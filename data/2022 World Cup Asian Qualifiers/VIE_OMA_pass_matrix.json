@@ -1,0 +1,3234 @@
+{
+    "matchInfo": {
+        "id": "crd3dlftoj2a224fh5kc84zro",
+        "coverageLevel": "13",
+        "date": "2022-03-24Z",
+        "time": "12:00:00Z",
+        "week": "9",
+        "numberOfPeriods": 2,
+        "periodLength": 45,
+        "overtimeLength": 15,
+        "lastUpdated": "2022-03-25T14:42:02Z",
+        "description": "Vietnam vs Oman",
+        "sport": {
+            "id": "289u5typ3vp4ifwh5thalohmq",
+            "name": "Soccer"
+        },
+        "ruleset": {
+            "id": "79plas4983031idr6vw83nuel",
+            "name": "Men"
+        },
+        "competition": {
+            "id": "40yjcbx2sq6oq736iqqqczwt1",
+            "name": "WC Qualification Asia",
+            "competitionCode": "WCA",
+            "competitionFormat": "International cup",
+            "country": {
+                "id": "7yck0z0f9rlpeyatanjc1ylzp",
+                "name": "Asia"
+            }
+        },
+        "tournamentCalendar": {
+            "id": "2frzbxa1eha1ca8a7u9mxot4a",
+            "startDate": "2019-06-06Z",
+            "endDate": "2022-05-30Z",
+            "name": "2022 Qatar"
+        },
+        "stage": {
+            "id": "2h83rz86nym6ac50nkadrq6i2",
+            "formatId": "ez04y4l55ag1ld87yjibnx0ph",
+            "startDate": "2021-09-02Z",
+            "endDate": "2022-03-29Z",
+            "name": "3rd Round"
+        },
+        "series": {
+            "id": "2he47pmzoq4o3qodutai6hene",
+            "formatId": "ci6ciikoil0ifcuis37z8h7md",
+            "name": "Group B"
+        },
+        "contestant": [
+            {
+                "id": "a9rijkw11dvpb2ysf1pe3zcqo",
+                "name": "Vietnam",
+                "shortName": "Vietnam",
+                "officialName": "Vietnam",
+                "code": "VIE",
+                "position": "home",
+                "country": {
+                    "id": "747si8rr6manolqh31d1vz17q",
+                    "name": "Vietnam"
+                }
+            },
+            {
+                "id": "58g81s16tc8hsmqhh0vyfbrrj",
+                "name": "Oman",
+                "shortName": "Oman",
+                "officialName": "Oman",
+                "code": "OMA",
+                "position": "away",
+                "country": {
+                    "id": "7er8r20ewopkflfj679v1dol5",
+                    "name": "Oman"
+                }
+            }
+        ],
+        "venue": {
+            "id": "d6f9oppkpi0uosgpdnym8ezhz",
+            "neutral": "no",
+            "longName": "Sân vận động quốc gia Mỹ Đình (My Dinh National Stadium)",
+            "shortName": "Sân vận động quốc gia Mỹ Đình (My Dinh National Stadium)"
+        }
+    },
+    "liveData": {
+        "matchDetails": {
+            "periodId": 14,
+            "matchStatus": "Played",
+            "winner": "away",
+            "matchLengthMin": 96,
+            "matchLengthSec": 38,
+            "period": [
+                {
+                    "id": 1,
+                    "start": "2022-03-24T12:01:45Z",
+                    "end": "2022-03-24T12:48:53Z",
+                    "lengthMin": 47,
+                    "lengthSec": 8
+                },
+                {
+                    "id": 2,
+                    "start": "2022-03-24T13:04:48Z",
+                    "end": "2022-03-24T13:54:18Z",
+                    "lengthMin": 49,
+                    "lengthSec": 30
+                }
+            ],
+            "scores": {
+                "ht": {
+                    "home": 0,
+                    "away": 0
+                },
+                "ft": {
+                    "home": 0,
+                    "away": 1
+                },
+                "total": {
+                    "home": 0,
+                    "away": 1
+                }
+            }
+        },
+        "lineUp": [
+            {
+                "contestantId": "a9rijkw11dvpb2ysf1pe3zcqo",
+                "player": [
+                    {
+                        "playerId": "8i9bywnawfb8viz019qp0qoyd",
+                        "firstName": "Nguyên Mạnh",
+                        "lastName": "Trần",
+                        "shortFirstName": "Nguyên Manh",
+                        "shortLastName": "Tran",
+                        "knownName": "Tran Nguyên Manh",
+                        "matchName": "Trần Nguyên Mạnh",
+                        "shirtNumber": 23,
+                        "position": "Goalkeeper",
+                        "positionSide": "Centre",
+                        "crossLost": 0,
+                        "crossSuccess": 0,
+                        "passLost": 7,
+                        "passSuccess": 21,
+                        "x": 11.23,
+                        "y": 51.63,
+                        "playerPass": [
+                            {
+                                "firstName": "Ngọc Hải",
+                                "lastName": "Quế",
+                                "shortFirstName": "Ngoc Hai",
+                                "shortLastName": "Que",
+                                "knownName": "Que Ngoc Hai",
+                                "matchName": "Quế Ngọc Hải",
+                                "playerId": "e6v2yp85v23qvk9sv6imua9jp",
+                                "value": 2
+                            },
+                            {
+                                "firstName": "Thanh Bình",
+                                "lastName": "Nguyễn",
+                                "shortFirstName": "Thanh Bình",
+                                "shortLastName": "Nguyen",
+                                "knownName": "Nguyen Thanh Bình",
+                                "matchName": "Nguyễn Thanh Bình",
+                                "playerId": "37bihupbl4i5alux0s7erhedw",
+                                "value": 2
+                            },
+                            {
+                                "firstName": "Việt Anh",
+                                "lastName": "Bùi Hoàng",
+                                "shortFirstName": "Viêt Anh",
+                                "shortLastName": "Bùi Hoàng",
+                                "knownName": "Bùi Hoàng Viêt Anh",
+                                "matchName": "Bùi Hoàng Việt Anh",
+                                "playerId": "3eln63o0hxvilaer7wcj4fn1m",
+                                "value": 4
+                            },
+                            {
+                                "firstName": "Tiến Linh",
+                                "lastName": "Nguyễn",
+                                "shortFirstName": "Tien Linh",
+                                "shortLastName": "Nguyen",
+                                "knownName": "Nguyen Tien Linh",
+                                "matchName": "Nguyễn Tiến Linh",
+                                "playerId": "f5lqyxoj63lzxk1naf9asmzft",
+                                "value": 3
+                            },
+                            {
+                                "firstName": "Văn Thanh",
+                                "lastName": "Vũ",
+                                "shortFirstName": "Van Thanh",
+                                "shortLastName": "Vu",
+                                "knownName": "Vu Van Thanh",
+                                "matchName": "Vũ Văn Thanh",
+                                "playerId": "dcs7trihxgq30h0972bqfd815",
+                                "value": 2
+                            },
+                            {
+                                "firstName": "Tuấn Hải",
+                                "lastName": "Phạm",
+                                "shortFirstName": "Tuan Hai",
+                                "shortLastName": "Pham",
+                                "knownName": "Pham Tuan Hai",
+                                "matchName": "Phạm Tuấn Hải",
+                                "playerId": "ed6okohi500kle8w1zinldpbe",
+                                "value": 1
+                            },
+                            {
+                                "firstName": "Thành Chung",
+                                "lastName": "Nguyễn",
+                                "shortFirstName": "Thành Chung",
+                                "shortLastName": "Nguyen",
+                                "knownName": "Nguyen Thành Chung",
+                                "matchName": "Nguyễn Thành Chung",
+                                "playerId": "asy8o6z7v81si8gx5iypyneuh",
+                                "value": 3
+                            },
+                            {
+                                "firstName": "Tấn Tài",
+                                "lastName": "Hồ",
+                                "shortFirstName": "Tan Tài",
+                                "shortLastName": "Ho",
+                                "knownName": "Ho Tan Tài",
+                                "matchName": "Hồ Tấn Tài",
+                                "playerId": "4qe9v3ndhrzjm7aar3j78bkkp",
+                                "value": 4
+                            }
+                        ]
+                    },
+                    {
+                        "playerId": "asy8o6z7v81si8gx5iypyneuh",
+                        "firstName": "Thành Chung",
+                        "lastName": "Nguyễn",
+                        "shortFirstName": "Thành Chung",
+                        "shortLastName": "Nguyen",
+                        "knownName": "Nguyen Thành Chung",
+                        "matchName": "Nguyễn Thành Chung",
+                        "shirtNumber": 16,
+                        "position": "Defender",
+                        "positionSide": "Left/Centre",
+                        "crossLost": 0,
+                        "crossSuccess": 0,
+                        "passLost": 4,
+                        "passSuccess": 38,
+                        "x": 40.22,
+                        "y": 78.19,
+                        "playerPass": [
+                            {
+                                "firstName": "Tuấn Anh",
+                                "lastName": "Nguyễn",
+                                "shortFirstName": "Tuan Anh",
+                                "shortLastName": "Nguyen",
+                                "knownName": "Nguyen Tuan Anh",
+                                "matchName": "Nguyễn Tuấn Anh",
+                                "playerId": "1zgo9j4wksutxvgpp35lqz5jp",
+                                "value": 1
+                            },
+                            {
+                                "firstName": "Tuấn Hải",
+                                "lastName": "Phạm",
+                                "shortFirstName": "Tuan Hai",
+                                "shortLastName": "Pham",
+                                "knownName": "Pham Tuan Hai",
+                                "matchName": "Phạm Tuấn Hải",
+                                "playerId": "ed6okohi500kle8w1zinldpbe",
+                                "value": 2
+                            },
+                            {
+                                "firstName": "Tấn Tài",
+                                "lastName": "Hồ",
+                                "shortFirstName": "Tan Tài",
+                                "shortLastName": "Ho",
+                                "knownName": "Ho Tan Tài",
+                                "matchName": "Hồ Tấn Tài",
+                                "playerId": "4qe9v3ndhrzjm7aar3j78bkkp",
+                                "value": 1
+                            },
+                            {
+                                "firstName": "Tiến Linh",
+                                "lastName": "Nguyễn",
+                                "shortFirstName": "Tien Linh",
+                                "shortLastName": "Nguyen",
+                                "knownName": "Nguyen Tien Linh",
+                                "matchName": "Nguyễn Tiến Linh",
+                                "playerId": "f5lqyxoj63lzxk1naf9asmzft",
+                                "value": 2
+                            },
+                            {
+                                "firstName": "Hùng Dũng",
+                                "lastName": "Đỗ",
+                                "shortFirstName": "Hùng Dung",
+                                "shortLastName": "Do",
+                                "knownName": "Do Hùng Dung",
+                                "matchName": "Đỗ Hùng Dũng",
+                                "playerId": "2ntgtoybe2s2vtd9n3w7pyqqx",
+                                "value": 8
+                            },
+                            {
+                                "firstName": "Văn Thanh",
+                                "lastName": "Vũ",
+                                "shortFirstName": "Van Thanh",
+                                "shortLastName": "Vu",
+                                "knownName": "Vu Van Thanh",
+                                "matchName": "Vũ Văn Thanh",
+                                "playerId": "dcs7trihxgq30h0972bqfd815",
+                                "value": 8
+                            },
+                            {
+                                "firstName": "Nguyên Mạnh",
+                                "lastName": "Trần",
+                                "shortFirstName": "Nguyên Manh",
+                                "shortLastName": "Tran",
+                                "knownName": "Tran Nguyên Manh",
+                                "matchName": "Trần Nguyên Mạnh",
+                                "playerId": "8i9bywnawfb8viz019qp0qoyd",
+                                "value": 5
+                            },
+                            {
+                                "firstName": "Đức Chinh",
+                                "lastName": "Hà",
+                                "shortFirstName": "Duc Chinh",
+                                "shortLastName": "Hà",
+                                "knownName": "Hà Duc Chinh",
+                                "matchName": "Hà Đức Chinh",
+                                "playerId": "eq8a0j8ug7wkngpf7kuu1l0x5",
+                                "value": 1
+                            },
+                            {
+                                "firstName": "Ngọc Hải",
+                                "lastName": "Quế",
+                                "shortFirstName": "Ngoc Hai",
+                                "shortLastName": "Que",
+                                "knownName": "Que Ngoc Hai",
+                                "matchName": "Quế Ngọc Hải",
+                                "playerId": "e6v2yp85v23qvk9sv6imua9jp",
+                                "value": 4
+                            },
+                            {
+                                "firstName": "Văn Toàn",
+                                "lastName": "Nguyễn",
+                                "shortFirstName": "Van Toàn",
+                                "shortLastName": "Nguyen",
+                                "knownName": "Nguyen Van Toàn I",
+                                "matchName": "Nguyễn Văn Toàn",
+                                "playerId": "al34aloy23wyvosb19kq3du51",
+                                "value": 1
+                            },
+                            {
+                                "firstName": "Văn Xuân",
+                                "lastName": "Lê",
+                                "shortFirstName": "Van Xuân",
+                                "shortLastName": "Lê",
+                                "knownName": "Lê Van Xuân",
+                                "matchName": "Lê Văn Xuân",
+                                "playerId": "9jm943d39ny1s8w0qlkmpk0ve",
+                                "value": 3
+                            },
+                            {
+                                "firstName": "Quang Hải",
+                                "lastName": "Nguyễn",
+                                "shortFirstName": "Quang Hai",
+                                "shortLastName": "Nguyen",
+                                "knownName": "Nguyen Quang Hai",
+                                "matchName": "Nguyễn Quang Hải",
+                                "playerId": "77ipvasiwsyshd44tly4iue39",
+                                "value": 1
+                            }
+                        ]
+                    },
+                    {
+                        "playerId": "e6v2yp85v23qvk9sv6imua9jp",
+                        "firstName": "Ngọc Hải",
+                        "lastName": "Quế",
+                        "shortFirstName": "Ngoc Hai",
+                        "shortLastName": "Que",
+                        "knownName": "Que Ngoc Hai",
+                        "matchName": "Quế Ngọc Hải",
+                        "shirtNumber": 3,
+                        "position": "Defender",
+                        "positionSide": "Centre",
+                        "crossLost": 1,
+                        "crossSuccess": 0,
+                        "passLost": 9,
+                        "passSuccess": 22,
+                        "x": 33.22,
+                        "y": 50.73,
+                        "playerPass": [
+                            {
+                                "firstName": "Văn Toàn",
+                                "lastName": "Nguyễn",
+                                "shortFirstName": "Van Toàn",
+                                "shortLastName": "Nguyen",
+                                "knownName": "Nguyen Van Toàn I",
+                                "matchName": "Nguyễn Văn Toàn",
+                                "playerId": "al34aloy23wyvosb19kq3du51",
+                                "value": 1
+                            },
+                            {
+                                "firstName": "Quang Hải",
+                                "lastName": "Nguyễn",
+                                "shortFirstName": "Quang Hai",
+                                "shortLastName": "Nguyen",
+                                "knownName": "Nguyen Quang Hai",
+                                "matchName": "Nguyễn Quang Hải",
+                                "playerId": "77ipvasiwsyshd44tly4iue39",
+                                "value": 1
+                            },
+                            {
+                                "firstName": "Công Phượng",
+                                "lastName": "Nguyễn",
+                                "shortFirstName": "Công Phuong",
+                                "shortLastName": "Nguyen",
+                                "knownName": "Nguyen Công Phuong",
+                                "matchName": "Nguyễn Công Phượng",
+                                "playerId": "3o022gbd24qltqhzb6sjeq7yt",
+                                "value": 3
+                            },
+                            {
+                                "firstName": "Việt Anh",
+                                "lastName": "Bùi Hoàng",
+                                "shortFirstName": "Viêt Anh",
+                                "shortLastName": "Bùi Hoàng",
+                                "knownName": "Bùi Hoàng Viêt Anh",
+                                "matchName": "Bùi Hoàng Việt Anh",
+                                "playerId": "3eln63o0hxvilaer7wcj4fn1m",
+                                "value": 2
+                            },
+                            {
+                                "firstName": "Đức Chinh",
+                                "lastName": "Hà",
+                                "shortFirstName": "Duc Chinh",
+                                "shortLastName": "Hà",
+                                "knownName": "Hà Duc Chinh",
+                                "matchName": "Hà Đức Chinh",
+                                "playerId": "eq8a0j8ug7wkngpf7kuu1l0x5",
+                                "value": 1
+                            },
+                            {
+                                "firstName": "Hùng Dũng",
+                                "lastName": "Đỗ",
+                                "shortFirstName": "Hùng Dung",
+                                "shortLastName": "Do",
+                                "knownName": "Do Hùng Dung",
+                                "matchName": "Đỗ Hùng Dũng",
+                                "playerId": "2ntgtoybe2s2vtd9n3w7pyqqx",
+                                "value": 1
+                            },
+                            {
+                                "firstName": "Văn Thanh",
+                                "lastName": "Vũ",
+                                "shortFirstName": "Van Thanh",
+                                "shortLastName": "Vu",
+                                "knownName": "Vu Van Thanh",
+                                "matchName": "Vũ Văn Thanh",
+                                "playerId": "dcs7trihxgq30h0972bqfd815",
+                                "value": 1
+                            },
+                            {
+                                "firstName": "Nguyên Mạnh",
+                                "lastName": "Trần",
+                                "shortFirstName": "Nguyên Manh",
+                                "shortLastName": "Tran",
+                                "knownName": "Tran Nguyên Manh",
+                                "matchName": "Trần Nguyên Mạnh",
+                                "playerId": "8i9bywnawfb8viz019qp0qoyd",
+                                "value": 1
+                            },
+                            {
+                                "firstName": "Tấn Tài",
+                                "lastName": "Hồ",
+                                "shortFirstName": "Tan Tài",
+                                "shortLastName": "Ho",
+                                "knownName": "Ho Tan Tài",
+                                "matchName": "Hồ Tấn Tài",
+                                "playerId": "4qe9v3ndhrzjm7aar3j78bkkp",
+                                "value": 2
+                            },
+                            {
+                                "firstName": "Thành Chung",
+                                "lastName": "Nguyễn",
+                                "shortFirstName": "Thành Chung",
+                                "shortLastName": "Nguyen",
+                                "knownName": "Nguyen Thành Chung",
+                                "matchName": "Nguyễn Thành Chung",
+                                "playerId": "asy8o6z7v81si8gx5iypyneuh",
+                                "value": 7
+                            },
+                            {
+                                "firstName": "Tuấn Anh",
+                                "lastName": "Nguyễn",
+                                "shortFirstName": "Tuan Anh",
+                                "shortLastName": "Nguyen",
+                                "knownName": "Nguyen Tuan Anh",
+                                "matchName": "Nguyễn Tuấn Anh",
+                                "playerId": "1zgo9j4wksutxvgpp35lqz5jp",
+                                "value": 1
+                            }
+                        ]
+                    },
+                    {
+                        "playerId": "3eln63o0hxvilaer7wcj4fn1m",
+                        "firstName": "Việt Anh",
+                        "lastName": "Bùi Hoàng",
+                        "shortFirstName": "Viêt Anh",
+                        "shortLastName": "Bùi Hoàng",
+                        "knownName": "Bùi Hoàng Viêt Anh",
+                        "matchName": "Bùi Hoàng Việt Anh",
+                        "shirtNumber": 5,
+                        "position": "Defender",
+                        "positionSide": "Centre/Right",
+                        "crossLost": 0,
+                        "crossSuccess": 0,
+                        "passLost": 11,
+                        "passSuccess": 16,
+                        "x": 36.65,
+                        "y": 26.27,
+                        "playerPass": [
+                            {
+                                "firstName": "Ngọc Hải",
+                                "lastName": "Quế",
+                                "shortFirstName": "Ngoc Hai",
+                                "shortLastName": "Que",
+                                "knownName": "Que Ngoc Hai",
+                                "matchName": "Quế Ngọc Hải",
+                                "playerId": "e6v2yp85v23qvk9sv6imua9jp",
+                                "value": 2
+                            },
+                            {
+                                "firstName": "Quang Hải",
+                                "lastName": "Nguyễn",
+                                "shortFirstName": "Quang Hai",
+                                "shortLastName": "Nguyen",
+                                "knownName": "Nguyen Quang Hai",
+                                "matchName": "Nguyễn Quang Hải",
+                                "playerId": "77ipvasiwsyshd44tly4iue39",
+                                "value": 1
+                            },
+                            {
+                                "firstName": "Văn Toàn",
+                                "lastName": "Nguyễn",
+                                "shortFirstName": "Van Toàn",
+                                "shortLastName": "Nguyen",
+                                "knownName": "Nguyen Van Toàn I",
+                                "matchName": "Nguyễn Văn Toàn",
+                                "playerId": "al34aloy23wyvosb19kq3du51",
+                                "value": 1
+                            },
+                            {
+                                "firstName": "Công Phượng",
+                                "lastName": "Nguyễn",
+                                "shortFirstName": "Công Phuong",
+                                "shortLastName": "Nguyen",
+                                "knownName": "Nguyen Công Phuong",
+                                "matchName": "Nguyễn Công Phượng",
+                                "playerId": "3o022gbd24qltqhzb6sjeq7yt",
+                                "value": 1
+                            },
+                            {
+                                "firstName": "Văn Thanh",
+                                "lastName": "Vũ",
+                                "shortFirstName": "Van Thanh",
+                                "shortLastName": "Vu",
+                                "knownName": "Vu Van Thanh",
+                                "matchName": "Vũ Văn Thanh",
+                                "playerId": "dcs7trihxgq30h0972bqfd815",
+                                "value": 2
+                            },
+                            {
+                                "firstName": "Hùng Dũng",
+                                "lastName": "Đỗ",
+                                "shortFirstName": "Hùng Dung",
+                                "shortLastName": "Do",
+                                "knownName": "Do Hùng Dung",
+                                "matchName": "Đỗ Hùng Dũng",
+                                "playerId": "2ntgtoybe2s2vtd9n3w7pyqqx",
+                                "value": 2
+                            },
+                            {
+                                "firstName": "Nguyên Mạnh",
+                                "lastName": "Trần",
+                                "shortFirstName": "Nguyên Manh",
+                                "shortLastName": "Tran",
+                                "knownName": "Tran Nguyên Manh",
+                                "matchName": "Trần Nguyên Mạnh",
+                                "playerId": "8i9bywnawfb8viz019qp0qoyd",
+                                "value": 1
+                            },
+                            {
+                                "firstName": "Tuấn Anh",
+                                "lastName": "Nguyễn",
+                                "shortFirstName": "Tuan Anh",
+                                "shortLastName": "Nguyen",
+                                "knownName": "Nguyen Tuan Anh",
+                                "matchName": "Nguyễn Tuấn Anh",
+                                "playerId": "1zgo9j4wksutxvgpp35lqz5jp",
+                                "value": 1
+                            },
+                            {
+                                "firstName": "Tuấn Hải",
+                                "lastName": "Phạm",
+                                "shortFirstName": "Tuan Hai",
+                                "shortLastName": "Pham",
+                                "knownName": "Pham Tuan Hai",
+                                "matchName": "Phạm Tuấn Hải",
+                                "playerId": "ed6okohi500kle8w1zinldpbe",
+                                "value": 1
+                            },
+                            {
+                                "firstName": "Thành Chung",
+                                "lastName": "Nguyễn",
+                                "shortFirstName": "Thành Chung",
+                                "shortLastName": "Nguyen",
+                                "knownName": "Nguyen Thành Chung",
+                                "matchName": "Nguyễn Thành Chung",
+                                "playerId": "asy8o6z7v81si8gx5iypyneuh",
+                                "value": 1
+                            },
+                            {
+                                "firstName": "Tấn Tài",
+                                "lastName": "Hồ",
+                                "shortFirstName": "Tan Tài",
+                                "shortLastName": "Ho",
+                                "knownName": "Ho Tan Tài",
+                                "matchName": "Hồ Tấn Tài",
+                                "playerId": "4qe9v3ndhrzjm7aar3j78bkkp",
+                                "value": 3
+                            }
+                        ]
+                    },
+                    {
+                        "playerId": "dcs7trihxgq30h0972bqfd815",
+                        "firstName": "Văn Thanh",
+                        "lastName": "Vũ",
+                        "shortFirstName": "Van Thanh",
+                        "shortLastName": "Vu",
+                        "knownName": "Vu Van Thanh",
+                        "matchName": "Vũ Văn Thanh",
+                        "shirtNumber": 17,
+                        "position": "Midfielder",
+                        "positionSide": "Left",
+                        "crossLost": 4,
+                        "crossSuccess": 0,
+                        "passLost": 7,
+                        "passSuccess": 26,
+                        "x": 55.22,
+                        "y": 87.79,
+                        "playerPass": [
+                            {
+                                "firstName": "Thành Chung",
+                                "lastName": "Nguyễn",
+                                "shortFirstName": "Thành Chung",
+                                "shortLastName": "Nguyen",
+                                "knownName": "Nguyen Thành Chung",
+                                "matchName": "Nguyễn Thành Chung",
+                                "playerId": "asy8o6z7v81si8gx5iypyneuh",
+                                "value": 9
+                            },
+                            {
+                                "firstName": "Tuấn Hải",
+                                "lastName": "Phạm",
+                                "shortFirstName": "Tuan Hai",
+                                "shortLastName": "Pham",
+                                "knownName": "Pham Tuan Hai",
+                                "matchName": "Phạm Tuấn Hải",
+                                "playerId": "ed6okohi500kle8w1zinldpbe",
+                                "value": 3
+                            },
+                            {
+                                "firstName": "Tuấn Anh",
+                                "lastName": "Nguyễn",
+                                "shortFirstName": "Tuan Anh",
+                                "shortLastName": "Nguyen",
+                                "knownName": "Nguyen Tuan Anh",
+                                "matchName": "Nguyễn Tuấn Anh",
+                                "playerId": "1zgo9j4wksutxvgpp35lqz5jp",
+                                "value": 2
+                            },
+                            {
+                                "firstName": "Công Phượng",
+                                "lastName": "Nguyễn",
+                                "shortFirstName": "Công Phuong",
+                                "shortLastName": "Nguyen",
+                                "knownName": "Nguyen Công Phuong",
+                                "matchName": "Nguyễn Công Phượng",
+                                "playerId": "3o022gbd24qltqhzb6sjeq7yt",
+                                "value": 2
+                            },
+                            {
+                                "firstName": "Quang Hải",
+                                "lastName": "Nguyễn",
+                                "shortFirstName": "Quang Hai",
+                                "shortLastName": "Nguyen",
+                                "knownName": "Nguyen Quang Hai",
+                                "matchName": "Nguyễn Quang Hải",
+                                "playerId": "77ipvasiwsyshd44tly4iue39",
+                                "value": 5
+                            },
+                            {
+                                "firstName": "Hùng Dũng",
+                                "lastName": "Đỗ",
+                                "shortFirstName": "Hùng Dung",
+                                "shortLastName": "Do",
+                                "knownName": "Do Hùng Dung",
+                                "matchName": "Đỗ Hùng Dũng",
+                                "playerId": "2ntgtoybe2s2vtd9n3w7pyqqx",
+                                "value": 4
+                            },
+                            {
+                                "firstName": "Tiến Linh",
+                                "lastName": "Nguyễn",
+                                "shortFirstName": "Tien Linh",
+                                "shortLastName": "Nguyen",
+                                "knownName": "Nguyen Tien Linh",
+                                "matchName": "Nguyễn Tiến Linh",
+                                "playerId": "f5lqyxoj63lzxk1naf9asmzft",
+                                "value": 1
+                            }
+                        ]
+                    },
+                    {
+                        "playerId": "2ntgtoybe2s2vtd9n3w7pyqqx",
+                        "firstName": "Hùng Dũng",
+                        "lastName": "Đỗ",
+                        "shortFirstName": "Hùng Dung",
+                        "shortLastName": "Do",
+                        "knownName": "Do Hùng Dung",
+                        "matchName": "Đỗ Hùng Dũng",
+                        "shirtNumber": 8,
+                        "position": "Midfielder",
+                        "positionSide": "Left/Centre",
+                        "crossLost": 1,
+                        "crossSuccess": 1,
+                        "passLost": 7,
+                        "passSuccess": 24,
+                        "x": 53.18,
+                        "y": 60.5,
+                        "playerPass": [
+                            {
+                                "firstName": "Tuấn Anh",
+                                "lastName": "Nguyễn",
+                                "shortFirstName": "Tuan Anh",
+                                "shortLastName": "Nguyen",
+                                "knownName": "Nguyen Tuan Anh",
+                                "matchName": "Nguyễn Tuấn Anh",
+                                "playerId": "1zgo9j4wksutxvgpp35lqz5jp",
+                                "value": 1
+                            },
+                            {
+                                "firstName": "Tuấn Hải",
+                                "lastName": "Phạm",
+                                "shortFirstName": "Tuan Hai",
+                                "shortLastName": "Pham",
+                                "knownName": "Pham Tuan Hai",
+                                "matchName": "Phạm Tuấn Hải",
+                                "playerId": "ed6okohi500kle8w1zinldpbe",
+                                "value": 2
+                            },
+                            {
+                                "firstName": "Thành Chung",
+                                "lastName": "Nguyễn",
+                                "shortFirstName": "Thành Chung",
+                                "shortLastName": "Nguyen",
+                                "knownName": "Nguyen Thành Chung",
+                                "matchName": "Nguyễn Thành Chung",
+                                "playerId": "asy8o6z7v81si8gx5iypyneuh",
+                                "value": 6
+                            },
+                            {
+                                "firstName": "Tấn Tài",
+                                "lastName": "Hồ",
+                                "shortFirstName": "Tan Tài",
+                                "shortLastName": "Ho",
+                                "knownName": "Ho Tan Tài",
+                                "matchName": "Hồ Tấn Tài",
+                                "playerId": "4qe9v3ndhrzjm7aar3j78bkkp",
+                                "value": 1
+                            },
+                            {
+                                "firstName": "Ngọc Hải",
+                                "lastName": "Quế",
+                                "shortFirstName": "Ngoc Hai",
+                                "shortLastName": "Que",
+                                "knownName": "Que Ngoc Hai",
+                                "matchName": "Quế Ngọc Hải",
+                                "playerId": "e6v2yp85v23qvk9sv6imua9jp",
+                                "value": 3
+                            },
+                            {
+                                "firstName": "Quang Hải",
+                                "lastName": "Nguyễn",
+                                "shortFirstName": "Quang Hai",
+                                "shortLastName": "Nguyen",
+                                "knownName": "Nguyen Quang Hai",
+                                "matchName": "Nguyễn Quang Hải",
+                                "playerId": "77ipvasiwsyshd44tly4iue39",
+                                "value": 1
+                            },
+                            {
+                                "firstName": "Văn Toàn",
+                                "lastName": "Nguyễn",
+                                "shortFirstName": "Van Toàn",
+                                "shortLastName": "Nguyen",
+                                "knownName": "Nguyen Van Toàn I",
+                                "matchName": "Nguyễn Văn Toàn",
+                                "playerId": "al34aloy23wyvosb19kq3du51",
+                                "value": 3
+                            },
+                            {
+                                "firstName": "Việt Anh",
+                                "lastName": "Bùi Hoàng",
+                                "shortFirstName": "Viêt Anh",
+                                "shortLastName": "Bùi Hoàng",
+                                "knownName": "Bùi Hoàng Viêt Anh",
+                                "matchName": "Bùi Hoàng Việt Anh",
+                                "playerId": "3eln63o0hxvilaer7wcj4fn1m",
+                                "value": 2
+                            },
+                            {
+                                "firstName": "Công Phượng",
+                                "lastName": "Nguyễn",
+                                "shortFirstName": "Công Phuong",
+                                "shortLastName": "Nguyen",
+                                "knownName": "Nguyen Công Phuong",
+                                "matchName": "Nguyễn Công Phượng",
+                                "playerId": "3o022gbd24qltqhzb6sjeq7yt",
+                                "value": 1
+                            },
+                            {
+                                "firstName": "Tiến Linh",
+                                "lastName": "Nguyễn",
+                                "shortFirstName": "Tien Linh",
+                                "shortLastName": "Nguyen",
+                                "knownName": "Nguyen Tien Linh",
+                                "matchName": "Nguyễn Tiến Linh",
+                                "playerId": "f5lqyxoj63lzxk1naf9asmzft",
+                                "cross": 1,
+                                "value": 2
+                            },
+                            {
+                                "firstName": "Văn Thanh",
+                                "lastName": "Vũ",
+                                "shortFirstName": "Van Thanh",
+                                "shortLastName": "Vu",
+                                "knownName": "Vu Van Thanh",
+                                "matchName": "Vũ Văn Thanh",
+                                "playerId": "dcs7trihxgq30h0972bqfd815",
+                                "value": 2
+                            }
+                        ]
+                    },
+                    {
+                        "playerId": "1zgo9j4wksutxvgpp35lqz5jp",
+                        "firstName": "Tuấn Anh",
+                        "lastName": "Nguyễn",
+                        "shortFirstName": "Tuan Anh",
+                        "shortLastName": "Nguyen",
+                        "knownName": "Nguyen Tuan Anh",
+                        "matchName": "Nguyễn Tuấn Anh",
+                        "shirtNumber": 11,
+                        "position": "Midfielder",
+                        "positionSide": "Centre/Right",
+                        "crossLost": 0,
+                        "crossSuccess": 0,
+                        "passLost": 3,
+                        "passSuccess": 12,
+                        "x": 48.67,
+                        "y": 43.26,
+                        "playerPass": [
+                            {
+                                "firstName": "Quang Hải",
+                                "lastName": "Nguyễn",
+                                "shortFirstName": "Quang Hai",
+                                "shortLastName": "Nguyen",
+                                "knownName": "Nguyen Quang Hai",
+                                "matchName": "Nguyễn Quang Hải",
+                                "playerId": "77ipvasiwsyshd44tly4iue39",
+                                "value": 1
+                            },
+                            {
+                                "firstName": "Việt Anh",
+                                "lastName": "Bùi Hoàng",
+                                "shortFirstName": "Viêt Anh",
+                                "shortLastName": "Bùi Hoàng",
+                                "knownName": "Bùi Hoàng Viêt Anh",
+                                "matchName": "Bùi Hoàng Việt Anh",
+                                "playerId": "3eln63o0hxvilaer7wcj4fn1m",
+                                "value": 1
+                            },
+                            {
+                                "firstName": "Văn Thanh",
+                                "lastName": "Vũ",
+                                "shortFirstName": "Van Thanh",
+                                "shortLastName": "Vu",
+                                "knownName": "Vu Van Thanh",
+                                "matchName": "Vũ Văn Thanh",
+                                "playerId": "dcs7trihxgq30h0972bqfd815",
+                                "value": 3
+                            },
+                            {
+                                "firstName": "Nguyên Mạnh",
+                                "lastName": "Trần",
+                                "shortFirstName": "Nguyên Manh",
+                                "shortLastName": "Tran",
+                                "knownName": "Tran Nguyên Manh",
+                                "matchName": "Trần Nguyên Mạnh",
+                                "playerId": "8i9bywnawfb8viz019qp0qoyd",
+                                "value": 1
+                            },
+                            {
+                                "firstName": "Tiến Linh",
+                                "lastName": "Nguyễn",
+                                "shortFirstName": "Tien Linh",
+                                "shortLastName": "Nguyen",
+                                "knownName": "Nguyen Tien Linh",
+                                "matchName": "Nguyễn Tiến Linh",
+                                "playerId": "f5lqyxoj63lzxk1naf9asmzft",
+                                "value": 1
+                            },
+                            {
+                                "firstName": "Tấn Tài",
+                                "lastName": "Hồ",
+                                "shortFirstName": "Tan Tài",
+                                "shortLastName": "Ho",
+                                "knownName": "Ho Tan Tài",
+                                "matchName": "Hồ Tấn Tài",
+                                "playerId": "4qe9v3ndhrzjm7aar3j78bkkp",
+                                "value": 2
+                            },
+                            {
+                                "firstName": "Thành Chung",
+                                "lastName": "Nguyễn",
+                                "shortFirstName": "Thành Chung",
+                                "shortLastName": "Nguyen",
+                                "knownName": "Nguyen Thành Chung",
+                                "matchName": "Nguyễn Thành Chung",
+                                "playerId": "asy8o6z7v81si8gx5iypyneuh",
+                                "value": 2
+                            },
+                            {
+                                "firstName": "Tuấn Hải",
+                                "lastName": "Phạm",
+                                "shortFirstName": "Tuan Hai",
+                                "shortLastName": "Pham",
+                                "knownName": "Pham Tuan Hai",
+                                "matchName": "Phạm Tuấn Hải",
+                                "playerId": "ed6okohi500kle8w1zinldpbe",
+                                "value": 1
+                            }
+                        ]
+                    },
+                    {
+                        "playerId": "4qe9v3ndhrzjm7aar3j78bkkp",
+                        "firstName": "Tấn Tài",
+                        "lastName": "Hồ",
+                        "shortFirstName": "Tan Tài",
+                        "shortLastName": "Ho",
+                        "knownName": "Ho Tan Tài",
+                        "matchName": "Hồ Tấn Tài",
+                        "shirtNumber": 13,
+                        "position": "Midfielder",
+                        "positionSide": "Right",
+                        "crossLost": 2,
+                        "crossSuccess": 1,
+                        "passLost": 10,
+                        "passSuccess": 20,
+                        "x": 52.61,
+                        "y": 12.57,
+                        "playerPass": [
+                            {
+                                "firstName": "Tuấn Hải",
+                                "lastName": "Phạm",
+                                "shortFirstName": "Tuan Hai",
+                                "shortLastName": "Pham",
+                                "knownName": "Pham Tuan Hai",
+                                "matchName": "Phạm Tuấn Hải",
+                                "playerId": "ed6okohi500kle8w1zinldpbe",
+                                "cross": 1,
+                                "value": 2
+                            },
+                            {
+                                "firstName": "Tuấn Anh",
+                                "lastName": "Nguyễn",
+                                "shortFirstName": "Tuan Anh",
+                                "shortLastName": "Nguyen",
+                                "knownName": "Nguyen Tuan Anh",
+                                "matchName": "Nguyễn Tuấn Anh",
+                                "playerId": "1zgo9j4wksutxvgpp35lqz5jp",
+                                "value": 2
+                            },
+                            {
+                                "firstName": "Công Phượng",
+                                "lastName": "Nguyễn",
+                                "shortFirstName": "Công Phuong",
+                                "shortLastName": "Nguyen",
+                                "knownName": "Nguyen Công Phuong",
+                                "matchName": "Nguyễn Công Phượng",
+                                "playerId": "3o022gbd24qltqhzb6sjeq7yt",
+                                "value": 1
+                            },
+                            {
+                                "firstName": "Việt Anh",
+                                "lastName": "Bùi Hoàng",
+                                "shortFirstName": "Viêt Anh",
+                                "shortLastName": "Bùi Hoàng",
+                                "knownName": "Bùi Hoàng Viêt Anh",
+                                "matchName": "Bùi Hoàng Việt Anh",
+                                "playerId": "3eln63o0hxvilaer7wcj4fn1m",
+                                "value": 1
+                            },
+                            {
+                                "firstName": "Quang Hải",
+                                "lastName": "Nguyễn",
+                                "shortFirstName": "Quang Hai",
+                                "shortLastName": "Nguyen",
+                                "knownName": "Nguyen Quang Hai",
+                                "matchName": "Nguyễn Quang Hải",
+                                "playerId": "77ipvasiwsyshd44tly4iue39",
+                                "value": 6
+                            },
+                            {
+                                "firstName": "Văn Toàn",
+                                "lastName": "Nguyễn",
+                                "shortFirstName": "Van Toàn",
+                                "shortLastName": "Nguyen",
+                                "knownName": "Nguyen Van Toàn I",
+                                "matchName": "Nguyễn Văn Toàn",
+                                "playerId": "al34aloy23wyvosb19kq3du51",
+                                "value": 1
+                            },
+                            {
+                                "firstName": "Ngọc Hải",
+                                "lastName": "Quế",
+                                "shortFirstName": "Ngoc Hai",
+                                "shortLastName": "Que",
+                                "knownName": "Que Ngoc Hai",
+                                "matchName": "Quế Ngọc Hải",
+                                "playerId": "e6v2yp85v23qvk9sv6imua9jp",
+                                "value": 1
+                            },
+                            {
+                                "firstName": "Nguyên Mạnh",
+                                "lastName": "Trần",
+                                "shortFirstName": "Nguyên Manh",
+                                "shortLastName": "Tran",
+                                "knownName": "Tran Nguyên Manh",
+                                "matchName": "Trần Nguyên Mạnh",
+                                "playerId": "8i9bywnawfb8viz019qp0qoyd",
+                                "value": 1
+                            },
+                            {
+                                "firstName": "Văn Thanh",
+                                "lastName": "Vũ",
+                                "shortFirstName": "Van Thanh",
+                                "shortLastName": "Vu",
+                                "knownName": "Vu Van Thanh",
+                                "matchName": "Vũ Văn Thanh",
+                                "playerId": "dcs7trihxgq30h0972bqfd815",
+                                "value": 2
+                            },
+                            {
+                                "firstName": "Hùng Dũng",
+                                "lastName": "Đỗ",
+                                "shortFirstName": "Hùng Dung",
+                                "shortLastName": "Do",
+                                "knownName": "Do Hùng Dung",
+                                "matchName": "Đỗ Hùng Dũng",
+                                "playerId": "2ntgtoybe2s2vtd9n3w7pyqqx",
+                                "value": 2
+                            },
+                            {
+                                "firstName": "Tiến Linh",
+                                "lastName": "Nguyễn",
+                                "shortFirstName": "Tien Linh",
+                                "shortLastName": "Nguyen",
+                                "knownName": "Nguyen Tien Linh",
+                                "matchName": "Nguyễn Tiến Linh",
+                                "playerId": "f5lqyxoj63lzxk1naf9asmzft",
+                                "value": 1
+                            }
+                        ]
+                    },
+                    {
+                        "playerId": "f5lqyxoj63lzxk1naf9asmzft",
+                        "firstName": "Tiến Linh",
+                        "lastName": "Nguyễn",
+                        "shortFirstName": "Tien Linh",
+                        "shortLastName": "Nguyen",
+                        "knownName": "Nguyen Tien Linh",
+                        "matchName": "Nguyễn Tiến Linh",
+                        "shirtNumber": 22,
+                        "position": "Striker",
+                        "positionSide": "Left/Centre",
+                        "crossLost": 0,
+                        "crossSuccess": 0,
+                        "passLost": 3,
+                        "passSuccess": 9,
+                        "x": 59.45,
+                        "y": 44.58,
+                        "playerPass": [
+                            {
+                                "firstName": "Văn Thanh",
+                                "lastName": "Vũ",
+                                "shortFirstName": "Van Thanh",
+                                "shortLastName": "Vu",
+                                "knownName": "Vu Van Thanh",
+                                "matchName": "Vũ Văn Thanh",
+                                "playerId": "dcs7trihxgq30h0972bqfd815",
+                                "value": 1
+                            },
+                            {
+                                "firstName": "Hùng Dũng",
+                                "lastName": "Đỗ",
+                                "shortFirstName": "Hùng Dung",
+                                "shortLastName": "Do",
+                                "knownName": "Do Hùng Dung",
+                                "matchName": "Đỗ Hùng Dũng",
+                                "playerId": "2ntgtoybe2s2vtd9n3w7pyqqx",
+                                "value": 1
+                            },
+                            {
+                                "firstName": "Quang Hải",
+                                "lastName": "Nguyễn",
+                                "shortFirstName": "Quang Hai",
+                                "shortLastName": "Nguyen",
+                                "knownName": "Nguyen Quang Hai",
+                                "matchName": "Nguyễn Quang Hải",
+                                "playerId": "77ipvasiwsyshd44tly4iue39",
+                                "value": 2
+                            },
+                            {
+                                "firstName": "Tuấn Anh",
+                                "lastName": "Nguyễn",
+                                "shortFirstName": "Tuan Anh",
+                                "shortLastName": "Nguyen",
+                                "knownName": "Nguyen Tuan Anh",
+                                "matchName": "Nguyễn Tuấn Anh",
+                                "playerId": "1zgo9j4wksutxvgpp35lqz5jp",
+                                "value": 1
+                            },
+                            {
+                                "firstName": "Tuấn Hải",
+                                "lastName": "Phạm",
+                                "shortFirstName": "Tuan Hai",
+                                "shortLastName": "Pham",
+                                "knownName": "Pham Tuan Hai",
+                                "matchName": "Phạm Tuấn Hải",
+                                "playerId": "ed6okohi500kle8w1zinldpbe",
+                                "value": 1
+                            },
+                            {
+                                "firstName": "Tấn Tài",
+                                "lastName": "Hồ",
+                                "shortFirstName": "Tan Tài",
+                                "shortLastName": "Ho",
+                                "knownName": "Ho Tan Tài",
+                                "matchName": "Hồ Tấn Tài",
+                                "playerId": "4qe9v3ndhrzjm7aar3j78bkkp",
+                                "value": 3
+                            }
+                        ]
+                    },
+                    {
+                        "playerId": "ed6okohi500kle8w1zinldpbe",
+                        "firstName": "Tuấn Hải",
+                        "lastName": "Phạm",
+                        "shortFirstName": "Tuan Hai",
+                        "shortLastName": "Pham",
+                        "knownName": "Pham Tuan Hai",
+                        "matchName": "Phạm Tuấn Hải",
+                        "shirtNumber": 6,
+                        "position": "Striker",
+                        "positionSide": "Centre",
+                        "crossLost": 0,
+                        "crossSuccess": 0,
+                        "passLost": 0,
+                        "passSuccess": 12,
+                        "x": 64.49,
+                        "y": 56.3,
+                        "playerPass": [
+                            {
+                                "firstName": "Tấn Tài",
+                                "lastName": "Hồ",
+                                "shortFirstName": "Tan Tài",
+                                "shortLastName": "Ho",
+                                "knownName": "Ho Tan Tài",
+                                "matchName": "Hồ Tấn Tài",
+                                "playerId": "4qe9v3ndhrzjm7aar3j78bkkp",
+                                "value": 1
+                            },
+                            {
+                                "firstName": "Công Phượng",
+                                "lastName": "Nguyễn",
+                                "shortFirstName": "Công Phuong",
+                                "shortLastName": "Nguyen",
+                                "knownName": "Nguyen Công Phuong",
+                                "matchName": "Nguyễn Công Phượng",
+                                "playerId": "3o022gbd24qltqhzb6sjeq7yt",
+                                "value": 1
+                            },
+                            {
+                                "firstName": "Quang Hải",
+                                "lastName": "Nguyễn",
+                                "shortFirstName": "Quang Hai",
+                                "shortLastName": "Nguyen",
+                                "knownName": "Nguyen Quang Hai",
+                                "matchName": "Nguyễn Quang Hải",
+                                "playerId": "77ipvasiwsyshd44tly4iue39",
+                                "value": 1
+                            },
+                            {
+                                "firstName": "Văn Toàn",
+                                "lastName": "Nguyễn",
+                                "shortFirstName": "Van Toàn",
+                                "shortLastName": "Nguyen",
+                                "knownName": "Nguyen Van Toàn I",
+                                "matchName": "Nguyễn Văn Toàn",
+                                "playerId": "al34aloy23wyvosb19kq3du51",
+                                "value": 1
+                            },
+                            {
+                                "firstName": "Văn Thanh",
+                                "lastName": "Vũ",
+                                "shortFirstName": "Van Thanh",
+                                "shortLastName": "Vu",
+                                "knownName": "Vu Van Thanh",
+                                "matchName": "Vũ Văn Thanh",
+                                "playerId": "dcs7trihxgq30h0972bqfd815",
+                                "value": 3
+                            },
+                            {
+                                "firstName": "Hùng Dũng",
+                                "lastName": "Đỗ",
+                                "shortFirstName": "Hùng Dung",
+                                "shortLastName": "Do",
+                                "knownName": "Do Hùng Dung",
+                                "matchName": "Đỗ Hùng Dũng",
+                                "playerId": "2ntgtoybe2s2vtd9n3w7pyqqx",
+                                "value": 3
+                            },
+                            {
+                                "firstName": "Tiến Linh",
+                                "lastName": "Nguyễn",
+                                "shortFirstName": "Tien Linh",
+                                "shortLastName": "Nguyen",
+                                "knownName": "Nguyen Tien Linh",
+                                "matchName": "Nguyễn Tiến Linh",
+                                "playerId": "f5lqyxoj63lzxk1naf9asmzft",
+                                "value": 2
+                            }
+                        ]
+                    },
+                    {
+                        "playerId": "77ipvasiwsyshd44tly4iue39",
+                        "firstName": "Quang Hải",
+                        "lastName": "Nguyễn",
+                        "shortFirstName": "Quang Hai",
+                        "shortLastName": "Nguyen",
+                        "knownName": "Nguyen Quang Hai",
+                        "matchName": "Nguyễn Quang Hải",
+                        "shirtNumber": 19,
+                        "position": "Striker",
+                        "positionSide": "Centre/Right",
+                        "crossLost": 6,
+                        "crossSuccess": 0,
+                        "passLost": 7,
+                        "passSuccess": 22,
+                        "x": 54.15,
+                        "y": 43.75,
+                        "playerPass": [
+                            {
+                                "firstName": "Ngọc Hải",
+                                "lastName": "Quế",
+                                "shortFirstName": "Ngoc Hai",
+                                "shortLastName": "Que",
+                                "knownName": "Que Ngoc Hai",
+                                "matchName": "Quế Ngọc Hải",
+                                "playerId": "e6v2yp85v23qvk9sv6imua9jp",
+                                "value": 1
+                            },
+                            {
+                                "firstName": "Thanh Bình",
+                                "lastName": "Nguyễn",
+                                "shortFirstName": "Thanh Bình",
+                                "shortLastName": "Nguyen",
+                                "knownName": "Nguyen Thanh Bình",
+                                "matchName": "Nguyễn Thanh Bình",
+                                "playerId": "37bihupbl4i5alux0s7erhedw",
+                                "value": 2
+                            },
+                            {
+                                "firstName": "Công Phượng",
+                                "lastName": "Nguyễn",
+                                "shortFirstName": "Công Phuong",
+                                "shortLastName": "Nguyen",
+                                "knownName": "Nguyen Công Phuong",
+                                "matchName": "Nguyễn Công Phượng",
+                                "playerId": "3o022gbd24qltqhzb6sjeq7yt",
+                                "value": 1
+                            },
+                            {
+                                "firstName": "Việt Anh",
+                                "lastName": "Bùi Hoàng",
+                                "shortFirstName": "Viêt Anh",
+                                "shortLastName": "Bùi Hoàng",
+                                "knownName": "Bùi Hoàng Viêt Anh",
+                                "matchName": "Bùi Hoàng Việt Anh",
+                                "playerId": "3eln63o0hxvilaer7wcj4fn1m",
+                                "value": 2
+                            },
+                            {
+                                "firstName": "Tiến Linh",
+                                "lastName": "Nguyễn",
+                                "shortFirstName": "Tien Linh",
+                                "shortLastName": "Nguyen",
+                                "knownName": "Nguyen Tien Linh",
+                                "matchName": "Nguyễn Tiến Linh",
+                                "playerId": "f5lqyxoj63lzxk1naf9asmzft",
+                                "value": 2
+                            },
+                            {
+                                "firstName": "Văn Thanh",
+                                "lastName": "Vũ",
+                                "shortFirstName": "Van Thanh",
+                                "shortLastName": "Vu",
+                                "knownName": "Vu Van Thanh",
+                                "matchName": "Vũ Văn Thanh",
+                                "playerId": "dcs7trihxgq30h0972bqfd815",
+                                "value": 5
+                            },
+                            {
+                                "firstName": "Tuấn Hải",
+                                "lastName": "Phạm",
+                                "shortFirstName": "Tuan Hai",
+                                "shortLastName": "Pham",
+                                "knownName": "Pham Tuan Hai",
+                                "matchName": "Phạm Tuấn Hải",
+                                "playerId": "ed6okohi500kle8w1zinldpbe",
+                                "value": 1
+                            },
+                            {
+                                "firstName": "Thành Chung",
+                                "lastName": "Nguyễn",
+                                "shortFirstName": "Thành Chung",
+                                "shortLastName": "Nguyen",
+                                "knownName": "Nguyen Thành Chung",
+                                "matchName": "Nguyễn Thành Chung",
+                                "playerId": "asy8o6z7v81si8gx5iypyneuh",
+                                "value": 2
+                            },
+                            {
+                                "firstName": "Tấn Tài",
+                                "lastName": "Hồ",
+                                "shortFirstName": "Tan Tài",
+                                "shortLastName": "Ho",
+                                "knownName": "Ho Tan Tài",
+                                "matchName": "Hồ Tấn Tài",
+                                "playerId": "4qe9v3ndhrzjm7aar3j78bkkp",
+                                "value": 6
+                            }
+                        ]
+                    },
+                    {
+                        "playerId": "937526g9ki3r5g7zipuq61vpx",
+                        "firstName": "Tấn Trường",
+                        "lastName": "Bùi",
+                        "shortFirstName": "Tan Truong",
+                        "shortLastName": "Bùi",
+                        "knownName": "Bùi Tan Truong",
+                        "matchName": "Bùi Tấn Trường",
+                        "shirtNumber": 1,
+                        "position": "Substitute"
+                    },
+                    {
+                        "playerId": "eq8a0j8ug7wkngpf7kuu1l0x5",
+                        "firstName": "Đức Chinh",
+                        "lastName": "Hà",
+                        "shortFirstName": "Duc Chinh",
+                        "shortLastName": "Hà",
+                        "knownName": "Hà Duc Chinh",
+                        "matchName": "Hà Đức Chinh",
+                        "shirtNumber": 18,
+                        "position": "Substitute",
+                        "crossLost": 0,
+                        "crossSuccess": 0,
+                        "passLost": 2,
+                        "passSuccess": 1,
+                        "x": 76.62,
+                        "y": 52.2,
+                        "playerPass": [
+                            {
+                                "firstName": "Thành Chung",
+                                "lastName": "Nguyễn",
+                                "shortFirstName": "Thành Chung",
+                                "shortLastName": "Nguyen",
+                                "knownName": "Nguyen Thành Chung",
+                                "matchName": "Nguyễn Thành Chung",
+                                "playerId": "asy8o6z7v81si8gx5iypyneuh",
+                                "value": 1
+                            }
+                        ]
+                    },
+                    {
+                        "playerId": "9jm943d39ny1s8w0qlkmpk0ve",
+                        "firstName": "Văn Xuân",
+                        "lastName": "Lê",
+                        "shortFirstName": "Van Xuân",
+                        "shortLastName": "Lê",
+                        "knownName": "Lê Van Xuân",
+                        "matchName": "Lê Văn Xuân",
+                        "shirtNumber": 2,
+                        "position": "Substitute",
+                        "crossLost": 0,
+                        "crossSuccess": 0,
+                        "passLost": 3,
+                        "passSuccess": 3,
+                        "x": 45.97,
+                        "y": 78.58,
+                        "playerPass": [
+                            {
+                                "firstName": "Nguyên Mạnh",
+                                "lastName": "Trần",
+                                "shortFirstName": "Nguyên Manh",
+                                "shortLastName": "Tran",
+                                "knownName": "Tran Nguyên Manh",
+                                "matchName": "Trần Nguyên Mạnh",
+                                "playerId": "8i9bywnawfb8viz019qp0qoyd",
+                                "value": 1
+                            },
+                            {
+                                "firstName": "Thành Chung",
+                                "lastName": "Nguyễn",
+                                "shortFirstName": "Thành Chung",
+                                "shortLastName": "Nguyen",
+                                "knownName": "Nguyen Thành Chung",
+                                "matchName": "Nguyễn Thành Chung",
+                                "playerId": "asy8o6z7v81si8gx5iypyneuh",
+                                "value": 1
+                            },
+                            {
+                                "firstName": "Thanh Bình",
+                                "lastName": "Nguyễn",
+                                "shortFirstName": "Thanh Bình",
+                                "shortLastName": "Nguyen",
+                                "knownName": "Nguyen Thanh Bình",
+                                "matchName": "Nguyễn Thanh Bình",
+                                "playerId": "37bihupbl4i5alux0s7erhedw",
+                                "value": 1
+                            }
+                        ]
+                    },
+                    {
+                        "playerId": "d6yj8ouqewixa5l1lfbraalpm",
+                        "firstName": "Hoàng Anh",
+                        "lastName": "Lý Công",
+                        "shortFirstName": "Hoàng Anh",
+                        "shortLastName": "Lý Công",
+                        "knownName": "Lý Công Hoàng Anh",
+                        "matchName": "Lý Công Hoàng Anh",
+                        "shirtNumber": 20,
+                        "position": "Substitute"
+                    },
+                    {
+                        "playerId": "al34aloy23wyvosb19kq3du51",
+                        "firstName": "Văn Toàn",
+                        "lastName": "Nguyễn",
+                        "shortFirstName": "Van Toàn",
+                        "shortLastName": "Nguyen",
+                        "knownName": "Nguyen Van Toàn I",
+                        "matchName": "Nguyễn Văn Toàn",
+                        "shirtNumber": 9,
+                        "position": "Substitute",
+                        "crossLost": 1,
+                        "crossSuccess": 0,
+                        "passLost": 1,
+                        "passSuccess": 8,
+                        "x": 56.58,
+                        "y": 33.78,
+                        "playerPass": [
+                            {
+                                "firstName": "Tuấn Hải",
+                                "lastName": "Phạm",
+                                "shortFirstName": "Tuan Hai",
+                                "shortLastName": "Pham",
+                                "knownName": "Pham Tuan Hai",
+                                "matchName": "Phạm Tuấn Hải",
+                                "playerId": "ed6okohi500kle8w1zinldpbe",
+                                "value": 1
+                            },
+                            {
+                                "firstName": "Tấn Tài",
+                                "lastName": "Hồ",
+                                "shortFirstName": "Tan Tài",
+                                "shortLastName": "Ho",
+                                "knownName": "Ho Tan Tài",
+                                "matchName": "Hồ Tấn Tài",
+                                "playerId": "4qe9v3ndhrzjm7aar3j78bkkp",
+                                "value": 2
+                            },
+                            {
+                                "firstName": "Hùng Dũng",
+                                "lastName": "Đỗ",
+                                "shortFirstName": "Hùng Dung",
+                                "shortLastName": "Do",
+                                "knownName": "Do Hùng Dung",
+                                "matchName": "Đỗ Hùng Dũng",
+                                "playerId": "2ntgtoybe2s2vtd9n3w7pyqqx",
+                                "value": 1
+                            },
+                            {
+                                "firstName": "Đức Chinh",
+                                "lastName": "Hà",
+                                "shortFirstName": "Duc Chinh",
+                                "shortLastName": "Hà",
+                                "knownName": "Hà Duc Chinh",
+                                "matchName": "Hà Đức Chinh",
+                                "playerId": "eq8a0j8ug7wkngpf7kuu1l0x5",
+                                "value": 1
+                            },
+                            {
+                                "firstName": "Công Phượng",
+                                "lastName": "Nguyễn",
+                                "shortFirstName": "Công Phuong",
+                                "shortLastName": "Nguyen",
+                                "knownName": "Nguyen Công Phuong",
+                                "matchName": "Nguyễn Công Phượng",
+                                "playerId": "3o022gbd24qltqhzb6sjeq7yt",
+                                "value": 2
+                            },
+                            {
+                                "firstName": "Quang Hải",
+                                "lastName": "Nguyễn",
+                                "shortFirstName": "Quang Hai",
+                                "shortLastName": "Nguyen",
+                                "knownName": "Nguyen Quang Hai",
+                                "matchName": "Nguyễn Quang Hải",
+                                "playerId": "77ipvasiwsyshd44tly4iue39",
+                                "value": 1
+                            }
+                        ]
+                    },
+                    {
+                        "playerId": "3o022gbd24qltqhzb6sjeq7yt",
+                        "firstName": "Công Phượng",
+                        "lastName": "Nguyễn",
+                        "shortFirstName": "Công Phuong",
+                        "shortLastName": "Nguyen",
+                        "knownName": "Nguyen Công Phuong",
+                        "matchName": "Nguyễn Công Phượng",
+                        "shirtNumber": 10,
+                        "position": "Substitute",
+                        "crossLost": 5,
+                        "crossSuccess": 2,
+                        "passLost": 5,
+                        "passSuccess": 10,
+                        "x": 59.52,
+                        "y": 46.21,
+                        "playerPass": [
+                            {
+                                "firstName": "Tấn Tài",
+                                "lastName": "Hồ",
+                                "shortFirstName": "Tan Tài",
+                                "shortLastName": "Ho",
+                                "knownName": "Ho Tan Tài",
+                                "matchName": "Hồ Tấn Tài",
+                                "playerId": "4qe9v3ndhrzjm7aar3j78bkkp",
+                                "value": 1
+                            },
+                            {
+                                "firstName": "Ngọc Hải",
+                                "lastName": "Quế",
+                                "shortFirstName": "Ngoc Hai",
+                                "shortLastName": "Que",
+                                "knownName": "Que Ngoc Hai",
+                                "matchName": "Quế Ngọc Hải",
+                                "playerId": "e6v2yp85v23qvk9sv6imua9jp",
+                                "value": 1
+                            },
+                            {
+                                "firstName": "Việt Anh",
+                                "lastName": "Bùi Hoàng",
+                                "shortFirstName": "Viêt Anh",
+                                "shortLastName": "Bùi Hoàng",
+                                "knownName": "Bùi Hoàng Viêt Anh",
+                                "matchName": "Bùi Hoàng Việt Anh",
+                                "playerId": "3eln63o0hxvilaer7wcj4fn1m",
+                                "cross": 2,
+                                "value": 1
+                            },
+                            {
+                                "firstName": "Thanh Bình",
+                                "lastName": "Nguyễn",
+                                "shortFirstName": "Thanh Bình",
+                                "shortLastName": "Nguyen",
+                                "knownName": "Nguyen Thanh Bình",
+                                "matchName": "Nguyễn Thanh Bình",
+                                "playerId": "37bihupbl4i5alux0s7erhedw",
+                                "value": 3
+                            },
+                            {
+                                "firstName": "Văn Toàn",
+                                "lastName": "Nguyễn",
+                                "shortFirstName": "Van Toàn",
+                                "shortLastName": "Nguyen",
+                                "knownName": "Nguyen Van Toàn I",
+                                "matchName": "Nguyễn Văn Toàn",
+                                "playerId": "al34aloy23wyvosb19kq3du51",
+                                "value": 2
+                            },
+                            {
+                                "firstName": "Quang Hải",
+                                "lastName": "Nguyễn",
+                                "shortFirstName": "Quang Hai",
+                                "shortLastName": "Nguyen",
+                                "knownName": "Nguyen Quang Hai",
+                                "matchName": "Nguyễn Quang Hải",
+                                "playerId": "77ipvasiwsyshd44tly4iue39",
+                                "value": 1
+                            },
+                            {
+                                "firstName": "Văn Thanh",
+                                "lastName": "Vũ",
+                                "shortFirstName": "Van Thanh",
+                                "shortLastName": "Vu",
+                                "knownName": "Vu Van Thanh",
+                                "matchName": "Vũ Văn Thanh",
+                                "playerId": "dcs7trihxgq30h0972bqfd815",
+                                "value": 1
+                            }
+                        ]
+                    },
+                    {
+                        "playerId": "37bihupbl4i5alux0s7erhedw",
+                        "firstName": "Thanh Bình",
+                        "lastName": "Nguyễn",
+                        "shortFirstName": "Thanh Bình",
+                        "shortLastName": "Nguyen",
+                        "knownName": "Nguyen Thanh Bình",
+                        "matchName": "Nguyễn Thanh Bình",
+                        "shirtNumber": 14,
+                        "position": "Substitute",
+                        "crossLost": 0,
+                        "crossSuccess": 0,
+                        "passLost": 1,
+                        "passSuccess": 11,
+                        "x": 29.4,
+                        "y": 46.29,
+                        "playerPass": [
+                            {
+                                "firstName": "Công Phượng",
+                                "lastName": "Nguyễn",
+                                "shortFirstName": "Công Phuong",
+                                "shortLastName": "Nguyen",
+                                "knownName": "Nguyen Công Phuong",
+                                "matchName": "Nguyễn Công Phượng",
+                                "playerId": "3o022gbd24qltqhzb6sjeq7yt",
+                                "value": 3
+                            },
+                            {
+                                "firstName": "Quang Hải",
+                                "lastName": "Nguyễn",
+                                "shortFirstName": "Quang Hai",
+                                "shortLastName": "Nguyen",
+                                "knownName": "Nguyen Quang Hai",
+                                "matchName": "Nguyễn Quang Hải",
+                                "playerId": "77ipvasiwsyshd44tly4iue39",
+                                "value": 1
+                            },
+                            {
+                                "firstName": "Văn Toàn",
+                                "lastName": "Nguyễn",
+                                "shortFirstName": "Van Toàn",
+                                "shortLastName": "Nguyen",
+                                "knownName": "Nguyen Van Toàn I",
+                                "matchName": "Nguyễn Văn Toàn",
+                                "playerId": "al34aloy23wyvosb19kq3du51",
+                                "value": 1
+                            },
+                            {
+                                "firstName": "Ngọc Hải",
+                                "lastName": "Quế",
+                                "shortFirstName": "Ngoc Hai",
+                                "shortLastName": "Que",
+                                "knownName": "Que Ngoc Hai",
+                                "matchName": "Quế Ngọc Hải",
+                                "playerId": "e6v2yp85v23qvk9sv6imua9jp",
+                                "value": 1
+                            },
+                            {
+                                "firstName": "Nguyên Mạnh",
+                                "lastName": "Trần",
+                                "shortFirstName": "Nguyên Manh",
+                                "shortLastName": "Tran",
+                                "knownName": "Tran Nguyên Manh",
+                                "matchName": "Trần Nguyên Mạnh",
+                                "playerId": "8i9bywnawfb8viz019qp0qoyd",
+                                "value": 1
+                            },
+                            {
+                                "firstName": "Thành Chung",
+                                "lastName": "Nguyễn",
+                                "shortFirstName": "Thành Chung",
+                                "shortLastName": "Nguyen",
+                                "knownName": "Nguyen Thành Chung",
+                                "matchName": "Nguyễn Thành Chung",
+                                "playerId": "asy8o6z7v81si8gx5iypyneuh",
+                                "value": 1
+                            },
+                            {
+                                "firstName": "Tấn Tài",
+                                "lastName": "Hồ",
+                                "shortFirstName": "Tan Tài",
+                                "shortLastName": "Ho",
+                                "knownName": "Ho Tan Tài",
+                                "matchName": "Hồ Tấn Tài",
+                                "playerId": "4qe9v3ndhrzjm7aar3j78bkkp",
+                                "value": 3
+                            }
+                        ]
+                    },
+                    {
+                        "playerId": "jkw07gb5kv7qra0yeqoy5ckp",
+                        "firstName": "Đức Chiến",
+                        "lastName": "Nguyễn",
+                        "shortFirstName": "Duc Chien",
+                        "shortLastName": "Nguyen",
+                        "knownName": "Nguyen Duc Chien",
+                        "matchName": "Nguyễn Đức Chiến",
+                        "shirtNumber": 15,
+                        "position": "Substitute"
+                    },
+                    {
+                        "playerId": "o4p2o6o2qiaatmym2kdazeju",
+                        "firstName": "Adriano",
+                        "lastName": "Schmidt",
+                        "shortFirstName": "Adriano",
+                        "shortLastName": "Schmidt",
+                        "knownName": "Adriano Schmidt",
+                        "matchName": "Schmidt Adriano",
+                        "shirtNumber": 21,
+                        "position": "Substitute"
+                    },
+                    {
+                        "playerId": "b8wk483b3yo4m30w70oirx3e2",
+                        "firstName": "Tuyên Quang",
+                        "lastName": "Vũ",
+                        "shortFirstName": "Tuyen Quang",
+                        "shortLastName": "Vu",
+                        "knownName": "Vu Tuyen Quang",
+                        "matchName": "Vũ Tuyên Quang",
+                        "shirtNumber": 12,
+                        "position": "Substitute"
+                    },
+                    {
+                        "playerId": "99isl373x702aaz7tyjlvut7u",
+                        "firstName": "Văn Nam",
+                        "lastName": "Đào",
+                        "shortFirstName": "Van Nam",
+                        "shortLastName": "Dào",
+                        "knownName": "Dào Van Nam",
+                        "matchName": "Đào Văn Nam",
+                        "shirtNumber": 4,
+                        "position": "Substitute"
+                    },
+                    {
+                        "playerId": "c8rjl4424mkjcz0gt1cplwyqx",
+                        "firstName": "Thanh Thịnh",
+                        "lastName": "Đỗ",
+                        "shortFirstName": "Thanh Thinh",
+                        "shortLastName": "Do",
+                        "knownName": "Do Thanh Thinh",
+                        "matchName": "Đỗ Thanh Thịnh",
+                        "shirtNumber": 7,
+                        "position": "Substitute"
+                    }
+                ],
+                "teamOfficial": {
+                    "id": "b3nzikii70zd513wyowh5785",
+                    "firstName": "Hang-Seo",
+                    "lastName": "Park",
+                    "type": "manager"
+                }
+            },
+            {
+                "contestantId": "58g81s16tc8hsmqhh0vyfbrrj",
+                "player": [
+                    {
+                        "playerId": "5lguoqiqa8o9dz3yyfay12odl",
+                        "firstName": "Ibrahim Saleh",
+                        "lastName": "Al Mukhaini",
+                        "shortFirstName": "Ibrahim Saleh",
+                        "shortLastName": "Al Mukhaini",
+                        "knownName": "Ibrahim Al Mukhaini",
+                        "matchName": "Ibrahim Al Mukhaini",
+                        "shirtNumber": 1,
+                        "position": "Goalkeeper",
+                        "positionSide": "Centre",
+                        "crossLost": 0,
+                        "crossSuccess": 0,
+                        "passLost": 9,
+                        "passSuccess": 19,
+                        "x": 9.36,
+                        "y": 46.56,
+                        "playerPass": [
+                            {
+                                "firstName": "Khalid",
+                                "lastName": "bin Khalifa Al-Hajri",
+                                "shortFirstName": "Khalid",
+                                "shortLastName": "bin Khalifa Al-Hajri",
+                                "knownName": "Khalid Al-Hajri",
+                                "matchName": "Khalid Al-Hajri",
+                                "playerId": "bdxiiq4jqh4zz18f6tlvybc9",
+                                "value": 3
+                            },
+                            {
+                                "firstName": "Harib Jamil Zaid",
+                                "lastName": "Al Saadi",
+                                "shortFirstName": "Harib Jamil Zaid",
+                                "shortLastName": "Al Saadi",
+                                "knownName": "Harib Al Saadi",
+                                "matchName": "Harib Al Saadi",
+                                "playerId": "4kobs8td4aalssqq51btlv55h",
+                                "value": 1
+                            },
+                            {
+                                "firstName": "Ahmed Mohammed Khalfan",
+                                "lastName": "Al Khamisi",
+                                "shortFirstName": "Ahmed Mohammed Khalfan",
+                                "shortLastName": "Al Khamisi",
+                                "knownName": "Ahmed Al Khamisi",
+                                "matchName": "Ahmed Al Khamisi",
+                                "playerId": "ecekrjqv6st71f3n0tb6wytbd",
+                                "value": 3
+                            },
+                            {
+                                "firstName": "Jameel Saleem Jameel",
+                                "lastName": "Al Yahmadi",
+                                "shortFirstName": "Jameel Saleem Jameel",
+                                "shortLastName": "Al Yahmadi",
+                                "knownName": "Jameel Al Yahmadi",
+                                "matchName": "Jameel Al Yahmadi",
+                                "playerId": "58h7ycnsu4limxyhchcf8xs6h",
+                                "value": 1
+                            },
+                            {
+                                "firstName": "Abdullah Fawaz",
+                                "lastName": "Afrah Bait Abdulghafur",
+                                "shortFirstName": "Abdullah Fawaz",
+                                "shortLastName": "Afrah Bait Abdulghafur",
+                                "knownName": "Abdullah Fawaz",
+                                "matchName": "Abdullah Fawaz",
+                                "playerId": "5lifj3syexmylybl166wj7tn9",
+                                "value": 1
+                            },
+                            {
+                                "firstName": "Abdulrahman Samir Juma",
+                                "lastName": "Al Ghassani",
+                                "shortFirstName": "Abdulrahman Samir Juma",
+                                "shortLastName": "Al Ghassani",
+                                "knownName": "Abdulrahman Al Ghassani",
+                                "matchName": "Abdulrahman Al Ghassani",
+                                "playerId": "exru3odcqhg6jqe9be9yqdc6h",
+                                "value": 4
+                            },
+                            {
+                                "firstName": "Ahmed Khalifa Said",
+                                "lastName": "Al Kaabi",
+                                "shortFirstName": "Ahmed Khalifa Said",
+                                "shortLastName": "Al Kaabi",
+                                "knownName": "Ahmed Al Kaabi",
+                                "matchName": "Ahmed Al Kaabi",
+                                "playerId": "2kocalnprzfeyay9lbxi0luc5",
+                                "value": 1
+                            },
+                            {
+                                "firstName": "Amjad Abdullah Sulaiman",
+                                "lastName": "Al Harthi",
+                                "shortFirstName": "Amjad Abdullah Sulaiman",
+                                "shortLastName": "Al Harthi",
+                                "knownName": "Amjad Al Harthi",
+                                "matchName": "Amjad Al Harthi",
+                                "playerId": "358oqfq61zre6ha9xz5gc1a8k",
+                                "value": 1
+                            },
+                            {
+                                "firstName": "Juma Marhoon Juma",
+                                "lastName": "Al Habsi",
+                                "shortFirstName": "Juma Marhoon Juma",
+                                "shortLastName": "Al Habsi",
+                                "knownName": "Juma Al Habsi",
+                                "matchName": "Juma Al Habsi",
+                                "playerId": "6v0lgsez7omqv5jokrjv0z93p",
+                                "value": 3
+                            },
+                            {
+                                "firstName": "Zahir Sulaiman Abdullah",
+                                "lastName": "Al Aghbari",
+                                "shortFirstName": "Zahir Sulaiman",
+                                "shortLastName": "Al Aghbari",
+                                "knownName": "Zahir Al Aghbari",
+                                "matchName": "Zahir Al Aghbari",
+                                "playerId": "1m7dmd2zja2l2gjvaan56j6ne",
+                                "value": 1
+                            }
+                        ]
+                    },
+                    {
+                        "playerId": "2kocalnprzfeyay9lbxi0luc5",
+                        "firstName": "Ahmed Khalifa Said",
+                        "lastName": "Al Kaabi",
+                        "shortFirstName": "Ahmed Khalifa Said",
+                        "shortLastName": "Al Kaabi",
+                        "knownName": "Ahmed Al Kaabi",
+                        "matchName": "Ahmed Al Kaabi",
+                        "shirtNumber": 2,
+                        "position": "Defender",
+                        "positionSide": "Left",
+                        "crossLost": 3,
+                        "crossSuccess": 0,
+                        "passLost": 9,
+                        "passSuccess": 31,
+                        "x": 45.07,
+                        "y": 84.74,
+                        "playerPass": [
+                            {
+                                "firstName": "Jameel Saleem Jameel",
+                                "lastName": "Al Yahmadi",
+                                "shortFirstName": "Jameel Saleem Jameel",
+                                "shortLastName": "Al Yahmadi",
+                                "knownName": "Jameel Al Yahmadi",
+                                "matchName": "Jameel Al Yahmadi",
+                                "playerId": "58h7ycnsu4limxyhchcf8xs6h",
+                                "value": 2
+                            },
+                            {
+                                "firstName": "Ahmed Mohammed Khalfan",
+                                "lastName": "Al Khamisi",
+                                "shortFirstName": "Ahmed Mohammed Khalfan",
+                                "shortLastName": "Al Khamisi",
+                                "knownName": "Ahmed Al Khamisi",
+                                "matchName": "Ahmed Al Khamisi",
+                                "playerId": "ecekrjqv6st71f3n0tb6wytbd",
+                                "value": 3
+                            },
+                            {
+                                "firstName": "Khalid",
+                                "lastName": "bin Khalifa Al-Hajri",
+                                "shortFirstName": "Khalid",
+                                "shortLastName": "bin Khalifa Al-Hajri",
+                                "knownName": "Khalid Al-Hajri",
+                                "matchName": "Khalid Al-Hajri",
+                                "playerId": "bdxiiq4jqh4zz18f6tlvybc9",
+                                "value": 2
+                            },
+                            {
+                                "firstName": "Harib Jamil Zaid",
+                                "lastName": "Al Saadi",
+                                "shortFirstName": "Harib Jamil Zaid",
+                                "shortLastName": "Al Saadi",
+                                "knownName": "Harib Al Saadi",
+                                "matchName": "Harib Al Saadi",
+                                "playerId": "4kobs8td4aalssqq51btlv55h",
+                                "value": 3
+                            },
+                            {
+                                "firstName": "Zahir Sulaiman Abdullah",
+                                "lastName": "Al Aghbari",
+                                "shortFirstName": "Zahir Sulaiman",
+                                "shortLastName": "Al Aghbari",
+                                "knownName": "Zahir Al Aghbari",
+                                "matchName": "Zahir Al Aghbari",
+                                "playerId": "1m7dmd2zja2l2gjvaan56j6ne",
+                                "value": 1
+                            },
+                            {
+                                "firstName": "Arshad Said Saleh Said",
+                                "lastName": "Al Alawi",
+                                "shortFirstName": "Arshad Said Saleh Said",
+                                "shortLastName": "Al Alawi",
+                                "knownName": "Arshad Al Alawi",
+                                "matchName": "Arshad Al Alawi",
+                                "playerId": "5gh05icbl60jnihotlw51pyzu",
+                                "value": 4
+                            },
+                            {
+                                "firstName": "Salaah Said Salim",
+                                "lastName": "Al-Yahyaei",
+                                "shortFirstName": "Salaah Said Salim",
+                                "shortLastName": "Al-Yahyaei",
+                                "knownName": "Salaah Al-Yahyaei",
+                                "matchName": "Salaah Al-Yahyaei",
+                                "playerId": "3qkcx7xfmflfhs2ae2zjaltyh",
+                                "value": 6
+                            },
+                            {
+                                "firstName": "Abdullah Fawaz",
+                                "lastName": "Afrah Bait Abdulghafur",
+                                "shortFirstName": "Abdullah Fawaz",
+                                "shortLastName": "Afrah Bait Abdulghafur",
+                                "knownName": "Abdullah Fawaz",
+                                "matchName": "Abdullah Fawaz",
+                                "playerId": "5lifj3syexmylybl166wj7tn9",
+                                "value": 4
+                            },
+                            {
+                                "firstName": "Juma Marhoon Juma",
+                                "lastName": "Al Habsi",
+                                "shortFirstName": "Juma Marhoon Juma",
+                                "shortLastName": "Al Habsi",
+                                "knownName": "Juma Al Habsi",
+                                "matchName": "Juma Al Habsi",
+                                "playerId": "6v0lgsez7omqv5jokrjv0z93p",
+                                "value": 6
+                            }
+                        ]
+                    },
+                    {
+                        "playerId": "6v0lgsez7omqv5jokrjv0z93p",
+                        "firstName": "Juma Marhoon Juma",
+                        "lastName": "Al Habsi",
+                        "shortFirstName": "Juma Marhoon Juma",
+                        "shortLastName": "Al Habsi",
+                        "knownName": "Juma Al Habsi",
+                        "matchName": "Juma Al Habsi",
+                        "shirtNumber": 5,
+                        "position": "Defender",
+                        "positionSide": "Left/Centre",
+                        "crossLost": 0,
+                        "crossSuccess": 0,
+                        "passLost": 9,
+                        "passSuccess": 34,
+                        "x": 33.18,
+                        "y": 68.31,
+                        "playerPass": [
+                            {
+                                "firstName": "Ibrahim Saleh",
+                                "lastName": "Al Mukhaini",
+                                "shortFirstName": "Ibrahim Saleh",
+                                "shortLastName": "Al Mukhaini",
+                                "knownName": "Ibrahim Al Mukhaini",
+                                "matchName": "Ibrahim Al Mukhaini",
+                                "playerId": "5lguoqiqa8o9dz3yyfay12odl",
+                                "value": 1
+                            },
+                            {
+                                "firstName": "Abdulrahman Samir Juma",
+                                "lastName": "Al Ghassani",
+                                "shortFirstName": "Abdulrahman Samir Juma",
+                                "shortLastName": "Al Ghassani",
+                                "knownName": "Abdulrahman Al Ghassani",
+                                "matchName": "Abdulrahman Al Ghassani",
+                                "playerId": "exru3odcqhg6jqe9be9yqdc6h",
+                                "value": 1
+                            },
+                            {
+                                "firstName": "Amjad Abdullah Sulaiman",
+                                "lastName": "Al Harthi",
+                                "shortFirstName": "Amjad Abdullah Sulaiman",
+                                "shortLastName": "Al Harthi",
+                                "knownName": "Amjad Al Harthi",
+                                "matchName": "Amjad Al Harthi",
+                                "playerId": "358oqfq61zre6ha9xz5gc1a8k",
+                                "value": 2
+                            },
+                            {
+                                "firstName": "Ahmed Khalifa Said",
+                                "lastName": "Al Kaabi",
+                                "shortFirstName": "Ahmed Khalifa Said",
+                                "shortLastName": "Al Kaabi",
+                                "knownName": "Ahmed Al Kaabi",
+                                "matchName": "Ahmed Al Kaabi",
+                                "playerId": "2kocalnprzfeyay9lbxi0luc5",
+                                "value": 13
+                            },
+                            {
+                                "firstName": "Arshad Said Saleh Said",
+                                "lastName": "Al Alawi",
+                                "shortFirstName": "Arshad Said Saleh Said",
+                                "shortLastName": "Al Alawi",
+                                "knownName": "Arshad Al Alawi",
+                                "matchName": "Arshad Al Alawi",
+                                "playerId": "5gh05icbl60jnihotlw51pyzu",
+                                "value": 1
+                            },
+                            {
+                                "firstName": "Mataz Saleh",
+                                "lastName": "Abd Raboh",
+                                "shortFirstName": "Mataz Saleh",
+                                "shortLastName": "Abd Raboh",
+                                "knownName": "Mataz Saleh",
+                                "matchName": "Mataz Saleh",
+                                "playerId": "354gleyxamncivf9tcy6fzt1x",
+                                "value": 1
+                            },
+                            {
+                                "firstName": "Harib Jamil Zaid",
+                                "lastName": "Al Saadi",
+                                "shortFirstName": "Harib Jamil Zaid",
+                                "shortLastName": "Al Saadi",
+                                "knownName": "Harib Al Saadi",
+                                "matchName": "Harib Al Saadi",
+                                "playerId": "4kobs8td4aalssqq51btlv55h",
+                                "value": 4
+                            },
+                            {
+                                "firstName": "Jameel Saleem Jameel",
+                                "lastName": "Al Yahmadi",
+                                "shortFirstName": "Jameel Saleem Jameel",
+                                "shortLastName": "Al Yahmadi",
+                                "knownName": "Jameel Al Yahmadi",
+                                "matchName": "Jameel Al Yahmadi",
+                                "playerId": "58h7ycnsu4limxyhchcf8xs6h",
+                                "value": 1
+                            },
+                            {
+                                "firstName": "Ahmed Mohammed Khalfan",
+                                "lastName": "Al Khamisi",
+                                "shortFirstName": "Ahmed Mohammed Khalfan",
+                                "shortLastName": "Al Khamisi",
+                                "knownName": "Ahmed Al Khamisi",
+                                "matchName": "Ahmed Al Khamisi",
+                                "playerId": "ecekrjqv6st71f3n0tb6wytbd",
+                                "value": 10
+                            }
+                        ]
+                    },
+                    {
+                        "playerId": "ecekrjqv6st71f3n0tb6wytbd",
+                        "firstName": "Ahmed Mohammed Khalfan",
+                        "lastName": "Al Khamisi",
+                        "shortFirstName": "Ahmed Mohammed Khalfan",
+                        "shortLastName": "Al Khamisi",
+                        "knownName": "Ahmed Al Khamisi",
+                        "matchName": "Ahmed Al Khamisi",
+                        "shirtNumber": 6,
+                        "position": "Defender",
+                        "positionSide": "Centre/Right",
+                        "crossLost": 0,
+                        "crossSuccess": 0,
+                        "passLost": 12,
+                        "passSuccess": 43,
+                        "x": 33.02,
+                        "y": 29.31,
+                        "playerPass": [
+                            {
+                                "firstName": "Harib Jamil Zaid",
+                                "lastName": "Al Saadi",
+                                "shortFirstName": "Harib Jamil Zaid",
+                                "shortLastName": "Al Saadi",
+                                "knownName": "Harib Al Saadi",
+                                "matchName": "Harib Al Saadi",
+                                "playerId": "4kobs8td4aalssqq51btlv55h",
+                                "value": 1
+                            },
+                            {
+                                "firstName": "Jameel Saleem Jameel",
+                                "lastName": "Al Yahmadi",
+                                "shortFirstName": "Jameel Saleem Jameel",
+                                "shortLastName": "Al Yahmadi",
+                                "knownName": "Jameel Al Yahmadi",
+                                "matchName": "Jameel Al Yahmadi",
+                                "playerId": "58h7ycnsu4limxyhchcf8xs6h",
+                                "value": 1
+                            },
+                            {
+                                "firstName": "Ibrahim Saleh",
+                                "lastName": "Al Mukhaini",
+                                "shortFirstName": "Ibrahim Saleh",
+                                "shortLastName": "Al Mukhaini",
+                                "knownName": "Ibrahim Al Mukhaini",
+                                "matchName": "Ibrahim Al Mukhaini",
+                                "playerId": "5lguoqiqa8o9dz3yyfay12odl",
+                                "value": 4
+                            },
+                            {
+                                "firstName": "Abdullah Fawaz",
+                                "lastName": "Afrah Bait Abdulghafur",
+                                "shortFirstName": "Abdullah Fawaz",
+                                "shortLastName": "Afrah Bait Abdulghafur",
+                                "knownName": "Abdullah Fawaz",
+                                "matchName": "Abdullah Fawaz",
+                                "playerId": "5lifj3syexmylybl166wj7tn9",
+                                "value": 5
+                            },
+                            {
+                                "firstName": "Abdulrahman Samir Juma",
+                                "lastName": "Al Ghassani",
+                                "shortFirstName": "Abdulrahman Samir Juma",
+                                "shortLastName": "Al Ghassani",
+                                "knownName": "Abdulrahman Al Ghassani",
+                                "matchName": "Abdulrahman Al Ghassani",
+                                "playerId": "exru3odcqhg6jqe9be9yqdc6h",
+                                "value": 1
+                            },
+                            {
+                                "firstName": "Ahmed Khalifa Said",
+                                "lastName": "Al Kaabi",
+                                "shortFirstName": "Ahmed Khalifa Said",
+                                "shortLastName": "Al Kaabi",
+                                "knownName": "Ahmed Al Kaabi",
+                                "matchName": "Ahmed Al Kaabi",
+                                "playerId": "2kocalnprzfeyay9lbxi0luc5",
+                                "value": 2
+                            },
+                            {
+                                "firstName": "Juma Marhoon Juma",
+                                "lastName": "Al Habsi",
+                                "shortFirstName": "Juma Marhoon Juma",
+                                "shortLastName": "Al Habsi",
+                                "knownName": "Juma Al Habsi",
+                                "matchName": "Juma Al Habsi",
+                                "playerId": "6v0lgsez7omqv5jokrjv0z93p",
+                                "value": 12
+                            },
+                            {
+                                "firstName": "Amjad Abdullah Sulaiman",
+                                "lastName": "Al Harthi",
+                                "shortFirstName": "Amjad Abdullah Sulaiman",
+                                "shortLastName": "Al Harthi",
+                                "knownName": "Amjad Al Harthi",
+                                "matchName": "Amjad Al Harthi",
+                                "playerId": "358oqfq61zre6ha9xz5gc1a8k",
+                                "value": 15
+                            },
+                            {
+                                "firstName": "Zahir Sulaiman Abdullah",
+                                "lastName": "Al Aghbari",
+                                "shortFirstName": "Zahir Sulaiman",
+                                "shortLastName": "Al Aghbari",
+                                "knownName": "Zahir Al Aghbari",
+                                "matchName": "Zahir Al Aghbari",
+                                "playerId": "1m7dmd2zja2l2gjvaan56j6ne",
+                                "value": 2
+                            }
+                        ]
+                    },
+                    {
+                        "playerId": "358oqfq61zre6ha9xz5gc1a8k",
+                        "firstName": "Amjad Abdullah Sulaiman",
+                        "lastName": "Al Harthi",
+                        "shortFirstName": "Amjad Abdullah Sulaiman",
+                        "shortLastName": "Al Harthi",
+                        "knownName": "Amjad Al Harthi",
+                        "matchName": "Amjad Al Harthi",
+                        "shirtNumber": 14,
+                        "position": "Defender",
+                        "positionSide": "Right",
+                        "crossLost": 1,
+                        "crossSuccess": 0,
+                        "passLost": 12,
+                        "passSuccess": 22,
+                        "x": 41.83,
+                        "y": 17.11,
+                        "playerPass": [
+                            {
+                                "firstName": "Ahmed Mohammed Khalfan",
+                                "lastName": "Al Khamisi",
+                                "shortFirstName": "Ahmed Mohammed Khalfan",
+                                "shortLastName": "Al Khamisi",
+                                "knownName": "Ahmed Al Khamisi",
+                                "matchName": "Ahmed Al Khamisi",
+                                "playerId": "ecekrjqv6st71f3n0tb6wytbd",
+                                "value": 9
+                            },
+                            {
+                                "firstName": "Khalid",
+                                "lastName": "bin Khalifa Al-Hajri",
+                                "shortFirstName": "Khalid",
+                                "shortLastName": "bin Khalifa Al-Hajri",
+                                "knownName": "Khalid Al-Hajri",
+                                "matchName": "Khalid Al-Hajri",
+                                "playerId": "bdxiiq4jqh4zz18f6tlvybc9",
+                                "value": 1
+                            },
+                            {
+                                "firstName": "Harib Jamil Zaid",
+                                "lastName": "Al Saadi",
+                                "shortFirstName": "Harib Jamil Zaid",
+                                "shortLastName": "Al Saadi",
+                                "knownName": "Harib Al Saadi",
+                                "matchName": "Harib Al Saadi",
+                                "playerId": "4kobs8td4aalssqq51btlv55h",
+                                "value": 2
+                            },
+                            {
+                                "firstName": "Zahir Sulaiman Abdullah",
+                                "lastName": "Al Aghbari",
+                                "shortFirstName": "Zahir Sulaiman",
+                                "shortLastName": "Al Aghbari",
+                                "knownName": "Zahir Al Aghbari",
+                                "matchName": "Zahir Al Aghbari",
+                                "playerId": "1m7dmd2zja2l2gjvaan56j6ne",
+                                "value": 1
+                            },
+                            {
+                                "firstName": "Arshad Said Saleh Said",
+                                "lastName": "Al Alawi",
+                                "shortFirstName": "Arshad Said Saleh Said",
+                                "shortLastName": "Al Alawi",
+                                "knownName": "Arshad Al Alawi",
+                                "matchName": "Arshad Al Alawi",
+                                "playerId": "5gh05icbl60jnihotlw51pyzu",
+                                "value": 1
+                            },
+                            {
+                                "firstName": "Salaah Said Salim",
+                                "lastName": "Al-Yahyaei",
+                                "shortFirstName": "Salaah Said Salim",
+                                "shortLastName": "Al-Yahyaei",
+                                "knownName": "Salaah Al-Yahyaei",
+                                "matchName": "Salaah Al-Yahyaei",
+                                "playerId": "3qkcx7xfmflfhs2ae2zjaltyh",
+                                "value": 2
+                            },
+                            {
+                                "firstName": "Abdullah Fawaz",
+                                "lastName": "Afrah Bait Abdulghafur",
+                                "shortFirstName": "Abdullah Fawaz",
+                                "shortLastName": "Afrah Bait Abdulghafur",
+                                "knownName": "Abdullah Fawaz",
+                                "matchName": "Abdullah Fawaz",
+                                "playerId": "5lifj3syexmylybl166wj7tn9",
+                                "value": 4
+                            },
+                            {
+                                "firstName": "Ibrahim Saleh",
+                                "lastName": "Al Mukhaini",
+                                "shortFirstName": "Ibrahim Saleh",
+                                "shortLastName": "Al Mukhaini",
+                                "knownName": "Ibrahim Al Mukhaini",
+                                "matchName": "Ibrahim Al Mukhaini",
+                                "playerId": "5lguoqiqa8o9dz3yyfay12odl",
+                                "value": 2
+                            }
+                        ]
+                    },
+                    {
+                        "playerId": "4kobs8td4aalssqq51btlv55h",
+                        "firstName": "Harib Jamil Zaid",
+                        "lastName": "Al Saadi",
+                        "shortFirstName": "Harib Jamil Zaid",
+                        "shortLastName": "Al Saadi",
+                        "knownName": "Harib Al Saadi",
+                        "matchName": "Harib Al Saadi",
+                        "shirtNumber": 23,
+                        "position": "Defensive Midfielder",
+                        "positionSide": "Centre",
+                        "crossLost": 0,
+                        "crossSuccess": 0,
+                        "passLost": 4,
+                        "passSuccess": 31,
+                        "x": 40.38,
+                        "y": 48.45,
+                        "playerPass": [
+                            {
+                                "firstName": "Juma Marhoon Juma",
+                                "lastName": "Al Habsi",
+                                "shortFirstName": "Juma Marhoon Juma",
+                                "shortLastName": "Al Habsi",
+                                "knownName": "Juma Al Habsi",
+                                "matchName": "Juma Al Habsi",
+                                "playerId": "6v0lgsez7omqv5jokrjv0z93p",
+                                "value": 4
+                            },
+                            {
+                                "firstName": "Amjad Abdullah Sulaiman",
+                                "lastName": "Al Harthi",
+                                "shortFirstName": "Amjad Abdullah Sulaiman",
+                                "shortLastName": "Al Harthi",
+                                "knownName": "Amjad Al Harthi",
+                                "matchName": "Amjad Al Harthi",
+                                "playerId": "358oqfq61zre6ha9xz5gc1a8k",
+                                "value": 5
+                            },
+                            {
+                                "firstName": "Ahmed Khalifa Said",
+                                "lastName": "Al Kaabi",
+                                "shortFirstName": "Ahmed Khalifa Said",
+                                "shortLastName": "Al Kaabi",
+                                "knownName": "Ahmed Al Kaabi",
+                                "matchName": "Ahmed Al Kaabi",
+                                "playerId": "2kocalnprzfeyay9lbxi0luc5",
+                                "value": 3
+                            },
+                            {
+                                "firstName": "Abdullah Fawaz",
+                                "lastName": "Afrah Bait Abdulghafur",
+                                "shortFirstName": "Abdullah Fawaz",
+                                "shortLastName": "Afrah Bait Abdulghafur",
+                                "knownName": "Abdullah Fawaz",
+                                "matchName": "Abdullah Fawaz",
+                                "playerId": "5lifj3syexmylybl166wj7tn9",
+                                "value": 3
+                            },
+                            {
+                                "firstName": "Ibrahim Saleh",
+                                "lastName": "Al Mukhaini",
+                                "shortFirstName": "Ibrahim Saleh",
+                                "shortLastName": "Al Mukhaini",
+                                "knownName": "Ibrahim Al Mukhaini",
+                                "matchName": "Ibrahim Al Mukhaini",
+                                "playerId": "5lguoqiqa8o9dz3yyfay12odl",
+                                "value": 1
+                            },
+                            {
+                                "firstName": "Arshad Said Saleh Said",
+                                "lastName": "Al Alawi",
+                                "shortFirstName": "Arshad Said Saleh Said",
+                                "shortLastName": "Al Alawi",
+                                "knownName": "Arshad Al Alawi",
+                                "matchName": "Arshad Al Alawi",
+                                "playerId": "5gh05icbl60jnihotlw51pyzu",
+                                "value": 2
+                            },
+                            {
+                                "firstName": "Salaah Said Salim",
+                                "lastName": "Al-Yahyaei",
+                                "shortFirstName": "Salaah Said Salim",
+                                "shortLastName": "Al-Yahyaei",
+                                "knownName": "Salaah Al-Yahyaei",
+                                "matchName": "Salaah Al-Yahyaei",
+                                "playerId": "3qkcx7xfmflfhs2ae2zjaltyh",
+                                "value": 3
+                            },
+                            {
+                                "firstName": "Zahir Sulaiman Abdullah",
+                                "lastName": "Al Aghbari",
+                                "shortFirstName": "Zahir Sulaiman",
+                                "shortLastName": "Al Aghbari",
+                                "knownName": "Zahir Al Aghbari",
+                                "matchName": "Zahir Al Aghbari",
+                                "playerId": "1m7dmd2zja2l2gjvaan56j6ne",
+                                "value": 3
+                            },
+                            {
+                                "firstName": "Khalid",
+                                "lastName": "bin Khalifa Al-Hajri",
+                                "shortFirstName": "Khalid",
+                                "shortLastName": "bin Khalifa Al-Hajri",
+                                "knownName": "Khalid Al-Hajri",
+                                "matchName": "Khalid Al-Hajri",
+                                "playerId": "bdxiiq4jqh4zz18f6tlvybc9",
+                                "value": 1
+                            },
+                            {
+                                "firstName": "Ahmed Mohammed Khalfan",
+                                "lastName": "Al Khamisi",
+                                "shortFirstName": "Ahmed Mohammed Khalfan",
+                                "shortLastName": "Al Khamisi",
+                                "knownName": "Ahmed Al Khamisi",
+                                "matchName": "Ahmed Al Khamisi",
+                                "playerId": "ecekrjqv6st71f3n0tb6wytbd",
+                                "value": 6
+                            }
+                        ]
+                    },
+                    {
+                        "playerId": "5gh05icbl60jnihotlw51pyzu",
+                        "firstName": "Arshad Said Saleh Said",
+                        "lastName": "Al Alawi",
+                        "shortFirstName": "Arshad Said Saleh Said",
+                        "shortLastName": "Al Alawi",
+                        "knownName": "Arshad Al Alawi",
+                        "matchName": "Arshad Al Alawi",
+                        "shirtNumber": 4,
+                        "position": "Midfielder",
+                        "positionSide": "Left/Centre",
+                        "crossLost": 0,
+                        "crossSuccess": 0,
+                        "passLost": 2,
+                        "passSuccess": 16,
+                        "x": 51.88,
+                        "y": 62.56,
+                        "playerPass": [
+                            {
+                                "firstName": "Jameel Saleem Jameel",
+                                "lastName": "Al Yahmadi",
+                                "shortFirstName": "Jameel Saleem Jameel",
+                                "shortLastName": "Al Yahmadi",
+                                "knownName": "Jameel Al Yahmadi",
+                                "matchName": "Jameel Al Yahmadi",
+                                "playerId": "58h7ycnsu4limxyhchcf8xs6h",
+                                "value": 2
+                            },
+                            {
+                                "firstName": "Ahmed Mohammed Khalfan",
+                                "lastName": "Al Khamisi",
+                                "shortFirstName": "Ahmed Mohammed Khalfan",
+                                "shortLastName": "Al Khamisi",
+                                "knownName": "Ahmed Al Khamisi",
+                                "matchName": "Ahmed Al Khamisi",
+                                "playerId": "ecekrjqv6st71f3n0tb6wytbd",
+                                "value": 2
+                            },
+                            {
+                                "firstName": "Harib Jamil Zaid",
+                                "lastName": "Al Saadi",
+                                "shortFirstName": "Harib Jamil Zaid",
+                                "shortLastName": "Al Saadi",
+                                "knownName": "Harib Al Saadi",
+                                "matchName": "Harib Al Saadi",
+                                "playerId": "4kobs8td4aalssqq51btlv55h",
+                                "value": 2
+                            },
+                            {
+                                "firstName": "Khalid",
+                                "lastName": "bin Khalifa Al-Hajri",
+                                "shortFirstName": "Khalid",
+                                "shortLastName": "bin Khalifa Al-Hajri",
+                                "knownName": "Khalid Al-Hajri",
+                                "matchName": "Khalid Al-Hajri",
+                                "playerId": "bdxiiq4jqh4zz18f6tlvybc9",
+                                "value": 1
+                            },
+                            {
+                                "firstName": "Salaah Said Salim",
+                                "lastName": "Al-Yahyaei",
+                                "shortFirstName": "Salaah Said Salim",
+                                "shortLastName": "Al-Yahyaei",
+                                "knownName": "Salaah Al-Yahyaei",
+                                "matchName": "Salaah Al-Yahyaei",
+                                "playerId": "3qkcx7xfmflfhs2ae2zjaltyh",
+                                "value": 3
+                            },
+                            {
+                                "firstName": "Zahir Sulaiman Abdullah",
+                                "lastName": "Al Aghbari",
+                                "shortFirstName": "Zahir Sulaiman",
+                                "shortLastName": "Al Aghbari",
+                                "knownName": "Zahir Al Aghbari",
+                                "matchName": "Zahir Al Aghbari",
+                                "playerId": "1m7dmd2zja2l2gjvaan56j6ne",
+                                "value": 2
+                            },
+                            {
+                                "firstName": "Amjad Abdullah Sulaiman",
+                                "lastName": "Al Harthi",
+                                "shortFirstName": "Amjad Abdullah Sulaiman",
+                                "shortLastName": "Al Harthi",
+                                "knownName": "Amjad Al Harthi",
+                                "matchName": "Amjad Al Harthi",
+                                "playerId": "358oqfq61zre6ha9xz5gc1a8k",
+                                "value": 2
+                            },
+                            {
+                                "firstName": "Ibrahim Saleh",
+                                "lastName": "Al Mukhaini",
+                                "shortFirstName": "Ibrahim Saleh",
+                                "shortLastName": "Al Mukhaini",
+                                "knownName": "Ibrahim Al Mukhaini",
+                                "matchName": "Ibrahim Al Mukhaini",
+                                "playerId": "5lguoqiqa8o9dz3yyfay12odl",
+                                "value": 1
+                            },
+                            {
+                                "firstName": "Abdullah Fawaz",
+                                "lastName": "Afrah Bait Abdulghafur",
+                                "shortFirstName": "Abdullah Fawaz",
+                                "shortLastName": "Afrah Bait Abdulghafur",
+                                "knownName": "Abdullah Fawaz",
+                                "matchName": "Abdullah Fawaz",
+                                "playerId": "5lifj3syexmylybl166wj7tn9",
+                                "value": 1
+                            }
+                        ]
+                    },
+                    {
+                        "playerId": "3qkcx7xfmflfhs2ae2zjaltyh",
+                        "firstName": "Salaah Said Salim",
+                        "lastName": "Al-Yahyaei",
+                        "shortFirstName": "Salaah Said Salim",
+                        "shortLastName": "Al-Yahyaei",
+                        "knownName": "Salaah Al-Yahyaei",
+                        "matchName": "Salaah Al-Yahyaei",
+                        "shirtNumber": 20,
+                        "position": "Midfielder",
+                        "positionSide": "Centre",
+                        "crossLost": 1,
+                        "crossSuccess": 1,
+                        "passLost": 8,
+                        "passSuccess": 20,
+                        "x": 61.04,
+                        "y": 57.01,
+                        "playerPass": [
+                            {
+                                "firstName": "Khalid",
+                                "lastName": "bin Khalifa Al-Hajri",
+                                "shortFirstName": "Khalid",
+                                "shortLastName": "bin Khalifa Al-Hajri",
+                                "knownName": "Khalid Al-Hajri",
+                                "matchName": "Khalid Al-Hajri",
+                                "playerId": "bdxiiq4jqh4zz18f6tlvybc9",
+                                "cross": 1,
+                                "value": 3
+                            },
+                            {
+                                "firstName": "Harib Jamil Zaid",
+                                "lastName": "Al Saadi",
+                                "shortFirstName": "Harib Jamil Zaid",
+                                "shortLastName": "Al Saadi",
+                                "knownName": "Harib Al Saadi",
+                                "matchName": "Harib Al Saadi",
+                                "playerId": "4kobs8td4aalssqq51btlv55h",
+                                "value": 2
+                            },
+                            {
+                                "firstName": "Ahmed Mohammed Khalfan",
+                                "lastName": "Al Khamisi",
+                                "shortFirstName": "Ahmed Mohammed Khalfan",
+                                "shortLastName": "Al Khamisi",
+                                "knownName": "Ahmed Al Khamisi",
+                                "matchName": "Ahmed Al Khamisi",
+                                "playerId": "ecekrjqv6st71f3n0tb6wytbd",
+                                "value": 1
+                            },
+                            {
+                                "firstName": "Jameel Saleem Jameel",
+                                "lastName": "Al Yahmadi",
+                                "shortFirstName": "Jameel Saleem Jameel",
+                                "shortLastName": "Al Yahmadi",
+                                "knownName": "Jameel Al Yahmadi",
+                                "matchName": "Jameel Al Yahmadi",
+                                "playerId": "58h7ycnsu4limxyhchcf8xs6h",
+                                "value": 1
+                            },
+                            {
+                                "firstName": "Abdullah Fawaz",
+                                "lastName": "Afrah Bait Abdulghafur",
+                                "shortFirstName": "Abdullah Fawaz",
+                                "shortLastName": "Afrah Bait Abdulghafur",
+                                "knownName": "Abdullah Fawaz",
+                                "matchName": "Abdullah Fawaz",
+                                "playerId": "5lifj3syexmylybl166wj7tn9",
+                                "value": 2
+                            },
+                            {
+                                "firstName": "Ahmed Khalifa Said",
+                                "lastName": "Al Kaabi",
+                                "shortFirstName": "Ahmed Khalifa Said",
+                                "shortLastName": "Al Kaabi",
+                                "knownName": "Ahmed Al Kaabi",
+                                "matchName": "Ahmed Al Kaabi",
+                                "playerId": "2kocalnprzfeyay9lbxi0luc5",
+                                "value": 4
+                            },
+                            {
+                                "firstName": "Juma Marhoon Juma",
+                                "lastName": "Al Habsi",
+                                "shortFirstName": "Juma Marhoon Juma",
+                                "shortLastName": "Al Habsi",
+                                "knownName": "Juma Al Habsi",
+                                "matchName": "Juma Al Habsi",
+                                "playerId": "6v0lgsez7omqv5jokrjv0z93p",
+                                "value": 1
+                            },
+                            {
+                                "firstName": "Zahir Sulaiman Abdullah",
+                                "lastName": "Al Aghbari",
+                                "shortFirstName": "Zahir Sulaiman",
+                                "shortLastName": "Al Aghbari",
+                                "knownName": "Zahir Al Aghbari",
+                                "matchName": "Zahir Al Aghbari",
+                                "playerId": "1m7dmd2zja2l2gjvaan56j6ne",
+                                "value": 3
+                            },
+                            {
+                                "firstName": "Arshad Said Saleh Said",
+                                "lastName": "Al Alawi",
+                                "shortFirstName": "Arshad Said Saleh Said",
+                                "shortLastName": "Al Alawi",
+                                "knownName": "Arshad Al Alawi",
+                                "matchName": "Arshad Al Alawi",
+                                "playerId": "5gh05icbl60jnihotlw51pyzu",
+                                "value": 3
+                            }
+                        ]
+                    },
+                    {
+                        "playerId": "5lifj3syexmylybl166wj7tn9",
+                        "firstName": "Abdullah Fawaz",
+                        "lastName": "Afrah Bait Abdulghafur",
+                        "shortFirstName": "Abdullah Fawaz",
+                        "shortLastName": "Afrah Bait Abdulghafur",
+                        "knownName": "Abdullah Fawaz",
+                        "matchName": "Abdullah Fawaz",
+                        "shirtNumber": 12,
+                        "position": "Midfielder",
+                        "positionSide": "Centre/Right",
+                        "crossLost": 0,
+                        "crossSuccess": 0,
+                        "passLost": 4,
+                        "passSuccess": 27,
+                        "x": 53.69,
+                        "y": 35.69,
+                        "playerPass": [
+                            {
+                                "firstName": "Ibrahim Saleh",
+                                "lastName": "Al Mukhaini",
+                                "shortFirstName": "Ibrahim Saleh",
+                                "shortLastName": "Al Mukhaini",
+                                "knownName": "Ibrahim Al Mukhaini",
+                                "matchName": "Ibrahim Al Mukhaini",
+                                "playerId": "5lguoqiqa8o9dz3yyfay12odl",
+                                "value": 1
+                            },
+                            {
+                                "firstName": "Amjad Abdullah Sulaiman",
+                                "lastName": "Al Harthi",
+                                "shortFirstName": "Amjad Abdullah Sulaiman",
+                                "shortLastName": "Al Harthi",
+                                "knownName": "Amjad Al Harthi",
+                                "matchName": "Amjad Al Harthi",
+                                "playerId": "358oqfq61zre6ha9xz5gc1a8k",
+                                "value": 3
+                            },
+                            {
+                                "firstName": "Juma Marhoon Juma",
+                                "lastName": "Al Habsi",
+                                "shortFirstName": "Juma Marhoon Juma",
+                                "shortLastName": "Al Habsi",
+                                "knownName": "Juma Al Habsi",
+                                "matchName": "Juma Al Habsi",
+                                "playerId": "6v0lgsez7omqv5jokrjv0z93p",
+                                "value": 1
+                            },
+                            {
+                                "firstName": "Ahmed Khalifa Said",
+                                "lastName": "Al Kaabi",
+                                "shortFirstName": "Ahmed Khalifa Said",
+                                "shortLastName": "Al Kaabi",
+                                "knownName": "Ahmed Al Kaabi",
+                                "matchName": "Ahmed Al Kaabi",
+                                "playerId": "2kocalnprzfeyay9lbxi0luc5",
+                                "value": 2
+                            },
+                            {
+                                "firstName": "Salaah Said Salim",
+                                "lastName": "Al-Yahyaei",
+                                "shortFirstName": "Salaah Said Salim",
+                                "shortLastName": "Al-Yahyaei",
+                                "knownName": "Salaah Al-Yahyaei",
+                                "matchName": "Salaah Al-Yahyaei",
+                                "playerId": "3qkcx7xfmflfhs2ae2zjaltyh",
+                                "value": 7
+                            },
+                            {
+                                "firstName": "Mataz Saleh",
+                                "lastName": "Abd Raboh",
+                                "shortFirstName": "Mataz Saleh",
+                                "shortLastName": "Abd Raboh",
+                                "knownName": "Mataz Saleh",
+                                "matchName": "Mataz Saleh",
+                                "playerId": "354gleyxamncivf9tcy6fzt1x",
+                                "value": 1
+                            },
+                            {
+                                "firstName": "Khalid",
+                                "lastName": "bin Khalifa Al-Hajri",
+                                "shortFirstName": "Khalid",
+                                "shortLastName": "bin Khalifa Al-Hajri",
+                                "knownName": "Khalid Al-Hajri",
+                                "matchName": "Khalid Al-Hajri",
+                                "playerId": "bdxiiq4jqh4zz18f6tlvybc9",
+                                "value": 1
+                            },
+                            {
+                                "firstName": "Harib Jamil Zaid",
+                                "lastName": "Al Saadi",
+                                "shortFirstName": "Harib Jamil Zaid",
+                                "shortLastName": "Al Saadi",
+                                "knownName": "Harib Al Saadi",
+                                "matchName": "Harib Al Saadi",
+                                "playerId": "4kobs8td4aalssqq51btlv55h",
+                                "value": 7
+                            },
+                            {
+                                "firstName": "Ahmed Mohammed Khalfan",
+                                "lastName": "Al Khamisi",
+                                "shortFirstName": "Ahmed Mohammed Khalfan",
+                                "shortLastName": "Al Khamisi",
+                                "knownName": "Ahmed Al Khamisi",
+                                "matchName": "Ahmed Al Khamisi",
+                                "playerId": "ecekrjqv6st71f3n0tb6wytbd",
+                                "value": 4
+                            }
+                        ]
+                    },
+                    {
+                        "playerId": "bdxiiq4jqh4zz18f6tlvybc9",
+                        "firstName": "Khalid",
+                        "lastName": "bin Khalifa Al-Hajri",
+                        "shortFirstName": "Khalid",
+                        "shortLastName": "bin Khalifa Al-Hajri",
+                        "knownName": "Khalid Al-Hajri",
+                        "matchName": "Khalid Al-Hajri",
+                        "shirtNumber": 7,
+                        "position": "Striker",
+                        "positionSide": "Left/Centre",
+                        "crossLost": 0,
+                        "crossSuccess": 0,
+                        "passLost": 9,
+                        "passSuccess": 9,
+                        "x": 59.19,
+                        "y": 51.4,
+                        "playerPass": [
+                            {
+                                "firstName": "Ahmed Khalifa Said",
+                                "lastName": "Al Kaabi",
+                                "shortFirstName": "Ahmed Khalifa Said",
+                                "shortLastName": "Al Kaabi",
+                                "knownName": "Ahmed Al Kaabi",
+                                "matchName": "Ahmed Al Kaabi",
+                                "playerId": "2kocalnprzfeyay9lbxi0luc5",
+                                "value": 1
+                            },
+                            {
+                                "firstName": "Abdullah Fawaz",
+                                "lastName": "Afrah Bait Abdulghafur",
+                                "shortFirstName": "Abdullah Fawaz",
+                                "shortLastName": "Afrah Bait Abdulghafur",
+                                "knownName": "Abdullah Fawaz",
+                                "matchName": "Abdullah Fawaz",
+                                "playerId": "5lifj3syexmylybl166wj7tn9",
+                                "value": 1
+                            },
+                            {
+                                "firstName": "Salaah Said Salim",
+                                "lastName": "Al-Yahyaei",
+                                "shortFirstName": "Salaah Said Salim",
+                                "shortLastName": "Al-Yahyaei",
+                                "knownName": "Salaah Al-Yahyaei",
+                                "matchName": "Salaah Al-Yahyaei",
+                                "playerId": "3qkcx7xfmflfhs2ae2zjaltyh",
+                                "value": 2
+                            },
+                            {
+                                "firstName": "Arshad Said Saleh Said",
+                                "lastName": "Al Alawi",
+                                "shortFirstName": "Arshad Said Saleh Said",
+                                "shortLastName": "Al Alawi",
+                                "knownName": "Arshad Al Alawi",
+                                "matchName": "Arshad Al Alawi",
+                                "playerId": "5gh05icbl60jnihotlw51pyzu",
+                                "value": 2
+                            },
+                            {
+                                "firstName": "Zahir Sulaiman Abdullah",
+                                "lastName": "Al Aghbari",
+                                "shortFirstName": "Zahir Sulaiman",
+                                "shortLastName": "Al Aghbari",
+                                "knownName": "Zahir Al Aghbari",
+                                "matchName": "Zahir Al Aghbari",
+                                "playerId": "1m7dmd2zja2l2gjvaan56j6ne",
+                                "value": 2
+                            },
+                            {
+                                "firstName": "Jameel Saleem Jameel",
+                                "lastName": "Al Yahmadi",
+                                "shortFirstName": "Jameel Saleem Jameel",
+                                "shortLastName": "Al Yahmadi",
+                                "knownName": "Jameel Al Yahmadi",
+                                "matchName": "Jameel Al Yahmadi",
+                                "playerId": "58h7ycnsu4limxyhchcf8xs6h",
+                                "value": 1
+                            }
+                        ]
+                    },
+                    {
+                        "playerId": "1m7dmd2zja2l2gjvaan56j6ne",
+                        "firstName": "Zahir Sulaiman Abdullah",
+                        "lastName": "Al Aghbari",
+                        "shortFirstName": "Zahir Sulaiman",
+                        "shortLastName": "Al Aghbari",
+                        "knownName": "Zahir Al Aghbari",
+                        "matchName": "Zahir Al Aghbari",
+                        "shirtNumber": 8,
+                        "position": "Striker",
+                        "positionSide": "Centre/Right",
+                        "crossLost": 0,
+                        "crossSuccess": 0,
+                        "passLost": 3,
+                        "passSuccess": 10,
+                        "x": 66.01,
+                        "y": 48.15,
+                        "playerPass": [
+                            {
+                                "firstName": "Salaah Said Salim",
+                                "lastName": "Al-Yahyaei",
+                                "shortFirstName": "Salaah Said Salim",
+                                "shortLastName": "Al-Yahyaei",
+                                "knownName": "Salaah Al-Yahyaei",
+                                "matchName": "Salaah Al-Yahyaei",
+                                "playerId": "3qkcx7xfmflfhs2ae2zjaltyh",
+                                "value": 1
+                            },
+                            {
+                                "firstName": "Arshad Said Saleh Said",
+                                "lastName": "Al Alawi",
+                                "shortFirstName": "Arshad Said Saleh Said",
+                                "shortLastName": "Al Alawi",
+                                "knownName": "Arshad Al Alawi",
+                                "matchName": "Arshad Al Alawi",
+                                "playerId": "5gh05icbl60jnihotlw51pyzu",
+                                "value": 2
+                            },
+                            {
+                                "firstName": "Abdullah Fawaz",
+                                "lastName": "Afrah Bait Abdulghafur",
+                                "shortFirstName": "Abdullah Fawaz",
+                                "shortLastName": "Afrah Bait Abdulghafur",
+                                "knownName": "Abdullah Fawaz",
+                                "matchName": "Abdullah Fawaz",
+                                "playerId": "5lifj3syexmylybl166wj7tn9",
+                                "value": 2
+                            },
+                            {
+                                "firstName": "Khalid",
+                                "lastName": "bin Khalifa Al-Hajri",
+                                "shortFirstName": "Khalid",
+                                "shortLastName": "bin Khalifa Al-Hajri",
+                                "knownName": "Khalid Al-Hajri",
+                                "matchName": "Khalid Al-Hajri",
+                                "playerId": "bdxiiq4jqh4zz18f6tlvybc9",
+                                "value": 2
+                            },
+                            {
+                                "firstName": "Harib Jamil Zaid",
+                                "lastName": "Al Saadi",
+                                "shortFirstName": "Harib Jamil Zaid",
+                                "shortLastName": "Al Saadi",
+                                "knownName": "Harib Al Saadi",
+                                "matchName": "Harib Al Saadi",
+                                "playerId": "4kobs8td4aalssqq51btlv55h",
+                                "value": 3
+                            }
+                        ]
+                    },
+                    {
+                        "playerId": "354gleyxamncivf9tcy6fzt1x",
+                        "firstName": "Mataz Saleh",
+                        "lastName": "Abd Raboh",
+                        "shortFirstName": "Mataz Saleh",
+                        "shortLastName": "Abd Raboh",
+                        "knownName": "Mataz Saleh",
+                        "matchName": "Mataz Saleh",
+                        "shirtNumber": 17,
+                        "position": "Substitute",
+                        "crossLost": 0,
+                        "crossSuccess": 0,
+                        "passLost": 1,
+                        "passSuccess": 2,
+                        "x": 39.62,
+                        "y": 76.03,
+                        "playerPass": [
+                            {
+                                "firstName": "Jameel Saleem Jameel",
+                                "lastName": "Al Yahmadi",
+                                "shortFirstName": "Jameel Saleem Jameel",
+                                "shortLastName": "Al Yahmadi",
+                                "knownName": "Jameel Al Yahmadi",
+                                "matchName": "Jameel Al Yahmadi",
+                                "playerId": "58h7ycnsu4limxyhchcf8xs6h",
+                                "value": 2
+                            }
+                        ]
+                    },
+                    {
+                        "playerId": "f3rzdphfqw3fbn4lditywotsl",
+                        "firstName": "Omar Talib Ahmed",
+                        "lastName": "Al Fazari",
+                        "shortFirstName": "Omar Talib Ahmed",
+                        "shortLastName": "Al Fazari",
+                        "knownName": "Omar Al Fazari",
+                        "matchName": "Omar Al Fazari",
+                        "shirtNumber": 16,
+                        "position": "Substitute"
+                    },
+                    {
+                        "playerId": "exru3odcqhg6jqe9be9yqdc6h",
+                        "firstName": "Abdulrahman Samir Juma",
+                        "lastName": "Al Ghassani",
+                        "shortFirstName": "Abdulrahman Samir Juma",
+                        "shortLastName": "Al Ghassani",
+                        "knownName": "Abdulrahman Al Ghassani",
+                        "matchName": "Abdulrahman Al Ghassani",
+                        "shirtNumber": 21,
+                        "position": "Substitute",
+                        "crossLost": 0,
+                        "crossSuccess": 0,
+                        "passLost": 3,
+                        "passSuccess": 6,
+                        "x": 57.05,
+                        "y": 59.36,
+                        "playerPass": [
+                            {
+                                "firstName": "Salaah Said Salim",
+                                "lastName": "Al-Yahyaei",
+                                "shortFirstName": "Salaah Said Salim",
+                                "shortLastName": "Al-Yahyaei",
+                                "knownName": "Salaah Al-Yahyaei",
+                                "matchName": "Salaah Al-Yahyaei",
+                                "playerId": "3qkcx7xfmflfhs2ae2zjaltyh",
+                                "value": 2
+                            },
+                            {
+                                "firstName": "Jameel Saleem Jameel",
+                                "lastName": "Al Yahmadi",
+                                "shortFirstName": "Jameel Saleem Jameel",
+                                "shortLastName": "Al Yahmadi",
+                                "knownName": "Jameel Al Yahmadi",
+                                "matchName": "Jameel Al Yahmadi",
+                                "playerId": "58h7ycnsu4limxyhchcf8xs6h",
+                                "value": 1
+                            },
+                            {
+                                "firstName": "Amjad Abdullah Sulaiman",
+                                "lastName": "Al Harthi",
+                                "shortFirstName": "Amjad Abdullah Sulaiman",
+                                "shortLastName": "Al Harthi",
+                                "knownName": "Amjad Al Harthi",
+                                "matchName": "Amjad Al Harthi",
+                                "playerId": "358oqfq61zre6ha9xz5gc1a8k",
+                                "value": 2
+                            },
+                            {
+                                "firstName": "Khalid",
+                                "lastName": "bin Khalifa Al-Hajri",
+                                "shortFirstName": "Khalid",
+                                "shortLastName": "bin Khalifa Al-Hajri",
+                                "knownName": "Khalid Al-Hajri",
+                                "matchName": "Khalid Al-Hajri",
+                                "playerId": "bdxiiq4jqh4zz18f6tlvybc9",
+                                "value": 1
+                            }
+                        ]
+                    },
+                    {
+                        "playerId": "drazcqnoat5nx2lxoj3mrmb4l",
+                        "firstName": "Mohsin Jouhar Bilal",
+                        "lastName": "Al Khaldi",
+                        "shortFirstName": "Mohsin Jouhar Bilal",
+                        "shortLastName": "Al Khaldi",
+                        "knownName": "Mohsin Al Khaldi",
+                        "matchName": "Mohsin Al Khaldi",
+                        "shirtNumber": 10,
+                        "position": "Substitute"
+                    },
+                    {
+                        "playerId": "79ekqcoteke9evgvaoxwsvx05",
+                        "firstName": "Mahmood Mabrook Nasib",
+                        "lastName": "Al Mushaifri",
+                        "shortFirstName": "Mahmood Mabrook Nasib",
+                        "shortLastName": "Al Mushaifri",
+                        "knownName": "Mahmood Mabrook",
+                        "matchName": "Mahmood Mabrook",
+                        "shirtNumber": 19,
+                        "position": "Substitute"
+                    },
+                    {
+                        "playerId": "49fa3gfnadr2p65jqxvq7kkph",
+                        "firstName": "Faiyz Issa Khadoom",
+                        "lastName": "Al Rashidi",
+                        "shortFirstName": "Faiyz Issa",
+                        "shortLastName": "Khadoom Al Rashidi",
+                        "knownName": "Faiyz Al Rashidi",
+                        "matchName": "Faiyz Al Rashidi",
+                        "shirtNumber": 18,
+                        "position": "Substitute"
+                    },
+                    {
+                        "playerId": "cj3vyid7vkyxlgrobiajt3b9x",
+                        "firstName": "Ahmed Faraj Abdulla",
+                        "lastName": "Al Rawahi",
+                        "shortFirstName": "Ahmed Faraj Abdulla",
+                        "shortLastName": "Al Rawahi",
+                        "knownName": "Ahmed Al Rawahi",
+                        "matchName": "Ahmed Al Rawahi",
+                        "shirtNumber": 22,
+                        "position": "Substitute"
+                    },
+                    {
+                        "playerId": "58h7ycnsu4limxyhchcf8xs6h",
+                        "firstName": "Jameel Saleem Jameel",
+                        "lastName": "Al Yahmadi",
+                        "shortFirstName": "Jameel Saleem Jameel",
+                        "shortLastName": "Al Yahmadi",
+                        "knownName": "Jameel Al Yahmadi",
+                        "matchName": "Jameel Al Yahmadi",
+                        "shirtNumber": 15,
+                        "position": "Substitute",
+                        "crossLost": 0,
+                        "crossSuccess": 0,
+                        "passLost": 7,
+                        "passSuccess": 12,
+                        "x": 47.84,
+                        "y": 62.26,
+                        "playerPass": [
+                            {
+                                "firstName": "Mataz Saleh",
+                                "lastName": "Abd Raboh",
+                                "shortFirstName": "Mataz Saleh",
+                                "shortLastName": "Abd Raboh",
+                                "knownName": "Mataz Saleh",
+                                "matchName": "Mataz Saleh",
+                                "playerId": "354gleyxamncivf9tcy6fzt1x",
+                                "value": 1
+                            },
+                            {
+                                "firstName": "Salaah Said Salim",
+                                "lastName": "Al-Yahyaei",
+                                "shortFirstName": "Salaah Said Salim",
+                                "shortLastName": "Al-Yahyaei",
+                                "knownName": "Salaah Al-Yahyaei",
+                                "matchName": "Salaah Al-Yahyaei",
+                                "playerId": "3qkcx7xfmflfhs2ae2zjaltyh",
+                                "value": 2
+                            },
+                            {
+                                "firstName": "Arshad Said Saleh Said",
+                                "lastName": "Al Alawi",
+                                "shortFirstName": "Arshad Said Saleh Said",
+                                "shortLastName": "Al Alawi",
+                                "knownName": "Arshad Al Alawi",
+                                "matchName": "Arshad Al Alawi",
+                                "playerId": "5gh05icbl60jnihotlw51pyzu",
+                                "value": 1
+                            },
+                            {
+                                "firstName": "Ibrahim Saleh",
+                                "lastName": "Al Mukhaini",
+                                "shortFirstName": "Ibrahim Saleh",
+                                "shortLastName": "Al Mukhaini",
+                                "knownName": "Ibrahim Al Mukhaini",
+                                "matchName": "Ibrahim Al Mukhaini",
+                                "playerId": "5lguoqiqa8o9dz3yyfay12odl",
+                                "value": 1
+                            },
+                            {
+                                "firstName": "Abdullah Fawaz",
+                                "lastName": "Afrah Bait Abdulghafur",
+                                "shortFirstName": "Abdullah Fawaz",
+                                "shortLastName": "Afrah Bait Abdulghafur",
+                                "knownName": "Abdullah Fawaz",
+                                "matchName": "Abdullah Fawaz",
+                                "playerId": "5lifj3syexmylybl166wj7tn9",
+                                "value": 2
+                            },
+                            {
+                                "firstName": "Ahmed Khalifa Said",
+                                "lastName": "Al Kaabi",
+                                "shortFirstName": "Ahmed Khalifa Said",
+                                "shortLastName": "Al Kaabi",
+                                "knownName": "Ahmed Al Kaabi",
+                                "matchName": "Ahmed Al Kaabi",
+                                "playerId": "2kocalnprzfeyay9lbxi0luc5",
+                                "value": 3
+                            },
+                            {
+                                "firstName": "Juma Marhoon Juma",
+                                "lastName": "Al Habsi",
+                                "shortFirstName": "Juma Marhoon Juma",
+                                "shortLastName": "Al Habsi",
+                                "knownName": "Juma Al Habsi",
+                                "matchName": "Juma Al Habsi",
+                                "playerId": "6v0lgsez7omqv5jokrjv0z93p",
+                                "value": 1
+                            },
+                            {
+                                "firstName": "Harib Jamil Zaid",
+                                "lastName": "Al Saadi",
+                                "shortFirstName": "Harib Jamil Zaid",
+                                "shortLastName": "Al Saadi",
+                                "knownName": "Harib Al Saadi",
+                                "matchName": "Harib Al Saadi",
+                                "playerId": "4kobs8td4aalssqq51btlv55h",
+                                "value": 1
+                            }
+                        ]
+                    },
+                    {
+                        "playerId": "8n3f6qdywwyvg55a6v1jtr6ga",
+                        "firstName": "Khalid Nasser Fadhil",
+                        "lastName": "Al-Braiki",
+                        "shortFirstName": "Khalid Nasser Fadhil",
+                        "shortLastName": "Al-Braiki",
+                        "knownName": "Khalid Al-Braiki",
+                        "matchName": "Khalid Al-Braiki",
+                        "shirtNumber": 13,
+                        "position": "Substitute"
+                    },
+                    {
+                        "playerId": "4asga04axy6rqdhdi9i7mxpex",
+                        "firstName": "Aiman Darwish",
+                        "lastName": "Dhahi",
+                        "shortFirstName": "Aiman Darwish",
+                        "shortLastName": "Dhahi",
+                        "knownName": "Aiman Dhahi",
+                        "matchName": "Aiman Dhahi",
+                        "shirtNumber": 9,
+                        "position": "Substitute"
+                    },
+                    {
+                        "playerId": "9dw5nzmfnf6m6mdhlapnanlxx",
+                        "firstName": "Fahmi Said Rajab",
+                        "lastName": "Durbein",
+                        "shortFirstName": "Fahmi Said Rajab",
+                        "shortLastName": "Durbein",
+                        "knownName": "Fahmi Durbein",
+                        "matchName": "Fahmi Durbein",
+                        "shirtNumber": 3,
+                        "position": "Substitute",
+                        "crossLost": 0,
+                        "crossSuccess": 0,
+                        "passLost": 0,
+                        "passSuccess": 0,
+                        "x": 0.0,
+                        "y": 0.0,
+                        "playerPass": []
+                    },
+                    {
+                        "playerId": "ban9fsqkgnlfojenvrz9g1l1x",
+                        "firstName": "Omer Mohammed Rashid",
+                        "lastName": "Malki",
+                        "shortFirstName": "Omer Mohammed Rashid",
+                        "shortLastName": "Malki",
+                        "knownName": "Omer Malki",
+                        "matchName": "Omer Malki",
+                        "shirtNumber": 11,
+                        "position": "Substitute"
+                    }
+                ],
+                "teamOfficial": {
+                    "id": "54dym484vpw14i40fynnjetx",
+                    "firstName": "Branko",
+                    "lastName": "Ivanković",
+                    "type": "manager"
+                }
+            }
+        ]
+    }
+}

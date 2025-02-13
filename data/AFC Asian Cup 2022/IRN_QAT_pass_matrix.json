@@ -1,0 +1,2558 @@
+{
+  "matchInfo": {
+    "id": "32ac6opwp57aefqaj1qebpatw",
+    "coverageLevel": "15",
+    "date": "2022-06-01Z",
+    "time": "13:00:00Z",
+    "week": "1",
+    "numberOfPeriods": 2,
+    "periodLength": 45,
+    "lastUpdated": "2022-06-02T09:22:01Z",
+    "description": "Iran U23 vs Qatar U23",
+    "sport": {
+      "id": "289u5typ3vp4ifwh5thalohmq",
+      "name": "Soccer"
+    },
+    "ruleset": {
+      "id": "35ld7tk5hxf5rfp44lpy0ymbq",
+      "name": "Youth"
+    },
+    "competition": {
+      "id": "dlf90uty1axvtr1vn2aaw9vqh",
+      "name": "AFC U23 Asian Cup",
+      "competitionCode": "U23",
+      "competitionFormat": "International cup",
+      "country": {
+        "id": "7yck0z0f9rlpeyatanjc1ylzp",
+        "name": "Asia"
+      }
+    },
+    "tournamentCalendar": {
+      "id": "axnxf31hhqgwntx2l3c9gtu96",
+      "startDate": "2022-06-01Z",
+      "endDate": "2022-06-19Z",
+      "name": "2022 Uzbekistan"
+    },
+    "stage": {
+      "id": "ay5mheslzj62w959bz2jgahd6",
+      "formatId": "86p6pz5rcsdbz4cklvfwtzrv9",
+      "startDate": "2022-06-01Z",
+      "endDate": "2022-06-09Z",
+      "name": "Group Stage"
+    },
+    "series": {
+      "id": "ay9an5uqegkup3jmev6m3ep9m",
+      "formatId": "choy4837jf63m90uh34q2jmxh",
+      "name": "Group A"
+    },
+    "contestant": [
+      {
+        "id": "b2q1944ktwtg4i5kuvs4smsb9",
+        "name": "Iran U23",
+        "shortName": "Iran",
+        "officialName": "Iran Under 23",
+        "code": "IRN",
+        "position": "home",
+        "country": {
+          "id": "e53g9hr2d3kasm34uumbg8r4",
+          "name": "Iran"
+        }
+      },
+      {
+        "id": "432lbt91c840nvd0i70ju2vhw",
+        "name": "Qatar U23",
+        "shortName": "Qatar",
+        "officialName": "Qatar Under 23",
+        "code": "QAT",
+        "position": "away",
+        "country": {
+          "id": "1evdpix889bnpu5wgh6ae7kng",
+          "name": "Qatar"
+        }
+      }
+    ],
+    "venue": {
+      "id": "6tn7pgfzh1dqm0jq3ocj2y400",
+      "neutral": "no",
+      "longName": "Milliy Stadion",
+      "shortName": "Milliy Stadion"
+    }
+  },
+  "liveData": {
+    "matchDetails": {
+      "periodId": 14,
+      "matchStatus": "Played",
+      "winner": "draw",
+      "matchLengthMin": 95,
+      "matchLengthSec": 6,
+      "period": [
+        {
+          "id": 1,
+          "start": "2022-06-01T13:00:27Z",
+          "end": "2022-06-01T13:46:29Z",
+          "lengthMin": 46,
+          "lengthSec": 2
+        },
+        {
+          "id": 2,
+          "start": "2022-06-01T14:01:58Z",
+          "end": "2022-06-01T14:51:02Z",
+          "lengthMin": 49,
+          "lengthSec": 4
+        }
+      ],
+      "scores": {
+        "ht": {
+          "home": 0,
+          "away": 0
+        },
+        "ft": {
+          "home": 1,
+          "away": 1
+        },
+        "total": {
+          "home": 1,
+          "away": 1
+        }
+      }
+    },
+    "lineUp": [
+      {
+        "contestantId": "b2q1944ktwtg4i5kuvs4smsb9",
+        "player": [
+          {
+            "playerId": "5287u7ctu90rz6dedidkf4il0",
+            "firstName": "Parsa",
+            "lastName": "Jafari",
+            "shortFirstName": "Parsa",
+            "shortLastName": "Jafari",
+            "knownName": "Parsa Jafari",
+            "matchName": "P. Jafari",
+            "shirtNumber": 22,
+            "position": "Goalkeeper",
+            "positionSide": "Centre",
+            "crossLost": 0,
+            "crossSuccess": 0,
+            "passLost": 3,
+            "passSuccess": 24,
+            "x": 9.7,
+            "y": 48.56,
+            "playerPass": [
+              {
+                "firstName": "Yasin",
+                "lastName": "Salmani",
+                "shortFirstName": "Yasin",
+                "shortLastName": "Salmani",
+                "matchName": "Y. Salmani",
+                "playerId": "3tcsa0py1fh1wpxd9j47yovai",
+                "value": 2
+              },
+              {
+                "firstName": "Milad",
+                "lastName": "Kor",
+                "shortFirstName": "Milad",
+                "shortLastName": "Kor",
+                "matchName": "M. Kor",
+                "playerId": "cd5vzqh6jklpgxz6t7b4lkglw",
+                "value": 9
+              },
+              {
+                "firstName": "Mohammad",
+                "lastName": "Ghorbani",
+                "shortFirstName": "Mohammad",
+                "shortLastName": "Ghorbani",
+                "matchName": "M. Ghorbani",
+                "playerId": "cwesoq5ph3pjbme0swh2dft3o",
+                "value": 1
+              },
+              {
+                "firstName": "Saman",
+                "lastName": "Fallah Varnami",
+                "shortFirstName": "Saman",
+                "shortLastName": "Fallah",
+                "matchName": "S. Fallah",
+                "playerId": "e5ez6hxwf4v3yku6gi0vxot1w",
+                "value": 8
+              },
+              {
+                "firstName": "Amir",
+                "lastName": "Jafari Seighalani",
+                "shortFirstName": "Amir",
+                "shortLastName": "Jafari",
+                "knownName": "Amir Jafari",
+                "matchName": "A. Jafari",
+                "playerId": "52l18ob5ryt72d9c2erv4o6c4",
+                "value": 2
+              },
+              {
+                "firstName": "Mehdi",
+                "lastName": "Hashemnejad",
+                "shortFirstName": "Mehdi",
+                "shortLastName": "Hashemnejad",
+                "matchName": "M. Hashemnejad",
+                "playerId": "bzta32k53oyhyzb9yux36u80k",
+                "value": 2
+              }
+            ]
+          },
+          {
+            "playerId": "52l18ob5ryt72d9c2erv4o6c4",
+            "firstName": "Amir",
+            "lastName": "Jafari Seighalani",
+            "shortFirstName": "Amir",
+            "shortLastName": "Jafari",
+            "knownName": "Amir Jafari",
+            "matchName": "A. Jafari",
+            "shirtNumber": 14,
+            "position": "Defender",
+            "positionSide": "Left",
+            "crossLost": 0,
+            "crossSuccess": 3,
+            "passLost": 14,
+            "passSuccess": 15,
+            "x": 41.03,
+            "y": 83.95,
+            "playerPass": [
+              {
+                "firstName": "Saman",
+                "lastName": "Fallah Varnami",
+                "shortFirstName": "Saman",
+                "shortLastName": "Fallah",
+                "matchName": "S. Fallah",
+                "playerId": "e5ez6hxwf4v3yku6gi0vxot1w",
+                "value": 2
+              },
+              {
+                "firstName": "Erfan",
+                "lastName": "Shahriari Khalaji",
+                "shortFirstName": "Erfan",
+                "shortLastName": "Shahriari",
+                "matchName": "E. Shahriari",
+                "playerId": "d2a1p9dlem3kumfknf6aiqkus",
+                "value": 3
+              },
+              {
+                "firstName": "Mohammad",
+                "lastName": "Khodabandelou",
+                "shortFirstName": "Mohammad",
+                "shortLastName": "Khodabandelou",
+                "matchName": "M. Khodabandelou",
+                "playerId": "cbxkuxs194z9ts3qjfzf7c416",
+                "cross": 1,
+                "value": 0
+              },
+              {
+                "firstName": "Milad",
+                "lastName": "Kor",
+                "shortFirstName": "Milad",
+                "shortLastName": "Kor",
+                "matchName": "M. Kor",
+                "playerId": "cd5vzqh6jklpgxz6t7b4lkglw",
+                "value": 3
+              },
+              {
+                "firstName": "Yasin",
+                "lastName": "Salmani",
+                "shortFirstName": "Yasin",
+                "shortLastName": "Salmani",
+                "matchName": "Y. Salmani",
+                "playerId": "3tcsa0py1fh1wpxd9j47yovai",
+                "value": 4
+              },
+              {
+                "firstName": "Ahmad",
+                "lastName": "Shariatzadeh",
+                "shortFirstName": "Ahmad",
+                "shortLastName": "Shariatzadeh",
+                "matchName": "A. Shariatzadeh",
+                "playerId": "ck30nrr5q0iw8ihuzd5k8ea22",
+                "cross": 1,
+                "value": 1
+              },
+              {
+                "firstName": "Mohammad",
+                "lastName": "Ghorbani",
+                "shortFirstName": "Mohammad",
+                "shortLastName": "Ghorbani",
+                "matchName": "M. Ghorbani",
+                "playerId": "cwesoq5ph3pjbme0swh2dft3o",
+                "cross": 1,
+                "value": 1
+              }
+            ]
+          },
+          {
+            "playerId": "cd5vzqh6jklpgxz6t7b4lkglw",
+            "firstName": "Milad",
+            "lastName": "Kor",
+            "shortFirstName": "Milad",
+            "shortLastName": "Kor",
+            "matchName": "M. Kor",
+            "shirtNumber": 3,
+            "position": "Defender",
+            "positionSide": "Left/Centre",
+            "crossLost": 0,
+            "crossSuccess": 0,
+            "passLost": 11,
+            "passSuccess": 41,
+            "x": 36.34,
+            "y": 66.49,
+            "playerPass": [
+              {
+                "firstName": "Ahmad",
+                "lastName": "Shariatzadeh",
+                "shortFirstName": "Ahmad",
+                "shortLastName": "Shariatzadeh",
+                "matchName": "A. Shariatzadeh",
+                "playerId": "ck30nrr5q0iw8ihuzd5k8ea22",
+                "value": 1
+              },
+              {
+                "firstName": "Mohammad",
+                "lastName": "Ghorbani",
+                "shortFirstName": "Mohammad",
+                "shortLastName": "Ghorbani",
+                "matchName": "M. Ghorbani",
+                "playerId": "cwesoq5ph3pjbme0swh2dft3o",
+                "value": 4
+              },
+              {
+                "firstName": "Yasin",
+                "lastName": "Salmani",
+                "shortFirstName": "Yasin",
+                "shortLastName": "Salmani",
+                "matchName": "Y. Salmani",
+                "playerId": "3tcsa0py1fh1wpxd9j47yovai",
+                "value": 6
+              },
+              {
+                "firstName": "Parsa",
+                "lastName": "Jafari",
+                "shortFirstName": "Parsa",
+                "shortLastName": "Jafari",
+                "knownName": "Parsa Jafari",
+                "matchName": "P. Jafari",
+                "playerId": "5287u7ctu90rz6dedidkf4il0",
+                "value": 3
+              },
+              {
+                "firstName": "Amir",
+                "lastName": "Jafari Seighalani",
+                "shortFirstName": "Amir",
+                "shortLastName": "Jafari",
+                "knownName": "Amir Jafari",
+                "matchName": "A. Jafari",
+                "playerId": "52l18ob5ryt72d9c2erv4o6c4",
+                "value": 7
+              },
+              {
+                "firstName": "Arwin Javad",
+                "lastName": "Kalmarzy Sabet",
+                "shortFirstName": "Arwin",
+                "shortLastName": "Sabet",
+                "matchName": "A. Sabet",
+                "playerId": "2cnu7te0i4rsa2r04altoa8lw",
+                "value": 1
+              },
+              {
+                "firstName": "Mehdi",
+                "lastName": "Hashemnejad",
+                "shortFirstName": "Mehdi",
+                "shortLastName": "Hashemnejad",
+                "matchName": "M. Hashemnejad",
+                "playerId": "bzta32k53oyhyzb9yux36u80k",
+                "value": 1
+              },
+              {
+                "firstName": "Aria",
+                "lastName": "Yousefi",
+                "shortFirstName": "Aria",
+                "shortLastName": "Yousefi",
+                "matchName": "A. Yousefi",
+                "playerId": "5la0mnmd7g9nl2xg74du66z9w",
+                "value": 2
+              },
+              {
+                "firstName": "Saman",
+                "lastName": "Fallah Varnami",
+                "shortFirstName": "Saman",
+                "shortLastName": "Fallah",
+                "matchName": "S. Fallah",
+                "playerId": "e5ez6hxwf4v3yku6gi0vxot1w",
+                "value": 14
+              },
+              {
+                "firstName": "Mohammad",
+                "lastName": "Khodabandelou",
+                "shortFirstName": "Mohammad",
+                "shortLastName": "Khodabandelou",
+                "matchName": "M. Khodabandelou",
+                "playerId": "cbxkuxs194z9ts3qjfzf7c416",
+                "value": 2
+              }
+            ]
+          },
+          {
+            "playerId": "e5ez6hxwf4v3yku6gi0vxot1w",
+            "firstName": "Saman",
+            "lastName": "Fallah Varnami",
+            "shortFirstName": "Saman",
+            "shortLastName": "Fallah",
+            "matchName": "S. Fallah",
+            "shirtNumber": 4,
+            "position": "Defender",
+            "positionSide": "Centre/Right",
+            "crossLost": 0,
+            "crossSuccess": 0,
+            "passLost": 18,
+            "passSuccess": 55,
+            "x": 37.28,
+            "y": 23.95,
+            "playerPass": [
+              {
+                "firstName": "Amir",
+                "lastName": "Jafari Seighalani",
+                "shortFirstName": "Amir",
+                "shortLastName": "Jafari",
+                "knownName": "Amir Jafari",
+                "matchName": "A. Jafari",
+                "playerId": "52l18ob5ryt72d9c2erv4o6c4",
+                "value": 1
+              },
+              {
+                "firstName": "Parsa",
+                "lastName": "Jafari",
+                "shortFirstName": "Parsa",
+                "shortLastName": "Jafari",
+                "knownName": "Parsa Jafari",
+                "matchName": "P. Jafari",
+                "playerId": "5287u7ctu90rz6dedidkf4il0",
+                "value": 5
+              },
+              {
+                "firstName": "Mehdi",
+                "lastName": "Hashemnejad",
+                "shortFirstName": "Mehdi",
+                "shortLastName": "Hashemnejad",
+                "matchName": "M. Hashemnejad",
+                "playerId": "bzta32k53oyhyzb9yux36u80k",
+                "value": 11
+              },
+              {
+                "firstName": "Aria",
+                "lastName": "Yousefi",
+                "shortFirstName": "Aria",
+                "shortLastName": "Yousefi",
+                "matchName": "A. Yousefi",
+                "playerId": "5la0mnmd7g9nl2xg74du66z9w",
+                "value": 2
+              },
+              {
+                "firstName": "Erfan",
+                "lastName": "Shahriari Khalaji",
+                "shortFirstName": "Erfan",
+                "shortLastName": "Shahriari",
+                "matchName": "E. Shahriari",
+                "playerId": "d2a1p9dlem3kumfknf6aiqkus",
+                "value": 1
+              },
+              {
+                "firstName": "Mohammad",
+                "lastName": "Khodabandelou",
+                "shortFirstName": "Mohammad",
+                "shortLastName": "Khodabandelou",
+                "matchName": "M. Khodabandelou",
+                "playerId": "cbxkuxs194z9ts3qjfzf7c416",
+                "value": 7
+              },
+              {
+                "firstName": "Balal",
+                "lastName": "Arazi",
+                "shortFirstName": "Balal",
+                "shortLastName": "Arazi",
+                "matchName": "B. Arazi",
+                "playerId": "9cwu0suhk8gopc2jje2fbrk7o",
+                "value": 3
+              },
+              {
+                "firstName": "Ahmad",
+                "lastName": "Shariatzadeh",
+                "shortFirstName": "Ahmad",
+                "shortLastName": "Shariatzadeh",
+                "matchName": "A. Shariatzadeh",
+                "playerId": "ck30nrr5q0iw8ihuzd5k8ea22",
+                "value": 1
+              },
+              {
+                "firstName": "Mohammad",
+                "lastName": "Ghorbani",
+                "shortFirstName": "Mohammad",
+                "shortLastName": "Ghorbani",
+                "matchName": "M. Ghorbani",
+                "playerId": "cwesoq5ph3pjbme0swh2dft3o",
+                "value": 3
+              },
+              {
+                "firstName": "Amirali",
+                "lastName": "Sadeghi",
+                "shortFirstName": "Amirali",
+                "shortLastName": "Sadeghi",
+                "matchName": "A. Sadeghi",
+                "playerId": "27wvnviktix9n0zj6a2v38pka",
+                "value": 3
+              },
+              {
+                "firstName": "Milad",
+                "lastName": "Kor",
+                "shortFirstName": "Milad",
+                "shortLastName": "Kor",
+                "matchName": "M. Kor",
+                "playerId": "cd5vzqh6jklpgxz6t7b4lkglw",
+                "value": 18
+              }
+            ]
+          },
+          {
+            "playerId": "bzta32k53oyhyzb9yux36u80k",
+            "firstName": "Mehdi",
+            "lastName": "Hashemnejad",
+            "shortFirstName": "Mehdi",
+            "shortLastName": "Hashemnejad",
+            "matchName": "M. Hashemnejad",
+            "shirtNumber": 2,
+            "position": "Defender",
+            "positionSide": "Right",
+            "crossLost": 3,
+            "crossSuccess": 0,
+            "passLost": 11,
+            "passSuccess": 26,
+            "x": 47.65,
+            "y": 14.95,
+            "playerPass": [
+              {
+                "firstName": "Mohammad",
+                "lastName": "Ghorbani",
+                "shortFirstName": "Mohammad",
+                "shortLastName": "Ghorbani",
+                "matchName": "M. Ghorbani",
+                "playerId": "cwesoq5ph3pjbme0swh2dft3o",
+                "value": 4
+              },
+              {
+                "firstName": "Balal",
+                "lastName": "Arazi",
+                "shortFirstName": "Balal",
+                "shortLastName": "Arazi",
+                "matchName": "B. Arazi",
+                "playerId": "9cwu0suhk8gopc2jje2fbrk7o",
+                "value": 1
+              },
+              {
+                "firstName": "Milad",
+                "lastName": "Kor",
+                "shortFirstName": "Milad",
+                "shortLastName": "Kor",
+                "matchName": "M. Kor",
+                "playerId": "cd5vzqh6jklpgxz6t7b4lkglw",
+                "value": 2
+              },
+              {
+                "firstName": "Amirali",
+                "lastName": "Sadeghi",
+                "shortFirstName": "Amirali",
+                "shortLastName": "Sadeghi",
+                "matchName": "A. Sadeghi",
+                "playerId": "27wvnviktix9n0zj6a2v38pka",
+                "value": 5
+              },
+              {
+                "firstName": "Mohammad",
+                "lastName": "Khodabandelou",
+                "shortFirstName": "Mohammad",
+                "shortLastName": "Khodabandelou",
+                "matchName": "M. Khodabandelou",
+                "playerId": "cbxkuxs194z9ts3qjfzf7c416",
+                "value": 5
+              },
+              {
+                "firstName": "Parsa",
+                "lastName": "Jafari",
+                "shortFirstName": "Parsa",
+                "shortLastName": "Jafari",
+                "knownName": "Parsa Jafari",
+                "matchName": "P. Jafari",
+                "playerId": "5287u7ctu90rz6dedidkf4il0",
+                "value": 1
+              },
+              {
+                "firstName": "Saman",
+                "lastName": "Fallah Varnami",
+                "shortFirstName": "Saman",
+                "shortLastName": "Fallah",
+                "matchName": "S. Fallah",
+                "playerId": "e5ez6hxwf4v3yku6gi0vxot1w",
+                "value": 8
+              }
+            ]
+          },
+          {
+            "playerId": "cwesoq5ph3pjbme0swh2dft3o",
+            "firstName": "Mohammad",
+            "lastName": "Ghorbani",
+            "shortFirstName": "Mohammad",
+            "shortLastName": "Ghorbani",
+            "matchName": "M. Ghorbani",
+            "shirtNumber": 16,
+            "position": "Defensive Midfielder",
+            "positionSide": "Centre",
+            "crossLost": 0,
+            "crossSuccess": 0,
+            "passLost": 5,
+            "passSuccess": 31,
+            "x": 46.27,
+            "y": 47.37,
+            "playerPass": [
+              {
+                "firstName": "Milad",
+                "lastName": "Kor",
+                "shortFirstName": "Milad",
+                "shortLastName": "Kor",
+                "matchName": "M. Kor",
+                "playerId": "cd5vzqh6jklpgxz6t7b4lkglw",
+                "value": 3
+              },
+              {
+                "firstName": "Amirali",
+                "lastName": "Sadeghi",
+                "shortFirstName": "Amirali",
+                "shortLastName": "Sadeghi",
+                "matchName": "A. Sadeghi",
+                "playerId": "27wvnviktix9n0zj6a2v38pka",
+                "value": 2
+              },
+              {
+                "firstName": "Yasin",
+                "lastName": "Salmani",
+                "shortFirstName": "Yasin",
+                "shortLastName": "Salmani",
+                "matchName": "Y. Salmani",
+                "playerId": "3tcsa0py1fh1wpxd9j47yovai",
+                "value": 4
+              },
+              {
+                "firstName": "Ahmad",
+                "lastName": "Shariatzadeh",
+                "shortFirstName": "Ahmad",
+                "shortLastName": "Shariatzadeh",
+                "matchName": "A. Shariatzadeh",
+                "playerId": "ck30nrr5q0iw8ihuzd5k8ea22",
+                "value": 3
+              },
+              {
+                "firstName": "Erfan",
+                "lastName": "Shahriari Khalaji",
+                "shortFirstName": "Erfan",
+                "shortLastName": "Shahriari",
+                "matchName": "E. Shahriari",
+                "playerId": "d2a1p9dlem3kumfknf6aiqkus",
+                "value": 1
+              },
+              {
+                "firstName": "Saman",
+                "lastName": "Fallah Varnami",
+                "shortFirstName": "Saman",
+                "shortLastName": "Fallah",
+                "matchName": "S. Fallah",
+                "playerId": "e5ez6hxwf4v3yku6gi0vxot1w",
+                "value": 10
+              },
+              {
+                "firstName": "Mehdi",
+                "lastName": "Hashemnejad",
+                "shortFirstName": "Mehdi",
+                "shortLastName": "Hashemnejad",
+                "matchName": "M. Hashemnejad",
+                "playerId": "bzta32k53oyhyzb9yux36u80k",
+                "value": 3
+              },
+              {
+                "firstName": "Parsa",
+                "lastName": "Jafari",
+                "shortFirstName": "Parsa",
+                "shortLastName": "Jafari",
+                "knownName": "Parsa Jafari",
+                "matchName": "P. Jafari",
+                "playerId": "5287u7ctu90rz6dedidkf4il0",
+                "value": 2
+              },
+              {
+                "firstName": "Amir",
+                "lastName": "Jafari Seighalani",
+                "shortFirstName": "Amir",
+                "shortLastName": "Jafari",
+                "knownName": "Amir Jafari",
+                "matchName": "A. Jafari",
+                "playerId": "52l18ob5ryt72d9c2erv4o6c4",
+                "value": 1
+              },
+              {
+                "firstName": "Mohammad",
+                "lastName": "Khodabandelou",
+                "shortFirstName": "Mohammad",
+                "shortLastName": "Khodabandelou",
+                "matchName": "M. Khodabandelou",
+                "playerId": "cbxkuxs194z9ts3qjfzf7c416",
+                "value": 2
+              }
+            ]
+          },
+          {
+            "playerId": "5la0mnmd7g9nl2xg74du66z9w",
+            "firstName": "Aria",
+            "lastName": "Yousefi",
+            "shortFirstName": "Aria",
+            "shortLastName": "Yousefi",
+            "matchName": "A. Yousefi",
+            "shirtNumber": 23,
+            "position": "Midfielder",
+            "positionSide": "Left",
+            "crossLost": 3,
+            "crossSuccess": 0,
+            "passLost": 2,
+            "passSuccess": 6,
+            "x": 66.37,
+            "y": 82.06,
+            "playerPass": [
+              {
+                "firstName": "Amir",
+                "lastName": "Jafari Seighalani",
+                "shortFirstName": "Amir",
+                "shortLastName": "Jafari",
+                "knownName": "Amir Jafari",
+                "matchName": "A. Jafari",
+                "playerId": "52l18ob5ryt72d9c2erv4o6c4",
+                "value": 3
+              },
+              {
+                "firstName": "Ahmad",
+                "lastName": "Shariatzadeh",
+                "shortFirstName": "Ahmad",
+                "shortLastName": "Shariatzadeh",
+                "matchName": "A. Shariatzadeh",
+                "playerId": "ck30nrr5q0iw8ihuzd5k8ea22",
+                "value": 1
+              },
+              {
+                "firstName": "Yasin",
+                "lastName": "Salmani",
+                "shortFirstName": "Yasin",
+                "shortLastName": "Salmani",
+                "matchName": "Y. Salmani",
+                "playerId": "3tcsa0py1fh1wpxd9j47yovai",
+                "value": 2
+              }
+            ]
+          },
+          {
+            "playerId": "3tcsa0py1fh1wpxd9j47yovai",
+            "firstName": "Yasin",
+            "lastName": "Salmani",
+            "shortFirstName": "Yasin",
+            "shortLastName": "Salmani",
+            "matchName": "Y. Salmani",
+            "shirtNumber": 10,
+            "position": "Midfielder",
+            "positionSide": "Left/Centre",
+            "crossLost": 1,
+            "crossSuccess": 0,
+            "passLost": 5,
+            "passSuccess": 26,
+            "x": 65.21,
+            "y": 63.12,
+            "playerPass": [
+              {
+                "firstName": "Mohammad",
+                "lastName": "Khodabandelou",
+                "shortFirstName": "Mohammad",
+                "shortLastName": "Khodabandelou",
+                "matchName": "M. Khodabandelou",
+                "playerId": "cbxkuxs194z9ts3qjfzf7c416",
+                "value": 4
+              },
+              {
+                "firstName": "Saman",
+                "lastName": "Fallah Varnami",
+                "shortFirstName": "Saman",
+                "shortLastName": "Fallah",
+                "matchName": "S. Fallah",
+                "playerId": "e5ez6hxwf4v3yku6gi0vxot1w",
+                "value": 6
+              },
+              {
+                "firstName": "Erfan",
+                "lastName": "Shahriari Khalaji",
+                "shortFirstName": "Erfan",
+                "shortLastName": "Shahriari",
+                "matchName": "E. Shahriari",
+                "playerId": "d2a1p9dlem3kumfknf6aiqkus",
+                "value": 3
+              },
+              {
+                "firstName": "Aria",
+                "lastName": "Yousefi",
+                "shortFirstName": "Aria",
+                "shortLastName": "Yousefi",
+                "matchName": "A. Yousefi",
+                "playerId": "5la0mnmd7g9nl2xg74du66z9w",
+                "value": 3
+              },
+              {
+                "firstName": "Parsa",
+                "lastName": "Jafari",
+                "shortFirstName": "Parsa",
+                "shortLastName": "Jafari",
+                "knownName": "Parsa Jafari",
+                "matchName": "P. Jafari",
+                "playerId": "5287u7ctu90rz6dedidkf4il0",
+                "value": 1
+              },
+              {
+                "firstName": "Amir",
+                "lastName": "Jafari Seighalani",
+                "shortFirstName": "Amir",
+                "shortLastName": "Jafari",
+                "knownName": "Amir Jafari",
+                "matchName": "A. Jafari",
+                "playerId": "52l18ob5ryt72d9c2erv4o6c4",
+                "value": 2
+              },
+              {
+                "firstName": "Arwin Javad",
+                "lastName": "Kalmarzy Sabet",
+                "shortFirstName": "Arwin",
+                "shortLastName": "Sabet",
+                "matchName": "A. Sabet",
+                "playerId": "2cnu7te0i4rsa2r04altoa8lw",
+                "value": 1
+              },
+              {
+                "firstName": "Milad",
+                "lastName": "Kor",
+                "shortFirstName": "Milad",
+                "shortLastName": "Kor",
+                "matchName": "M. Kor",
+                "playerId": "cd5vzqh6jklpgxz6t7b4lkglw",
+                "value": 3
+              },
+              {
+                "firstName": "Amirali",
+                "lastName": "Sadeghi",
+                "shortFirstName": "Amirali",
+                "shortLastName": "Sadeghi",
+                "matchName": "A. Sadeghi",
+                "playerId": "27wvnviktix9n0zj6a2v38pka",
+                "value": 1
+              },
+              {
+                "firstName": "Ahmad",
+                "lastName": "Shariatzadeh",
+                "shortFirstName": "Ahmad",
+                "shortLastName": "Shariatzadeh",
+                "matchName": "A. Shariatzadeh",
+                "playerId": "ck30nrr5q0iw8ihuzd5k8ea22",
+                "value": 1
+              },
+              {
+                "firstName": "Mohammad",
+                "lastName": "Ghorbani",
+                "shortFirstName": "Mohammad",
+                "shortLastName": "Ghorbani",
+                "matchName": "M. Ghorbani",
+                "playerId": "cwesoq5ph3pjbme0swh2dft3o",
+                "value": 1
+              }
+            ]
+          },
+          {
+            "playerId": "cbxkuxs194z9ts3qjfzf7c416",
+            "firstName": "Mohammad",
+            "lastName": "Khodabandelou",
+            "shortFirstName": "Mohammad",
+            "shortLastName": "Khodabandelou",
+            "matchName": "M. Khodabandelou",
+            "shirtNumber": 7,
+            "position": "Midfielder",
+            "positionSide": "Centre/Right",
+            "crossLost": 4,
+            "crossSuccess": 2,
+            "passLost": 15,
+            "passSuccess": 28,
+            "x": 53.08,
+            "y": 28.62,
+            "playerPass": [
+              {
+                "firstName": "Saman",
+                "lastName": "Fallah Varnami",
+                "shortFirstName": "Saman",
+                "shortLastName": "Fallah",
+                "matchName": "S. Fallah",
+                "playerId": "e5ez6hxwf4v3yku6gi0vxot1w",
+                "value": 3
+              },
+              {
+                "firstName": "Erfan",
+                "lastName": "Shahriari Khalaji",
+                "shortFirstName": "Erfan",
+                "shortLastName": "Shahriari",
+                "matchName": "E. Shahriari",
+                "playerId": "d2a1p9dlem3kumfknf6aiqkus",
+                "cross": 1,
+                "value": 0
+              },
+              {
+                "firstName": "Parsa",
+                "lastName": "Jafari",
+                "shortFirstName": "Parsa",
+                "shortLastName": "Jafari",
+                "knownName": "Parsa Jafari",
+                "matchName": "P. Jafari",
+                "playerId": "5287u7ctu90rz6dedidkf4il0",
+                "value": 1
+              },
+              {
+                "firstName": "Amir",
+                "lastName": "Jafari Seighalani",
+                "shortFirstName": "Amir",
+                "shortLastName": "Jafari",
+                "knownName": "Amir Jafari",
+                "matchName": "A. Jafari",
+                "playerId": "52l18ob5ryt72d9c2erv4o6c4",
+                "value": 1
+              },
+              {
+                "firstName": "Arwin Javad",
+                "lastName": "Kalmarzy Sabet",
+                "shortFirstName": "Arwin",
+                "shortLastName": "Sabet",
+                "matchName": "A. Sabet",
+                "playerId": "2cnu7te0i4rsa2r04altoa8lw",
+                "value": 1
+              },
+              {
+                "firstName": "Mehdi",
+                "lastName": "Hashemnejad",
+                "shortFirstName": "Mehdi",
+                "shortLastName": "Hashemnejad",
+                "matchName": "M. Hashemnejad",
+                "playerId": "bzta32k53oyhyzb9yux36u80k",
+                "value": 6
+              },
+              {
+                "firstName": "Yasin",
+                "lastName": "Salmani",
+                "shortFirstName": "Yasin",
+                "shortLastName": "Salmani",
+                "matchName": "Y. Salmani",
+                "playerId": "3tcsa0py1fh1wpxd9j47yovai",
+                "value": 4
+              },
+              {
+                "firstName": "Amirali",
+                "lastName": "Sadeghi",
+                "shortFirstName": "Amirali",
+                "shortLastName": "Sadeghi",
+                "matchName": "A. Sadeghi",
+                "playerId": "27wvnviktix9n0zj6a2v38pka",
+                "value": 10
+              },
+              {
+                "firstName": "Ahmad",
+                "lastName": "Shariatzadeh",
+                "shortFirstName": "Ahmad",
+                "shortLastName": "Shariatzadeh",
+                "matchName": "A. Shariatzadeh",
+                "playerId": "ck30nrr5q0iw8ihuzd5k8ea22",
+                "cross": 1,
+                "value": 2
+              }
+            ]
+          },
+          {
+            "playerId": "27wvnviktix9n0zj6a2v38pka",
+            "firstName": "Amirali",
+            "lastName": "Sadeghi",
+            "shortFirstName": "Amirali",
+            "shortLastName": "Sadeghi",
+            "matchName": "A. Sadeghi",
+            "shirtNumber": 9,
+            "position": "Midfielder",
+            "positionSide": "Right",
+            "crossLost": 5,
+            "crossSuccess": 3,
+            "passLost": 3,
+            "passSuccess": 17,
+            "x": 67.66,
+            "y": 13.72,
+            "playerPass": [
+              {
+                "firstName": "Mohammad",
+                "lastName": "Khodabandelou",
+                "shortFirstName": "Mohammad",
+                "shortLastName": "Khodabandelou",
+                "matchName": "M. Khodabandelou",
+                "playerId": "cbxkuxs194z9ts3qjfzf7c416",
+                "value": 8
+              },
+              {
+                "firstName": "Aria",
+                "lastName": "Yousefi",
+                "shortFirstName": "Aria",
+                "shortLastName": "Yousefi",
+                "matchName": "A. Yousefi",
+                "playerId": "5la0mnmd7g9nl2xg74du66z9w",
+                "cross": 1,
+                "value": 0
+              },
+              {
+                "firstName": "Saman",
+                "lastName": "Fallah Varnami",
+                "shortFirstName": "Saman",
+                "shortLastName": "Fallah",
+                "matchName": "S. Fallah",
+                "playerId": "e5ez6hxwf4v3yku6gi0vxot1w",
+                "cross": 1,
+                "value": 2
+              },
+              {
+                "firstName": "Erfan",
+                "lastName": "Shahriari Khalaji",
+                "shortFirstName": "Erfan",
+                "shortLastName": "Shahriari",
+                "matchName": "E. Shahriari",
+                "playerId": "d2a1p9dlem3kumfknf6aiqkus",
+                "cross": 1,
+                "value": 0
+              },
+              {
+                "firstName": "Mehdi",
+                "lastName": "Hashemnejad",
+                "shortFirstName": "Mehdi",
+                "shortLastName": "Hashemnejad",
+                "matchName": "M. Hashemnejad",
+                "playerId": "bzta32k53oyhyzb9yux36u80k",
+                "value": 4
+              },
+              {
+                "firstName": "Yasin",
+                "lastName": "Salmani",
+                "shortFirstName": "Yasin",
+                "shortLastName": "Salmani",
+                "matchName": "Y. Salmani",
+                "playerId": "3tcsa0py1fh1wpxd9j47yovai",
+                "value": 1
+              },
+              {
+                "firstName": "Ahmad",
+                "lastName": "Shariatzadeh",
+                "shortFirstName": "Ahmad",
+                "shortLastName": "Shariatzadeh",
+                "matchName": "A. Shariatzadeh",
+                "playerId": "ck30nrr5q0iw8ihuzd5k8ea22",
+                "value": 2
+              }
+            ]
+          },
+          {
+            "playerId": "ck30nrr5q0iw8ihuzd5k8ea22",
+            "firstName": "Ahmad",
+            "lastName": "Shariatzadeh",
+            "shortFirstName": "Ahmad",
+            "shortLastName": "Shariatzadeh",
+            "matchName": "A. Shariatzadeh",
+            "shirtNumber": 11,
+            "position": "Striker",
+            "positionSide": "Centre",
+            "crossLost": 0,
+            "crossSuccess": 0,
+            "passLost": 3,
+            "passSuccess": 8,
+            "x": 63.41,
+            "y": 58.44,
+            "playerPass": [
+              {
+                "firstName": "Erfan",
+                "lastName": "Shahriari Khalaji",
+                "shortFirstName": "Erfan",
+                "shortLastName": "Shahriari",
+                "matchName": "E. Shahriari",
+                "playerId": "d2a1p9dlem3kumfknf6aiqkus",
+                "value": 1
+              },
+              {
+                "firstName": "Aria",
+                "lastName": "Yousefi",
+                "shortFirstName": "Aria",
+                "shortLastName": "Yousefi",
+                "matchName": "A. Yousefi",
+                "playerId": "5la0mnmd7g9nl2xg74du66z9w",
+                "value": 1
+              },
+              {
+                "firstName": "Mohammad",
+                "lastName": "Ghorbani",
+                "shortFirstName": "Mohammad",
+                "shortLastName": "Ghorbani",
+                "matchName": "M. Ghorbani",
+                "playerId": "cwesoq5ph3pjbme0swh2dft3o",
+                "value": 1
+              },
+              {
+                "firstName": "Yasin",
+                "lastName": "Salmani",
+                "shortFirstName": "Yasin",
+                "shortLastName": "Salmani",
+                "matchName": "Y. Salmani",
+                "playerId": "3tcsa0py1fh1wpxd9j47yovai",
+                "value": 3
+              },
+              {
+                "firstName": "Amirali",
+                "lastName": "Sadeghi",
+                "shortFirstName": "Amirali",
+                "shortLastName": "Sadeghi",
+                "matchName": "A. Sadeghi",
+                "playerId": "27wvnviktix9n0zj6a2v38pka",
+                "value": 2
+              }
+            ]
+          },
+          {
+            "playerId": "4zt8le6tb6lpssrr6ju103itw",
+            "firstName": "Mohammad Mehdi",
+            "lastName": "Ahmadi",
+            "shortFirstName": "Mohammad",
+            "shortLastName": "Ahmadi",
+            "matchName": "M. Ahmadi",
+            "shirtNumber": 13,
+            "position": "Substitute"
+          },
+          {
+            "playerId": "9cwu0suhk8gopc2jje2fbrk7o",
+            "firstName": "Balal",
+            "lastName": "Arazi",
+            "shortFirstName": "Balal",
+            "shortLastName": "Arazi",
+            "matchName": "B. Arazi",
+            "shirtNumber": 19,
+            "position": "Substitute",
+            "crossLost": 0,
+            "crossSuccess": 0,
+            "passLost": 0,
+            "passSuccess": 4,
+            "x": 59.95,
+            "y": 11.18,
+            "playerPass": [
+              {
+                "firstName": "Mohammad",
+                "lastName": "Ghorbani",
+                "shortFirstName": "Mohammad",
+                "shortLastName": "Ghorbani",
+                "matchName": "M. Ghorbani",
+                "playerId": "cwesoq5ph3pjbme0swh2dft3o",
+                "value": 1
+              },
+              {
+                "firstName": "Mohammad",
+                "lastName": "Khodabandelou",
+                "shortFirstName": "Mohammad",
+                "shortLastName": "Khodabandelou",
+                "matchName": "M. Khodabandelou",
+                "playerId": "cbxkuxs194z9ts3qjfzf7c416",
+                "value": 2
+              },
+              {
+                "firstName": "Saman",
+                "lastName": "Fallah Varnami",
+                "shortFirstName": "Saman",
+                "shortLastName": "Fallah",
+                "matchName": "S. Fallah",
+                "playerId": "e5ez6hxwf4v3yku6gi0vxot1w",
+                "value": 1
+              }
+            ]
+          },
+          {
+            "playerId": "dlih30tqkhz84u65pn5bcct1w",
+            "firstName": "Alireza",
+            "lastName": "Bavieh",
+            "shortFirstName": "Alireza",
+            "shortLastName": "Bavieh",
+            "matchName": "A. Bavieh",
+            "shirtNumber": 6,
+            "position": "Substitute"
+          },
+          {
+            "playerId": "50dk8ej8xtxvrma9qozj0sob8",
+            "firstName": "Mohammadhossein",
+            "lastName": "Eslami",
+            "shortFirstName": "Mohammadhossein",
+            "shortLastName": "Eslami",
+            "matchName": "M. Eslami",
+            "shirtNumber": 15,
+            "position": "Substitute"
+          },
+          {
+            "playerId": "4l1j8jh8uw5mjrmn7vyhs3das",
+            "firstName": "Mohammad Amin",
+            "lastName": "Hazbavi",
+            "shortFirstName": "Mohammad",
+            "shortLastName": "Hazbavi",
+            "matchName": "M. Hazbavi",
+            "shirtNumber": 5,
+            "position": "Substitute"
+          },
+          {
+            "playerId": "ayfjrfpe58sl6q3f9iym1bu38",
+            "firstName": "Reza",
+            "lastName": "Kakhsaz",
+            "shortFirstName": "Reza",
+            "shortLastName": "Kakhsaz",
+            "matchName": "R. Kakhsaz",
+            "shirtNumber": 1,
+            "position": "Substitute"
+          },
+          {
+            "playerId": "2cnu7te0i4rsa2r04altoa8lw",
+            "firstName": "Arwin Javad",
+            "lastName": "Kalmarzy Sabet",
+            "shortFirstName": "Arwin",
+            "shortLastName": "Sabet",
+            "matchName": "A. Sabet",
+            "shirtNumber": 20,
+            "position": "Substitute",
+            "crossLost": 0,
+            "crossSuccess": 0,
+            "passLost": 1,
+            "passSuccess": 2,
+            "x": 59.75,
+            "y": 55.29,
+            "playerPass": [
+              {
+                "firstName": "Mehdi",
+                "lastName": "Hashemnejad",
+                "shortFirstName": "Mehdi",
+                "shortLastName": "Hashemnejad",
+                "matchName": "M. Hashemnejad",
+                "playerId": "bzta32k53oyhyzb9yux36u80k",
+                "value": 1
+              },
+              {
+                "firstName": "Mohammad",
+                "lastName": "Ghorbani",
+                "shortFirstName": "Mohammad",
+                "shortLastName": "Ghorbani",
+                "matchName": "M. Ghorbani",
+                "playerId": "cwesoq5ph3pjbme0swh2dft3o",
+                "value": 1
+              }
+            ]
+          },
+          {
+            "playerId": "ayfwtascprg0q1gmsz15szbpw",
+            "firstName": "Alireza",
+            "lastName": "Khodaei",
+            "shortFirstName": "Alireza",
+            "shortLastName": "Khodaei",
+            "matchName": "A. Khodaei",
+            "shirtNumber": 18,
+            "position": "Substitute"
+          },
+          {
+            "playerId": "7bvsguhmrtzxv4ejpxku94ro4",
+            "firstName": "Yadegar",
+            "lastName": "Rostami",
+            "shortFirstName": "Yadegar",
+            "shortLastName": "Rostami",
+            "matchName": "Y. Rostami",
+            "shirtNumber": 17,
+            "position": "Substitute",
+            "crossLost": 0,
+            "crossSuccess": 0,
+            "passLost": 0,
+            "passSuccess": 0,
+            "x": 0.0,
+            "y": 0.0,
+            "playerPass": []
+          },
+          {
+            "playerId": "d2a1p9dlem3kumfknf6aiqkus",
+            "firstName": "Erfan",
+            "lastName": "Shahriari Khalaji",
+            "shortFirstName": "Erfan",
+            "shortLastName": "Shahriari",
+            "matchName": "E. Shahriari",
+            "shirtNumber": 21,
+            "position": "Substitute",
+            "crossLost": 1,
+            "crossSuccess": 0,
+            "passLost": 1,
+            "passSuccess": 8,
+            "x": 67.09,
+            "y": 79.89,
+            "playerPass": [
+              {
+                "firstName": "Milad",
+                "lastName": "Kor",
+                "shortFirstName": "Milad",
+                "shortLastName": "Kor",
+                "matchName": "M. Kor",
+                "playerId": "cd5vzqh6jklpgxz6t7b4lkglw",
+                "value": 1
+              },
+              {
+                "firstName": "Yasin",
+                "lastName": "Salmani",
+                "shortFirstName": "Yasin",
+                "shortLastName": "Salmani",
+                "matchName": "Y. Salmani",
+                "playerId": "3tcsa0py1fh1wpxd9j47yovai",
+                "value": 2
+              },
+              {
+                "firstName": "Mohammad",
+                "lastName": "Ghorbani",
+                "shortFirstName": "Mohammad",
+                "shortLastName": "Ghorbani",
+                "matchName": "M. Ghorbani",
+                "playerId": "cwesoq5ph3pjbme0swh2dft3o",
+                "value": 2
+              },
+              {
+                "firstName": "Parsa",
+                "lastName": "Jafari",
+                "shortFirstName": "Parsa",
+                "shortLastName": "Jafari",
+                "knownName": "Parsa Jafari",
+                "matchName": "P. Jafari",
+                "playerId": "5287u7ctu90rz6dedidkf4il0",
+                "value": 1
+              },
+              {
+                "firstName": "Amir",
+                "lastName": "Jafari Seighalani",
+                "shortFirstName": "Amir",
+                "shortLastName": "Jafari",
+                "knownName": "Amir Jafari",
+                "matchName": "A. Jafari",
+                "playerId": "52l18ob5ryt72d9c2erv4o6c4",
+                "value": 2
+              }
+            ]
+          },
+          {
+            "playerId": "c3c874bssu44z51qctp2og9w4",
+            "firstName": "Mohammad Hossein",
+            "lastName": "Zavari",
+            "shortFirstName": "Mohammad",
+            "shortLastName": "Zavari",
+            "matchName": "M. Zavari",
+            "shirtNumber": 8,
+            "position": "Substitute"
+          }
+        ],
+        "teamOfficial": {
+          "id": "b3q8rz8nhng9w5rgu8gg9s2j9",
+          "firstName": "Mehdi",
+          "lastName": "Mahdavikia",
+          "type": "manager"
+        }
+      },
+      {
+        "contestantId": "432lbt91c840nvd0i70ju2vhw",
+        "player": [
+          {
+            "playerId": "78wlww1klh83oljw4tn98qt7u",
+            "firstName": "Salah Zakaria",
+            "lastName": "Hassan Moussa",
+            "shortFirstName": "Salah Zakaria",
+            "shortLastName": "Hassan Moussa",
+            "knownName": "Salah Zakaria",
+            "matchName": "Salah Zakaria",
+            "shirtNumber": 22,
+            "position": "Goalkeeper",
+            "positionSide": "Centre",
+            "crossLost": 0,
+            "crossSuccess": 0,
+            "passLost": 11,
+            "passSuccess": 24,
+            "x": 11.39,
+            "y": 47.14,
+            "playerPass": [
+              {
+                "firstName": "Yusuf",
+                "lastName": "Abdurisag Yusuf",
+                "shortFirstName": "Yusuf",
+                "shortLastName": "Abdurisag Yusuf",
+                "knownName": "Yusuf Abdurisag",
+                "matchName": "Yusuf Abdurisag",
+                "playerId": "5k9892yp5tsjbhrbkani38qcq",
+                "value": 1
+              },
+              {
+                "firstName": "Abdulrasheed",
+                "lastName": "Umaru Ibrahim",
+                "shortFirstName": "Abdulrasheed",
+                "shortLastName": "Umaru Ibrahim",
+                "knownName": "Abdulrasheed Umaru",
+                "matchName": "Abdulrasheed Umaru",
+                "playerId": "ciakzy7ftiszz97t2l8jp9wbt",
+                "value": 1
+              },
+              {
+                "firstName": "Jassem",
+                "lastName": "Gaber Abdulsallam",
+                "shortFirstName": "Jassem",
+                "shortLastName": "Gaber Abdulsallam",
+                "knownName": "Jassem Gaber",
+                "matchName": "Jassem Gaber",
+                "playerId": "6hl0xey9edugb1mnqbc744bca",
+                "value": 2
+              },
+              {
+                "firstName": "Ahmed Mohammed",
+                "lastName": "Al Ganehi",
+                "shortFirstName": "Ahmed Mohammed",
+                "shortLastName": "Al Ganehi",
+                "knownName": "Ahmed Al Ganehi",
+                "matchName": "Ahmed Al Ganehi",
+                "playerId": "1vhfyfhcym850rlmyfl1z5f1m",
+                "value": 1
+              },
+              {
+                "firstName": "Yousef Ayman",
+                "lastName": "Hafez Farahat",
+                "shortFirstName": "Yousef Ayman",
+                "shortLastName": "Hafez Farahat",
+                "knownName": "Yousef Ayman",
+                "matchName": "Yousef Ayman",
+                "playerId": "53jeclamuosqjg9m3wybcmfop",
+                "value": 7
+              },
+              {
+                "firstName": "Ahmed Suhail",
+                "lastName": "Saber Ali Al Hamawende",
+                "shortFirstName": "Ahmed Suhail",
+                "shortLastName": "Saber Ali Al Hamawende",
+                "knownName": "Ahmed Suhail",
+                "matchName": "Ahmed Suhail",
+                "playerId": "1n4vsrq9e9gfki5t1uvxm7euh",
+                "value": 11
+              }
+            ]
+          },
+          {
+            "playerId": "7t3vfr3j2vznpxpn91uchnz3e",
+            "firstName": "Abdulla Issa",
+            "lastName": "Al Sulaiti",
+            "shortFirstName": "Abdulla Issa",
+            "shortLastName": "Al Sulaiti",
+            "knownName": "Abdulla Al Sulaiti",
+            "matchName": "Abdulla Al Sulaiti",
+            "shirtNumber": 12,
+            "position": "Defender",
+            "positionSide": "Left",
+            "crossLost": 0,
+            "crossSuccess": 0,
+            "passLost": 15,
+            "passSuccess": 7,
+            "x": 28.27,
+            "y": 85.62,
+            "playerPass": [
+              {
+                "firstName": "Yusuf",
+                "lastName": "Abdurisag Yusuf",
+                "shortFirstName": "Yusuf",
+                "shortLastName": "Abdurisag Yusuf",
+                "knownName": "Yusuf Abdurisag",
+                "matchName": "Yusuf Abdurisag",
+                "playerId": "5k9892yp5tsjbhrbkani38qcq",
+                "value": 1
+              },
+              {
+                "firstName": "Yousef Ayman",
+                "lastName": "Hafez Farahat",
+                "shortFirstName": "Yousef Ayman",
+                "shortLastName": "Hafez Farahat",
+                "knownName": "Yousef Ayman",
+                "matchName": "Yousef Ayman",
+                "playerId": "53jeclamuosqjg9m3wybcmfop",
+                "value": 1
+              },
+              {
+                "firstName": "Jassem",
+                "lastName": "Gaber Abdulsallam",
+                "shortFirstName": "Jassem",
+                "shortLastName": "Gaber Abdulsallam",
+                "knownName": "Jassem Gaber",
+                "matchName": "Jassem Gaber",
+                "playerId": "6hl0xey9edugb1mnqbc744bca",
+                "value": 1
+              },
+              {
+                "firstName": "Ahmed Suhail",
+                "lastName": "Saber Ali Al Hamawende",
+                "shortFirstName": "Ahmed Suhail",
+                "shortLastName": "Saber Ali Al Hamawende",
+                "knownName": "Ahmed Suhail",
+                "matchName": "Ahmed Suhail",
+                "playerId": "1n4vsrq9e9gfki5t1uvxm7euh",
+                "value": 4
+              }
+            ]
+          },
+          {
+            "playerId": "1n4vsrq9e9gfki5t1uvxm7euh",
+            "firstName": "Ahmed Suhail",
+            "lastName": "Saber Ali Al Hamawende",
+            "shortFirstName": "Ahmed Suhail",
+            "shortLastName": "Saber Ali Al Hamawende",
+            "knownName": "Ahmed Suhail",
+            "matchName": "Ahmed Suhail",
+            "shirtNumber": 19,
+            "position": "Defender",
+            "positionSide": "Left/Centre",
+            "crossLost": 0,
+            "crossSuccess": 0,
+            "passLost": 16,
+            "passSuccess": 31,
+            "x": 30.42,
+            "y": 64.3,
+            "playerPass": [
+              {
+                "firstName": "Salah Zakaria",
+                "lastName": "Hassan Moussa",
+                "shortFirstName": "Salah Zakaria",
+                "shortLastName": "Hassan Moussa",
+                "knownName": "Salah Zakaria",
+                "matchName": "Salah Zakaria",
+                "playerId": "78wlww1klh83oljw4tn98qt7u",
+                "value": 4
+              },
+              {
+                "firstName": "Yousef Ayman",
+                "lastName": "Hafez Farahat",
+                "shortFirstName": "Yousef Ayman",
+                "shortLastName": "Hafez Farahat",
+                "knownName": "Yousef Ayman",
+                "matchName": "Yousef Ayman",
+                "playerId": "53jeclamuosqjg9m3wybcmfop",
+                "value": 11
+              },
+              {
+                "firstName": "Hashim",
+                "lastName": "Ali Abdullatif",
+                "shortFirstName": "Hashim",
+                "shortLastName": "Ali Abdullatif",
+                "knownName": "Hashim Ali",
+                "matchName": "Hashim Ali",
+                "playerId": "eji1rwwlv0ef6lzqepoieok8a",
+                "value": 2
+              },
+              {
+                "firstName": "Abdulla Issa",
+                "lastName": "Al Sulaiti",
+                "shortFirstName": "Abdulla Issa",
+                "shortLastName": "Al Sulaiti",
+                "knownName": "Abdulla Al Sulaiti",
+                "matchName": "Abdulla Al Sulaiti",
+                "playerId": "7t3vfr3j2vznpxpn91uchnz3e",
+                "value": 5
+              },
+              {
+                "firstName": "Abdulrasheed",
+                "lastName": "Umaru Ibrahim",
+                "shortFirstName": "Abdulrasheed",
+                "shortLastName": "Umaru Ibrahim",
+                "knownName": "Abdulrasheed Umaru",
+                "matchName": "Abdulrasheed Umaru",
+                "playerId": "ciakzy7ftiszz97t2l8jp9wbt",
+                "value": 1
+              },
+              {
+                "firstName": "Jassem",
+                "lastName": "Gaber Abdulsallam",
+                "shortFirstName": "Jassem",
+                "shortLastName": "Gaber Abdulsallam",
+                "knownName": "Jassem Gaber",
+                "matchName": "Jassem Gaber",
+                "playerId": "6hl0xey9edugb1mnqbc744bca",
+                "value": 4
+              },
+              {
+                "firstName": "Yusuf",
+                "lastName": "Abdurisag Yusuf",
+                "shortFirstName": "Yusuf",
+                "shortLastName": "Abdurisag Yusuf",
+                "knownName": "Yusuf Abdurisag",
+                "matchName": "Yusuf Abdurisag",
+                "playerId": "5k9892yp5tsjbhrbkani38qcq",
+                "value": 3
+              },
+              {
+                "firstName": "Ali Malolah",
+                "lastName": "Karami",
+                "shortFirstName": "Ali Malolah",
+                "shortLastName": "Karami",
+                "knownName": "Ali Malolah",
+                "matchName": "Ali Malolah",
+                "playerId": "cn0j44qz2lapnx2ine5saltgq",
+                "value": 1
+              }
+            ]
+          },
+          {
+            "playerId": "53jeclamuosqjg9m3wybcmfop",
+            "firstName": "Yousef Ayman",
+            "lastName": "Hafez Farahat",
+            "shortFirstName": "Yousef Ayman",
+            "shortLastName": "Hafez Farahat",
+            "knownName": "Yousef Ayman",
+            "matchName": "Yousef Ayman",
+            "shirtNumber": 5,
+            "position": "Defender",
+            "positionSide": "Centre/Right",
+            "crossLost": 0,
+            "crossSuccess": 0,
+            "passLost": 11,
+            "passSuccess": 32,
+            "x": 34.2,
+            "y": 33.05,
+            "playerPass": [
+              {
+                "firstName": "Hashim",
+                "lastName": "Ali Abdullatif",
+                "shortFirstName": "Hashim",
+                "shortLastName": "Ali Abdullatif",
+                "knownName": "Hashim Ali",
+                "matchName": "Hashim Ali",
+                "playerId": "eji1rwwlv0ef6lzqepoieok8a",
+                "value": 2
+              },
+              {
+                "firstName": "Ahmed Mohammed",
+                "lastName": "Al Ganehi",
+                "shortFirstName": "Ahmed Mohammed",
+                "shortLastName": "Al Ganehi",
+                "knownName": "Ahmed Al Ganehi",
+                "matchName": "Ahmed Al Ganehi",
+                "playerId": "1vhfyfhcym850rlmyfl1z5f1m",
+                "value": 1
+              },
+              {
+                "firstName": "Salah Zakaria",
+                "lastName": "Hassan Moussa",
+                "shortFirstName": "Salah Zakaria",
+                "shortLastName": "Hassan Moussa",
+                "knownName": "Salah Zakaria",
+                "matchName": "Salah Zakaria",
+                "playerId": "78wlww1klh83oljw4tn98qt7u",
+                "value": 7
+              },
+              {
+                "firstName": "Ahmed Suhail",
+                "lastName": "Saber Ali Al Hamawende",
+                "shortFirstName": "Ahmed Suhail",
+                "shortLastName": "Saber Ali Al Hamawende",
+                "knownName": "Ahmed Suhail",
+                "matchName": "Ahmed Suhail",
+                "playerId": "1n4vsrq9e9gfki5t1uvxm7euh",
+                "value": 8
+              },
+              {
+                "firstName": "Osamah Abdulkarim Ahmed",
+                "lastName": "Al Tairi",
+                "shortFirstName": "Osamah Abdulkarim Ahmed",
+                "shortLastName": "Al Tairi",
+                "knownName": "Osamah Al Tairi",
+                "matchName": "Osamah Al Tairi",
+                "playerId": "7fa5y589xjbp5f18qzge1u3h0",
+                "value": 2
+              },
+              {
+                "firstName": "Ali Malolah",
+                "lastName": "Karami",
+                "shortFirstName": "Ali Malolah",
+                "shortLastName": "Karami",
+                "knownName": "Ali Malolah",
+                "matchName": "Ali Malolah",
+                "playerId": "cn0j44qz2lapnx2ine5saltgq",
+                "value": 6
+              },
+              {
+                "firstName": "Mostafa Tarek",
+                "lastName": "Meshaal",
+                "shortFirstName": "Mostafa Tarek",
+                "shortLastName": "Meshaal",
+                "knownName": "Mostafa Tarek",
+                "matchName": "Mostafa Tarek",
+                "playerId": "10hk0fqpnvb3exrzrq0se1v8q",
+                "value": 2
+              },
+              {
+                "firstName": "Yusuf",
+                "lastName": "Abdurisag Yusuf",
+                "shortFirstName": "Yusuf",
+                "shortLastName": "Abdurisag Yusuf",
+                "knownName": "Yusuf Abdurisag",
+                "matchName": "Yusuf Abdurisag",
+                "playerId": "5k9892yp5tsjbhrbkani38qcq",
+                "value": 1
+              },
+              {
+                "firstName": "Jassem",
+                "lastName": "Gaber Abdulsallam",
+                "shortFirstName": "Jassem",
+                "shortLastName": "Gaber Abdulsallam",
+                "knownName": "Jassem Gaber",
+                "matchName": "Jassem Gaber",
+                "playerId": "6hl0xey9edugb1mnqbc744bca",
+                "value": 1
+              },
+              {
+                "firstName": "Abdulrasheed",
+                "lastName": "Umaru Ibrahim",
+                "shortFirstName": "Abdulrasheed",
+                "shortLastName": "Umaru Ibrahim",
+                "knownName": "Abdulrasheed Umaru",
+                "matchName": "Abdulrasheed Umaru",
+                "playerId": "ciakzy7ftiszz97t2l8jp9wbt",
+                "value": 1
+              },
+              {
+                "firstName": "Abdulla Issa",
+                "lastName": "Al Sulaiti",
+                "shortFirstName": "Abdulla Issa",
+                "shortLastName": "Al Sulaiti",
+                "knownName": "Abdulla Al Sulaiti",
+                "matchName": "Abdulla Al Sulaiti",
+                "playerId": "7t3vfr3j2vznpxpn91uchnz3e",
+                "value": 1
+              }
+            ]
+          },
+          {
+            "playerId": "cn0j44qz2lapnx2ine5saltgq",
+            "firstName": "Ali Malolah",
+            "lastName": "Karami",
+            "shortFirstName": "Ali Malolah",
+            "shortLastName": "Karami",
+            "knownName": "Ali Malolah",
+            "matchName": "Ali Malolah",
+            "shirtNumber": 2,
+            "position": "Defender",
+            "positionSide": "Right",
+            "crossLost": 4,
+            "crossSuccess": 0,
+            "passLost": 8,
+            "passSuccess": 9,
+            "x": 36.43,
+            "y": 16.23,
+            "playerPass": [
+              {
+                "firstName": "Jassem",
+                "lastName": "Gaber Abdulsallam",
+                "shortFirstName": "Jassem",
+                "shortLastName": "Gaber Abdulsallam",
+                "knownName": "Jassem Gaber",
+                "matchName": "Jassem Gaber",
+                "playerId": "6hl0xey9edugb1mnqbc744bca",
+                "value": 1
+              },
+              {
+                "firstName": "Abdulla Issa",
+                "lastName": "Al Sulaiti",
+                "shortFirstName": "Abdulla Issa",
+                "shortLastName": "Al Sulaiti",
+                "knownName": "Abdulla Al Sulaiti",
+                "matchName": "Abdulla Al Sulaiti",
+                "playerId": "7t3vfr3j2vznpxpn91uchnz3e",
+                "value": 1
+              },
+              {
+                "firstName": "Yusuf",
+                "lastName": "Abdurisag Yusuf",
+                "shortFirstName": "Yusuf",
+                "shortLastName": "Abdurisag Yusuf",
+                "knownName": "Yusuf Abdurisag",
+                "matchName": "Yusuf Abdurisag",
+                "playerId": "5k9892yp5tsjbhrbkani38qcq",
+                "value": 1
+              },
+              {
+                "firstName": "Salah Zakaria",
+                "lastName": "Hassan Moussa",
+                "shortFirstName": "Salah Zakaria",
+                "shortLastName": "Hassan Moussa",
+                "knownName": "Salah Zakaria",
+                "matchName": "Salah Zakaria",
+                "playerId": "78wlww1klh83oljw4tn98qt7u",
+                "value": 1
+              },
+              {
+                "firstName": "Hashim",
+                "lastName": "Ali Abdullatif",
+                "shortFirstName": "Hashim",
+                "shortLastName": "Ali Abdullatif",
+                "knownName": "Hashim Ali",
+                "matchName": "Hashim Ali",
+                "playerId": "eji1rwwlv0ef6lzqepoieok8a",
+                "value": 1
+              },
+              {
+                "firstName": "Yousef Ayman",
+                "lastName": "Hafez Farahat",
+                "shortFirstName": "Yousef Ayman",
+                "shortLastName": "Hafez Farahat",
+                "knownName": "Yousef Ayman",
+                "matchName": "Yousef Ayman",
+                "playerId": "53jeclamuosqjg9m3wybcmfop",
+                "value": 3
+              },
+              {
+                "firstName": "Ahmed Mohammed",
+                "lastName": "Al Ganehi",
+                "shortFirstName": "Ahmed Mohammed",
+                "shortLastName": "Al Ganehi",
+                "knownName": "Ahmed Al Ganehi",
+                "matchName": "Ahmed Al Ganehi",
+                "playerId": "1vhfyfhcym850rlmyfl1z5f1m",
+                "value": 1
+              }
+            ]
+          },
+          {
+            "playerId": "10hk0fqpnvb3exrzrq0se1v8q",
+            "firstName": "Mostafa Tarek",
+            "lastName": "Meshaal",
+            "shortFirstName": "Mostafa Tarek",
+            "shortLastName": "Meshaal",
+            "knownName": "Mostafa Tarek",
+            "matchName": "Mostafa Tarek",
+            "shirtNumber": 8,
+            "position": "Midfielder",
+            "positionSide": "Left/Centre",
+            "crossLost": 3,
+            "crossSuccess": 2,
+            "passLost": 4,
+            "passSuccess": 16,
+            "x": 56.39,
+            "y": 61.3,
+            "playerPass": [
+              {
+                "firstName": "Ahmed Mohammed",
+                "lastName": "Al Ganehi",
+                "shortFirstName": "Ahmed Mohammed",
+                "shortLastName": "Al Ganehi",
+                "knownName": "Ahmed Al Ganehi",
+                "matchName": "Ahmed Al Ganehi",
+                "playerId": "1vhfyfhcym850rlmyfl1z5f1m",
+                "value": 1
+              },
+              {
+                "firstName": "Yousef Ayman",
+                "lastName": "Hafez Farahat",
+                "shortFirstName": "Yousef Ayman",
+                "shortLastName": "Hafez Farahat",
+                "knownName": "Yousef Ayman",
+                "matchName": "Yousef Ayman",
+                "playerId": "53jeclamuosqjg9m3wybcmfop",
+                "value": 1
+              },
+              {
+                "firstName": "Hashim",
+                "lastName": "Ali Abdullatif",
+                "shortFirstName": "Hashim",
+                "shortLastName": "Ali Abdullatif",
+                "knownName": "Hashim Ali",
+                "matchName": "Hashim Ali",
+                "playerId": "eji1rwwlv0ef6lzqepoieok8a",
+                "cross": 1,
+                "value": 3
+              },
+              {
+                "firstName": "Osamah Abdulkarim Ahmed",
+                "lastName": "Al Tairi",
+                "shortFirstName": "Osamah Abdulkarim Ahmed",
+                "shortLastName": "Al Tairi",
+                "knownName": "Osamah Al Tairi",
+                "matchName": "Osamah Al Tairi",
+                "playerId": "7fa5y589xjbp5f18qzge1u3h0",
+                "value": 1
+              },
+              {
+                "firstName": "Ahmed Suhail",
+                "lastName": "Saber Ali Al Hamawende",
+                "shortFirstName": "Ahmed Suhail",
+                "shortLastName": "Saber Ali Al Hamawende",
+                "knownName": "Ahmed Suhail",
+                "matchName": "Ahmed Suhail",
+                "playerId": "1n4vsrq9e9gfki5t1uvxm7euh",
+                "cross": 1,
+                "value": 4
+              },
+              {
+                "firstName": "Yusuf",
+                "lastName": "Abdurisag Yusuf",
+                "shortFirstName": "Yusuf",
+                "shortLastName": "Abdurisag Yusuf",
+                "knownName": "Yusuf Abdurisag",
+                "matchName": "Yusuf Abdurisag",
+                "playerId": "5k9892yp5tsjbhrbkani38qcq",
+                "value": 1
+              },
+              {
+                "firstName": "Ali Malolah",
+                "lastName": "Karami",
+                "shortFirstName": "Ali Malolah",
+                "shortLastName": "Karami",
+                "knownName": "Ali Malolah",
+                "matchName": "Ali Malolah",
+                "playerId": "cn0j44qz2lapnx2ine5saltgq",
+                "value": 1
+              },
+              {
+                "firstName": "Abdulla Issa",
+                "lastName": "Al Sulaiti",
+                "shortFirstName": "Abdulla Issa",
+                "shortLastName": "Al Sulaiti",
+                "knownName": "Abdulla Al Sulaiti",
+                "matchName": "Abdulla Al Sulaiti",
+                "playerId": "7t3vfr3j2vznpxpn91uchnz3e",
+                "value": 2
+              },
+              {
+                "firstName": "Jassem",
+                "lastName": "Gaber Abdulsallam",
+                "shortFirstName": "Jassem",
+                "shortLastName": "Gaber Abdulsallam",
+                "knownName": "Jassem Gaber",
+                "matchName": "Jassem Gaber",
+                "playerId": "6hl0xey9edugb1mnqbc744bca",
+                "value": 2
+              }
+            ]
+          },
+          {
+            "playerId": "6hl0xey9edugb1mnqbc744bca",
+            "firstName": "Jassem",
+            "lastName": "Gaber Abdulsallam",
+            "shortFirstName": "Jassem",
+            "shortLastName": "Gaber Abdulsallam",
+            "knownName": "Jassem Gaber",
+            "matchName": "Jassem Gaber",
+            "shirtNumber": 15,
+            "position": "Midfielder",
+            "positionSide": "Centre",
+            "crossLost": 0,
+            "crossSuccess": 0,
+            "passLost": 4,
+            "passSuccess": 17,
+            "x": 40.48,
+            "y": 43.01,
+            "playerPass": [
+              {
+                "firstName": "Ahmed Suhail",
+                "lastName": "Saber Ali Al Hamawende",
+                "shortFirstName": "Ahmed Suhail",
+                "shortLastName": "Saber Ali Al Hamawende",
+                "knownName": "Ahmed Suhail",
+                "matchName": "Ahmed Suhail",
+                "playerId": "1n4vsrq9e9gfki5t1uvxm7euh",
+                "value": 2
+              },
+              {
+                "firstName": "Osamah Abdulkarim Ahmed",
+                "lastName": "Al Tairi",
+                "shortFirstName": "Osamah Abdulkarim Ahmed",
+                "shortLastName": "Al Tairi",
+                "knownName": "Osamah Al Tairi",
+                "matchName": "Osamah Al Tairi",
+                "playerId": "7fa5y589xjbp5f18qzge1u3h0",
+                "value": 2
+              },
+              {
+                "firstName": "Hashim",
+                "lastName": "Ali Abdullatif",
+                "shortFirstName": "Hashim",
+                "shortLastName": "Ali Abdullatif",
+                "knownName": "Hashim Ali",
+                "matchName": "Hashim Ali",
+                "playerId": "eji1rwwlv0ef6lzqepoieok8a",
+                "value": 1
+              },
+              {
+                "firstName": "Yousef Ayman",
+                "lastName": "Hafez Farahat",
+                "shortFirstName": "Yousef Ayman",
+                "shortLastName": "Hafez Farahat",
+                "knownName": "Yousef Ayman",
+                "matchName": "Yousef Ayman",
+                "playerId": "53jeclamuosqjg9m3wybcmfop",
+                "value": 5
+              },
+              {
+                "firstName": "Abdulrasheed",
+                "lastName": "Umaru Ibrahim",
+                "shortFirstName": "Abdulrasheed",
+                "shortLastName": "Umaru Ibrahim",
+                "knownName": "Abdulrasheed Umaru",
+                "matchName": "Abdulrasheed Umaru",
+                "playerId": "ciakzy7ftiszz97t2l8jp9wbt",
+                "value": 1
+              },
+              {
+                "firstName": "Abdulla Issa",
+                "lastName": "Al Sulaiti",
+                "shortFirstName": "Abdulla Issa",
+                "shortLastName": "Al Sulaiti",
+                "knownName": "Abdulla Al Sulaiti",
+                "matchName": "Abdulla Al Sulaiti",
+                "playerId": "7t3vfr3j2vznpxpn91uchnz3e",
+                "value": 1
+              },
+              {
+                "firstName": "Mostafa Tarek",
+                "lastName": "Meshaal",
+                "shortFirstName": "Mostafa Tarek",
+                "shortLastName": "Meshaal",
+                "knownName": "Mostafa Tarek",
+                "matchName": "Mostafa Tarek",
+                "playerId": "10hk0fqpnvb3exrzrq0se1v8q",
+                "value": 2
+              },
+              {
+                "firstName": "Ali Malolah",
+                "lastName": "Karami",
+                "shortFirstName": "Ali Malolah",
+                "shortLastName": "Karami",
+                "knownName": "Ali Malolah",
+                "matchName": "Ali Malolah",
+                "playerId": "cn0j44qz2lapnx2ine5saltgq",
+                "value": 1
+              },
+              {
+                "firstName": "Yusuf",
+                "lastName": "Abdurisag Yusuf",
+                "shortFirstName": "Yusuf",
+                "shortLastName": "Abdurisag Yusuf",
+                "knownName": "Yusuf Abdurisag",
+                "matchName": "Yusuf Abdurisag",
+                "playerId": "5k9892yp5tsjbhrbkani38qcq",
+                "value": 2
+              }
+            ]
+          },
+          {
+            "playerId": "7fa5y589xjbp5f18qzge1u3h0",
+            "firstName": "Osamah Abdulkarim Ahmed",
+            "lastName": "Al Tairi",
+            "shortFirstName": "Osamah Abdulkarim Ahmed",
+            "shortLastName": "Al Tairi",
+            "knownName": "Osamah Al Tairi",
+            "matchName": "Osamah Al Tairi",
+            "shirtNumber": 6,
+            "position": "Midfielder",
+            "positionSide": "Centre/Right",
+            "crossLost": 0,
+            "crossSuccess": 0,
+            "passLost": 6,
+            "passSuccess": 16,
+            "x": 47.59,
+            "y": 36.19,
+            "playerPass": [
+              {
+                "firstName": "Mostafa Tarek",
+                "lastName": "Meshaal",
+                "shortFirstName": "Mostafa Tarek",
+                "shortLastName": "Meshaal",
+                "knownName": "Mostafa Tarek",
+                "matchName": "Mostafa Tarek",
+                "playerId": "10hk0fqpnvb3exrzrq0se1v8q",
+                "value": 6
+              },
+              {
+                "firstName": "Ali Malolah",
+                "lastName": "Karami",
+                "shortFirstName": "Ali Malolah",
+                "shortLastName": "Karami",
+                "knownName": "Ali Malolah",
+                "matchName": "Ali Malolah",
+                "playerId": "cn0j44qz2lapnx2ine5saltgq",
+                "value": 2
+              },
+              {
+                "firstName": "Jassem",
+                "lastName": "Gaber Abdulsallam",
+                "shortFirstName": "Jassem",
+                "shortLastName": "Gaber Abdulsallam",
+                "knownName": "Jassem Gaber",
+                "matchName": "Jassem Gaber",
+                "playerId": "6hl0xey9edugb1mnqbc744bca",
+                "value": 2
+              },
+              {
+                "firstName": "Abdulrasheed",
+                "lastName": "Umaru Ibrahim",
+                "shortFirstName": "Abdulrasheed",
+                "shortLastName": "Umaru Ibrahim",
+                "knownName": "Abdulrasheed Umaru",
+                "matchName": "Abdulrasheed Umaru",
+                "playerId": "ciakzy7ftiszz97t2l8jp9wbt",
+                "value": 2
+              },
+              {
+                "firstName": "Abdulla Issa",
+                "lastName": "Al Sulaiti",
+                "shortFirstName": "Abdulla Issa",
+                "shortLastName": "Al Sulaiti",
+                "knownName": "Abdulla Al Sulaiti",
+                "matchName": "Abdulla Al Sulaiti",
+                "playerId": "7t3vfr3j2vznpxpn91uchnz3e",
+                "value": 1
+              },
+              {
+                "firstName": "Yousef Ayman",
+                "lastName": "Hafez Farahat",
+                "shortFirstName": "Yousef Ayman",
+                "shortLastName": "Hafez Farahat",
+                "knownName": "Yousef Ayman",
+                "matchName": "Yousef Ayman",
+                "playerId": "53jeclamuosqjg9m3wybcmfop",
+                "value": 1
+              },
+              {
+                "firstName": "Ahmed Mohammed",
+                "lastName": "Al Ganehi",
+                "shortFirstName": "Ahmed Mohammed",
+                "shortLastName": "Al Ganehi",
+                "knownName": "Ahmed Al Ganehi",
+                "matchName": "Ahmed Al Ganehi",
+                "playerId": "1vhfyfhcym850rlmyfl1z5f1m",
+                "value": 1
+              },
+              {
+                "firstName": "Salah Zakaria",
+                "lastName": "Hassan Moussa",
+                "shortFirstName": "Salah Zakaria",
+                "shortLastName": "Hassan Moussa",
+                "knownName": "Salah Zakaria",
+                "matchName": "Salah Zakaria",
+                "playerId": "78wlww1klh83oljw4tn98qt7u",
+                "value": 1
+              }
+            ]
+          },
+          {
+            "playerId": "5k9892yp5tsjbhrbkani38qcq",
+            "firstName": "Yusuf",
+            "lastName": "Abdurisag Yusuf",
+            "shortFirstName": "Yusuf",
+            "shortLastName": "Abdurisag Yusuf",
+            "knownName": "Yusuf Abdurisag",
+            "matchName": "Yusuf Abdurisag",
+            "shirtNumber": 9,
+            "position": "Striker",
+            "positionSide": "Left/Centre",
+            "crossLost": 1,
+            "crossSuccess": 1,
+            "passLost": 7,
+            "passSuccess": 8,
+            "x": 54.48,
+            "y": 74.67,
+            "playerPass": [
+              {
+                "firstName": "Ahmed Suhail",
+                "lastName": "Saber Ali Al Hamawende",
+                "shortFirstName": "Ahmed Suhail",
+                "shortLastName": "Saber Ali Al Hamawende",
+                "knownName": "Ahmed Suhail",
+                "matchName": "Ahmed Suhail",
+                "playerId": "1n4vsrq9e9gfki5t1uvxm7euh",
+                "value": 1
+              },
+              {
+                "firstName": "Abdulrasheed",
+                "lastName": "Umaru Ibrahim",
+                "shortFirstName": "Abdulrasheed",
+                "shortLastName": "Umaru Ibrahim",
+                "knownName": "Abdulrasheed Umaru",
+                "matchName": "Abdulrasheed Umaru",
+                "playerId": "ciakzy7ftiszz97t2l8jp9wbt",
+                "value": 2
+              },
+              {
+                "firstName": "Hashim",
+                "lastName": "Ali Abdullatif",
+                "shortFirstName": "Hashim",
+                "shortLastName": "Ali Abdullatif",
+                "knownName": "Hashim Ali",
+                "matchName": "Hashim Ali",
+                "playerId": "eji1rwwlv0ef6lzqepoieok8a",
+                "cross": 1,
+                "value": 3
+              },
+              {
+                "firstName": "Yousef Ayman",
+                "lastName": "Hafez Farahat",
+                "shortFirstName": "Yousef Ayman",
+                "shortLastName": "Hafez Farahat",
+                "knownName": "Yousef Ayman",
+                "matchName": "Yousef Ayman",
+                "playerId": "53jeclamuosqjg9m3wybcmfop",
+                "value": 2
+              }
+            ]
+          },
+          {
+            "playerId": "eji1rwwlv0ef6lzqepoieok8a",
+            "firstName": "Hashim",
+            "lastName": "Ali Abdullatif",
+            "shortFirstName": "Hashim",
+            "shortLastName": "Ali Abdullatif",
+            "knownName": "Hashim Ali",
+            "matchName": "Hashim Ali",
+            "shirtNumber": 10,
+            "position": "Striker",
+            "positionSide": "Centre",
+            "crossLost": 2,
+            "crossSuccess": 0,
+            "passLost": 4,
+            "passSuccess": 14,
+            "x": 59.37,
+            "y": 58.74,
+            "playerPass": [
+              {
+                "firstName": "Yousef Ayman",
+                "lastName": "Hafez Farahat",
+                "shortFirstName": "Yousef Ayman",
+                "shortLastName": "Hafez Farahat",
+                "knownName": "Yousef Ayman",
+                "matchName": "Yousef Ayman",
+                "playerId": "53jeclamuosqjg9m3wybcmfop",
+                "value": 1
+              },
+              {
+                "firstName": "Osamah Abdulkarim Ahmed",
+                "lastName": "Al Tairi",
+                "shortFirstName": "Osamah Abdulkarim Ahmed",
+                "shortLastName": "Al Tairi",
+                "knownName": "Osamah Al Tairi",
+                "matchName": "Osamah Al Tairi",
+                "playerId": "7fa5y589xjbp5f18qzge1u3h0",
+                "value": 5
+              },
+              {
+                "firstName": "Ahmed Suhail",
+                "lastName": "Saber Ali Al Hamawende",
+                "shortFirstName": "Ahmed Suhail",
+                "shortLastName": "Saber Ali Al Hamawende",
+                "knownName": "Ahmed Suhail",
+                "matchName": "Ahmed Suhail",
+                "playerId": "1n4vsrq9e9gfki5t1uvxm7euh",
+                "value": 1
+              },
+              {
+                "firstName": "Salah Zakaria",
+                "lastName": "Hassan Moussa",
+                "shortFirstName": "Salah Zakaria",
+                "shortLastName": "Hassan Moussa",
+                "knownName": "Salah Zakaria",
+                "matchName": "Salah Zakaria",
+                "playerId": "78wlww1klh83oljw4tn98qt7u",
+                "value": 1
+              },
+              {
+                "firstName": "Yusuf",
+                "lastName": "Abdurisag Yusuf",
+                "shortFirstName": "Yusuf",
+                "shortLastName": "Abdurisag Yusuf",
+                "knownName": "Yusuf Abdurisag",
+                "matchName": "Yusuf Abdurisag",
+                "playerId": "5k9892yp5tsjbhrbkani38qcq",
+                "value": 3
+              },
+              {
+                "firstName": "Ali Malolah",
+                "lastName": "Karami",
+                "shortFirstName": "Ali Malolah",
+                "shortLastName": "Karami",
+                "knownName": "Ali Malolah",
+                "matchName": "Ali Malolah",
+                "playerId": "cn0j44qz2lapnx2ine5saltgq",
+                "value": 2
+              },
+              {
+                "firstName": "Mostafa Tarek",
+                "lastName": "Meshaal",
+                "shortFirstName": "Mostafa Tarek",
+                "shortLastName": "Meshaal",
+                "knownName": "Mostafa Tarek",
+                "matchName": "Mostafa Tarek",
+                "playerId": "10hk0fqpnvb3exrzrq0se1v8q",
+                "value": 1
+              }
+            ]
+          },
+          {
+            "playerId": "ciakzy7ftiszz97t2l8jp9wbt",
+            "firstName": "Abdulrasheed",
+            "lastName": "Umaru Ibrahim",
+            "shortFirstName": "Abdulrasheed",
+            "shortLastName": "Umaru Ibrahim",
+            "knownName": "Abdulrasheed Umaru",
+            "matchName": "Abdulrasheed Umaru",
+            "shirtNumber": 7,
+            "position": "Striker",
+            "positionSide": "Centre/Right",
+            "crossLost": 2,
+            "crossSuccess": 0,
+            "passLost": 6,
+            "passSuccess": 5,
+            "x": 56.56,
+            "y": 23.3,
+            "playerPass": [
+              {
+                "firstName": "Osamah Abdulkarim Ahmed",
+                "lastName": "Al Tairi",
+                "shortFirstName": "Osamah Abdulkarim Ahmed",
+                "shortLastName": "Al Tairi",
+                "knownName": "Osamah Al Tairi",
+                "matchName": "Osamah Al Tairi",
+                "playerId": "7fa5y589xjbp5f18qzge1u3h0",
+                "value": 1
+              },
+              {
+                "firstName": "Yusuf",
+                "lastName": "Abdurisag Yusuf",
+                "shortFirstName": "Yusuf",
+                "shortLastName": "Abdurisag Yusuf",
+                "knownName": "Yusuf Abdurisag",
+                "matchName": "Yusuf Abdurisag",
+                "playerId": "5k9892yp5tsjbhrbkani38qcq",
+                "value": 1
+              },
+              {
+                "firstName": "Hashim",
+                "lastName": "Ali Abdullatif",
+                "shortFirstName": "Hashim",
+                "shortLastName": "Ali Abdullatif",
+                "knownName": "Hashim Ali",
+                "matchName": "Hashim Ali",
+                "playerId": "eji1rwwlv0ef6lzqepoieok8a",
+                "value": 3
+              }
+            ]
+          },
+          {
+            "playerId": "2ehu3jo0msb2498cwfd1h55yi",
+            "firstName": "Mohammed Emad",
+            "lastName": "Aiash",
+            "shortFirstName": "Mohammed Emad",
+            "shortLastName": "Aiash",
+            "knownName": "Mohammed Emad",
+            "matchName": "Mohammed Emad",
+            "shirtNumber": 4,
+            "position": "Substitute",
+            "crossLost": 0,
+            "crossSuccess": 0,
+            "passLost": 0,
+            "passSuccess": 0,
+            "x": 0.0,
+            "y": 0.0,
+            "playerPass": []
+          },
+          {
+            "playerId": "1vhfyfhcym850rlmyfl1z5f1m",
+            "firstName": "Ahmed Mohammed",
+            "lastName": "Al Ganehi",
+            "shortFirstName": "Ahmed Mohammed",
+            "shortLastName": "Al Ganehi",
+            "knownName": "Ahmed Al Ganehi",
+            "matchName": "Ahmed Al Ganehi",
+            "shirtNumber": 20,
+            "position": "Substitute",
+            "crossLost": 0,
+            "crossSuccess": 0,
+            "passLost": 3,
+            "passSuccess": 3,
+            "x": 59.55,
+            "y": 22.45,
+            "playerPass": [
+              {
+                "firstName": "Ali Malolah",
+                "lastName": "Karami",
+                "shortFirstName": "Ali Malolah",
+                "shortLastName": "Karami",
+                "knownName": "Ali Malolah",
+                "matchName": "Ali Malolah",
+                "playerId": "cn0j44qz2lapnx2ine5saltgq",
+                "value": 2
+              },
+              {
+                "firstName": "Osamah Abdulkarim Ahmed",
+                "lastName": "Al Tairi",
+                "shortFirstName": "Osamah Abdulkarim Ahmed",
+                "shortLastName": "Al Tairi",
+                "knownName": "Osamah Al Tairi",
+                "matchName": "Osamah Al Tairi",
+                "playerId": "7fa5y589xjbp5f18qzge1u3h0",
+                "value": 1
+              }
+            ]
+          },
+          {
+            "playerId": "21zfzqebp4cdldk3ipgpcntp0",
+            "firstName": "Jassim Mohammed",
+            "lastName": "Al Mehairi",
+            "shortFirstName": "Jassim Mohammed",
+            "shortLastName": "Al Mehairi",
+            "knownName": "Jassim Al Mehairi",
+            "matchName": "Jassim Al Mehairi",
+            "shirtNumber": 11,
+            "position": "Substitute"
+          },
+          {
+            "playerId": "bmuowfb5zzeimtjbf6nf2s1sk",
+            "firstName": "Jassem Mohammed",
+            "lastName": "Ali Al Sharshani",
+            "shortFirstName": "Jassem Mohammed",
+            "shortLastName": "Ali Al Sharshani",
+            "knownName": "Jassem Al Sharshani",
+            "matchName": "Jassem Al Sharshani",
+            "shirtNumber": 23,
+            "position": "Substitute"
+          },
+          {
+            "playerId": "6d2ziomf100s65ty9sfskl8iy",
+            "firstName": "Faisal Mohamed",
+            "lastName": "Azadi",
+            "shortFirstName": "Faisal Mohamed",
+            "shortLastName": "Azadi",
+            "knownName": "Faisal Azadi",
+            "matchName": "Faisal Azadi",
+            "shirtNumber": 16,
+            "position": "Substitute"
+          },
+          {
+            "playerId": "1lfnscfj0hiqg5xsej9kz20kq",
+            "firstName": "Marwan Sherif",
+            "lastName": "Badreldin",
+            "shortFirstName": "Marwan",
+            "shortLastName": "Sherif Badreldin",
+            "knownName": "Marwan Badreldin",
+            "matchName": "Marwan Badreldin",
+            "shirtNumber": 21,
+            "position": "Substitute"
+          },
+          {
+            "playerId": "7jf6hxh63kf12q6exd9nyueei",
+            "firstName": "Mahmud",
+            "lastName": "Ibrahim Abunada",
+            "shortFirstName": "Mahmud",
+            "shortLastName": "Ibrahim Abunada",
+            "knownName": "Mahmud Abunada",
+            "matchName": "Mahmud Abunada",
+            "shirtNumber": 1,
+            "position": "Substitute"
+          },
+          {
+            "playerId": "pnb3jpuect9jcr9poaf87mcp",
+            "firstName": "Mohamed",
+            "lastName": "Khaled Al Naemi",
+            "shortFirstName": "Mohamed",
+            "shortLastName": "Khaled Al Naemi",
+            "knownName": "Mohamed Al Naemi",
+            "matchName": "Mohamed Al Naemi",
+            "shirtNumber": 13,
+            "position": "Substitute",
+            "crossLost": 0,
+            "crossSuccess": 0,
+            "passLost": 0,
+            "passSuccess": 0,
+            "x": 4.55,
+            "y": 90.3,
+            "playerPass": []
+          },
+          {
+            "playerId": "4actp9mx3emtmip97d1seaq5l",
+            "firstName": "Khaled Waleed",
+            "lastName": "Mansour",
+            "shortFirstName": "Khaled Waleed",
+            "shortLastName": "Mansour",
+            "knownName": "Khaled Waleed",
+            "matchName": "Khaled Waleed",
+            "shirtNumber": 17,
+            "position": "Substitute"
+          },
+          {
+            "playerId": "9411zim2l7ljuymnrbfbl9hbd",
+            "firstName": "Andri",
+            "lastName": "Syahputra Sudarmanto",
+            "shortFirstName": "Andri",
+            "shortLastName": "Syahputra Sudarmanto",
+            "knownName": "Andri Syahputra",
+            "matchName": "Andri Syahputra",
+            "shirtNumber": 14,
+            "position": "Substitute",
+            "crossLost": 0,
+            "crossSuccess": 0,
+            "passLost": 0,
+            "passSuccess": 1,
+            "x": 51.02,
+            "y": 40.65,
+            "playerPass": [
+              {
+                "firstName": "Mostafa Tarek",
+                "lastName": "Meshaal",
+                "shortFirstName": "Mostafa Tarek",
+                "shortLastName": "Meshaal",
+                "knownName": "Mostafa Tarek",
+                "matchName": "Mostafa Tarek",
+                "playerId": "10hk0fqpnvb3exrzrq0se1v8q",
+                "value": 1
+              }
+            ]
+          },
+          {
+            "playerId": "3hwuo24x813kz5i8tnqt8j33e",
+            "firstName": "Diyab Haroon",
+            "lastName": "Taha",
+            "shortFirstName": "Diyab Haroon",
+            "shortLastName": "Taha",
+            "knownName": "Diyab Taha",
+            "matchName": "Diyab Taha",
+            "shirtNumber": 3,
+            "position": "Substitute"
+          },
+          {
+            "playerId": "egchi129gnazo4qdjao2p984q",
+            "firstName": "Mekki Mohsen",
+            "lastName": "Tombari",
+            "shortFirstName": "Mekki Mohsen",
+            "shortLastName": "Tombari",
+            "knownName": "Mekki Tombari",
+            "matchName": "Mekki Tombari",
+            "shirtNumber": 18,
+            "position": "Substitute"
+          }
+        ],
+        "teamOfficial": {
+          "id": "4cztki8unqpcv9yxigdpc0fzd",
+          "firstName": "Nicolás Andrés",
+          "lastName": "Córdova San Cristóbal",
+          "type": "manager"
+        }
+      }
+    ]
+  }
+}

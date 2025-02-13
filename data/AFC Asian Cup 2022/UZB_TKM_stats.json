@@ -1,0 +1,2735 @@
+{
+  "matchInfo": {
+    "id": "32eo54m3d4pt3mqc0pgilqdxw",
+    "coverageLevel": "13",
+    "date": "2022-06-01Z",
+    "time": "15:30:00Z",
+    "week": "1",
+    "postMatch": "1",
+    "numberOfPeriods": 2,
+    "periodLength": 45,
+    "lastUpdated": "2022-06-22T13:40:59Z",
+    "description": "Uzbekistan U23 vs Turkmenistan U23",
+    "sport": {
+      "id": "289u5typ3vp4ifwh5thalohmq",
+      "name": "Soccer"
+    },
+    "ruleset": {
+      "id": "35ld7tk5hxf5rfp44lpy0ymbq",
+      "name": "Youth"
+    },
+    "competition": {
+      "id": "dlf90uty1axvtr1vn2aaw9vqh",
+      "name": "AFC U23 Asian Cup",
+      "competitionCode": "U23",
+      "competitionFormat": "International cup",
+      "country": {
+        "id": "7yck0z0f9rlpeyatanjc1ylzp",
+        "name": "Asia"
+      }
+    },
+    "tournamentCalendar": {
+      "id": "axnxf31hhqgwntx2l3c9gtu96",
+      "startDate": "2022-06-01Z",
+      "endDate": "2022-06-19Z",
+      "name": "2022 Uzbekistan"
+    },
+    "stage": {
+      "id": "ay5mheslzj62w959bz2jgahd6",
+      "formatId": "86p6pz5rcsdbz4cklvfwtzrv9",
+      "startDate": "2022-06-01Z",
+      "endDate": "2022-06-09Z",
+      "name": "Group Stage"
+    },
+    "series": {
+      "id": "ay9an5uqegkup3jmev6m3ep9m",
+      "formatId": "choy4837jf63m90uh34q2jmxh",
+      "name": "Group A"
+    },
+    "contestant": [
+      {
+        "id": "5wbuue9v4wpx0ktjy86rtnt4h",
+        "name": "Uzbekistan U23",
+        "shortName": "Uzbekistan",
+        "officialName": "Uzbekistan Under 23",
+        "code": "UZB",
+        "position": "home",
+        "country": {
+          "id": "8j3qx8u2xs9yc8u8b3n1r31k",
+          "name": "Uzbekistan"
+        }
+      },
+      {
+        "id": "b2ts0ayco2vpm3kl8r3ihyqqd",
+        "name": "Turkmenistan U23",
+        "shortName": "Turkmenistan",
+        "officialName": "Turkmenistan Under 23",
+        "code": "TKM",
+        "position": "away",
+        "country": {
+          "id": "6xf1qvrbv5hkwwjscxlyfavrw",
+          "name": "Turkmenistan"
+        }
+      }
+    ],
+    "venue": {
+      "id": "kbdix99imsuqpy54cp65yfu",
+      "neutral": "no",
+      "longName": "Paxtakor Markaziy Stadion",
+      "shortName": "Paxtakor Markaziy Stadion"
+    }
+  },
+  "liveData": {
+    "matchDetails": {
+      "periodId": 14,
+      "matchStatus": "Played",
+      "winner": "home",
+      "matchLengthMin": 98,
+      "matchLengthSec": 20,
+      "period": [
+        {
+          "id": 1,
+          "start": "2022-06-01T15:31:09Z",
+          "end": "2022-06-01T16:19:09Z",
+          "lengthMin": 48,
+          "lengthSec": 0
+        },
+        {
+          "id": 2,
+          "start": "2022-06-01T16:36:00Z",
+          "end": "2022-06-01T17:26:20Z",
+          "lengthMin": 50,
+          "lengthSec": 20
+        }
+      ],
+      "scores": {
+        "ht": {
+          "home": 0,
+          "away": 0
+        },
+        "ft": {
+          "home": 1,
+          "away": 0
+        },
+        "total": {
+          "home": 1,
+          "away": 0
+        }
+      }
+    },
+    "goal": [
+      {
+        "contestantId": "5wbuue9v4wpx0ktjy86rtnt4h",
+        "periodId": 2,
+        "timeMin": 75,
+        "timeMinSec": "74:58",
+        "lastUpdated": "2022-06-01T17:06:10Z",
+        "timestamp": "2022-06-01T17:05:58Z",
+        "type": "PG",
+        "scorerId": "1ev1kn9ul13s0wcg3n319bzmc",
+        "scorerName": "U. Khoshimov",
+        "optaEventId": "2426857133",
+        "homeScore": 1,
+        "awayScore": 0
+      }
+    ],
+    "card": [
+      {
+        "contestantId": "b2ts0ayco2vpm3kl8r3ihyqqd",
+        "periodId": 1,
+        "timeMin": 23,
+        "timeMinSec": "22:25",
+        "lastUpdated": "2022-06-20T01:09:03Z",
+        "timestamp": "2022-06-01T15:53:34Z",
+        "type": "YC",
+        "playerId": "a6i7yovwpqulf4omrn26tp0yc",
+        "playerName": "B. Muradov",
+        "optaEventId": "2426832129",
+        "cardReason": "Foul"
+      },
+      {
+        "contestantId": "b2ts0ayco2vpm3kl8r3ihyqqd",
+        "periodId": 2,
+        "timeMin": 50,
+        "timeMinSec": "49:48",
+        "lastUpdated": "2022-06-01T16:40:54Z",
+        "timestamp": "2022-06-01T16:40:48Z",
+        "type": "YC",
+        "playerId": "az33blnf4413if50hg7ln90k4",
+        "playerName": "D. Berdiyev",
+        "optaEventId": "2426845869",
+        "cardReason": "Foul"
+      },
+      {
+        "contestantId": "b2ts0ayco2vpm3kl8r3ihyqqd",
+        "periodId": 2,
+        "timeMin": 75,
+        "timeMinSec": "74:04",
+        "lastUpdated": "2022-06-01T17:05:20Z",
+        "timestamp": "2022-06-01T17:05:05Z",
+        "type": "YC",
+        "playerId": "6pkjhogl2q0xuiy5qvlq2um8k",
+        "playerName": "W. Jumaýew",
+        "optaEventId": "2426856807",
+        "cardReason": "Handball"
+      },
+      {
+        "contestantId": "5wbuue9v4wpx0ktjy86rtnt4h",
+        "periodId": 2,
+        "timeMin": 79,
+        "timeMinSec": "78:51",
+        "lastUpdated": "2022-06-01T17:10:05Z",
+        "timestamp": "2022-06-01T17:09:51Z",
+        "type": "YC",
+        "playerId": "9azaqwvoh7r62g4k3rxihdogk",
+        "playerName": "A. Davronov",
+        "optaEventId": "2426859155",
+        "cardReason": "Time wasting"
+      },
+      {
+        "contestantId": "5wbuue9v4wpx0ktjy86rtnt4h",
+        "periodId": 2,
+        "timeMin": 86,
+        "timeMinSec": "85:03",
+        "lastUpdated": "2022-06-01T17:16:20Z",
+        "timestamp": "2022-06-01T17:16:03Z",
+        "type": "YC",
+        "playerId": "1a1sihg2xjclhxu6aaxnixnca",
+        "playerName": "O. Abdumajidov",
+        "optaEventId": "2426861935",
+        "cardReason": "Foul"
+      },
+      {
+        "contestantId": "b2ts0ayco2vpm3kl8r3ihyqqd",
+        "periodId": 2,
+        "timeMin": 95,
+        "timeMinSec": "94:05",
+        "lastUpdated": "2022-06-01T17:25:15Z",
+        "timestamp": "2022-06-01T17:25:05Z",
+        "type": "YC",
+        "playerId": "1b15l7d3r50d5sfzf6rel7be2",
+        "playerName": "V. Ballakov",
+        "optaEventId": "2426865623",
+        "cardReason": "Foul"
+      }
+    ],
+    "substitute": [
+      {
+        "contestantId": "b2ts0ayco2vpm3kl8r3ihyqqd",
+        "periodId": 2,
+        "timeMin": 46,
+        "timeMinSec": "45:00",
+        "lastUpdated": "2022-06-01T16:35:43Z",
+        "timestamp": "2022-06-01T16:35:38Z",
+        "playerOnId": "6pkjhogl2q0xuiy5qvlq2um8k",
+        "playerOnName": "W. Jumaýew",
+        "playerOffId": "7528dae2cbu135opbefvnpatw",
+        "playerOffName": "R. Galkin",
+        "subReason": "Tactical"
+      },
+      {
+        "contestantId": "b2ts0ayco2vpm3kl8r3ihyqqd",
+        "periodId": 2,
+        "timeMin": 59,
+        "timeMinSec": "58:36",
+        "lastUpdated": "2022-06-01T16:49:45Z",
+        "timestamp": "2022-06-01T16:49:37Z",
+        "playerOnId": "7m9xe06birsiunttrfh7apjpw",
+        "playerOnName": "T. Charyyev",
+        "playerOffId": "5ne7h5jg4ltpqcyrnpceq92c4",
+        "playerOffName": "R. Myratberdiýew",
+        "subReason": "Tactical"
+      },
+      {
+        "contestantId": "5wbuue9v4wpx0ktjy86rtnt4h",
+        "periodId": 2,
+        "timeMin": 62,
+        "timeMinSec": "61:59",
+        "lastUpdated": "2022-06-01T16:53:08Z",
+        "timestamp": "2022-06-01T16:53:00Z",
+        "playerOnId": "e91gh5bq3043wqt0huy9v6kx6",
+        "playerOnName": "I. Ibragimov",
+        "playerOffId": "4n2vz20b6cj3f7sysv7nvtppm",
+        "playerOffName": "D. Kholmatov",
+        "subReason": "Tactical"
+      },
+      {
+        "contestantId": "5wbuue9v4wpx0ktjy86rtnt4h",
+        "periodId": 2,
+        "timeMin": 63,
+        "timeMinSec": "62:08",
+        "lastUpdated": "2022-06-01T16:53:16Z",
+        "timestamp": "2022-06-01T16:53:09Z",
+        "playerOnId": "1ev1kn9ul13s0wcg3n319bzmc",
+        "playerOnName": "U. Khoshimov",
+        "playerOffId": "96ts4gj0nt03zrz6bqyy4gnbo",
+        "playerOffName": "O. Jo‘raqo‘ziev",
+        "subReason": "Tactical"
+      },
+      {
+        "contestantId": "5wbuue9v4wpx0ktjy86rtnt4h",
+        "periodId": 2,
+        "timeMin": 71,
+        "timeMinSec": "70:07",
+        "lastUpdated": "2022-06-01T17:01:14Z",
+        "timestamp": "2022-06-01T17:01:07Z",
+        "playerOnId": "2clpbungt3x2z4wwr5ecc4iga",
+        "playerOnName": "A. Fayzullaev",
+        "playerOffId": "duuxe51d2842h7j4s0bowvfxm",
+        "playerOffName": "J. Jaloliddinov",
+        "subReason": "Injury"
+      },
+      {
+        "contestantId": "5wbuue9v4wpx0ktjy86rtnt4h",
+        "periodId": 2,
+        "timeMin": 71,
+        "timeMinSec": "70:17",
+        "lastUpdated": "2022-06-01T17:01:24Z",
+        "timestamp": "2022-06-01T17:01:17Z",
+        "playerOnId": "c7robvquax4x3k6qjrc3eetck",
+        "playerOnName": "R. Jiyanov",
+        "playerOffId": "7ir425iljcvmgj0fnjs8qsxgq",
+        "playerOffName": "H. Norchaev",
+        "subReason": "Tactical"
+      },
+      {
+        "contestantId": "5wbuue9v4wpx0ktjy86rtnt4h",
+        "periodId": 2,
+        "timeMin": 80,
+        "timeMinSec": "79:31",
+        "lastUpdated": "2022-06-01T17:10:40Z",
+        "timestamp": "2022-06-01T17:10:31Z",
+        "playerOnId": "1a1sihg2xjclhxu6aaxnixnca",
+        "playerOnName": "O. Abdumajidov",
+        "playerOffId": "9azaqwvoh7r62g4k3rxihdogk",
+        "playerOffName": "A. Davronov",
+        "subReason": "Injury"
+      },
+      {
+        "contestantId": "b2ts0ayco2vpm3kl8r3ihyqqd",
+        "periodId": 2,
+        "timeMin": 83,
+        "timeMinSec": "82:08",
+        "lastUpdated": "2022-06-01T17:13:14Z",
+        "timestamp": "2022-06-01T17:13:09Z",
+        "playerOnId": "435zzjvwezk6ym3iputy74lqs",
+        "playerOnName": "D. Meredov",
+        "playerOffId": "az33blnf4413if50hg7ln90k4",
+        "playerOffName": "D. Berdiyev",
+        "subReason": "Injury"
+      }
+    ],
+    "lineUp": [
+      {
+        "contestantId": "5wbuue9v4wpx0ktjy86rtnt4h",
+        "formationUsed": "4231",
+        "player": [
+          {
+            "playerId": "awh4nx97uo09zgpnjlqtiaycq",
+            "firstName": "Abduvohid",
+            "lastName": "Ne'matov",
+            "shortFirstName": "Abduvohid",
+            "shortLastName": "Nematov",
+            "matchName": "A. Ne'matov",
+            "shirtNumber": 1,
+            "position": "Goalkeeper",
+            "positionSide": "Centre",
+            "formationPlace": "1",
+            "stat": [
+              {
+                "type": "totalPass",
+                "value": "31"
+              },
+              {
+                "type": "saves",
+                "value": "3"
+              },
+              {
+                "type": "minsPlayed",
+                "value": "90"
+              },
+              {
+                "type": "cleanSheet",
+                "value": "1"
+              },
+              {
+                "type": "goalKicks",
+                "value": "4"
+              },
+              {
+                "type": "accuratePass",
+                "value": "26"
+              },
+              {
+                "type": "totalClearance",
+                "value": "2"
+              },
+              {
+                "type": "lostCorners",
+                "value": "1"
+              },
+              {
+                "type": "gameStarted",
+                "value": "1"
+              },
+              {
+                "type": "formationPlace",
+                "value": "1"
+              }
+            ]
+          },
+          {
+            "playerId": "7kt9xrw1zv2maamty58mo6icq",
+            "firstName": "Dostonbek",
+            "lastName": "Tursunov",
+            "shortFirstName": "Dostonbek",
+            "shortLastName": "Tursunov",
+            "matchName": "D. Tursunov",
+            "shirtNumber": 3,
+            "position": "Defender",
+            "positionSide": "Left",
+            "formationPlace": "3",
+            "stat": [
+              {
+                "type": "minsPlayed",
+                "value": "90"
+              },
+              {
+                "type": "totalTackle",
+                "value": "3"
+              },
+              {
+                "type": "totalPass",
+                "value": "47"
+              },
+              {
+                "type": "gameStarted",
+                "value": "1"
+              },
+              {
+                "type": "wonTackle",
+                "value": "3"
+              },
+              {
+                "type": "totalThrows",
+                "value": "7"
+              },
+              {
+                "type": "accuratePass",
+                "value": "40"
+              },
+              {
+                "type": "lostCorners",
+                "value": "1"
+              },
+              {
+                "type": "totalClearance",
+                "value": "2"
+              },
+              {
+                "type": "fouls",
+                "value": "1"
+              },
+              {
+                "type": "cleanSheet",
+                "value": "1"
+              },
+              {
+                "type": "formationPlace",
+                "value": "3"
+              }
+            ]
+          },
+          {
+            "playerId": "9azaqwvoh7r62g4k3rxihdogk",
+            "firstName": "Alibek",
+            "lastName": "Davronov",
+            "shortFirstName": "Alibek",
+            "shortLastName": "Davronov",
+            "matchName": "A. Davronov",
+            "shirtNumber": 18,
+            "position": "Defender",
+            "positionSide": "Left/Centre",
+            "formationPlace": "6",
+            "stat": [
+              {
+                "type": "totalTackle",
+                "value": "3"
+              },
+              {
+                "type": "minsPlayed",
+                "value": "80"
+              },
+              {
+                "type": "yellowCard",
+                "value": "1"
+              },
+              {
+                "type": "totalSubOff",
+                "value": "1"
+              },
+              {
+                "type": "totalPass",
+                "value": "68"
+              },
+              {
+                "type": "wonTackle",
+                "value": "3"
+              },
+              {
+                "type": "gameStarted",
+                "value": "1"
+              },
+              {
+                "type": "accuratePass",
+                "value": "60"
+              },
+              {
+                "type": "totalClearance",
+                "value": "1"
+              },
+              {
+                "type": "wasFouled",
+                "value": "2"
+              },
+              {
+                "type": "formationPlace",
+                "value": "6"
+              }
+            ]
+          },
+          {
+            "playerId": "467zr5gxxl1dzdg3fb8s5wxec",
+            "firstName": "Muhammadqodir",
+            "lastName": "Khamraliev",
+            "shortFirstName": "Muhammadqodir",
+            "shortLastName": "Khamraliev",
+            "matchName": "M. Khamraliev",
+            "shirtNumber": 5,
+            "position": "Defender",
+            "positionSide": "Centre/Right",
+            "formationPlace": "5",
+            "stat": [
+              {
+                "type": "cleanSheet",
+                "value": "1"
+              },
+              {
+                "type": "shotOffTarget",
+                "value": "2"
+              },
+              {
+                "type": "accuratePass",
+                "value": "70"
+              },
+              {
+                "type": "wasFouled",
+                "value": "1"
+              },
+              {
+                "type": "totalThrows",
+                "value": "1"
+              },
+              {
+                "type": "gameStarted",
+                "value": "1"
+              },
+              {
+                "type": "totalPass",
+                "value": "75"
+              },
+              {
+                "type": "totalScoringAtt",
+                "value": "4"
+              },
+              {
+                "type": "minsPlayed",
+                "value": "90"
+              },
+              {
+                "type": "blockedScoringAtt",
+                "value": "2"
+              },
+              {
+                "type": "formationPlace",
+                "value": "5"
+              }
+            ]
+          },
+          {
+            "playerId": "3z934u9uo5h1ihpdgjbs1ukus",
+            "firstName": "Eldorbek",
+            "lastName": "Begimov",
+            "shortFirstName": "Eldorbek",
+            "shortLastName": "Begimov",
+            "matchName": "E. Begimov",
+            "shirtNumber": 13,
+            "position": "Defender",
+            "positionSide": "Right",
+            "formationPlace": "2",
+            "stat": [
+              {
+                "type": "cleanSheet",
+                "value": "1"
+              },
+              {
+                "type": "fouls",
+                "value": "2"
+              },
+              {
+                "type": "accuratePass",
+                "value": "55"
+              },
+              {
+                "type": "totalClearance",
+                "value": "1"
+              },
+              {
+                "type": "totalThrows",
+                "value": "6"
+              },
+              {
+                "type": "gameStarted",
+                "value": "1"
+              },
+              {
+                "type": "totalPass",
+                "value": "58"
+              },
+              {
+                "type": "totalTackle",
+                "value": "1"
+              },
+              {
+                "type": "minsPlayed",
+                "value": "90"
+              },
+              {
+                "type": "formationPlace",
+                "value": "2"
+              }
+            ]
+          },
+          {
+            "playerId": "duuxe51d2842h7j4s0bowvfxm",
+            "firstName": "Jasurbek",
+            "lastName": "Jaloliddinov",
+            "shortFirstName": "Jasurbek",
+            "shortLastName": "Jaloliddinov",
+            "matchName": "J. Jaloliddinov",
+            "shirtNumber": 10,
+            "position": "Defensive Midfielder",
+            "positionSide": "Left/Centre",
+            "formationPlace": "4",
+            "captain": "yes",
+            "stat": [
+              {
+                "type": "ontargetScoringAtt",
+                "value": "1"
+              },
+              {
+                "type": "totalPass",
+                "value": "36"
+              },
+              {
+                "type": "minsPlayed",
+                "value": "71"
+              },
+              {
+                "type": "totalTackle",
+                "value": "1"
+              },
+              {
+                "type": "totalSubOff",
+                "value": "1"
+              },
+              {
+                "type": "blockedScoringAtt",
+                "value": "2"
+              },
+              {
+                "type": "cornerTaken",
+                "value": "6"
+              },
+              {
+                "type": "totalScoringAtt",
+                "value": "6"
+              },
+              {
+                "type": "shotOffTarget",
+                "value": "3"
+              },
+              {
+                "type": "wonTackle",
+                "value": "1"
+              },
+              {
+                "type": "wonCorners",
+                "value": "3"
+              },
+              {
+                "type": "gameStarted",
+                "value": "1"
+              },
+              {
+                "type": "accuratePass",
+                "value": "29"
+              },
+              {
+                "type": "wasFouled",
+                "value": "1"
+              },
+              {
+                "type": "formationPlace",
+                "value": "4"
+              }
+            ]
+          },
+          {
+            "playerId": "54aru4kb28z4w04z09envr9xw",
+            "firstName": "Abdurauf",
+            "lastName": "Bo'riyev",
+            "shortFirstName": "Abdurauf",
+            "shortLastName": "Boriyev",
+            "matchName": "A. Bo'riyev",
+            "shirtNumber": 23,
+            "position": "Defensive Midfielder",
+            "positionSide": "Centre/Right",
+            "formationPlace": "8",
+            "stat": [
+              {
+                "type": "accuratePass",
+                "value": "50"
+              },
+              {
+                "type": "wonTackle",
+                "value": "2"
+              },
+              {
+                "type": "gameStarted",
+                "value": "1"
+              },
+              {
+                "type": "wonCorners",
+                "value": "1"
+              },
+              {
+                "type": "cleanSheet",
+                "value": "1"
+              },
+              {
+                "type": "fouls",
+                "value": "2"
+              },
+              {
+                "type": "totalScoringAtt",
+                "value": "1"
+              },
+              {
+                "type": "totalTackle",
+                "value": "2"
+              },
+              {
+                "type": "minsPlayed",
+                "value": "90"
+              },
+              {
+                "type": "totalPass",
+                "value": "62"
+              },
+              {
+                "type": "ontargetScoringAtt",
+                "value": "1"
+              },
+              {
+                "type": "formationPlace",
+                "value": "8"
+              }
+            ]
+          },
+          {
+            "playerId": "2u37f1gdclicvyjh5rys5ap2i",
+            "firstName": "Hojimat",
+            "lastName": "Erkinov",
+            "shortFirstName": "Hojimat",
+            "shortLastName": "Erkinov",
+            "matchName": "H. Erkinov",
+            "shirtNumber": 7,
+            "position": "Attacking Midfielder",
+            "positionSide": "Left",
+            "formationPlace": "11",
+            "stat": [
+              {
+                "type": "totalPass",
+                "value": "36"
+              },
+              {
+                "type": "minsPlayed",
+                "value": "90"
+              },
+              {
+                "type": "totalTackle",
+                "value": "1"
+              },
+              {
+                "type": "cornerTaken",
+                "value": "1"
+              },
+              {
+                "type": "fouls",
+                "value": "3"
+              },
+              {
+                "type": "cleanSheet",
+                "value": "1"
+              },
+              {
+                "type": "wonCorners",
+                "value": "1"
+              },
+              {
+                "type": "gameStarted",
+                "value": "1"
+              },
+              {
+                "type": "wonTackle",
+                "value": "1"
+              },
+              {
+                "type": "totalThrows",
+                "value": "2"
+              },
+              {
+                "type": "wasFouled",
+                "value": "2"
+              },
+              {
+                "type": "accuratePass",
+                "value": "33"
+              },
+              {
+                "type": "formationPlace",
+                "value": "11"
+              }
+            ]
+          },
+          {
+            "playerId": "4n2vz20b6cj3f7sysv7nvtppm",
+            "firstName": "Diyor",
+            "lastName": "Kholmatov",
+            "shortFirstName": "Diyor",
+            "shortLastName": "Kholmatov",
+            "matchName": "D. Kholmatov",
+            "shirtNumber": 17,
+            "position": "Attacking Midfielder",
+            "positionSide": "Centre",
+            "formationPlace": "10",
+            "stat": [
+              {
+                "type": "minsPlayed",
+                "value": "62"
+              },
+              {
+                "type": "totalSubOff",
+                "value": "1"
+              },
+              {
+                "type": "blockedScoringAtt",
+                "value": "2"
+              },
+              {
+                "type": "cornerTaken",
+                "value": "1"
+              },
+              {
+                "type": "totalScoringAtt",
+                "value": "4"
+              },
+              {
+                "type": "ontargetScoringAtt",
+                "value": "1"
+              },
+              {
+                "type": "totalPass",
+                "value": "27"
+              },
+              {
+                "type": "wonCorners",
+                "value": "2"
+              },
+              {
+                "type": "gameStarted",
+                "value": "1"
+              },
+              {
+                "type": "accuratePass",
+                "value": "26"
+              },
+              {
+                "type": "wasFouled",
+                "value": "2"
+              },
+              {
+                "type": "shotOffTarget",
+                "value": "1"
+              },
+              {
+                "type": "fouls",
+                "value": "1"
+              },
+              {
+                "type": "formationPlace",
+                "value": "10"
+              }
+            ]
+          },
+          {
+            "playerId": "96ts4gj0nt03zrz6bqyy4gnbo",
+            "firstName": "Otabek",
+            "lastName": "Jo‘raqo‘ziev",
+            "shortFirstName": "Otabek",
+            "shortLastName": "Jooraqoziev",
+            "matchName": "O. Jo‘raqo‘ziev",
+            "shirtNumber": 11,
+            "position": "Attacking Midfielder",
+            "positionSide": "Right",
+            "formationPlace": "7",
+            "stat": [
+              {
+                "type": "totalOffside",
+                "value": "1"
+              },
+              {
+                "type": "gameStarted",
+                "value": "1"
+              },
+              {
+                "type": "accuratePass",
+                "value": "14"
+              },
+              {
+                "type": "totalPass",
+                "value": "19"
+              },
+              {
+                "type": "totalSubOff",
+                "value": "1"
+              },
+              {
+                "type": "minsPlayed",
+                "value": "63"
+              },
+              {
+                "type": "formationPlace",
+                "value": "7"
+              }
+            ]
+          },
+          {
+            "playerId": "7ir425iljcvmgj0fnjs8qsxgq",
+            "firstName": "Husain",
+            "lastName": "Norchaev",
+            "shortFirstName": "Husain",
+            "shortLastName": "Norchaev",
+            "matchName": "H. Norchaev",
+            "shirtNumber": 19,
+            "position": "Striker",
+            "positionSide": "Centre",
+            "formationPlace": "9",
+            "stat": [
+              {
+                "type": "gameStarted",
+                "value": "1"
+              },
+              {
+                "type": "totalThrows",
+                "value": "1"
+              },
+              {
+                "type": "accuratePass",
+                "value": "13"
+              },
+              {
+                "type": "shotOffTarget",
+                "value": "1"
+              },
+              {
+                "type": "totalSubOff",
+                "value": "1"
+              },
+              {
+                "type": "minsPlayed",
+                "value": "71"
+              },
+              {
+                "type": "totalTackle",
+                "value": "1"
+              },
+              {
+                "type": "totalScoringAtt",
+                "value": "2"
+              },
+              {
+                "type": "ontargetScoringAtt",
+                "value": "1"
+              },
+              {
+                "type": "totalPass",
+                "value": "15"
+              },
+              {
+                "type": "formationPlace",
+                "value": "9"
+              }
+            ]
+          },
+          {
+            "playerId": "1a1sihg2xjclhxu6aaxnixnca",
+            "firstName": "Odilbek",
+            "lastName": "Abdumajidov",
+            "shortFirstName": "Odilbek",
+            "shortLastName": "Abdumajidov",
+            "matchName": "O. Abdumajidov",
+            "shirtNumber": 15,
+            "position": "Substitute",
+            "subPosition": "Defender",
+            "stat": [
+              {
+                "type": "totalPass",
+                "value": "6"
+              },
+              {
+                "type": "yellowCard",
+                "value": "1"
+              },
+              {
+                "type": "minsPlayed",
+                "value": "10"
+              },
+              {
+                "type": "totalSubOn",
+                "value": "1"
+              },
+              {
+                "type": "fouls",
+                "value": "1"
+              },
+              {
+                "type": "totalClearance",
+                "value": "1"
+              },
+              {
+                "type": "accuratePass",
+                "value": "6"
+              },
+              {
+                "type": "formationPlace",
+                "value": "0"
+              }
+            ]
+          },
+          {
+            "playerId": "97hktcxqt9mi9wv4r5gydamms",
+            "firstName": "Hamidullo",
+            "lastName": "Abdunabiev",
+            "shortFirstName": "Hamidullo",
+            "shortLastName": "Abdunabiev",
+            "matchName": "H. Abdunabiev",
+            "shirtNumber": 21,
+            "position": "Substitute",
+            "subPosition": "Goalkeeper",
+            "stat": [
+              {
+                "type": "formationPlace",
+                "value": "0"
+              }
+            ]
+          },
+          {
+            "playerId": "2clpbungt3x2z4wwr5ecc4iga",
+            "firstName": "Abbosbek",
+            "lastName": "Fayzullaev",
+            "shortFirstName": "Abbosbek",
+            "shortLastName": "Fayzullaev",
+            "matchName": "A. Fayzullaev",
+            "shirtNumber": 14,
+            "position": "Substitute",
+            "subPosition": "Midfielder",
+            "stat": [
+              {
+                "type": "cornerTaken",
+                "value": "1"
+              },
+              {
+                "type": "totalSubOn",
+                "value": "1"
+              },
+              {
+                "type": "minsPlayed",
+                "value": "19"
+              },
+              {
+                "type": "totalTackle",
+                "value": "2"
+              },
+              {
+                "type": "totalPass",
+                "value": "11"
+              },
+              {
+                "type": "wasFouled",
+                "value": "1"
+              },
+              {
+                "type": "accuratePass",
+                "value": "7"
+              },
+              {
+                "type": "wonTackle",
+                "value": "1"
+              },
+              {
+                "type": "wonCorners",
+                "value": "1"
+              },
+              {
+                "type": "formationPlace",
+                "value": "0"
+              }
+            ]
+          },
+          {
+            "playerId": "e91gh5bq3043wqt0huy9v6kx6",
+            "firstName": "Ibrokhim",
+            "lastName": "Ibragimov",
+            "shortFirstName": "Ibrokhim",
+            "shortLastName": "Ibragimov",
+            "matchName": "I. Ibragimov",
+            "shirtNumber": 8,
+            "position": "Substitute",
+            "subPosition": "Midfielder",
+            "stat": [
+              {
+                "type": "totalPass",
+                "value": "13"
+              },
+              {
+                "type": "cornerTaken",
+                "value": "1"
+              },
+              {
+                "type": "totalScoringAtt",
+                "value": "1"
+              },
+              {
+                "type": "minsPlayed",
+                "value": "28"
+              },
+              {
+                "type": "totalTackle",
+                "value": "1"
+              },
+              {
+                "type": "totalSubOn",
+                "value": "1"
+              },
+              {
+                "type": "shotOffTarget",
+                "value": "1"
+              },
+              {
+                "type": "accuratePass",
+                "value": "10"
+              },
+              {
+                "type": "wasFouled",
+                "value": "1"
+              },
+              {
+                "type": "wonTackle",
+                "value": "1"
+              },
+              {
+                "type": "formationPlace",
+                "value": "0"
+              }
+            ]
+          },
+          {
+            "playerId": "c7robvquax4x3k6qjrc3eetck",
+            "firstName": "Ruslanbek",
+            "lastName": "Jiyanov",
+            "shortFirstName": "Ruslanbek",
+            "shortLastName": "Jiyanov",
+            "matchName": "R. Jiyanov",
+            "shirtNumber": 20,
+            "position": "Substitute",
+            "subPosition": "Attacker",
+            "stat": [
+              {
+                "type": "totalPass",
+                "value": "4"
+              },
+              {
+                "type": "minsPlayed",
+                "value": "19"
+              },
+              {
+                "type": "totalSubOn",
+                "value": "1"
+              },
+              {
+                "type": "blockedScoringAtt",
+                "value": "2"
+              },
+              {
+                "type": "totalScoringAtt",
+                "value": "3"
+              },
+              {
+                "type": "shotOffTarget",
+                "value": "1"
+              },
+              {
+                "type": "wonCorners",
+                "value": "2"
+              },
+              {
+                "type": "accuratePass",
+                "value": "2"
+              },
+              {
+                "type": "formationPlace",
+                "value": "0"
+              }
+            ]
+          },
+          {
+            "playerId": "1ev1kn9ul13s0wcg3n319bzmc",
+            "firstName": "Ulug'bek",
+            "lastName": "Khoshimov",
+            "shortFirstName": "Ulugbek",
+            "shortLastName": "Khoshimov",
+            "matchName": "U. Khoshimov",
+            "shirtNumber": 9,
+            "position": "Substitute",
+            "subPosition": "Attacker",
+            "stat": [
+              {
+                "type": "totalPass",
+                "value": "16"
+              },
+              {
+                "type": "ontargetScoringAtt",
+                "value": "1"
+              },
+              {
+                "type": "goals",
+                "value": "1"
+              },
+              {
+                "type": "totalScoringAtt",
+                "value": "1"
+              },
+              {
+                "type": "minsPlayed",
+                "value": "27"
+              },
+              {
+                "type": "totalSubOn",
+                "value": "1"
+              },
+              {
+                "type": "fouls",
+                "value": "2"
+              },
+              {
+                "type": "accuratePass",
+                "value": "15"
+              },
+              {
+                "type": "formationPlace",
+                "value": "0"
+              }
+            ]
+          },
+          {
+            "playerId": "9f36030tu98dvbarzexfr0l7u",
+            "firstName": "Saidazamat",
+            "lastName": "Mirsaidov",
+            "shortFirstName": "Saidazamat",
+            "shortLastName": "Mirsaidov",
+            "matchName": "S. Mirsaidov",
+            "shirtNumber": 2,
+            "position": "Substitute",
+            "subPosition": "Midfielder",
+            "stat": [
+              {
+                "type": "formationPlace",
+                "value": "0"
+              }
+            ]
+          },
+          {
+            "playerId": "e17hgmriovnf77gqvrmlqta1g",
+            "firstName": "Vladimir",
+            "lastName": "Nazarov",
+            "shortFirstName": "Vladimir",
+            "shortLastName": "Nazarov",
+            "matchName": "V. Nazarov",
+            "shirtNumber": 12,
+            "position": "Substitute",
+            "subPosition": "Goalkeeper",
+            "stat": [
+              {
+                "type": "formationPlace",
+                "value": "0"
+              }
+            ]
+          },
+          {
+            "playerId": "6fj2k8aa3uiftayykuzexy80k",
+            "firstName": "Alisher",
+            "lastName": "Odilov",
+            "shortFirstName": "Alisher",
+            "shortLastName": "Odilov",
+            "matchName": "A. Odilov",
+            "shirtNumber": 22,
+            "position": "Substitute",
+            "subPosition": "Attacker",
+            "stat": [
+              {
+                "type": "formationPlace",
+                "value": "0"
+              }
+            ]
+          },
+          {
+            "playerId": "a32903he1rf0w0dwzob7uav4k",
+            "firstName": "Jaloliddin",
+            "lastName": "Sodiqov",
+            "shortFirstName": "Jaloliddin",
+            "shortLastName": "Sodikov",
+            "matchName": "J. Sodiqov",
+            "shirtNumber": 6,
+            "position": "Substitute",
+            "subPosition": "Defender",
+            "stat": [
+              {
+                "type": "formationPlace",
+                "value": "0"
+              }
+            ]
+          },
+          {
+            "playerId": "2ljwms00bo2rjtup8vk8bm3h0",
+            "firstName": "Shahzod",
+            "lastName": "Toirov",
+            "shortFirstName": "Tairov",
+            "shortLastName": "Shakhzod",
+            "matchName": "S. Toirov",
+            "shirtNumber": 16,
+            "position": "Substitute",
+            "subPosition": "Midfielder",
+            "stat": [
+              {
+                "type": "formationPlace",
+                "value": "0"
+              }
+            ]
+          },
+          {
+            "playerId": "e6ttxh6ppqz26qa1393l8eyju",
+            "firstName": "Abubakr Rizo",
+            "lastName": "Turdialiev",
+            "shortFirstName": "Abubakr",
+            "shortLastName": "Turdialiev",
+            "matchName": "A. Turdialiev",
+            "shirtNumber": 4,
+            "position": "Substitute",
+            "subPosition": "Defender",
+            "stat": [
+              {
+                "type": "formationPlace",
+                "value": "0"
+              }
+            ]
+          }
+        ],
+        "teamOfficial": {
+          "id": "cxyits4nfw5zyquafc1u4l7f9",
+          "firstName": "Timur",
+          "lastName": "Kapadze",
+          "type": "manager"
+        },
+        "stat": [
+          {
+            "fh": "6",
+            "sh": "9",
+            "type": "totalTackle",
+            "value": "15"
+          },
+          {
+            "fh": "0",
+            "sh": "3",
+            "type": "saves",
+            "value": "3"
+          },
+          {
+            "fh": "2",
+            "sh": "6",
+            "type": "blockedScoringAtt",
+            "value": "8"
+          },
+          {
+            "fh": "5",
+            "sh": "5",
+            "type": "cornerTaken",
+            "value": "10"
+          },
+          {
+            "fh": "7",
+            "sh": "15",
+            "type": "totalScoringAtt",
+            "value": "22"
+          },
+          {
+            "fh": "0",
+            "sh": "1",
+            "type": "goals",
+            "value": "1"
+          },
+          {
+            "fh": "0",
+            "sh": "1",
+            "type": "penaltyWon",
+            "value": "1"
+          },
+          {
+            "fh": "2",
+            "sh": "3",
+            "type": "ontargetScoringAtt",
+            "value": "5"
+          },
+          {
+            "fh": "0",
+            "sh": "2",
+            "type": "totalYellowCard",
+            "value": "2"
+          },
+          {
+            "fh": "281",
+            "sh": "243",
+            "type": "totalPass",
+            "value": "524"
+          },
+          {
+            "fh": "5",
+            "sh": "5",
+            "type": "wonCorners",
+            "value": "10"
+          },
+          {
+            "fh": "4",
+            "sh": "8",
+            "type": "wonTackle",
+            "value": "12"
+          },
+          {
+            "fh": "11",
+            "sh": "6",
+            "type": "totalThrows",
+            "value": "17"
+          },
+          {
+            "fh": "8",
+            "sh": "4",
+            "type": "fkFoulLost",
+            "value": "12"
+          },
+          {
+            "fh": "6",
+            "sh": "4",
+            "type": "fkFoulWon",
+            "value": "10"
+          },
+          {
+            "fh": "248",
+            "sh": "208",
+            "type": "accuratePass",
+            "value": "456"
+          },
+          {
+            "fh": "0",
+            "sh": "2",
+            "type": "lostCorners",
+            "value": "2"
+          },
+          {
+            "fh": "2",
+            "sh": "5",
+            "type": "totalClearance",
+            "value": "7"
+          },
+          {
+            "fh": "2",
+            "sh": "2",
+            "type": "goalKicks",
+            "value": "4"
+          },
+          {
+            "fh": "3",
+            "sh": "6",
+            "type": "shotOffTarget",
+            "value": "9"
+          },
+          {
+            "fh": "0",
+            "sh": "5",
+            "type": "subsMade",
+            "value": "5"
+          },
+          {
+            "fh": "1",
+            "sh": "0",
+            "type": "totalOffside",
+            "value": "1"
+          },
+          {
+            "fh": "69.1",
+            "sh": "70.1",
+            "type": "possessionPercentage",
+            "value": "69.6"
+          },
+          {
+            "type": "cleanSheet",
+            "value": "1"
+          },
+          {
+            "type": "formationUsed",
+            "value": "4231"
+          }
+        ],
+        "kit": {
+          "id": "15692",
+          "colour1": "#0000FF",
+          "type": "third"
+        }
+      },
+      {
+        "contestantId": "b2ts0ayco2vpm3kl8r3ihyqqd",
+        "formationUsed": "442",
+        "player": [
+          {
+            "playerId": "6pf726in4mkbjyra8hikq1qfo",
+            "firstName": "Rasul",
+            "lastName": "Charyyev",
+            "shortFirstName": "Rasul",
+            "shortLastName": "Charyyev",
+            "matchName": "R. Charyyev",
+            "shirtNumber": 22,
+            "position": "Goalkeeper",
+            "positionSide": "Centre",
+            "formationPlace": "1",
+            "stat": [
+              {
+                "type": "accuratePass",
+                "value": "18"
+              },
+              {
+                "type": "penaltyFaced",
+                "value": "1"
+              },
+              {
+                "type": "totalClearance",
+                "value": "5"
+              },
+              {
+                "type": "lostCorners",
+                "value": "3"
+              },
+              {
+                "type": "penGoalsConceded",
+                "value": "1"
+              },
+              {
+                "type": "gameStarted",
+                "value": "1"
+              },
+              {
+                "type": "goalKicks",
+                "value": "15"
+              },
+              {
+                "type": "goalsConceded",
+                "value": "1"
+              },
+              {
+                "type": "saves",
+                "value": "4"
+              },
+              {
+                "type": "minsPlayed",
+                "value": "90"
+              },
+              {
+                "type": "totalPass",
+                "value": "32"
+              },
+              {
+                "type": "formationPlace",
+                "value": "1"
+              }
+            ]
+          },
+          {
+            "playerId": "erylgtiyocevhqtooszm023h0",
+            "firstName": "Arzuvguly",
+            "lastName": "Sapargulyyev",
+            "shortFirstName": "Arzuvguly",
+            "shortLastName": "Sapargulyyev",
+            "matchName": "A. Sapargulyyev",
+            "shirtNumber": 19,
+            "position": "Defender",
+            "positionSide": "Left",
+            "formationPlace": "3",
+            "stat": [
+              {
+                "type": "totalThrows",
+                "value": "7"
+              },
+              {
+                "type": "gameStarted",
+                "value": "1"
+              },
+              {
+                "type": "totalClearance",
+                "value": "2"
+              },
+              {
+                "type": "wasFouled",
+                "value": "1"
+              },
+              {
+                "type": "penGoalsConceded",
+                "value": "1"
+              },
+              {
+                "type": "accuratePass",
+                "value": "12"
+              },
+              {
+                "type": "minsPlayed",
+                "value": "90"
+              },
+              {
+                "type": "totalTackle",
+                "value": "1"
+              },
+              {
+                "type": "goalsConceded",
+                "value": "1"
+              },
+              {
+                "type": "cornerTaken",
+                "value": "2"
+              },
+              {
+                "type": "totalPass",
+                "value": "24"
+              },
+              {
+                "type": "formationPlace",
+                "value": "3"
+              }
+            ]
+          },
+          {
+            "playerId": "ae5ykymqwxobb9edb0q8f7uok",
+            "firstName": "Yhlas",
+            "lastName": "Toydjanov",
+            "shortFirstName": "Yhlas",
+            "shortLastName": "Toyjanov",
+            "matchName": "Y. Toydjanov",
+            "shirtNumber": 2,
+            "position": "Defender",
+            "positionSide": "Left/Centre",
+            "formationPlace": "6",
+            "stat": [
+              {
+                "type": "totalTackle",
+                "value": "4"
+              },
+              {
+                "type": "minsPlayed",
+                "value": "90"
+              },
+              {
+                "type": "totalScoringAtt",
+                "value": "2"
+              },
+              {
+                "type": "goalsConceded",
+                "value": "1"
+              },
+              {
+                "type": "ontargetScoringAtt",
+                "value": "2"
+              },
+              {
+                "type": "totalPass",
+                "value": "37"
+              },
+              {
+                "type": "gameStarted",
+                "value": "1"
+              },
+              {
+                "type": "wonCorners",
+                "value": "1"
+              },
+              {
+                "type": "wonTackle",
+                "value": "2"
+              },
+              {
+                "type": "accuratePass",
+                "value": "29"
+              },
+              {
+                "type": "penGoalsConceded",
+                "value": "1"
+              },
+              {
+                "type": "lostCorners",
+                "value": "3"
+              },
+              {
+                "type": "totalClearance",
+                "value": "4"
+              },
+              {
+                "type": "formationPlace",
+                "value": "6"
+              }
+            ]
+          },
+          {
+            "playerId": "az33blnf4413if50hg7ln90k4",
+            "firstName": "Dovran",
+            "lastName": "Berdiyev",
+            "shortFirstName": "Dovran",
+            "shortLastName": "Berdiyev",
+            "matchName": "D. Berdiyev",
+            "shirtNumber": 15,
+            "position": "Defender",
+            "positionSide": "Centre/Right",
+            "formationPlace": "5",
+            "stat": [
+              {
+                "type": "totalPass",
+                "value": "18"
+              },
+              {
+                "type": "goalsConceded",
+                "value": "1"
+              },
+              {
+                "type": "yellowCard",
+                "value": "1"
+              },
+              {
+                "type": "totalSubOff",
+                "value": "1"
+              },
+              {
+                "type": "totalTackle",
+                "value": "1"
+              },
+              {
+                "type": "minsPlayed",
+                "value": "83"
+              },
+              {
+                "type": "fouls",
+                "value": "1"
+              },
+              {
+                "type": "penGoalsConceded",
+                "value": "1"
+              },
+              {
+                "type": "wasFouled",
+                "value": "1"
+              },
+              {
+                "type": "lostCorners",
+                "value": "2"
+              },
+              {
+                "type": "totalClearance",
+                "value": "3"
+              },
+              {
+                "type": "accuratePass",
+                "value": "14"
+              },
+              {
+                "type": "gameStarted",
+                "value": "1"
+              },
+              {
+                "type": "totalThrows",
+                "value": "3"
+              },
+              {
+                "type": "formationPlace",
+                "value": "5"
+              }
+            ]
+          },
+          {
+            "playerId": "7528dae2cbu135opbefvnpatw",
+            "firstName": "Roman",
+            "lastName": "Galkin",
+            "shortFirstName": "Roman",
+            "shortLastName": "Galkin",
+            "matchName": "R. Galkin",
+            "shirtNumber": 6,
+            "position": "Defender",
+            "positionSide": "Right",
+            "formationPlace": "2",
+            "stat": [
+              {
+                "type": "gameStarted",
+                "value": "1"
+              },
+              {
+                "type": "wonTackle",
+                "value": "1"
+              },
+              {
+                "type": "totalThrows",
+                "value": "5"
+              },
+              {
+                "type": "wasFouled",
+                "value": "2"
+              },
+              {
+                "type": "totalClearance",
+                "value": "1"
+              },
+              {
+                "type": "accuratePass",
+                "value": "4"
+              },
+              {
+                "type": "totalSubOff",
+                "value": "1"
+              },
+              {
+                "type": "totalTackle",
+                "value": "1"
+              },
+              {
+                "type": "minsPlayed",
+                "value": "45"
+              },
+              {
+                "type": "totalPass",
+                "value": "8"
+              },
+              {
+                "type": "formationPlace",
+                "value": "2"
+              }
+            ]
+          },
+          {
+            "playerId": "mwnzoowbtblqirq40y34ld78",
+            "firstName": "Şamämmet",
+            "lastName": "Şanazarowiç Hydyrow",
+            "shortFirstName": "Samämmet",
+            "shortLastName": "Hydyrow",
+            "matchName": "S. Hydyrow",
+            "shirtNumber": 11,
+            "position": "Midfielder",
+            "positionSide": "Left",
+            "formationPlace": "11",
+            "stat": [
+              {
+                "type": "fouls",
+                "value": "2"
+              },
+              {
+                "type": "shotOffTarget",
+                "value": "1"
+              },
+              {
+                "type": "gameStarted",
+                "value": "1"
+              },
+              {
+                "type": "penGoalsConceded",
+                "value": "1"
+              },
+              {
+                "type": "wasFouled",
+                "value": "2"
+              },
+              {
+                "type": "totalClearance",
+                "value": "1"
+              },
+              {
+                "type": "accuratePass",
+                "value": "5"
+              },
+              {
+                "type": "totalPass",
+                "value": "6"
+              },
+              {
+                "type": "minsPlayed",
+                "value": "90"
+              },
+              {
+                "type": "goalsConceded",
+                "value": "1"
+              },
+              {
+                "type": "totalScoringAtt",
+                "value": "1"
+              },
+              {
+                "type": "formationPlace",
+                "value": "11"
+              }
+            ]
+          },
+          {
+            "playerId": "2x33u5kdq4b95ldwzj8qtu3je",
+            "firstName": "Meylis",
+            "lastName": "Diniyev",
+            "shortFirstName": "Meylis",
+            "shortLastName": "Diniyev",
+            "matchName": "M. Diniyev",
+            "shirtNumber": 10,
+            "position": "Midfielder",
+            "positionSide": "Left/Centre",
+            "formationPlace": "8",
+            "stat": [
+              {
+                "type": "totalPass",
+                "value": "18"
+              },
+              {
+                "type": "goalsConceded",
+                "value": "1"
+              },
+              {
+                "type": "totalScoringAtt",
+                "value": "1"
+              },
+              {
+                "type": "minsPlayed",
+                "value": "90"
+              },
+              {
+                "type": "totalTackle",
+                "value": "1"
+              },
+              {
+                "type": "fouls",
+                "value": "2"
+              },
+              {
+                "type": "shotOffTarget",
+                "value": "1"
+              },
+              {
+                "type": "wasFouled",
+                "value": "2"
+              },
+              {
+                "type": "penGoalsConceded",
+                "value": "1"
+              },
+              {
+                "type": "totalClearance",
+                "value": "1"
+              },
+              {
+                "type": "accuratePass",
+                "value": "9"
+              },
+              {
+                "type": "gameStarted",
+                "value": "1"
+              },
+              {
+                "type": "formationPlace",
+                "value": "8"
+              }
+            ]
+          },
+          {
+            "playerId": "3dgby1vbchv36vojjlo0r5e96",
+            "firstName": "Mirza",
+            "lastName": "Beknazarov",
+            "shortFirstName": "Mirza",
+            "shortLastName": "Beknazarov",
+            "matchName": "M. Beknazarov",
+            "shirtNumber": 8,
+            "position": "Midfielder",
+            "positionSide": "Centre/Right",
+            "formationPlace": "4",
+            "stat": [
+              {
+                "type": "totalTackle",
+                "value": "2"
+              },
+              {
+                "type": "minsPlayed",
+                "value": "90"
+              },
+              {
+                "type": "goalsConceded",
+                "value": "1"
+              },
+              {
+                "type": "totalPass",
+                "value": "23"
+              },
+              {
+                "type": "gameStarted",
+                "value": "1"
+              },
+              {
+                "type": "accuratePass",
+                "value": "14"
+              },
+              {
+                "type": "penGoalsConceded",
+                "value": "1"
+              },
+              {
+                "type": "wasFouled",
+                "value": "2"
+              },
+              {
+                "type": "formationPlace",
+                "value": "4"
+              }
+            ]
+          },
+          {
+            "playerId": "5ne7h5jg4ltpqcyrnpceq92c4",
+            "firstName": "Rahman",
+            "lastName": "Orazmyrat ogly Myratberdiýew",
+            "shortFirstName": "Rahman",
+            "shortLastName": "Myratberdiyew",
+            "matchName": "R. Myratberdiýew",
+            "shirtNumber": 7,
+            "position": "Midfielder",
+            "positionSide": "Right",
+            "formationPlace": "7",
+            "stat": [
+              {
+                "type": "totalTackle",
+                "value": "1"
+              },
+              {
+                "type": "minsPlayed",
+                "value": "59"
+              },
+              {
+                "type": "totalSubOff",
+                "value": "1"
+              },
+              {
+                "type": "totalPass",
+                "value": "9"
+              },
+              {
+                "type": "wonTackle",
+                "value": "1"
+              },
+              {
+                "type": "gameStarted",
+                "value": "1"
+              },
+              {
+                "type": "accuratePass",
+                "value": "8"
+              },
+              {
+                "type": "wasFouled",
+                "value": "1"
+              },
+              {
+                "type": "fouls",
+                "value": "1"
+              },
+              {
+                "type": "formationPlace",
+                "value": "7"
+              }
+            ]
+          },
+          {
+            "playerId": "a6i7yovwpqulf4omrn26tp0yc",
+            "firstName": "Begençmyrat",
+            "lastName": "Bekmyradowiç Myradow",
+            "shortFirstName": "Begencmyrat",
+            "shortLastName": "Myradow",
+            "matchName": "B. Muradov",
+            "shirtNumber": 9,
+            "position": "Striker",
+            "positionSide": "Left/Centre",
+            "formationPlace": "9",
+            "stat": [
+              {
+                "type": "yellowCard",
+                "value": "1"
+              },
+              {
+                "type": "minsPlayed",
+                "value": "90"
+              },
+              {
+                "type": "goalsConceded",
+                "value": "1"
+              },
+              {
+                "type": "totalScoringAtt",
+                "value": "1"
+              },
+              {
+                "type": "ontargetScoringAtt",
+                "value": "1"
+              },
+              {
+                "type": "totalPass",
+                "value": "12"
+              },
+              {
+                "type": "gameStarted",
+                "value": "1"
+              },
+              {
+                "type": "totalThrows",
+                "value": "4"
+              },
+              {
+                "type": "penGoalsConceded",
+                "value": "1"
+              },
+              {
+                "type": "totalClearance",
+                "value": "1"
+              },
+              {
+                "type": "accuratePass",
+                "value": "7"
+              },
+              {
+                "type": "fouls",
+                "value": "4"
+              },
+              {
+                "type": "formationPlace",
+                "value": "9"
+              }
+            ]
+          },
+          {
+            "playerId": "1b15l7d3r50d5sfzf6rel7be2",
+            "firstName": "Velmyrat",
+            "lastName": "Ballakov",
+            "shortFirstName": "Velmyrat",
+            "shortLastName": "Ballakov",
+            "matchName": "V. Ballakov",
+            "shirtNumber": 23,
+            "position": "Striker",
+            "positionSide": "Centre/Right",
+            "formationPlace": "10",
+            "captain": "yes",
+            "stat": [
+              {
+                "type": "goalsConceded",
+                "value": "1"
+              },
+              {
+                "type": "yellowCard",
+                "value": "1"
+              },
+              {
+                "type": "totalTackle",
+                "value": "2"
+              },
+              {
+                "type": "minsPlayed",
+                "value": "90"
+              },
+              {
+                "type": "totalPass",
+                "value": "23"
+              },
+              {
+                "type": "totalClearance",
+                "value": "1"
+              },
+              {
+                "type": "penGoalsConceded",
+                "value": "1"
+              },
+              {
+                "type": "wasFouled",
+                "value": "1"
+              },
+              {
+                "type": "accuratePass",
+                "value": "16"
+              },
+              {
+                "type": "totalThrows",
+                "value": "1"
+              },
+              {
+                "type": "wonTackle",
+                "value": "1"
+              },
+              {
+                "type": "gameStarted",
+                "value": "1"
+              },
+              {
+                "type": "fouls",
+                "value": "2"
+              },
+              {
+                "type": "formationPlace",
+                "value": "10"
+              }
+            ]
+          },
+          {
+            "playerId": "55v4gg1nj5lrrmsovtheqv3mc",
+            "firstName": "Rustem",
+            "lastName": "Ahallyyev",
+            "shortFirstName": "Rustem",
+            "shortLastName": "Ahallyyev",
+            "matchName": "R. Ahallyyev",
+            "shirtNumber": 16,
+            "position": "Substitute",
+            "subPosition": "Goalkeeper",
+            "stat": [
+              {
+                "type": "formationPlace",
+                "value": "0"
+              }
+            ]
+          },
+          {
+            "playerId": "c54sw0vizqoyg845if7f6qz2s",
+            "firstName": "Begmyrat",
+            "lastName": "Arbatov",
+            "shortFirstName": "Begmyrat",
+            "shortLastName": "Arbatov",
+            "matchName": "B. Arbatov",
+            "shirtNumber": 21,
+            "position": "Substitute",
+            "subPosition": "Defender",
+            "stat": [
+              {
+                "type": "formationPlace",
+                "value": "0"
+              }
+            ]
+          },
+          {
+            "playerId": "3044d8bw1ex8moi73egjuledw",
+            "firstName": "Rovshen",
+            "lastName": "Baylyyev",
+            "shortFirstName": "Rovshen",
+            "shortLastName": "Baylyyev",
+            "matchName": "R. Baylyyev",
+            "shirtNumber": 18,
+            "position": "Substitute",
+            "subPosition": "Midfielder",
+            "stat": [
+              {
+                "type": "formationPlace",
+                "value": "0"
+              }
+            ]
+          },
+          {
+            "playerId": "7m9xe06birsiunttrfh7apjpw",
+            "firstName": "Teymur",
+            "lastName": "Charyyev",
+            "shortFirstName": "Teymur",
+            "shortLastName": "Charyyev",
+            "matchName": "T. Charyyev",
+            "shirtNumber": 14,
+            "position": "Substitute",
+            "subPosition": "Midfielder",
+            "stat": [
+              {
+                "type": "shotOffTarget",
+                "value": "1"
+              },
+              {
+                "type": "totalThrows",
+                "value": "2"
+              },
+              {
+                "type": "wonTackle",
+                "value": "1"
+              },
+              {
+                "type": "accuratePass",
+                "value": "5"
+              },
+              {
+                "type": "totalClearance",
+                "value": "2"
+              },
+              {
+                "type": "lostCorners",
+                "value": "1"
+              },
+              {
+                "type": "penGoalsConceded",
+                "value": "1"
+              },
+              {
+                "type": "totalPass",
+                "value": "11"
+              },
+              {
+                "type": "totalSubOn",
+                "value": "1"
+              },
+              {
+                "type": "totalTackle",
+                "value": "2"
+              },
+              {
+                "type": "minsPlayed",
+                "value": "31"
+              },
+              {
+                "type": "totalScoringAtt",
+                "value": "1"
+              },
+              {
+                "type": "goalsConceded",
+                "value": "1"
+              },
+              {
+                "type": "formationPlace",
+                "value": "0"
+              }
+            ]
+          },
+          {
+            "playerId": "20fmo9in5btqbnh75nin2gfvu",
+            "firstName": "Batyr",
+            "lastName": "Gaylyyev",
+            "shortFirstName": "Batyr",
+            "shortLastName": "Gaylyyev",
+            "matchName": "B. Gaylyyev",
+            "shirtNumber": 1,
+            "position": "Substitute",
+            "subPosition": "Midfielder",
+            "stat": [
+              {
+                "type": "formationPlace",
+                "value": "0"
+              }
+            ]
+          },
+          {
+            "playerId": "2xbqef9l2yjaamlhuls6tasyc",
+            "firstName": "Hojanazar",
+            "lastName": "Gurbanov",
+            "shortFirstName": "Hojanazar",
+            "shortLastName": "Gurbanov",
+            "matchName": "H. Gurbanov",
+            "shirtNumber": 20,
+            "position": "Substitute",
+            "subPosition": "Midfielder",
+            "stat": [
+              {
+                "type": "formationPlace",
+                "value": "0"
+              }
+            ]
+          },
+          {
+            "playerId": "6pkjhogl2q0xuiy5qvlq2um8k",
+            "firstName": "Wepa",
+            "lastName": "Jumaýew",
+            "shortFirstName": "Wepa",
+            "shortLastName": "Jumayew",
+            "matchName": "W. Jumaýew",
+            "shirtNumber": 4,
+            "position": "Substitute",
+            "subPosition": "Midfielder",
+            "stat": [
+              {
+                "type": "totalPass",
+                "value": "11"
+              },
+              {
+                "type": "goalsConceded",
+                "value": "1"
+              },
+              {
+                "type": "yellowCard",
+                "value": "1"
+              },
+              {
+                "type": "minsPlayed",
+                "value": "45"
+              },
+              {
+                "type": "totalTackle",
+                "value": "1"
+              },
+              {
+                "type": "totalSubOn",
+                "value": "1"
+              },
+              {
+                "type": "penaltyConceded",
+                "value": "1"
+              },
+              {
+                "type": "fouls",
+                "value": "1"
+              },
+              {
+                "type": "penGoalsConceded",
+                "value": "1"
+              },
+              {
+                "type": "totalClearance",
+                "value": "3"
+              },
+              {
+                "type": "lostCorners",
+                "value": "1"
+              },
+              {
+                "type": "accuratePass",
+                "value": "10"
+              },
+              {
+                "type": "totalThrows",
+                "value": "1"
+              },
+              {
+                "type": "wonTackle",
+                "value": "1"
+              },
+              {
+                "type": "formationPlace",
+                "value": "0"
+              }
+            ]
+          },
+          {
+            "playerId": "1id0ndi0g344jz2raf7q3fifo",
+            "firstName": "Ambyar",
+            "lastName": "Mahmudov",
+            "shortFirstName": "Ambyar",
+            "shortLastName": "Mahmudov",
+            "matchName": "A. Mahmudov",
+            "shirtNumber": 12,
+            "position": "Substitute",
+            "subPosition": "Defender",
+            "stat": [
+              {
+                "type": "formationPlace",
+                "value": "0"
+              }
+            ]
+          },
+          {
+            "playerId": "435zzjvwezk6ym3iputy74lqs",
+            "firstName": "Dayanch",
+            "lastName": "Meredov",
+            "shortFirstName": "Dayanch",
+            "shortLastName": "Meredov",
+            "matchName": "D. Meredov",
+            "shirtNumber": 17,
+            "position": "Substitute",
+            "subPosition": "Attacker",
+            "stat": [
+              {
+                "type": "totalClearance",
+                "value": "1"
+              },
+              {
+                "type": "wonCorners",
+                "value": "1"
+              },
+              {
+                "type": "totalSubOn",
+                "value": "1"
+              },
+              {
+                "type": "minsPlayed",
+                "value": "7"
+              },
+              {
+                "type": "formationPlace",
+                "value": "0"
+              }
+            ]
+          },
+          {
+            "playerId": "8tdmmmgrcz3m1xrmbo12iwglw",
+            "firstName": "Oraz",
+            "lastName": "Orazov",
+            "shortFirstName": "Oraz",
+            "shortLastName": "Orazov",
+            "matchName": "O. Orazov",
+            "shirtNumber": 3,
+            "position": "Substitute",
+            "subPosition": "Defender",
+            "stat": [
+              {
+                "type": "formationPlace",
+                "value": "0"
+              }
+            ]
+          },
+          {
+            "playerId": "9xpngkxkss8b6oe2vzi0qkfmc",
+            "firstName": "Arslan",
+            "lastName": "Saparov",
+            "shortFirstName": "Arslan",
+            "shortLastName": "Saparov",
+            "knownName": "Arslan Saparov",
+            "matchName": "A. Saparov",
+            "shirtNumber": 13,
+            "position": "Substitute",
+            "subPosition": "Attacker",
+            "stat": [
+              {
+                "type": "formationPlace",
+                "value": "0"
+              }
+            ]
+          },
+          {
+            "playerId": "7gheq59qraa8fpi5wwx7y1as",
+            "firstName": "Ruslan",
+            "lastName": "Tajiyev",
+            "shortFirstName": "Ruslan",
+            "shortLastName": "Tajiyev",
+            "matchName": "R. Tajiyev",
+            "shirtNumber": 5,
+            "position": "Substitute",
+            "subPosition": "Midfielder",
+            "stat": [
+              {
+                "type": "formationPlace",
+                "value": "0"
+              }
+            ]
+          }
+        ],
+        "teamOfficial": {
+          "id": "9x356iuachi902pe5wdbuqr6c",
+          "firstName": "Ahmet",
+          "lastName": "Agamyradov",
+          "type": "manager"
+        },
+        "stat": [
+          {
+            "fh": "6",
+            "sh": "7",
+            "type": "fkFoulLost",
+            "value": "13"
+          },
+          {
+            "fh": "3",
+            "sh": "4",
+            "type": "wonTackle",
+            "value": "7"
+          },
+          {
+            "fh": "10",
+            "sh": "13",
+            "type": "totalThrows",
+            "value": "23"
+          },
+          {
+            "fh": "0",
+            "sh": "2",
+            "type": "wonCorners",
+            "value": "2"
+          },
+          {
+            "fh": "5",
+            "sh": "5",
+            "type": "lostCorners",
+            "value": "10"
+          },
+          {
+            "fh": "14",
+            "sh": "11",
+            "type": "totalClearance",
+            "value": "25"
+          },
+          {
+            "fh": "0",
+            "sh": "1",
+            "type": "penGoalsConceded",
+            "value": "1"
+          },
+          {
+            "fh": "83",
+            "sh": "68",
+            "type": "accuratePass",
+            "value": "151"
+          },
+          {
+            "fh": "8",
+            "sh": "4",
+            "type": "fkFoulWon",
+            "value": "12"
+          },
+          {
+            "fh": "0",
+            "sh": "1",
+            "type": "penaltyFaced",
+            "value": "1"
+          },
+          {
+            "fh": "30.9",
+            "sh": "29.9",
+            "type": "possessionPercentage",
+            "value": "30.4"
+          },
+          {
+            "fh": "0",
+            "sh": "1",
+            "type": "penaltyConceded",
+            "value": "1"
+          },
+          {
+            "fh": "0",
+            "sh": "3",
+            "type": "subsMade",
+            "value": "3"
+          },
+          {
+            "fh": "7",
+            "sh": "8",
+            "type": "goalKicks",
+            "value": "15"
+          },
+          {
+            "fh": "1",
+            "sh": "2",
+            "type": "shotOffTarget",
+            "value": "3"
+          },
+          {
+            "fh": "2",
+            "sh": "2",
+            "type": "saves",
+            "value": "4"
+          },
+          {
+            "fh": "6",
+            "sh": "10",
+            "type": "totalTackle",
+            "value": "16"
+          },
+          {
+            "fh": "0",
+            "sh": "1",
+            "type": "goalsConceded",
+            "value": "1"
+          },
+          {
+            "fh": "1",
+            "sh": "5",
+            "type": "totalScoringAtt",
+            "value": "6"
+          },
+          {
+            "fh": "0",
+            "sh": "2",
+            "type": "cornerTaken",
+            "value": "2"
+          },
+          {
+            "fh": "0",
+            "sh": "3",
+            "type": "ontargetScoringAtt",
+            "value": "3"
+          },
+          {
+            "fh": "127",
+            "sh": "105",
+            "type": "totalPass",
+            "value": "232"
+          },
+          {
+            "fh": "1",
+            "sh": "3",
+            "type": "totalYellowCard",
+            "value": "4"
+          },
+          {
+            "type": "formationUsed",
+            "value": "442"
+          }
+        ],
+        "kit": {
+          "id": "15693",
+          "colour1": "#FFFFFF",
+          "type": "third"
+        }
+      }
+    ],
+    "matchDetailsExtra": {
+      "attendance": "28670",
+      "matchOfficial": [
+        {
+          "id": "38zbh0edefwouek4786w6e3u1",
+          "type": "Main",
+          "firstName": "Hanna",
+          "lastName": "Hattab"
+        },
+        {
+          "id": "dfugnufvngb3y2mvamul3v5jp",
+          "type": "Lineman 1",
+          "firstName": "Ali",
+          "lastName": "Ahmad"
+        },
+        {
+          "id": "w035jydwv4iuc2pp6k7tsonp",
+          "type": "Lineman 2",
+          "firstName": "Owen",
+          "lastName": "Goldrick"
+        },
+        {
+          "id": "bhd83sm8b62rrhtomasxhyuol",
+          "type": "Fourth official",
+          "firstName": "Jonathon",
+          "lastName": "Barreiro"
+        }
+      ]
+    }
+  }
+}
