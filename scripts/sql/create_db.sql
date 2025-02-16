@@ -71,15 +71,12 @@ create or replace table match_details (
 
 -- Players
 create or replace table players (
-    matchId varchar not null,
     contestantId varchar not null,
     playerId varchar,
     playerKnownName varchar not null,
     playerMatchName varchar not null,
-    playerPosition varchar not null,
     primary key(playerId),
     foreign key(contestantId) references contestants(contestantId),
-    foreign key(matchId) references matches_info(matchId)
 );
 
 -- Events
@@ -124,7 +121,7 @@ create or replace table xgoal (
     contestantId varchar not null,
     matchId varchar not null,
     playerId varchar not null,
-    stat array not null,
+    stats array not null,
     primary key(contestantId, matchId, playerId),
     foreign key(contestantId) references contestants(contestantId),
     foreign key(matchId) references matches_info(matchId),
@@ -132,13 +129,23 @@ create or replace table xgoal (
 );
 
 -- General stats
-create or replace table stats (
+create or replace table player_stats (
     contestantId varchar not null,
     matchId varchar not null,
     playerId varchar not null,
-    stat array not null,
+    stats array not null,
     primary key(contestantId, matchId, playerId),
     foreign key(contestantId) references contestants(contestantId),
     foreign key(matchId) references matches_info(matchId),
     foreign key(playerId) references players(playerId)
+);
+
+create or replace table contestant_stats (
+    contestantId varchar not null,
+    matchId varchar not null,
+    generalStats array not null,
+    xgoalStats array not null,
+    primary key(contestantId, matchId),
+    foreign key(contestantId) references contestants(contestantId),
+    foreign key(matchId) references matches_info(matchId)
 );
