@@ -2,7 +2,7 @@
 import streamlit as st
 
 from snowflake.snowpark import Session
-from PIL import Image
+from util import render_image
 from first_time_setup import render as render_first_time_setup, get_is_first_time_setup_dismissed
 
 # Render function
@@ -25,7 +25,8 @@ def render(session: Session):
 
     col1, col2 = st.columns([1.1, 5])
 
-    col1.image("./Image.png", width=150, output_format='PNG')
+    with col1:
+        render_image("Image.png")
     col2.title("Vietnam National Team Data App")
 
     st.header("Introduction")

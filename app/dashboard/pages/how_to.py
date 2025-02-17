@@ -9,6 +9,7 @@ import matplotlib.font_manager as fm  # Import fonts
 # Draw pitches for the shot map
 from snowflake.snowpark import Session
 from first_time_setup import render as render_first_time_setup, get_is_first_time_setup_dismissed
+from util import render_figure
 from mplsoccer import Pitch
 
 mpl.rcParams['figure.dpi'] = 300
@@ -1141,7 +1142,7 @@ def render(session: Session):
                 xgoalFile=xgoalFile,
                 eventsFile=eventsFile
             )
-            st.pyplot(fig)
+            render_figure(fig)
 
             # Instructions to read the xG timeline
             st.subheader(
@@ -1197,7 +1198,7 @@ def render(session: Session):
                 directory=directory,
                 eventsFile=eventsFile
             )
-            st.pyplot(fig)
+            render_figure(fig)
 
             # Instructions to read the shot map
             st.subheader(
@@ -1243,7 +1244,7 @@ def render(session: Session):
                 directory=directory,
                 passMatrixFile=passnetworkFile
             )
-            st.pyplot(fig)
+            render_figure(fig)
 
             # Instructions on how to read a passing network
             st.subheader(
