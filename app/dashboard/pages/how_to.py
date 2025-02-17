@@ -14,11 +14,10 @@ from mplsoccer import Pitch
 mpl.rcParams['figure.dpi'] = 300
 
 # Global variables
-directory = '../../../data/2022 World Cup Asian Qualifiers/'
+directory = 'data/2022 World Cup Asian Qualifiers/'
 xgoalFile = 'JPN_VIE_xgoal_stats.json'
 eventsFile = 'JPN_VIE_events.json'
 passnetworkFile = 'JPN_VIE_pass_matrix.json'
-statsFile = 'JPN_VIE_stats.json'
 
 # Import the fonts from the same folder as this code
 robotoRegular = fm.FontProperties(fname='./Roboto-Regular.ttf')
@@ -37,7 +36,7 @@ def open_json(directory: str, file: str):
 # Function to create the xG timeline
 
 
-def xG_timeline(directory: str, xgoalFile: str, eventsFile: str):
+def xG_timeline(directory: str, xgoalFile: str, eventsFile: str) -> plt.Figure:
     # Variables to store the length of each half
     first_half_time = 45
     second_half_time = 45
@@ -136,7 +135,8 @@ def xG_timeline(directory: str, xgoalFile: str, eventsFile: str):
     }
 
     # Add the sample dataset to the data frame
-    xg_data = xg_data.append(xGoalEvent, ignore_index=True)
+    xg_data = pd.concat([xg_data, pd.DataFrame(
+        xGoalEvent, index=[0])], ignore_index=True)
 
     # Declare variables to store the individual and cumulated expected goals
     homeXGoal = 0
@@ -270,281 +270,283 @@ def xG_timeline(directory: str, xgoalFile: str, eventsFile: str):
         xGoalEvent['awayXGoal'] = awayXGoal
 
         # Add each event to the big dataframe
-        xg_data = xg_data.append(xGoalEvent, ignore_index=True)
+        xg_data = pd.concat([xg_data, pd.DataFrame(
+            xGoalEvent, index=[0])], ignore_index=True)
 
-        home_colour = 'darkblue'
-        home_edge_colour = 'white'
+    home_colour = 'darkblue'
+    home_edge_colour = 'white'
 
-        away_colour = 'red'
-        away_edge_colour = 'yellow'
+    away_colour = 'red'
+    away_edge_colour = 'yellow'
 
-        # Declare a couple of variables to use
-        max_xg = 0
-        graph_end_time = 0
+    # Declare a couple of variables to use
+    max_xg = 0
+    graph_end_time = 0
+    isextratime = False
+
+    # Check if the home team's total xG is larger than the away team's total xG or not...
+    # If it is...
+    if (xg_data['homeXGoal'].iloc[-1] >= xg_data['awayXGoal'].iloc[-1]):
+
+        # ...then assign the home team's total xG to the max_xg variable.
+        # We also round it up to one decimal number because
+        # this variable will be used to set the limit of the y axis of our timeline.
+
+        max_xg = round(xg_data['homeXGoal'].iloc[-1], 1)
+
+        # If the match's largest xG is smaller or equal to 2...
+        if (max_xg <= 2):
+            # ...then create two lists that...
+            # ...store the ticks values...
+            y_times = [0, 0.25, 0.5, 0.75,
+                       1, 1.25, 1.5, 1.75, 2]
+            # ...and the ticks labels...
+            y_labels = ["0", "0.25", "0.5", "0.75",
+                        "1", "1.25", "1.5", "1.75", "2"]
+            # to use when drawing the timeline.
+        # If the largest xG is larger than 2, but smaller or equal to 3.5...
+        elif (max_xg <= 3.5):
+            # ...then make these lists slightly less detailed than the previous two.
+            y_times = [0, 0.5, 1, 1.5, 2, 2.5, 3, 3.5]
+            y_labels = ["0", "0.5", "1",
+                        "1.5", "2", "2.5", "3", "3.5"]
+        else:  # If the largest xG is larger than 3.5...
+            # ...then make both lists even less detailed than the previous two.
+            y_times = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+            y_labels = ["0", "1", "2", "3", "4",
+                        "5", "6", "7", "8", "9", "10"]
+
+    # If the away team's xG is larger than the home team's xG...
+    # ...do the same steps for the away team's xG...
+    else:
+        # ...including assign the away team's total xG to the max_xg variable.
+        max_xg = round(xg_data['awayXGoal'].iloc[-1], 1)
+
+        if (max_xg <= 2):
+            y_times = [0, 0.25, 0.5, 0.75,
+                       1, 1.25, 1.5, 1.75, 2]
+            y_labels = ["0", "0.25", "0.5", "0.75",
+                        "1", "1.25", "1.5", "1.75", "2"]
+        elif (max_xg <= 3.5):
+            y_times = [0, 0.5, 1, 1.5, 2, 2.5, 3, 3.5]
+            y_labels = ["0", "0.5", "1",
+                        "1.5", "2", "2.5", "3", "3.5"]
+        else:
+            y_times = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+            y_labels = ["0", "1", "2", "3", "4",
+                        "5", "6", "7", "8", "9", "10"]
+
+    # Calculate the match length
+    match_length = first_half_time + second_half_time + \
+        first_extra_time + second_extra_time
+
+    # Get the time when the last shot was made in this match
+    last_shot = xg_data['minute'].iloc[-1]
+
+    # Check if the match is played through to the extra time or not
+    if (second_extra_time == 0):  # If it is not then...
+        # ...calculate the minute that the graph will end by... (it's obvious through the names of the used variables!)
+        graph_end_time = match_length + gap_width
         isextratime = False
+    else:  # If it is played to extra time then do a similar step
+        # (gap_width * 3) here is basically because we have three gaps separating the four halves played.
+        graph_end_time = match_length + (gap_width * 3)
+        isextratime = True
+    # We also assign the True/False value to the isextratime variable for the code below.
 
-        # Check if the home team's total xG is larger than the away team's total xG or not...
-        # If it is...
-        if (xg_data['homeXGoal'].iloc[-1] >= xg_data['awayXGoal'].iloc[-1]):
+    # Create three variables to store the length and the number of gaps used for each half
+    tmp1st = first_half_time
+    tmp2nd = first_half_time + gap_width + second_half_time
+    tmp1et = first_half_time + gap_width + \
+        second_half_time + gap_width + first_extra_time
 
-            # ...then assign the home team's total xG to the max_xg variable.
-            # We also round it up to one decimal number because
-            # this variable will be used to set the limit of the y axis of our timeline.
+    # If the match did not play to extra time...
+    if (isextratime == False):
+        # ...then create these lists to store the ticks values and labels for the x axis.
+        # Very similar to what we have done at the start for the y axis.
+        x_times = [0, 15, 30, 45, first_half_time, first_half_time + gap_width, first_half_time +
+                   15 + gap_width, first_half_time + 30 + gap_width, first_half_time + 45 + gap_width, graph_end_time]
+        x_labels = ["", "15", "30", "45", "", "45",
+                    "60", "75", "90", str(second_half_time + 45)]
+    else:
+        x_times = [0, 15, 30, 45, tmp1st, tmp1st + gap_width, tmp1st +
+                   15 + gap_width, tmp1st + 30 + gap_width, tmp1st + 45 + gap_width, tmp2nd,
+                   tmp2nd + gap_width, tmp1et, tmp1et + gap_width, tmp1et + 15 + gap_width, graph_end_time]
+        x_labels = ["", "15", "30", "45", "", "45", "60",
+                    "75", "90", "", "90", "", "105", "", "120"]
 
-            max_xg = round(xg_data['homeXGoal'].iloc[-1], 1)
+    # Choose the background colour for the timeline and the stripes colour for the shots map
+    bg = "white"
+    # stripe_colour = '#bf4789'
 
-            # If the match's largest xG is smaller or equal to 2...
-            if (max_xg <= 2):
-                # ...then create two lists that...
-                # ...store the ticks values...
-                y_times = [0, 0.25, 0.5, 0.75,
-                           1, 1.25, 1.5, 1.75, 2]
-                # ...and the ticks labels...
-                y_labels = ["0", "0.25", "0.5", "0.75",
-                            "1", "1.25", "1.5", "1.75", "2"]
-                # to use when drawing the timeline.
-            # If the largest xG is larger than 2, but smaller or equal to 3.5...
-            elif (max_xg <= 3.5):
-                # ...then make these lists slightly less detailed than the previous two.
-                y_times = [0, 0.5, 1, 1.5, 2, 2.5, 3, 3.5]
-                y_labels = ["0", "0.5", "1",
-                            "1.5", "2", "2.5", "3", "3.5"]
-            else:  # If the largest xG is larger than 3.5...
-                # ...then make both lists even less detailed than the previous two.
-                y_times = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-                y_labels = ["0", "1", "2", "3", "4",
-                            "5", "6", "7", "8", "9", "10"]
+    # Draw the xG timeline:
 
-        # If the away team's xG is larger than the home team's xG...
-        # ...do the same steps for the away team's xG...
-        else:
-            # ...including assign the away team's total xG to the max_xg variable.
-            max_xg = round(xg_data['awayXGoal'].iloc[-1], 1)
+    # Create the figure to draw the xG timeline
+    fig, ax = plt.subplots(figsize=(12, 8))
+    # This one is used to remove the outline that connects the plot and the ticks
+    plt.box(False)
 
-            if (max_xg <= 2):
-                y_times = [0, 0.25, 0.5, 0.75,
-                           1, 1.25, 1.5, 1.75, 2]
-                y_labels = ["0", "0.25", "0.5", "0.75",
-                            "1", "1.25", "1.5", "1.75", "2"]
-            elif (max_xg <= 3.5):
-                y_times = [0, 0.5, 1, 1.5, 2, 2.5, 3, 3.5]
-                y_labels = ["0", "0.5", "1",
-                            "1.5", "2", "2.5", "3", "3.5"]
-            else:
-                y_times = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-                y_labels = ["0", "1", "2", "3", "4",
-                            "5", "6", "7", "8", "9", "10"]
+    # Import the lists of x and y ticks values and labels
+    plt.xticks(x_times, x_labels,
+               fontproperties=robotoRegular, color="black")
+    plt.yticks(y_times, y_labels,
+               fontproperties=robotoRegular, color="black")
 
-        # Calculate the match length
-        match_length = first_half_time + second_half_time + \
-            first_extra_time + second_extra_time
+    # Set the label of the x and y axes
+    plt.ylabel("Cumulative Expected Goals (xG)", fontsize=10,
+               fontproperties=robotoBold, color="black")
+    plt.xlabel("Minutes Played", fontsize=10,
+               fontproperties=robotoBold, color="black")
 
-        # Get the time when the last shot was made in this match
-        last_shot = xg_data['minute'].iloc[-1]
+    # Set the limit of the x and y axes
+    plt.xlim(0, graph_end_time + 2)
+    # Adding two is for creating a small gap to see where the xG lines end
+    plt.ylim(0, max_xg + 0.1)
 
-        # Check if the match is played through to the extra time or not
-        if (second_extra_time == 0):  # If it is not then...
-            # ...calculate the minute that the graph will end by... (it's obvious through the names of the used variables!)
-            graph_end_time = match_length + gap_width
-            isextratime = False
-        else:  # If it is played to extra time then do a similar step
-            # (gap_width * 3) here is basically because we have three gaps separating the four halves played.
-            graph_end_time = match_length + (gap_width * 3)
-            isextratime = True
-        # We also assign the True/False value to the isextratime variable for the code below.
+    # Change the properties of the plot's grid and the parameters for the ticks
+    plt.grid(zorder=1, color="black", axis='y', alpha=0.2)
+    plt.tick_params(axis=u'both', which=u'both', length=0)
 
-        # Create three variables to store the length and the number of gaps used for each half
-        tmp1st = first_half_time
-        tmp2nd = first_half_time + gap_width + second_half_time
-        tmp1et = first_half_time + gap_width + \
-            second_half_time + gap_width + first_extra_time
-
-        # If the match did not play to extra time...
-        if (isextratime == False):
-            # ...then create these lists to store the ticks values and labels for the x axis.
-            # Very similar to what we have done at the start for the y axis.
-            x_times = [0, 15, 30, 45, first_half_time, first_half_time + gap_width, first_half_time +
-                       15 + gap_width, first_half_time + 30 + gap_width, first_half_time + 45 + gap_width, graph_end_time]
-            x_labels = ["", "15", "30", "45", "", "45",
-                        "60", "75", "90", str(second_half_time + 45)]
-        else:
-            x_times = [0, 15, 30, 45, tmp1st, tmp1st + gap_width, tmp1st +
-                       15 + gap_width, tmp1st + 30 + gap_width, tmp1st + 45 + gap_width, tmp2nd,
-                       tmp2nd + gap_width, tmp1et, tmp1et + gap_width, tmp1et + 15 + gap_width, graph_end_time]
-            x_labels = ["", "15", "30", "45", "", "45", "60",
-                        "75", "90", "", "90", "", "105", "", "120"]
-
-        # Choose the background colour for the timeline and the stripes colour for the shots map
-        bg = "white"
-        # stripe_colour = '#bf4789'
-
-        # Draw the xG timeline:
-
-        # Create the figure to draw the xG timeline
-        fig, ax = plt.subplots(figsize=(12, 8))
-        # This one is used to remove the outline that connects the plot and the ticks
-        plt.box(False)
-
-        # Import the lists of x and y ticks values and labels
-        plt.xticks(x_times, x_labels,
-                   fontproperties=robotoRegular, color="black")
-        plt.yticks(y_times, y_labels,
-                   fontproperties=robotoRegular, color="black")
-
-        # Set the label of the x and y axes
-        plt.ylabel("Cumulative Expected Goals (xG)", fontsize=10,
-                   fontproperties=robotoBold, color="black")
-        plt.xlabel("Minutes Played", fontsize=10,
-                   fontproperties=robotoBold, color="black")
-
-        # Set the limit of the x and y axes
-        plt.xlim(0, graph_end_time + 2)
-        # Adding two is for creating a small gap to see where the xG lines end
-        plt.ylim(0, max_xg + 0.1)
-
-        # Change the properties of the plot's grid and the parameters for the ticks
-        plt.grid(zorder=1, color="black", axis='y', alpha=0.2)
-        plt.tick_params(axis=u'both', which=u'both', length=0)
-
-        # Add the gaps in between both halves
-        rect1 = ax.patch
-        rect2 = ax.patch
-        rect3 = ax.patch
-        rect1 = patches.Rectangle((first_half_time, 0), gap_width, 10,
-                                  linewidth=0, edgecolor='white', facecolor=bg, zorder=2)
-        rect2 = patches.Rectangle((first_half_time + gap_width + second_half_time, 0), gap_width, 10,
-                                  linewidth=0, edgecolor='white', facecolor=bg, zorder=2)
-        rect3 = patches.Rectangle((first_half_time + gap_width + second_half_time + gap_width + first_extra_time, 0), gap_width, 10,
-                                  linewidth=0, edgecolor='white', facecolor=bg, zorder=2)
-        ax.add_patch(rect1)
-        if (periodNo > 2):  # Only add the other two patches if there is extra time
-            ax.add_patch(rect2)
-            ax.add_patch(rect3)
-            # Draw the border for the added gaps (extra time gaps)
-            ax.axvline(first_half_time + gap_width + second_half_time,
-                       color='black', linestyle='-', alpha=0.2)
-            ax.axvline(first_half_time + gap_width + second_half_time +
-                       gap_width, color='black', linestyle='-', alpha=0.2)
-            ax.axvline(first_half_time + gap_width + second_half_time + gap_width +
-                       first_extra_time, color='black', linestyle='-', alpha=0.2)
-            ax.axvline(first_half_time + gap_width + second_half_time + gap_width +
-                       first_extra_time + gap_width, color='black', linestyle='-', alpha=0.2)
-
-        # Draw the borders for the added gaps (gap between two halves)
-        ax.axvline(first_half_time, color='black',
-                   linestyle='-', alpha=0.2)
-        ax.axvline(first_half_time + gap_width,
+    # Add the gaps in between both halves
+    rect1 = ax.patch
+    rect2 = ax.patch
+    rect3 = ax.patch
+    rect1 = patches.Rectangle((first_half_time, 0), gap_width, 10,
+                              linewidth=0, edgecolor='white', facecolor=bg, zorder=2)
+    rect2 = patches.Rectangle((first_half_time + gap_width + second_half_time, 0), gap_width, 10,
+                              linewidth=0, edgecolor='white', facecolor=bg, zorder=2)
+    rect3 = patches.Rectangle((first_half_time + gap_width + second_half_time + gap_width + first_extra_time, 0), gap_width, 10,
+                              linewidth=0, edgecolor='white', facecolor=bg, zorder=2)
+    ax.add_patch(rect1)
+    if (periodNo > 2):  # Only add the other two patches if there is extra time
+        ax.add_patch(rect2)
+        ax.add_patch(rect3)
+        # Draw the border for the added gaps (extra time gaps)
+        ax.axvline(first_half_time + gap_width + second_half_time,
                    color='black', linestyle='-', alpha=0.2)
+        ax.axvline(first_half_time + gap_width + second_half_time +
+                   gap_width, color='black', linestyle='-', alpha=0.2)
+        ax.axvline(first_half_time + gap_width + second_half_time + gap_width +
+                   first_extra_time, color='black', linestyle='-', alpha=0.2)
+        ax.axvline(first_half_time + gap_width + second_half_time + gap_width +
+                   first_extra_time + gap_width, color='black', linestyle='-', alpha=0.2)
 
-        # Draw the line to indicate the time when the last shot of the match was made
-        ax.axvline(last_shot, color='black',
-                   linestyle='--', alpha=0.2)
+    # Draw the borders for the added gaps (gap between two halves)
+    ax.axvline(first_half_time, color='black',
+               linestyle='-', alpha=0.2)
+    ax.axvline(first_half_time + gap_width,
+               color='black', linestyle='-', alpha=0.2)
 
-        # Draw the steps for each shot event from the xg_data dataframe
-        ax.step(x='minute', y='homeXGoal', data=xg_data,
-                color=home_colour, linewidth=3, where='post', zorder=1)
-        ax.step(x='minute', y='awayXGoal', data=xg_data,
-                color=away_colour, linewidth=3, where='post', zorder=1)
+    # Draw the line to indicate the time when the last shot of the match was made
+    ax.axvline(last_shot, color='black',
+               linestyle='--', alpha=0.2)
 
-        # Continue drawing the xG line until the last minute of the match,
-        # rather than stopping at the last shot of the match
-        ax.step(x=[graph_end_time, last_shot], y=[xg_data['homeXGoal'][len(xg_data) - 1], xg_data['homeXGoal'][len(xg_data) - 1]],
-                color=home_colour, linewidth=3, where='post', zorder=1)
-        ax.step(x=[graph_end_time, last_shot], y=[xg_data['awayXGoal'][len(xg_data) - 1], xg_data['awayXGoal'][len(xg_data) - 1]],
-                color=away_colour, linewidth=3, where='post', zorder=1)
+    # Draw the steps for each shot event from the xg_data dataframe
+    ax.step(x='minute', y='homeXGoal', data=xg_data,
+            color=home_colour, linewidth=3, where='post', zorder=1)
+    ax.step(x='minute', y='awayXGoal', data=xg_data,
+            color=away_colour, linewidth=3, where='post', zorder=1)
 
-        # Look for the goalscorer's information in the xg_data dataframe
-        for i in range(len(xg_data)):
+    # Continue drawing the xG line until the last minute of the match,
+    # rather than stopping at the last shot of the match
+    ax.step(x=[graph_end_time, last_shot], y=[xg_data['homeXGoal'][len(xg_data) - 1], xg_data['homeXGoal'][len(xg_data) - 1]],
+            color=home_colour, linewidth=3, where='post', zorder=1)
+    ax.step(x=[graph_end_time, last_shot], y=[xg_data['awayXGoal'][len(xg_data) - 1], xg_data['awayXGoal'][len(xg_data) - 1]],
+            color=away_colour, linewidth=3, where='post', zorder=1)
 
-            # If the shot event has a homeScorerName assigned to it
-            # (Essentially if the shot event is a goal and has the goalscorer's name)
-            if (xg_data['shotType'][i] == 16) and (xg_data['homeScorerName'][i] != ""):
+    # Look for the goalscorer's information in the xg_data dataframe
+    for i in range(len(xg_data)):
 
-                # Create a text string which will store the name of the goal scorer and the xG of the goal
-                home_text = xg_data['homeScorerName'][i] + "\n" + \
-                    "{:.2f}".format(float(xg_data['homeEachXGoal'][i])) + " xG\n" + \
-                    "{:.2f}".format(
-                        float(xg_data['homeXGOT'][i])) + " xGOT"
+        # If the shot event has a homeScorerName assigned to it
+        # (Essentially if the shot event is a goal and has the goalscorer's name)
+        if (xg_data['shotType'][i] == 16) and (xg_data['homeScorerName'][i] != ""):
 
-                # Create a text box to store the text string
-                props = dict(boxstyle='round', facecolor='white',
-                             edgecolor=home_colour, alpha=0.7)
-
-                # Plot a dot at the displayed minute when the goal was scored
-                ax.scatter(xg_data['minute'][i], xg_data['homeXGoal'][i],
-                           s=60, facecolors=home_colour, edgecolors=home_edge_colour, zorder=6, linewidth=3)
-
-                # Display the information of the goal (the text string) within the text box
-                ax.text(xg_data['realMinute'][i] + 0.5, xg_data['homeXGoal'][i] + (max_xg / 10 * 0.3), home_text,
-                        ha='center', color=home_colour, zorder=6, fontproperties=robotoBold, bbox=props)
-
-            # If the goal is scored by an away player then do the steps similarly,
-            # but use the information of the away team.
-            elif (xg_data['shotType'][i] == 16) and (xg_data['awayScorerName'][i] != ""):
-
-                away_text = xg_data['awayScorerName'][i] + "\n" + \
-                    "{:.2f}".format(float(xg_data['awayEachXGoal'][i])) + " xG\n" + \
-                    "{:.2f}".format(
-                        float(xg_data['awayXGOT'][i])) + " xGOT"
-
-                props = dict(boxstyle='round', facecolor='white',
-                             edgecolor=away_colour, alpha=0.7)
-
-                ax.scatter(xg_data['minute'][i], xg_data['awayXGoal'][i],
-                           s=60, facecolors=away_colour, edgecolors=away_edge_colour, zorder=6, linewidth=3)
-                ax.text(xg_data['realMinute'][i] + 0.5, xg_data['awayXGoal'][i] + (max_xg / 10 * 0.3), away_text,
-                        ha='center', color=away_colour, zorder=6, fontproperties=robotoBold, bbox=props)
-
-        # Determine if each team has scored less/equal to or more than 1 goal
-        # to create a text string that stores each team's xG information
-        if (homeScore <= 1):
-            home_xG = homeTeam + '\n' + \
-                str(homeScore) + ' goal\n' + \
+            # Create a text string which will store the name of the goal scorer and the xG of the goal
+            home_text = xg_data['homeScorerName'][i] + "\n" + \
+                "{:.2f}".format(float(xg_data['homeEachXGoal'][i])) + " xG\n" + \
                 "{:.2f}".format(
-                    float(xg_data['homeXGoal'][i])) + ' xG'
-        else:
-            home_xG = homeTeam + '\n' + \
-                str(homeScore) + ' goals\n' + \
+                    float(xg_data['homeXGOT'][i])) + " xGOT"
+
+            # Create a text box to store the text string
+            props = dict(boxstyle='round', facecolor='white',
+                         edgecolor=home_colour, alpha=0.7)
+
+            # Plot a dot at the displayed minute when the goal was scored
+            ax.scatter(xg_data['minute'][i], xg_data['homeXGoal'][i],
+                       s=60, facecolors=home_colour, edgecolors=home_edge_colour, zorder=6, linewidth=3)
+
+            # Display the information of the goal (the text string) within the text box
+            ax.text(xg_data['realMinute'][i] + 0.5, xg_data['homeXGoal'][i] + (max_xg / 10 * 0.3), home_text,
+                    ha='center', color=home_colour, zorder=6, fontproperties=robotoBold, bbox=props)
+
+        # If the goal is scored by an away player then do the steps similarly,
+        # but use the information of the away team.
+        elif (xg_data['shotType'][i] == 16) and (xg_data['awayScorerName'][i] != ""):
+
+            away_text = xg_data['awayScorerName'][i] + "\n" + \
+                "{:.2f}".format(float(xg_data['awayEachXGoal'][i])) + " xG\n" + \
                 "{:.2f}".format(
-                    float(xg_data['homeXGoal'][i])) + ' xG'
+                    float(xg_data['awayXGOT'][i])) + " xGOT"
 
-        if (awayScore <= 1):
-            away_xG = awayTeam + '\n' + \
-                str(awayScore) + ' goal\n' + \
-                "{:.2f}".format(
-                    float(xg_data['awayXGoal'][i])) + ' xG'
-        else:
-            away_xG = awayTeam + '\n' + \
-                str(awayScore) + ' goals\n' + \
-                "{:.2f}".format(
-                    float(xg_data['awayXGoal'][i])) + ' xG'
+            props = dict(boxstyle='round', facecolor='white',
+                         edgecolor=away_colour, alpha=0.7)
 
-        # Add each team's text string to the end of their respective xG line
-        home_x_position = graph_end_time + 3
-        away_x_position = graph_end_time + 3
-        ax.text(home_x_position, xg_data['homeXGoal'][len(xg_data) - 1] - 0.05, home_xG,
-                color=home_colour, font_properties=robotoBold, fontsize=15, ha='left')
-        ax.text(away_x_position, xg_data['awayXGoal'][len(xg_data) - 1] - 0.05, away_xG,
-                color=away_colour, font_properties=robotoBold, fontsize=15, ha='left')
+            ax.scatter(xg_data['minute'][i], xg_data['awayXGoal'][i],
+                       s=60, facecolors=away_colour, edgecolors=away_edge_colour, zorder=6, linewidth=3)
+            ax.text(xg_data['realMinute'][i] + 0.5, xg_data['awayXGoal'][i] + (max_xg / 10 * 0.3), away_text,
+                    ha='center', color=away_colour, zorder=6, fontproperties=robotoBold, bbox=props)
 
-        # Add the text to indicate which half is which
-        # (Divide by 2 allows the text to be at the central of its respective space that has been separated by the gap)
-        ax.text((first_half_time / 2), max_xg + 0.13, 'First half', color='black',
-                font_properties=robotoBold, fontsize=15, ha='center')
-        ax.text(first_half_time + gap_width + (second_half_time / 2), max_xg + 0.13, 'Second half',
-                color='black', font_properties=robotoBold, fontsize=15, ha='center')
+    # Determine if each team has scored less/equal to or more than 1 goal
+    # to create a text string that stores each team's xG information
+    if (homeScore <= 1):
+        home_xG = homeTeam + '\n' + \
+            str(homeScore) + ' goal\n' + \
+            "{:.2f}".format(
+                float(xg_data['homeXGoal'][i])) + ' xG'
+    else:
+        home_xG = homeTeam + '\n' + \
+            str(homeScore) + ' goals\n' + \
+            "{:.2f}".format(
+                float(xg_data['homeXGoal'][i])) + ' xG'
 
-        if (periodNo > 2):
-            ax.text(first_half_time + gap_width + second_half_time + gap_width + (first_extra_time / 2), max_xg + 0.13,
-                    'First ET', color='black', font_properties=robotoBold, fontsize=15, ha='center')
-            ax.text(first_half_time + gap_width + second_half_time + gap_width + first_extra_time + gap_width + (second_extra_time / 2), max_xg + 0.13,
-                    'Second ET', color='black', font_properties=robotoBold, fontsize=15, ha='center')
+    if (awayScore <= 1):
+        away_xG = awayTeam + '\n' + \
+            str(awayScore) + ' goal\n' + \
+            "{:.2f}".format(
+                float(xg_data['awayXGoal'][i])) + ' xG'
+    else:
+        away_xG = awayTeam + '\n' + \
+            str(awayScore) + ' goals\n' + \
+            "{:.2f}".format(
+                float(xg_data['awayXGoal'][i])) + ' xG'
 
-    # Ask Streamlit to show the viz
-    st.pyplot(fig)
+    # Add each team's text string to the end of their respective xG line
+    home_x_position = graph_end_time + 3
+    away_x_position = graph_end_time + 3
+    ax.text(home_x_position, xg_data['homeXGoal'][len(xg_data) - 1] - 0.05, home_xG,
+            color=home_colour, font_properties=robotoBold, fontsize=15, ha='left')
+    ax.text(away_x_position, xg_data['awayXGoal'][len(xg_data) - 1] - 0.05, away_xG,
+            color=away_colour, font_properties=robotoBold, fontsize=15, ha='left')
+
+    # Add the text to indicate which half is which
+    # (Divide by 2 allows the text to be at the central of its respective space that has been separated by the gap)
+    ax.text((first_half_time / 2), max_xg + 0.13, 'First half', color='black',
+            font_properties=robotoBold, fontsize=15, ha='center')
+    ax.text(first_half_time + gap_width + (second_half_time / 2), max_xg + 0.13, 'Second half',
+            color='black', font_properties=robotoBold, fontsize=15, ha='center')
+
+    if (periodNo > 2):
+        ax.text(first_half_time + gap_width + second_half_time + gap_width + (first_extra_time / 2), max_xg + 0.13,
+                'First ET', color='black', font_properties=robotoBold, fontsize=15, ha='center')
+        ax.text(first_half_time + gap_width + second_half_time + gap_width + first_extra_time + gap_width + (second_extra_time / 2), max_xg + 0.13,
+                'Second ET', color='black', font_properties=robotoBold, fontsize=15, ha='center')
+
+    return fig
 
 # Function to create the shot map
-def shot_map(directory: str, eventsFile: str):
+
+
+def shot_map(directory: str, eventsFile: str) -> plt.Figure:
     # Open the json file, copy its data, and then immediately close the json file
     jsonData = open_json(directory, eventsFile)
 
@@ -637,7 +639,8 @@ def shot_map(directory: str, eventsFile: str):
     }
 
     # Add the sample dataset to the data frame
-    xg_data = xg_data.append(xGoalEvent, ignore_index=True)
+    xg_data = pd.concat([xg_data, pd.DataFrame(
+        xGoalEvent, index=[0])], ignore_index=True)
 
     # Declare variables to store the individual and cumulated expected goals
     homeXGoal = 0
@@ -771,13 +774,14 @@ def shot_map(directory: str, eventsFile: str):
         xGoalEvent['awayXGoal'] = awayXGoal
 
         # Add each event to the big dataframe
-        xg_data = xg_data.append(xGoalEvent, ignore_index=True)
+        xg_data = pd.concat([xg_data, pd.DataFrame(
+            xGoalEvent, index=[0])], ignore_index=True)
 
-        home_colour = 'darkblue'
-        home_edge_colour = 'white'
+    home_colour = 'darkblue'
+    home_edge_colour = 'white'
 
-        away_colour = 'red'
-        away_edge_colour = 'yellow'
+    away_colour = 'red'
+    away_edge_colour = 'yellow'
 
     # Create counting variables and categorise the shots
     home_goals = 0
@@ -794,7 +798,7 @@ def shot_map(directory: str, eventsFile: str):
 
     # Setup and draw the pitch
     pitch = Pitch(pitch_type='opta', pitch_color='grass', line_color='white',
-                  stripe=True, constrained_layout=True, tight_layout=True)
+                  stripe=True)
     fig, ax = pitch.draw(figsize=(10, 8))
 
     # Go through the xg_data list to get the shots data
@@ -959,24 +963,20 @@ def shot_map(directory: str, eventsFile: str):
     nodes = pitch.scatter(83, 4, s=500, marker='o',
                           color=home_colour, edgecolors=home_edge_colour, zorder=1, ax=ax)
 
-    # Ask Streamlit to show the viz
-    st.pyplot(fig)
+    return fig
 
 # Function to create the passing network
-def passing_network(directory: str, eventsFile: str):
+
+
+def passing_network(directory: str, passMatrixFile: str) -> plt.Figure:
     isHomeTeam = False
     # Open the json file, copy its data, and then immediately close the json file
-    jsonData = open_json(directory, eventsFile)
+    jsonData = open_json(directory, passMatrixFile)
 
     # Assign each section of the json file to a variable
     # and get the necessary information about the match
     matchInfo = jsonData['matchInfo']
-    matchName = matchInfo['description']
-    compName = matchInfo['competition']['name']
     liveData = jsonData['liveData']
-    matchDetails = liveData["matchDetails"]
-    homeScore = matchDetails['scores']['total']['home']
-    awayScore = matchDetails['scores']['total']['away']
 
     # Get the necessary information about both teams
     for contestant in matchInfo['contestant']:
@@ -991,7 +991,6 @@ def passing_network(directory: str, eventsFile: str):
 
     # Access the lineUp section of the json file
     # and get the lineups of both teams
-    liveData = jsonData['liveData']
     squadList = liveData['lineUp']
     home = squadList[0]
     away = squadList[1]
@@ -1042,7 +1041,7 @@ def passing_network(directory: str, eventsFile: str):
 
     # Setup and draw the pitch
     pitch = Pitch(pitch_type='opta', pitch_color='#0e1117', line_color='white',
-                  stripe=False, constrained_layout=True, tight_layout=True)
+                  stripe=False)
     fig, ax = pitch.draw(figsize=(10, 8))
 
     # Create variables to store the starting and ending x,y coordinates of the passes
@@ -1113,8 +1112,7 @@ def passing_network(directory: str, eventsFile: str):
     fig.set_figwidth(10.5)
     fig.set_figheight(10)
 
-    # Ask Streamlit to plot the figure
-    st.pyplot(fig)
+    return fig
 
 # Function to render the page
 
@@ -1138,11 +1136,12 @@ def render(session: Session):
         if (userOption == 'xG timeline'):
 
             # Create the xG timeline
-            xG_timeline(
+            fig: plt.Figure = xG_timeline(
                 directory=directory,
                 xgoalFile=xgoalFile,
                 eventsFile=eventsFile
             )
+            st.pyplot(fig)
 
             # Instructions to read the xG timeline
             st.subheader(
@@ -1194,10 +1193,11 @@ def render(session: Session):
         if (userOption == 'Shot map'):
 
             # Create the shot map
-            # shot_map(
-            #     directory=directory,
-            #     eventsFile=eventsFile
-            # )
+            fig: plt.Figure = shot_map(
+                directory=directory,
+                eventsFile=eventsFile
+            )
+            st.pyplot(fig)
 
             # Instructions to read the shot map
             st.subheader(
@@ -1239,10 +1239,11 @@ def render(session: Session):
         elif (userOption == 'Passing network'):
 
             # Create the passing network
-            # passing_network(
-            #     directory=directory,
-            #     eventsFile=eventsFile
-            # )
+            fig: plt.Figure = passing_network(
+                directory=directory,
+                passMatrixFile=passnetworkFile
+            )
+            st.pyplot(fig)
 
             # Instructions on how to read a passing network
             st.subheader(

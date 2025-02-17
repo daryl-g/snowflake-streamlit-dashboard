@@ -116,8 +116,7 @@ def playersListExtractor(directory1, files_list1, directory2, files_list2, chose
                     if (position == chosenPosition[k]):
 
                         if (len(playersList) == 0):
-                            playersList = playersList.append(
-                                playerInfo, ignore_index=True)
+                            playersList = pd.concat([playersList, pd.DataFrame(playerInfo, index=[0])], ignore_index=True)
                         else:
 
                             for j in range(len(playersList)):
@@ -129,8 +128,7 @@ def playersListExtractor(directory1, files_list1, directory2, files_list2, chose
                                     break
 
                             if (isplayerinlist == False):
-                                playersList = playersList.append(
-                                    playerInfo, ignore_index=True)
+                                playersList = pd.concat([playersList, pd.DataFrame(playerInfo, index=[0])], ignore_index=True)
 
     if (directory2 != '') and (files_list2 != ''):
 
@@ -197,8 +195,7 @@ def playersListExtractor(directory1, files_list1, directory2, files_list2, chose
                         if (position == chosenPosition[k]):
 
                             if (len(playersList) == 0):
-                                playersList = playersList.append(
-                                    playerInfo, ignore_index=True)
+                                playersList = pd.concat([playersList, pd.DataFrame(playerInfo, index=[0])], ignore_index=True)
                             else:
 
                                 for j in range(len(playersList)):
@@ -210,8 +207,7 @@ def playersListExtractor(directory1, files_list1, directory2, files_list2, chose
                                         break
 
                                 if (isplayerinlist == False):
-                                    playersList = playersList.append(
-                                        playerInfo, ignore_index=True)
+                                    playersList = pd.concat([playersList, pd.DataFrame(playerInfo, index=[0])], ignore_index=True)
 
         return playersList
     else:
@@ -572,7 +568,7 @@ with st.spinner("The app is trying its hardest to bring you the best viz!"):
         # Set up and draw the pitch
         pitch = Pitch(positional=True, positional_color='white',
                       pitch_type='opta', pitch_color='#0e1117',
-                      line_color="white", stripe=False, constrained_layout=True, tight_layout=True)
+                      line_color="white", stripe=False)
         fig, ax = pitch.draw(figsize=(10, 8))
 
         for i in range(len(touches_data)):
@@ -1002,7 +998,7 @@ with st.spinner("The app is trying its hardest to bring you the best viz!"):
         # Set up and draw the pitch
         pitch = Pitch(positional=True, positional_color='white',
                       pitch_type='opta', pitch_color='#0e1117',
-                      line_color="white", stripe=False, constrained_layout=True, tight_layout=True)
+                      line_color="white", stripe=False)
         fig, ax = pitch.draw(figsize=(10, 8))
 
         for i in range(len(passes_data)):
@@ -1232,7 +1228,7 @@ with st.spinner("The app is trying its hardest to bring you the best viz!"):
         total_xg = 0
 
         pitch = VerticalPitch(pitch_type='opta', pitch_color='#0e1117',
-                              line_color='white', constrained_layout=True, tight_layout=True, half=True)
+                              line_color='white', half=True)
         fig, ax = pitch.draw(figsize=(10, 8))
 
         teamColor = 'red'

@@ -191,8 +191,7 @@ with col1:
             if (position == 'Goalkeeper'):
 
                 if (len(goalkeepers) == 0):
-                    goalkeepers = goalkeepers.append(
-                        playerInfo, ignore_index=True)
+                    goalkeepers = pd.concat([goalkeepers, pd.DataFrame(playerInfo, index=[0])], ignore_index=True)
                 else:
 
                     for j in range(len(goalkeepers)):
@@ -202,13 +201,12 @@ with col1:
                             break
 
                     if (isplayerinlist == False):
-                        goalkeepers = goalkeepers.append(
-                            playerInfo, ignore_index=True)
+                        goalkeepers = pd.concat([goalkeepers, pd.DataFrame(playerInfo, index=[0])], ignore_index=True)
 
             elif (position == 'Defender') or (position == 'Wing Back'):
 
                 if (len(defenders) == 0):
-                    defenders = defenders.append(playerInfo, ignore_index=True)
+                    defenders = pd.concat([defenders, pd.DataFrame(playerInfo, index=[0])], ignore_index=True)
                 else:
 
                     for j in range(len(defenders)):
@@ -218,14 +216,12 @@ with col1:
                             break
 
                     if (isplayerinlist == False):
-                        defenders = defenders.append(
-                            playerInfo, ignore_index=True)
+                        defenders = pd.concat([defenders, pd.DataFrame(playerInfo, index=[0])], ignore_index=True)
 
             elif (position == 'Midfielder'):
 
                 if (len(midfielders) == 0):
-                    midfielders = midfielders.append(
-                        playerInfo, ignore_index=True)
+                    midfielders = pd.concat([midfielders, pd.DataFrame(playerInfo, index=[0])], ignore_index=True)
                 else:
 
                     for j in range(len(midfielders)):
@@ -235,13 +231,12 @@ with col1:
                             break
 
                     if (isplayerinlist == False):
-                        midfielders = midfielders.append(
-                            playerInfo, ignore_index=True)
+                        midfielders = pd.concat([midfielders, pd.DataFrame(playerInfo, index=[0])], ignore_index=True)
 
             elif (position == 'Attacker') or (position == 'Striker'):
 
                 if (len(attackers) == 0):
-                    attackers = attackers.append(playerInfo, ignore_index=True)
+                    attackers = pd.concat([attackers, pd.DataFrame(playerInfo, index=[0])], ignore_index=True)
                 else:
 
                     for j in range(len(attackers)):
@@ -251,8 +246,7 @@ with col1:
                             break
 
                     if (isplayerinlist == False):
-                        attackers = attackers.append(
-                            playerInfo, ignore_index=True)
+                        attackers = pd.concat([attackers, pd.DataFrame(playerInfo, index=[0])], ignore_index=True)
 
     positionOption = st.radio(
         label="Choose player's position",
@@ -415,7 +409,7 @@ with st.spinner("Have a bite while you are waiting for this viz!"):
         # Set up and draw the pitch
         pitch = Pitch(positional=True, positional_color='white',
                         pitch_type='opta', pitch_color='#0e1117',
-                        line_color="white", stripe=False, constrained_layout=True, tight_layout=True)
+                        line_color="white", stripe=False)
         fig, ax = pitch.draw(figsize=(10, 8))
 
         for i in range(len(touches_data)):
@@ -578,7 +572,7 @@ with st.spinner("Have a bite while you are waiting for this viz!"):
         # Set up and draw the pitch
         pitch = Pitch(positional=True, positional_color='white',
                         pitch_type='opta', pitch_color='#0e1117',
-                        line_color="white", stripe=False, constrained_layout=True, tight_layout=True)
+                        line_color="white", stripe=False)
         fig, ax = pitch.draw(figsize=(10, 8))
 
         for i in range(len(passes_data)):
@@ -690,7 +684,7 @@ with st.spinner("Have a bite while you are waiting for this viz!"):
         total_xg = 0
 
         pitch = VerticalPitch(pitch_type='opta', pitch_color='#0e1117',
-                                line_color='white', constrained_layout=True, tight_layout=True, half=True)
+                                line_color='white',half=True)
         fig, ax = pitch.draw(figsize=(10, 8))
 
         teamColor = 'red'

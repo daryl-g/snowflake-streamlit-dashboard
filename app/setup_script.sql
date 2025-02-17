@@ -38,3 +38,7 @@ create or alter versioned schema shared_content;
     execute immediate from './sql/shared_content-competitions.sql';
     execute immediate from './sql/shared_content-match_details.sql';
     execute immediate from './sql/shared_content-matches_info.sql';
+
+-- create streamlit app
+create or replace streamlit identifier("dashboard_app")
+query_warehouse = "DASHBOARD_WH"

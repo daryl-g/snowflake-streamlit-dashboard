@@ -270,7 +270,7 @@ with st.spinner("While waiting, remember to stay hydrated!"):
         }
 
         # Add the sample dataset to the data frame
-        xg_data = xg_data.append(xGoalEvent, ignore_index=True)
+        xg_data = pd.concat([xg_data, pd.DataFrame(xGoalEvent, index=[0])], ignore_index=True)
 
         # Declare variables to store the individual and cumulated expected goals
         homeXGoal = 0
@@ -404,7 +404,7 @@ with st.spinner("While waiting, remember to stay hydrated!"):
             xGoalEvent['awayXGoal'] = awayXGoal
 
             # Add each event to the big dataframe
-            xg_data = xg_data.append(xGoalEvent, ignore_index=True)
+            xg_data = pd.concat([xg_data, pd.DataFrame(xGoalEvent, index=[0])], ignore_index=True)
 
             if (homeTeam == 'Vietnam'):
                 home_colour = 'red'
@@ -752,7 +752,7 @@ with st.spinner("While waiting, remember to stay hydrated!"):
 
                 # Setup and draw the pitch
                 pitch = Pitch(pitch_type='opta', pitch_color='grass', line_color='white',
-                              stripe=True, constrained_layout=True, tight_layout=True)
+                              stripe=True)
                 fig, ax = pitch.draw(figsize=(10, 8))
 
                 # Go through the xg_data list to get the shots data
@@ -1067,7 +1067,7 @@ with st.spinner("While waiting, remember to stay hydrated!"):
 
         # Setup and draw the pitch
         pitch = Pitch(pitch_type='opta', pitch_color='#0e1117', line_color='white',
-                      stripe=False, constrained_layout=True, tight_layout=True)
+                      stripe=False)
         fig, ax = pitch.draw(figsize=(10, 8))
 
         if (vizOption == "Home team's passing network"):

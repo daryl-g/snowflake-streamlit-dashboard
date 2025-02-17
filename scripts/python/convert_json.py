@@ -25,7 +25,7 @@ class converter:
             raise ValueError(
                 "Invalid data folder. Please select from the following options: '2022 World Cup Asian Qualifiers', 'AFF Cup 2020'")
         else:
-            self.data_path = "data/" + data_folder + "/"
+            self.data_path = "app/dashboard/data/" + data_folder + "/"
 
     # Get the list of files in the data directory
     def get_files(self) -> list:
