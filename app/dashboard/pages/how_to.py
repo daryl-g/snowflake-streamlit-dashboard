@@ -9,7 +9,7 @@ import matplotlib.font_manager as fm  # Import fonts
 # Draw pitches for the shot map
 from snowflake.snowpark import Session
 from first_time_setup import render as render_first_time_setup, get_is_first_time_setup_dismissed
-from util import render_figure
+from util import render_figure, save_and_render_figure
 from mplsoccer import Pitch
 
 mpl.rcParams['figure.dpi'] = 300
@@ -28,7 +28,7 @@ robotoBold = fm.FontProperties(fname='./Roboto-Bold.ttf')
 
 
 def open_json(directory: str, file: str):
-    with open(directory + eventsFile, encoding='utf-8') as jsonFile:
+    with open(directory + file, encoding='utf-8') as jsonFile:
         jsonData = json.load(jsonFile)
         jsonFile.close()
 
@@ -1131,6 +1131,10 @@ def render(session: Session):
         index=0
     )
 
+    # Paths to save figures
+    figure_path = "plots/"
+    match_name = eventsFile.split("_")[0] + "_" + eventsFile.split("_")[1]
+
     # A wish to the user while they are waiting for the viz
     with st.spinner("Hope you are having a good day! These instructions will be with you shortly."):
 
@@ -1142,7 +1146,11 @@ def render(session: Session):
                 xgoalFile=xgoalFile,
                 eventsFile=eventsFile
             )
-            render_figure(fig)
+            # render_figure(fig)
+            save_and_render_figure(
+                fig=fig,
+                filepath=figure_path + match_name + "_xG_timeline.png",
+            )
 
             # Instructions to read the xG timeline
             st.subheader(
@@ -1198,7 +1206,11 @@ def render(session: Session):
                 directory=directory,
                 eventsFile=eventsFile
             )
-            render_figure(fig)
+            # render_figure(fig)
+            save_and_render_figure(
+                fig=fig,
+                filepath=figure_path + match_name + "_shot_map.png",
+            )
 
             # Instructions to read the shot map
             st.subheader(
@@ -1244,7 +1256,11 @@ def render(session: Session):
                 directory=directory,
                 passMatrixFile=passnetworkFile
             )
-            render_figure(fig)
+            # render_figure(fig)
+            save_and_render_figure(
+                fig=fig,
+                filepath=figure_path + match_name + "_passing_network.png",
+            )
 
             # Instructions on how to read a passing network
             st.subheader(

@@ -16,7 +16,7 @@ def get_app_name(_session: Session) -> str:
 
 def render_image(filepath: str):
     """
-    filepath: path to the image. Must have a valid file extension.
+    :params str filepath: path to the image. Must have a valid file extension.
     """
     mime_type = filepath.split('.')[-1:][0].lower()
     with open(filepath, "rb") as f:
@@ -25,8 +25,17 @@ def render_image(filepath: str):
         image_string = f'data:image/{mime_type};base64,{content_b64encoded}'
         st.image(image_string)
 
+def save_and_render_figure(fig: plt.Figure, filepath: str = "plots/temp.png"):
+    """
+    :params plt.Figure fig: matplotlib figure object
+
+    :params str filepath: path to save the figure. Must have a valid file extension. Default is "plots/temp.png"
+    """
+    fig.savefig(filepath, format="png", transparent=True)
+    render_image(filepath)
+
 def render_figure(fig: plt.Figure):
     """
-    fig: matplotlib figure object
+    :params plt.Figure fig: matplotlib figure object
     """
     st.pyplot(fig)

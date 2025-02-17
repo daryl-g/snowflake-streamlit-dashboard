@@ -5,8 +5,11 @@ import matplotlib as mpl  # Increase quality of the visualisation
 import matplotlib.pyplot as plt  # Draw the xG timeline
 import matplotlib.patches as patches  # A part of the timeline
 import matplotlib.font_manager as fm  # Import fonts
+
 # Draw pitches for the shot map & expected XI
 from mplsoccer import Pitch
+from util import save_and_render_figure
+
 mpl.rcParams['figure.dpi'] = 300
 
 # Page setup
@@ -52,8 +55,8 @@ elif (competitionOption == 'AFF Cup 2020'):
 # Radio buttons to choose which visualisation to display
 vizOption = st.radio(
     label='Visualisation on display',
-    options=('xG timeline', 'Shot map', "Home team's passing network",
-             "Away team's passing network"),
+    options=('xG timeline', 'Shot map', "Home team passing network",
+             "Away team passing network"),
     index=0
 )
 
@@ -1207,4 +1210,12 @@ with st.spinner("While waiting, remember to stay hydrated!"):
         fig.set_figheight(10)
 
     # Ask Streamlit to plot the figure
-    st.pyplot(fig)
+    ## Paths to save figures
+    figure_path = "plots/"
+    match_name = eventsFile.split("_")[0] + "_" + eventsFile.split("_")[1]
+    figure_name = match_name + "_" + vizOption.replace(" ", "_").lower() + ".png"
+
+    save_and_render_figure(
+        fig=fig,
+        filepath=figure_name
+    )

@@ -3,7 +3,10 @@ import json
 import pandas as pd
 import matplotlib as mpl
 import matplotlib.font_manager as fm
+
 from mplsoccer import Pitch, VerticalPitch
+from util import save_and_render_figure
+
 mpl.rcParams['figure.dpi'] = 300
 
 # Page setup
@@ -1328,4 +1331,6 @@ with st.spinner("The app is trying its hardest to bring you the best viz!"):
         fig.set_facecolor('#0e1117')
 
     # Ask Streamlit to plot the figure
-    st.pyplot(fig)
+    save_and_render_figure(
+        fig=fig
+    )
