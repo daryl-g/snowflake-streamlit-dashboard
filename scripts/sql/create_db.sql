@@ -42,14 +42,13 @@ create or replace table competitions (
 -- Matches
 create or replace table matches_info (
     matchId varchar,
+    competitionId varchar not null,
+    tournamentCalendarId varchar not null,
     matchDescription varchar not null,
     matchDate date not null,
     matchTime time not null,
     contestantId1 varchar not null,
     contestantId2 varchar not null,
-    competitionId varchar not null,
-    competitionName varchar not null,
-    tournamentCalendarId varchar not null,
     primary key(matchId),
     foreign key(contestantId1) references contestants(contestantId),
     foreign key(contestantId2) references contestants(contestantId),
@@ -64,7 +63,6 @@ create or replace table match_details (
     periodLength int not null,
     overtimeLength int not null,
     periods array not null,
-    scores array not null,
     primary key(matchId),
     foreign key(matchId) references matches_info(matchId)
 );
@@ -76,7 +74,7 @@ create or replace table players (
     playerKnownName varchar not null,
     playerMatchName varchar not null,
     primary key(playerId),
-    foreign key(contestantId) references contestants(contestantId),
+    foreign key(contestantId) references contestants(contestantId)
 );
 
 -- Events

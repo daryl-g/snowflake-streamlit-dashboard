@@ -5,6 +5,7 @@ import os
 import json
 import pandas as pd
 
+
 class converter:
     # Constructor
     def __init__(
@@ -15,14 +16,14 @@ class converter:
         Initialise the converter class.
 
         :param str data_folder: The path to the data directory. 
-        
+
             Options:
             - "2022 World Cup Asian Qualifiers"
-            - "AFC Asian Cup 2022"
             - "AFF Cup 2020"
         """
-        if data_folder not in ["2022 World Cup Asian Qualifiers", "AFC Asian Cup 2022", "AFF Cup 2020"]:
-            raise ValueError("Invalid data folder. Please select from the following options: '2022 World Cup Asian Qualifiers', 'AFC Asian Cup 2022', 'AFF Cup 2020'")
+        if data_folder not in ["2022 World Cup Asian Qualifiers", "AFF Cup 2020"]:
+            raise ValueError(
+                "Invalid data folder. Please select from the following options: '2022 World Cup Asian Qualifiers', 'AFF Cup 2020'")
         else:
             self.data_path = "data/" + data_folder + "/"
 
@@ -50,15 +51,15 @@ class converter:
             f.close()
 
         return data
-    
+
     # Mapping columns to the flattened JSON
-    ## Utility function
+    # Utility function
     def mapping(self, file_type: str, which_way: str = "left", return_dict: bool = False) -> list | dict:
         """
         A utility function to map the columns to the flattened JSON.
 
         :param str file_type: The type of JSON file to map the columns. Inherited from the json_to_df method.
-            
+
             Options:
             - "events": Event data.
             - "pass_matrix": Pass network data.
@@ -71,7 +72,7 @@ class converter:
             - "players": Player data.
 
         :param str which_way: The direction to map the columns.
-            
+
             Options:
             - "left": Returns the predefined columns. Default option.
             - "right": Returns the flattened JSON columns.
@@ -81,12 +82,14 @@ class converter:
 
         # Check if the file type is valid
         if file_type not in ["events", "pass_matrix", "stats", "xgoal_stats", "competitions", "contestants", "matches", "match_details", "players"]:
-            raise ValueError("Invalid file type. Please select from the following options: 'events', 'pass_matrix', 'stats', 'xgoal_stats'")
-        
+            raise ValueError(
+                "Invalid file type. Please select from the following options: 'events', 'pass_matrix', 'stats', 'xgoal_stats'")
+
         # Check if the direction is valid
         if which_way not in ["left", "right"]:
-            raise ValueError("Invalid direction. Please select from the following options: 'left', 'right'")
-        
+            raise ValueError(
+                "Invalid direction. Please select from the following options: 'left', 'right'")
+
         # Predefined mappings
         events_columns: dict = {
             "matchId": "matchInfo.id",
@@ -112,7 +115,7 @@ class converter:
             "avgY": "liveData.lineUp.player.y",
             "passSuccess": "liveData.lineUp.player.passSuccess",
             "passLost": "liveData.lineUp.player.passLost",
-            "playerPasses": "liveData.lineUp.player.passes",
+            "playerPasses": "liveData.lineUp.playerPass",
         }
 
         playerStats_columns: dict = {
@@ -141,10 +144,11 @@ class converter:
             "competitionName": "matchInfo.competition.name",
             "competitionCode": "matchInfo.competition.competitionCode",
             "competitionAreaId": "matchInfo.competition.country.id",
-            "tournamentCalendarId": "matchInfo.competition.tournamentCalendar.id",
-            "tournamentCalendarName": "matchInfo.competition.tournamentCalendar.name",
-            "tournamentCalendarStartDate": "matchInfo.competition.tournamentCalendar.startDate",
-            "tournamentCalendarEndDate": "matchInfo.competition.tournamentCalendar.endDate",
+            "competitionAreaName": "matchInfo.competition.country.name",
+            "tournamentCalendarId": "matchInfo.tournamentCalendar.id",
+            "tournamentCalendarName": "matchInfo.tournamentCalendar.name",
+            "tournamentCalendarStartDate": "matchInfo.tournamentCalendar.startDate",
+            "tournamentCalendarEndDate": "matchInfo.tournamentCalendar.endDate",
         }
 
         contestant_columns: dict = {
@@ -165,8 +169,7 @@ class converter:
             "contestantId1": "matchInfo.contestant.id",
             "contestantId2": "matchInfo.contestant.id",
             "competitionId": "matchInfo.competition.id",
-            "competitionName": "matchInfo.competition.name",
-            "tournamentCalendarId": "matchInfo.competition.tournamentCalendar.id",
+            "tournamentCalendarId": "matchInfo.tournamentCalendar.id",
         }
 
         match_details_columns: dict = {
@@ -177,7 +180,6 @@ class converter:
             "matchLengthMin": "liveData.matchDetails.matchLengthMin",
             "matchLengthSec": "liveData.matchDetails.matchLengthSec",
             "periods": "liveData.matchDetails.period",
-            "scores": "liveData.matchDetails.scores",
         }
 
         players_columns: dict = {
@@ -227,7 +229,7 @@ class converter:
                 if which_way == "left":
                     return list(competition_columns.keys())
                 else:
-                    return list(competition_columns.values())    
+                    return list(competition_columns.values())
         elif file_type == "contestants":
             if return_dict:
                 return contestant_columns
@@ -278,14 +280,24 @@ class converter:
         # Get the next key in the path
         key = path_dest[0]
 
+        # Check if the key is a qualifier, stat, scores, period, or playerPass
+        if key in ["qualifier", "stat", "scores", "period", "playerPass"]:
+            # Go to the next level and return the data
+            return [self.traverse_data(data[key], path_dest[1:])]
         # Check the current type of data
-        if isinstance(data, dict):
+        elif isinstance(data, dict):
             # Continue to the next level
             return self.traverse_data(data[key], path_dest[1:])
         elif isinstance(data, list):
-            # Flatten the list and continue to the next level
-            flattened_data = pd.json_normalize(data, max_level=0)
-            return self.traverse_data(flattened_data[key].tolist(), path_dest[1:])
+            # Empty list to store the extracted data
+            extracted_data: list = []
+            # Iterate through the list and grab the data that matches the key
+            for item in data:
+                if key in item:
+                    extracted_data.append(
+                        self.traverse_data(item[key], path_dest[1:]))
+            # Return the extracted data
+            return extracted_data
         else:
             # If the data is a primitive type, return it
             return data
@@ -296,7 +308,7 @@ class converter:
         Convert JSON files to a DataFrame.
 
         :param str file_type: The type of JSON file to convert to a DataFrame.
-            
+
             Options:
             - "events": Event data. Default option.
             - "pass_matrix": Pass network data.
@@ -310,7 +322,8 @@ class converter:
         """
         # Check if the file type is valid
         if file_type not in ["events", "pass_matrix", "stats", "xgoal_stats", "competitions", "contestants", "matches", "match_details", "players"]:
-            raise ValueError("Invalid file type. Please select from the following options: 'events', 'pass_matrix', 'stats', 'xgoal_stats', 'competitions', 'contestants', 'matches', 'match_details', 'players'")
+            raise ValueError(
+                "Invalid file type. Please select from the following options: 'events', 'pass_matrix', 'stats', 'xgoal_stats', 'competitions', 'contestants', 'matches', 'match_details', 'players'")
 
         # Get all files in the data directory
         files: list = self.get_files()
@@ -322,12 +335,13 @@ class converter:
             files: list = [file for file in files if "stats" in file]
 
         # Determine columns based on the file type
-        columns: list = self.mapping(file_type, which_way = "left")
-        json_columns: dict = self.mapping(file_type, which_way = "right", return_dict = True)
+        columns: list = self.mapping(file_type, which_way="left")
+        json_columns: dict = self.mapping(
+            file_type, which_way="right", return_dict=True)
 
         # Initialise an empty DataFrame
         df: pd.DataFrame = pd.DataFrame(columns=columns)
-        
+
         # Iterate through all files
         for file in files:
             # Import the JSON file
@@ -335,6 +349,9 @@ class converter:
 
             # Empty dict to store the extracted data
             data_from_file: dict = {k: "" for k in json_columns.keys()}
+
+            # Empty variable to store the number of values in the dict
+            num_values: int = 0
 
             # Iterate through the JSON columns
             for key, value in json_columns.items():
@@ -346,15 +363,36 @@ class converter:
                 second_level = top_level[path_dest[1]]
 
                 # Traverse the data
-                extracted_data = self.traverse_data(second_level, path_dest[2:])
+                extracted_data = self.traverse_data(
+                    second_level, path_dest[2:])
 
                 # Add the extracted data to the dict
-                data_from_file[key] = extracted_data
+                if ("Date" in key) or ("Time" in key):
+                    data_from_file[key] = extracted_data.replace("Z", "")
+                elif (key != "contestantId1") and (key != "contestantId2"):
+                    data_from_file[key] = extracted_data
+                elif key == "contestantId1":
+                    data_from_file[key] = extracted_data[0]
+                elif key == "contestantId2":
+                    data_from_file[key] = extracted_data[1]
+
+                num_values = len(extracted_data) if isinstance(
+                    extracted_data, list) else 1
 
             # Concatenate the mapped data to the main DataFrame
-            df = pd.concat([df, pd.DataFrame(data_from_file)], ignore_index=True)
+            df = pd.concat(
+                [df, pd.DataFrame(data_from_file, index=[i for i in range(0, num_values)])], ignore_index=True)
 
-            # Drop duplicates
-            df.drop_duplicates(inplace=True, ignore_index=True)
+        # Drop duplicates
+        try:
+            # Get all ID columns in the DataFrame
+            id_columns: list = [
+                col for col in df.columns if "Id" in col]
+
+            # Drop duplicates based on the ID columns
+            df.drop_duplicates(subset=id_columns, keep="first",
+                               inplace=True, ignore_index=True)
+        except TypeError:
+            pass
 
         return df
