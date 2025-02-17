@@ -13,7 +13,7 @@ native_app:
     role: dashboard_provider
     warehouse: dashboard_wh
     scripts:
-      - scripts/sql/setup-shared-content.sql
+      - scripts/sql/create_shared_contents.sql
   application:
     name: dashboard_app
     role: dashboard_admin

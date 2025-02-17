@@ -24,9 +24,8 @@ def render(session: Session):
     )
 
     col1, col2 = st.columns([1.1, 5])
-    image = Image.open('Image.png')
 
-    col1.image(image, width=150, output_format='PNG')
+    col1.image("./Image.png", width=150, output_format='PNG')
     col2.title("Vietnam National Team Data App")
 
     st.header("Introduction")
@@ -71,9 +70,12 @@ def render(session: Session):
         "Created by Daryl Dao - @dgouilard\n(Vietnamese name: Đào Hoàng Thái, Twitter handle: @dgouilard)"
     )
 
-    if __name__ == "__main__":
-        session = Session.builder.getOrCreate()
-        if not get_is_first_time_setup_dismissed(session):
-            render_first_time_setup(session)
-        else:
-            render(session)
+
+if __name__ == "__main__":
+    session = Session.builder.getOrCreate()
+    session.custom_package_usage_config = {"enabled": True}
+
+    if not get_is_first_time_setup_dismissed(session):
+        render_first_time_setup(session)
+    else:
+        render(session)

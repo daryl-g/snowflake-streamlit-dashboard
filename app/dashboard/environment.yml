@@ -1,5 +1,13 @@
 name: sf_env
 channels:
-- snowflake
+  - snowflake
 dependencies:
-- snowflake-native-apps-permission
+  - snowflake-native-apps-permission
+  - matplotlib
+  - pandas
+  - pillow
+  - numpy
+  - python
+  - pip
+  # - pip:
+  # - mplsoccer

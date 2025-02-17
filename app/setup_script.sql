@@ -21,10 +21,10 @@ create schema if not exists config_data;
 create or alter versioned schema ui;
     grant usage on schema ui to application role app_viewer;
     execute immediate from './sql/ui-landing_page.sql';
-    execute immediate from './sql/ui-how_to.sql';
-    execute immediate from './sql/ui-last_match.sql';
-    execute immediate from './sql/ui-player_individual.sql';
-    execute immediate from './sql/ui-player_overall.sql';
+    -- execute immediate from './sql/ui-how_to.sql';
+    -- execute immediate from './sql/ui-last_match.sql';
+    -- execute immediate from './sql/ui-player_individual.sql';
+    -- execute immediate from './sql/ui-player_overall.sql';
 
 -- simple generic methods to register callbacks
 create or alter versioned schema config_code;

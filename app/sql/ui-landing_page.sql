@@ -6,3 +6,6 @@ create or replace
 grant usage
     on streamlit ui."Landing page"
     to application role app_viewer;
+grant usage
+    on streamlit ui."Landing page"
+    to application role app_admin;
