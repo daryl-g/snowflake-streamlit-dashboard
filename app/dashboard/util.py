@@ -1,3 +1,5 @@
+# This file contains utility functions that are used in the dashboard.
+
 import streamlit as st
 from snowflake.snowpark import Session
 

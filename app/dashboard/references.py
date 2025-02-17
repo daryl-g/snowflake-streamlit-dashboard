@@ -1,3 +1,5 @@
+# This file contains the functions for displaying and interacting with reference bindings.
+
 from dataclasses import dataclass
 import json
 from typing import List

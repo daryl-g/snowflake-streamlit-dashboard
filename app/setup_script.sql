@@ -20,9 +20,11 @@ create schema if not exists config_data;
 -- the ui schema holds all streamlits
 create or alter versioned schema ui;
     grant usage on schema ui to application role app_viewer;
-    execute immediate from './sql/ui-v_dashboard.sql';
-    execute immediate from './sql/ui-v_sensor_data.sql';
-    execute immediate from './sql/ui-v_configuration.sql';
+    execute immediate from './sql/ui-landing_page.sql';
+    execute immediate from './sql/ui-how_to.sql';
+    execute immediate from './sql/ui-last_match.sql';
+    execute immediate from './sql/ui-player_individual.sql';
+    execute immediate from './sql/ui-player_overall.sql';
 
 -- simple generic methods to register callbacks
 create or alter versioned schema config_code;
@@ -32,6 +34,7 @@ create or alter versioned schema config_code;
 -- we need two views for each table we want to share from the provider through the app:
 -- one set of views live in the package schema; the other set of views are defined here
 create or alter versioned schema shared_content;
-    execute immediate from './sql/shared_content-sensor_types_view.sql';
-    execute immediate from './sql/shared_content-sensor_ranges.sql';
-    execute immediate from './sql/shared_content-sensor_service_schedules.sql';
+    execute immediate from './sql/shared_content-contestants.sql';
+    execute immediate from './sql/shared_content-competitions.sql';
+    execute immediate from './sql/shared_content-match_details.sql';
+    execute immediate from './sql/shared_content-matches_info.sql';
