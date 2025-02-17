@@ -38,3 +38,9 @@ create or alter versioned schema shared_content;
     execute immediate from './sql/shared_content-competitions.sql';
     execute immediate from './sql/shared_content-match_details.sql';
     execute immediate from './sql/shared_content-matches_info.sql';
+
+    -- share the views with the app roles
+    grant select on all tables in schema shared_content to application role app_viewer;
+
+    grant select on all tables in schema shared_content to application role app_admin;
+
