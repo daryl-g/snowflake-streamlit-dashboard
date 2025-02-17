@@ -9,7 +9,7 @@ import matplotlib.font_manager as fm  # Import fonts
 # Draw pitches for the shot map
 from snowflake.snowpark import Session
 from first_time_setup import render as render_first_time_setup, get_is_first_time_setup_dismissed
-# from mplsoccer import Pitch
+from mplsoccer import Pitch
 
 mpl.rcParams['figure.dpi'] = 300
 
@@ -544,577 +544,577 @@ def xG_timeline(directory: str, xgoalFile: str, eventsFile: str):
     st.pyplot(fig)
 
 # Function to create the shot map
-# def shot_map(directory: str, eventsFile: str):
-    # # Open the json file, copy its data, and then immediately close the json file
-    # jsonData = open_json(directory, eventsFile)
+def shot_map(directory: str, eventsFile: str):
+    # Open the json file, copy its data, and then immediately close the json file
+    jsonData = open_json(directory, eventsFile)
 
-    # # Assign each section of the json file to a variable
-    # matchInfo = jsonData['matchInfo']
-    # # Variable to store the number of periods played in the match
-    # periodNo = int(matchInfo['numberOfPeriods'])
-    # liveData = jsonData['liveData']
-    # events = liveData['event']
+    # Assign each section of the json file to a variable
+    matchInfo = jsonData['matchInfo']
+    # Variable to store the number of periods played in the match
+    periodNo = int(matchInfo['numberOfPeriods'])
+    liveData = jsonData['liveData']
+    events = liveData['event']
 
-    # # For loop to get the end time of each half
-    # for event in events:
+    # For loop to get the end time of each half
+    for event in events:
 
-    #     # Check if the number of periods played is 2 or not
-    #     if (periodNo == 2):
+        # Check if the number of periods played is 2 or not
+        if (periodNo == 2):
 
-    #         if (event['typeId'] == 30):
-    #             if (event['periodId'] == 1):
-    #                 # Get the end time of the first half
-    #                 first_half_time = int(event['timeMin'])
-    #             elif (event['periodId'] == 2):
-    #                 # Get the end time of the second half,
-    #                 second_half_time = int(event['timeMin']) - 45
-    #                 # then minus 45 to get the length of the half
+            if (event['typeId'] == 30):
+                if (event['periodId'] == 1):
+                    # Get the end time of the first half
+                    first_half_time = int(event['timeMin'])
+                elif (event['periodId'] == 2):
+                    # Get the end time of the second half,
+                    second_half_time = int(event['timeMin']) - 45
+                    # then minus 45 to get the length of the half
 
-    #     # If the match is played into the extra time (possible due to the Finals series)
-    #     elif (periodNo > 2):
+        # If the match is played into the extra time (possible due to the Finals series)
+        elif (periodNo > 2):
 
-    #         # Get the end time of the first half of the extra time
-    #         # then minus 90 to get the length of the first extra time
-    #         if (event['typeId'] == 30):
-    #             if (event['periodId'] == 3):
-    #                 first_extra_time = int(event['timeMin']) - 90
-    #             # Get the end time of the second half of the extra time
-    #             # then minus 105 (first 90 + first extra time 15) to get the length of the 2nd extra time
-    #             elif (event['periodId'] == 4):
-    #                 second_extra_time = int(event['timeMin']) - 105
+            # Get the end time of the first half of the extra time
+            # then minus 90 to get the length of the first extra time
+            if (event['typeId'] == 30):
+                if (event['periodId'] == 3):
+                    first_extra_time = int(event['timeMin']) - 90
+                # Get the end time of the second half of the extra time
+                # then minus 105 (first 90 + first extra time 15) to get the length of the 2nd extra time
+                elif (event['periodId'] == 4):
+                    second_extra_time = int(event['timeMin']) - 105
 
-    # # Variable to check the home team
-    # isHomeTeam = False
-    # # Open the json file, copy its data, and then immediately close the json file
-    # jsonData = open_json(directory, xgoalFile)
+    # Variable to check the home team
+    isHomeTeam = False
+    # Open the json file, copy its data, and then immediately close the json file
+    jsonData = open_json(directory, xgoalFile)
 
-    # # Assign each section of the json file to a variable
-    # # and get the necessary information about the match
-    # matchInfo = jsonData['matchInfo']
-    # liveData = jsonData['liveData']
-    # matchDetails = liveData["matchDetails"]
-    # event = liveData['event']
-    # homeScore = matchDetails['scores']['total']['home']
-    # awayScore = matchDetails['scores']['total']['away']
+    # Assign each section of the json file to a variable
+    # and get the necessary information about the match
+    matchInfo = jsonData['matchInfo']
+    liveData = jsonData['liveData']
+    matchDetails = liveData["matchDetails"]
+    event = liveData['event']
+    homeScore = matchDetails['scores']['total']['home']
+    awayScore = matchDetails['scores']['total']['away']
 
-    # # Get the necessary information about both teams
-    # for contestant in matchInfo['contestant']:
+    # Get the necessary information about both teams
+    for contestant in matchInfo['contestant']:
 
-    #     if contestant['position'] == 'home':
-    #         homeTeamId = contestant['id']
-    #         homeTeam = contestant['name']
-    #     else:
-    #         if isHomeTeam == False:
-    #             awayTeamId = contestant['id']
-    #             awayTeam = contestant['name']
+        if contestant['position'] == 'home':
+            homeTeamId = contestant['id']
+            homeTeam = contestant['name']
+        else:
+            if isHomeTeam == False:
+                awayTeamId = contestant['id']
+                awayTeam = contestant['name']
 
-    # # Declare variables to use for data processing
-    # homeXGoal = 0
-    # awayXGoal = 0
+    # Declare variables to use for data processing
+    homeXGoal = 0
+    awayXGoal = 0
 
-    # # Determine the width of the gap in between each half
-    # gap_width = 2
+    # Determine the width of the gap in between each half
+    gap_width = 2
 
-    # # Create a blank data frame to store the xG data
-    # xg_data = pd.DataFrame()
+    # Create a blank data frame to store the xG data
+    xg_data = pd.DataFrame()
 
-    # # Create a sample dataset
-    # xGoalEvent = {
-    #     'minute': 0,  # Minute displayed on the xG timeline
-    #     'realMinute': 0,  # Minute that the shot took place in the match
-    #     'period': 1,  # Period when the shot took place
-    #     'shotType': 0,  # Shot type (assigned by Opta [13, 14, 15, 16])
-    #     'x': 0,  # x coordinate of the shot
-    #     'y': 0,  # y coordinate of the shot
-    #     'homeScorerName': '',  # Name of the goalscorer
-    #     'awayScorerName': '',
-    #     'homeEachXGoal': 0,  # Each shot's expected goal
-    #     'awayEachXGoal': 0,
-    #     'homeXGOT': 0,  # xGOT (Expected goal on target) of each shot
-    #     'awayXGOT': 0,
-    #     'homeXGoal': 0,  # Cumulated expected goal
-    #     'awayXGoal': 0,
-    # }
+    # Create a sample dataset
+    xGoalEvent = {
+        'minute': 0,  # Minute displayed on the xG timeline
+        'realMinute': 0,  # Minute that the shot took place in the match
+        'period': 1,  # Period when the shot took place
+        'shotType': 0,  # Shot type (assigned by Opta [13, 14, 15, 16])
+        'x': 0,  # x coordinate of the shot
+        'y': 0,  # y coordinate of the shot
+        'homeScorerName': '',  # Name of the goalscorer
+        'awayScorerName': '',
+        'homeEachXGoal': 0,  # Each shot's expected goal
+        'awayEachXGoal': 0,
+        'homeXGOT': 0,  # xGOT (Expected goal on target) of each shot
+        'awayXGOT': 0,
+        'homeXGoal': 0,  # Cumulated expected goal
+        'awayXGoal': 0,
+    }
 
-    # # Add the sample dataset to the data frame
-    # xg_data = xg_data.append(xGoalEvent, ignore_index=True)
+    # Add the sample dataset to the data frame
+    xg_data = xg_data.append(xGoalEvent, ignore_index=True)
 
-    # # Declare variables to store the individual and cumulated expected goals
-    # homeXGoal = 0
-    # awayXGoal = 0
+    # Declare variables to store the individual and cumulated expected goals
+    homeXGoal = 0
+    awayXGoal = 0
 
-    # # This loop will go through every shot events in the list.
-    # # For every shot event...
-    # for index, event in enumerate(event):
+    # This loop will go through every shot events in the list.
+    # For every shot event...
+    for index, event in enumerate(event):
 
-    #     # Assign the real minute when the shot took place to the dataset
-    #     xGoalEvent['realMinute'] = event['timeMin']
+        # Assign the real minute when the shot took place to the dataset
+        xGoalEvent['realMinute'] = event['timeMin']
 
-    #     # Check if the period of the shot event is exceeding 4 or not
-    #     if (event['periodId'] <= 4):
+        # Check if the period of the shot event is exceeding 4 or not
+        if (event['periodId'] <= 4):
 
-    #         # Assign the period of the shot to the corresponding column of the dataset
-    #         xGoalEvent['period'] = event['periodId']
+            # Assign the period of the shot to the corresponding column of the dataset
+            xGoalEvent['period'] = event['periodId']
 
-    #         # Calculate the minute which the shot will be displayed in the xG timeline
-    #         # If the shot took place in the first half...
-    #         if (event['periodId'] == 1):
-    #             # ...assign the usual minute to the corresponding column of the dataset.
-    #             xGoalEvent['minute'] = event['timeMin']
+            # Calculate the minute which the shot will be displayed in the xG timeline
+            # If the shot took place in the first half...
+            if (event['periodId'] == 1):
+                # ...assign the usual minute to the corresponding column of the dataset.
+                xGoalEvent['minute'] = event['timeMin']
 
-    #         # If the shot took place in the second half...
-    #         elif (event['periodId'] == 2):
-    #             # ...add the length of the stoppage/injury time of the first half (first_half_time - 45)
-    #             # and the width of the gap to the original minute when the shot took place.
-    #             xGoalEvent['minute'] = event['timeMin'] + \
-    #                 first_half_time - 45 + gap_width
+            # If the shot took place in the second half...
+            elif (event['periodId'] == 2):
+                # ...add the length of the stoppage/injury time of the first half (first_half_time - 45)
+                # and the width of the gap to the original minute when the shot took place.
+                xGoalEvent['minute'] = event['timeMin'] + \
+                    first_half_time - 45 + gap_width
 
-    #         # If the shot took place in the first half of the extra time...
-    #         elif (event['periodId'] == 3):
-    #             # ...add the length of the stoppage/injury time of the first half *and* the second half
-    #             # and twice the width of the gap (because there are two gaps separating three halves)
-    #             # to the original minute when the shot took place.
-    #             xGoalEvent['minute'] = event['timeMin'] + first_half_time - 45 + gap_width + \
-    #                 second_half_time - 45 + gap_width
+            # If the shot took place in the first half of the extra time...
+            elif (event['periodId'] == 3):
+                # ...add the length of the stoppage/injury time of the first half *and* the second half
+                # and twice the width of the gap (because there are two gaps separating three halves)
+                # to the original minute when the shot took place.
+                xGoalEvent['minute'] = event['timeMin'] + first_half_time - 45 + gap_width + \
+                    second_half_time - 45 + gap_width
 
-    #         # If the shot took place in the second half of the extra time...
-    #         elif (event['periodId'] == 4):
-    #             # ...add the length of the stoppage/injury time of the first half, the second half
-    #             # and the first half of the extra time
-    #             # (first_half_time - 45), (second_half_time - 45) and (first_extra_time - 15)
-    #             # to the original minute when the shot took place.
-    #             xGoalEvent['minute'] = event['timeMin'] + first_half_time - 45 + gap_width + \
-    #                 second_half_time - 45 + gap_width + first_extra_time - 15 + gap_width
+            # If the shot took place in the second half of the extra time...
+            elif (event['periodId'] == 4):
+                # ...add the length of the stoppage/injury time of the first half, the second half
+                # and the first half of the extra time
+                # (first_half_time - 45), (second_half_time - 45) and (first_extra_time - 15)
+                # to the original minute when the shot took place.
+                xGoalEvent['minute'] = event['timeMin'] + first_half_time - 45 + gap_width + \
+                    second_half_time - 45 + gap_width + first_extra_time - 15 + gap_width
 
-    #     # If the period when the shot took place exceeded 4 (into the penalty shootout)
-    #     # then stop the for loop.
-    #     else:
-    #         break
+        # If the period when the shot took place exceeded 4 (into the penalty shootout)
+        # then stop the for loop.
+        else:
+            break
 
-    #     # Error with this id
-    #     if (event['id'] == 2207030489):
-    #         break
+        # Error with this id
+        if (event['id'] == 2207030489):
+            break
 
-    #     # Check if the team in possession's ID matches the home team's ID or not
-    #     if (event['contestantId'] == homeTeamId):
+        # Check if the team in possession's ID matches the home team's ID or not
+        if (event['contestantId'] == homeTeamId):
 
-    #         # Get the typeId of the shot
-    #         xGoalEvent['shotType'] = event['typeId']
-    #         # Get the x coordinate of the shot
-    #         xGoalEvent['x'] = event['x']
-    #         # Get the y coordinate of the shot
-    #         xGoalEvent['y'] = event['y']
-    #         # Assign the scorer's name to the respective value of the dict
-    #         # and leave the away scorer name field blank
-    #         xGoalEvent['homeScorerName'] = event['playerName']
-    #         xGoalEvent['awayScorerName'] = ""
+            # Get the typeId of the shot
+            xGoalEvent['shotType'] = event['typeId']
+            # Get the x coordinate of the shot
+            xGoalEvent['x'] = event['x']
+            # Get the y coordinate of the shot
+            xGoalEvent['y'] = event['y']
+            # Assign the scorer's name to the respective value of the dict
+            # and leave the away scorer name field blank
+            xGoalEvent['homeScorerName'] = event['playerName']
+            xGoalEvent['awayScorerName'] = ""
 
-    #         # Go through the qualifiers of the shot
-    #         for qualifier in event['qualifier']:
-    #             # If the qualifierId is 321 (store the xG value of the shot)
-    #             if (qualifier['qualifierId'] == 321):
-    #                 # Get the xG value of the shot
-    #                 xGoalEvent['homeEachXGoal'] = float(
-    #                     qualifier['value'])
-    #                 xGoalEvent['awayEachXGoal'] = 0
-    #                 # Add the xG value of the current shot to the total xG value of the home team
-    #                 homeXGoal += float(qualifier['value'])
-    #                 xGoalEvent['homeXGoal'] = homeXGoal
+            # Go through the qualifiers of the shot
+            for qualifier in event['qualifier']:
+                # If the qualifierId is 321 (store the xG value of the shot)
+                if (qualifier['qualifierId'] == 321):
+                    # Get the xG value of the shot
+                    xGoalEvent['homeEachXGoal'] = float(
+                        qualifier['value'])
+                    xGoalEvent['awayEachXGoal'] = 0
+                    # Add the xG value of the current shot to the total xG value of the home team
+                    homeXGoal += float(qualifier['value'])
+                    xGoalEvent['homeXGoal'] = homeXGoal
 
-    #             # If the qualifierId is 322 (store the xGOT value of the shot)
-    #             elif (qualifier['qualifierId'] == 322):
-    #                 # Get the xGOT value of the shot
-    #                 xGoalEvent['homeXGOT'] = float(qualifier['value'])
-    #                 xGoalEvent['awayXGOT'] = 0
+                # If the qualifierId is 322 (store the xGOT value of the shot)
+                elif (qualifier['qualifierId'] == 322):
+                    # Get the xGOT value of the shot
+                    xGoalEvent['homeXGOT'] = float(qualifier['value'])
+                    xGoalEvent['awayXGOT'] = 0
 
-    #             # Check if the shot (on target) is a blocked shot or not
-    #             if (qualifier['qualifierId'] == 82):
-    #                 xGoalEvent['shotType'] = 12
+                # Check if the shot (on target) is a blocked shot or not
+                if (qualifier['qualifierId'] == 82):
+                    xGoalEvent['shotType'] = 12
 
-    #     else:
+        else:
 
-    #         # Get the typeId of the shot
-    #         xGoalEvent['shotType'] = event['typeId']
-    #         # Get the x coordinate of the shot
-    #         xGoalEvent['x'] = event['x']
-    #         # Get the y coordinate of the shot
-    #         xGoalEvent['y'] = event['y']
-    #         # Assign the scorer's name to the respective value of the dict
-    #         # and leave the home scorer name field blank
-    #         xGoalEvent['homeScorerName'] = ""
-    #         xGoalEvent['awayScorerName'] = event['playerName']
+            # Get the typeId of the shot
+            xGoalEvent['shotType'] = event['typeId']
+            # Get the x coordinate of the shot
+            xGoalEvent['x'] = event['x']
+            # Get the y coordinate of the shot
+            xGoalEvent['y'] = event['y']
+            # Assign the scorer's name to the respective value of the dict
+            # and leave the home scorer name field blank
+            xGoalEvent['homeScorerName'] = ""
+            xGoalEvent['awayScorerName'] = event['playerName']
 
-    #         # Go through the qualifiers of the shot
-    #         for qualifier in event['qualifier']:
-    #             # If the qualifierId is 321 (store the xG value of the shot)
-    #             if (qualifier['qualifierId'] == 321):
-    #                 # Get the xG value of the shot
-    #                 xGoalEvent['homeEachXGoal'] = 0
-    #                 xGoalEvent['awayEachXGoal'] = float(
-    #                     qualifier['value'])
-    #                 # Add the xG value of the current shot to the total xG value of the away team
-    #                 awayXGoal += float(qualifier['value'])
+            # Go through the qualifiers of the shot
+            for qualifier in event['qualifier']:
+                # If the qualifierId is 321 (store the xG value of the shot)
+                if (qualifier['qualifierId'] == 321):
+                    # Get the xG value of the shot
+                    xGoalEvent['homeEachXGoal'] = 0
+                    xGoalEvent['awayEachXGoal'] = float(
+                        qualifier['value'])
+                    # Add the xG value of the current shot to the total xG value of the away team
+                    awayXGoal += float(qualifier['value'])
 
-    #             # If the qualifierId is 322 (store the xGOT value of the shot)
-    #             elif (qualifier['qualifierId'] == 322):
-    #                 xGoalEvent['homeXGOT'] = 0
-    #                 # Get the xGOT value of the shot
-    #                 xGoalEvent['awayXGOT'] = float(qualifier['value'])
+                # If the qualifierId is 322 (store the xGOT value of the shot)
+                elif (qualifier['qualifierId'] == 322):
+                    xGoalEvent['homeXGOT'] = 0
+                    # Get the xGOT value of the shot
+                    xGoalEvent['awayXGOT'] = float(qualifier['value'])
 
-    #             # Check if the shot (on target) is a blocked shot or not
-    #             if (qualifier['qualifierId'] == 82):
-    #                 xGoalEvent['shotType'] = 12
+                # Check if the shot (on target) is a blocked shot or not
+                if (qualifier['qualifierId'] == 82):
+                    xGoalEvent['shotType'] = 12
 
-    #     # Assign the total xG of both teams after this event
-    #     # to the corresponding columns of the dataset.
-    #     xGoalEvent['homeXGoal'] = homeXGoal
-    #     xGoalEvent['awayXGoal'] = awayXGoal
+        # Assign the total xG of both teams after this event
+        # to the corresponding columns of the dataset.
+        xGoalEvent['homeXGoal'] = homeXGoal
+        xGoalEvent['awayXGoal'] = awayXGoal
 
-    #     # Add each event to the big dataframe
-    #     xg_data = xg_data.append(xGoalEvent, ignore_index=True)
+        # Add each event to the big dataframe
+        xg_data = xg_data.append(xGoalEvent, ignore_index=True)
 
-    #     home_colour = 'darkblue'
-    #     home_edge_colour = 'white'
+        home_colour = 'darkblue'
+        home_edge_colour = 'white'
 
-    #     away_colour = 'red'
-    #     away_edge_colour = 'yellow'
+        away_colour = 'red'
+        away_edge_colour = 'yellow'
 
-    # # Create counting variables and categorise the shots
-    # home_goals = 0
-    # home_on_target = 0
-    # home_post = 0
-    # home_off_target = 0
-    # home_blocked = 0
+    # Create counting variables and categorise the shots
+    home_goals = 0
+    home_on_target = 0
+    home_post = 0
+    home_off_target = 0
+    home_blocked = 0
 
-    # away_goals = 0
-    # away_on_target = 0
-    # away_post = 0
-    # away_off_target = 0
-    # away_blocked = 0
+    away_goals = 0
+    away_on_target = 0
+    away_post = 0
+    away_off_target = 0
+    away_blocked = 0
 
-    # # Setup and draw the pitch
-    # pitch = Pitch(pitch_type='opta', pitch_color='grass', line_color='white',
-    #               stripe=True, constrained_layout=True, tight_layout=True)
-    # fig, ax = pitch.draw(figsize=(10, 8))
+    # Setup and draw the pitch
+    pitch = Pitch(pitch_type='opta', pitch_color='grass', line_color='white',
+                  stripe=True, constrained_layout=True, tight_layout=True)
+    fig, ax = pitch.draw(figsize=(10, 8))
 
-    # # Go through the xg_data list to get the shots data
-    # for i in range(0, len(xg_data)):
+    # Go through the xg_data list to get the shots data
+    for i in range(0, len(xg_data)):
 
-    #     # If the shot belongs to a home player...
-    #     if (xg_data['homeScorerName'][i] != ''):
+        # If the shot belongs to a home player...
+        if (xg_data['homeScorerName'][i] != ''):
 
-    #         # Check to see which type of shot it is
-    #         # (16 = goal, 15 = shot on target, 12 = shot blocked,
-    #         # 14 = shot hit post, 13 = shot off target)
-    #         #
-    #         # Then plot the shot location (x, y coordinates) and
-    #         # the size of the shot based on the xG, and increase
-    #         # the counter for the respective type of shot.
-    #         if (xg_data['shotType'][i] == 16):
-    #             nodes = pitch.scatter(xg_data['x'][i] - ((xg_data['x'][i] - 50.1) * 2), xg_data['y'][i] - ((xg_data['y'][i] - 49.9) * 2), s=700 * xg_data['homeEachXGoal'][i], marker='o',
-    #                                   color=home_colour, edgecolors=home_edge_colour, zorder=1, ax=ax)
-    #             home_goals = home_goals + 1
-    #             home_on_target = home_on_target + 1
-    #         elif (xg_data['shotType'][i] == 15):
-    #             nodes = pitch.scatter(xg_data['x'][i] - ((xg_data['x'][i] - 50.1) * 2), xg_data['y'][i] - ((xg_data['y'][i] - 49.9) * 2), s=700 * xg_data['homeEachXGoal'][i], marker='^',
-    #                                   color=home_colour, edgecolors=home_edge_colour, zorder=1, ax=ax)
-    #             home_on_target = home_on_target + 1
-    #         elif (xg_data['shotType'][i] == 14):
-    #             nodes = pitch.scatter(xg_data['x'][i] - ((xg_data['x'][i] - 50.1) * 2), xg_data['y'][i] - ((xg_data['y'][i] - 49.9) * 2), s=700 * xg_data['homeEachXGoal'][i], marker='s',
-    #                                   color=home_colour, edgecolors=home_edge_colour, zorder=1, ax=ax)
-    #             home_post = home_post + 1
-    #         elif (xg_data['shotType'][i] == 12):
-    #             nodes = pitch.scatter(xg_data['x'][i] - ((xg_data['x'][i] - 50.1) * 2), xg_data['y'][i] - ((xg_data['y'][i] - 49.9) * 2), s=700 * xg_data['homeEachXGoal'][i], marker='D',
-    #                                   color=home_colour, edgecolors=home_edge_colour, zorder=1, ax=ax)
-    #             home_blocked = home_blocked + 1
-    #         else:
-    #             nodes = pitch.scatter(xg_data['x'][i] - ((xg_data['x'][i] - 50.1) * 2), xg_data['y'][i] - ((xg_data['y'][i] - 49.9) * 2), s=700 * xg_data['homeEachXGoal'][i], marker='X',
-    #                                   color=home_colour, edgecolors=home_edge_colour, zorder=1, ax=ax)
-    #             home_off_target = home_off_target + 1
-    #     else:
-    #         if (xg_data['shotType'][i] == 16):
-    #             nodes = pitch.scatter(xg_data['x'][i], xg_data['y'][i], s=700 * xg_data['awayEachXGoal'][i], marker='o',
-    #                                   color=away_colour, edgecolors=away_edge_colour, zorder=1, ax=ax)
-    #             away_goals = away_goals + 1
-    #             away_on_target = away_on_target + 1
-    #         elif (xg_data['shotType'][i] == 15):
-    #             nodes = pitch.scatter(xg_data['x'][i], xg_data['y'][i], s=700 * xg_data['awayEachXGoal'][i], marker='^',
-    #                                   color=away_colour, edgecolors=away_edge_colour, zorder=1, ax=ax)
-    #             away_on_target = away_on_target + 1
-    #         elif (xg_data['shotType'][i] == 14):
-    #             nodes = pitch.scatter(xg_data['x'][i], xg_data['y'][i], s=700 * xg_data['awayEachXGoal'][i], marker='s',
-    #                                   color=away_colour, edgecolors=away_edge_colour, zorder=1, ax=ax)
-    #             away_post = away_post + 1
-    #         elif (xg_data['shotType'][i] == 12):
-    #             nodes = pitch.scatter(xg_data['x'][i], xg_data['y'][i], s=700 * xg_data['awayEachXGoal'][i], marker='D',
-    #                                   color=away_colour, edgecolors=away_edge_colour, zorder=1, ax=ax)
-    #             away_blocked = away_blocked + 1
-    #         else:
-    #             nodes = pitch.scatter(xg_data['x'][i], xg_data['y'][i], s=700 * xg_data['awayEachXGoal'][i], marker='X',
-    #                                   color=away_colour, edgecolors=away_edge_colour, zorder=1, ax=ax)
-    #             away_off_target = away_off_target + 1
+            # Check to see which type of shot it is
+            # (16 = goal, 15 = shot on target, 12 = shot blocked,
+            # 14 = shot hit post, 13 = shot off target)
+            #
+            # Then plot the shot location (x, y coordinates) and
+            # the size of the shot based on the xG, and increase
+            # the counter for the respective type of shot.
+            if (xg_data['shotType'][i] == 16):
+                nodes = pitch.scatter(xg_data['x'][i] - ((xg_data['x'][i] - 50.1) * 2), xg_data['y'][i] - ((xg_data['y'][i] - 49.9) * 2), s=700 * xg_data['homeEachXGoal'][i], marker='o',
+                                      color=home_colour, edgecolors=home_edge_colour, zorder=1, ax=ax)
+                home_goals = home_goals + 1
+                home_on_target = home_on_target + 1
+            elif (xg_data['shotType'][i] == 15):
+                nodes = pitch.scatter(xg_data['x'][i] - ((xg_data['x'][i] - 50.1) * 2), xg_data['y'][i] - ((xg_data['y'][i] - 49.9) * 2), s=700 * xg_data['homeEachXGoal'][i], marker='^',
+                                      color=home_colour, edgecolors=home_edge_colour, zorder=1, ax=ax)
+                home_on_target = home_on_target + 1
+            elif (xg_data['shotType'][i] == 14):
+                nodes = pitch.scatter(xg_data['x'][i] - ((xg_data['x'][i] - 50.1) * 2), xg_data['y'][i] - ((xg_data['y'][i] - 49.9) * 2), s=700 * xg_data['homeEachXGoal'][i], marker='s',
+                                      color=home_colour, edgecolors=home_edge_colour, zorder=1, ax=ax)
+                home_post = home_post + 1
+            elif (xg_data['shotType'][i] == 12):
+                nodes = pitch.scatter(xg_data['x'][i] - ((xg_data['x'][i] - 50.1) * 2), xg_data['y'][i] - ((xg_data['y'][i] - 49.9) * 2), s=700 * xg_data['homeEachXGoal'][i], marker='D',
+                                      color=home_colour, edgecolors=home_edge_colour, zorder=1, ax=ax)
+                home_blocked = home_blocked + 1
+            else:
+                nodes = pitch.scatter(xg_data['x'][i] - ((xg_data['x'][i] - 50.1) * 2), xg_data['y'][i] - ((xg_data['y'][i] - 49.9) * 2), s=700 * xg_data['homeEachXGoal'][i], marker='X',
+                                      color=home_colour, edgecolors=home_edge_colour, zorder=1, ax=ax)
+                home_off_target = home_off_target + 1
+        else:
+            if (xg_data['shotType'][i] == 16):
+                nodes = pitch.scatter(xg_data['x'][i], xg_data['y'][i], s=700 * xg_data['awayEachXGoal'][i], marker='o',
+                                      color=away_colour, edgecolors=away_edge_colour, zorder=1, ax=ax)
+                away_goals = away_goals + 1
+                away_on_target = away_on_target + 1
+            elif (xg_data['shotType'][i] == 15):
+                nodes = pitch.scatter(xg_data['x'][i], xg_data['y'][i], s=700 * xg_data['awayEachXGoal'][i], marker='^',
+                                      color=away_colour, edgecolors=away_edge_colour, zorder=1, ax=ax)
+                away_on_target = away_on_target + 1
+            elif (xg_data['shotType'][i] == 14):
+                nodes = pitch.scatter(xg_data['x'][i], xg_data['y'][i], s=700 * xg_data['awayEachXGoal'][i], marker='s',
+                                      color=away_colour, edgecolors=away_edge_colour, zorder=1, ax=ax)
+                away_post = away_post + 1
+            elif (xg_data['shotType'][i] == 12):
+                nodes = pitch.scatter(xg_data['x'][i], xg_data['y'][i], s=700 * xg_data['awayEachXGoal'][i], marker='D',
+                                      color=away_colour, edgecolors=away_edge_colour, zorder=1, ax=ax)
+                away_blocked = away_blocked + 1
+            else:
+                nodes = pitch.scatter(xg_data['x'][i], xg_data['y'][i], s=700 * xg_data['awayEachXGoal'][i], marker='X',
+                                      color=away_colour, edgecolors=away_edge_colour, zorder=1, ax=ax)
+                away_off_target = away_off_target + 1
 
-    # # Prepare two strings to store the teams' name, goals scored, and xG
-    # home_team = homeTeam + ' - ' + \
-    #     str(homeScore) + ' (' + \
-    #     "{:.2f}".format(
-    #         float(xg_data['homeXGoal'][len(xg_data) - 1])) + ' xG)'
-    # away_team = 'v ' + awayTeam + ' - ' + \
-    #     str(awayScore) + ' (' + \
-    #     "{:.2f}".format(
-    #         float(xg_data['awayXGoal'][len(xg_data) - 1])) + ' xG)'
+    # Prepare two strings to store the teams' name, goals scored, and xG
+    home_team = homeTeam + ' - ' + \
+        str(homeScore) + ' (' + \
+        "{:.2f}".format(
+            float(xg_data['homeXGoal'][len(xg_data) - 1])) + ' xG)'
+    away_team = 'v ' + awayTeam + ' - ' + \
+        str(awayScore) + ' (' + \
+        "{:.2f}".format(
+            float(xg_data['awayXGoal'][len(xg_data) - 1])) + ' xG)'
 
-    # # Write the two above strings
-    # ax.text(49.5, 95, home_team, color=home_colour,
-    #         font_properties=robotoBold, fontsize=20, ha='right')
-    # ax.text(50.5, 95, away_team, color=away_colour,
-    #         font_properties=robotoBold, fontsize=20, ha='left')
+    # Write the two above strings
+    ax.text(49.5, 95, home_team, color=home_colour,
+            font_properties=robotoBold, fontsize=20, ha='right')
+    ax.text(50.5, 95, away_team, color=away_colour,
+            font_properties=robotoBold, fontsize=20, ha='left')
 
-    # # Credit
-    # ax.text(1, 97, "By Daryl - @dgouilard", color='white',
-    #         fontproperties=robotoRegular, fontsize=10)
+    # Credit
+    ax.text(1, 97, "By Daryl - @dgouilard", color='white',
+            fontproperties=robotoRegular, fontsize=10)
 
-    # # Prepare three text boxes, one for the goal type, two for each team's quantity
-    # text_box = dict(boxstyle='round', facecolor='white')
-    # home_values = dict(boxstyle='round', facecolor=home_colour,
-    #                    edgecolor=home_edge_colour)
-    # away_values = dict(boxstyle='round', facecolor=away_colour,
-    #                    edgecolor=away_edge_colour)
+    # Prepare three text boxes, one for the goal type, two for each team's quantity
+    text_box = dict(boxstyle='round', facecolor='white')
+    home_values = dict(boxstyle='round', facecolor=home_colour,
+                       edgecolor=home_edge_colour)
+    away_values = dict(boxstyle='round', facecolor=away_colour,
+                       edgecolor=away_edge_colour)
 
-    # # Indicate how many goals each team have scored
-    # ax.text(50, 65, 'Goals', color='black', font_properties=robotoBold,
-    #         fontsize=12, ha='center', bbox=text_box)
-    # ax.text(39, 65, str(home_goals), color=home_edge_colour,
-    #         font_properties=robotoBold, fontsize=12, ha='left', bbox=home_values)
-    # ax.text(59, 65, str(away_goals), color=away_edge_colour,
-    #         font_properties=robotoBold, fontsize=12, ha='left', bbox=away_values)
+    # Indicate how many goals each team have scored
+    ax.text(50, 65, 'Goals', color='black', font_properties=robotoBold,
+            fontsize=12, ha='center', bbox=text_box)
+    ax.text(39, 65, str(home_goals), color=home_edge_colour,
+            font_properties=robotoBold, fontsize=12, ha='left', bbox=home_values)
+    ax.text(59, 65, str(away_goals), color=away_edge_colour,
+            font_properties=robotoBold, fontsize=12, ha='left', bbox=away_values)
 
-    # # Indicate how many shots on target (including goals) each team have made
-    # ax.text(50, 57, 'Shots on target', color='black',
-    #         font_properties=robotoBold, fontsize=12, ha='center', bbox=text_box)
-    # ax.text(39, 57, str(home_on_target), color=home_edge_colour,
-    #         font_properties=robotoBold, fontsize=12, ha='left', bbox=home_values)
-    # ax.text(59, 57, str(away_on_target), color=away_edge_colour,
-    #         font_properties=robotoBold, fontsize=12, ha='left', bbox=away_values)
+    # Indicate how many shots on target (including goals) each team have made
+    ax.text(50, 57, 'Shots on target', color='black',
+            font_properties=robotoBold, fontsize=12, ha='center', bbox=text_box)
+    ax.text(39, 57, str(home_on_target), color=home_edge_colour,
+            font_properties=robotoBold, fontsize=12, ha='left', bbox=home_values)
+    ax.text(59, 57, str(away_on_target), color=away_edge_colour,
+            font_properties=robotoBold, fontsize=12, ha='left', bbox=away_values)
 
-    # # Indicate how many shots that hit the post each team have made
-    # ax.text(50, 49, 'Hit post', color='black', font_properties=robotoBold,
-    #         fontsize=12, ha='center', bbox=text_box)
-    # ax.text(39, 49, str(home_post), color=home_edge_colour,
-    #         font_properties=robotoBold, fontsize=12, ha='left', bbox=home_values)
-    # ax.text(59, 49, str(away_post), color=away_edge_colour,
-    #         font_properties=robotoBold, fontsize=12, ha='left', bbox=away_values)
+    # Indicate how many shots that hit the post each team have made
+    ax.text(50, 49, 'Hit post', color='black', font_properties=robotoBold,
+            fontsize=12, ha='center', bbox=text_box)
+    ax.text(39, 49, str(home_post), color=home_edge_colour,
+            font_properties=robotoBold, fontsize=12, ha='left', bbox=home_values)
+    ax.text(59, 49, str(away_post), color=away_edge_colour,
+            font_properties=robotoBold, fontsize=12, ha='left', bbox=away_values)
 
-    # # Indicate how many shots off target each team have made
-    # ax.text(49.85, 41, 'Shots off target', color='black',
-    #         font_properties=robotoBold, fontsize=12, ha='center', bbox=text_box)
-    # ax.text(39, 41, str(home_off_target), color=home_edge_colour,
-    #         font_properties=robotoBold, fontsize=12, ha='left', bbox=home_values)
-    # ax.text(59, 41, str(away_off_target), color=away_edge_colour,
-    #         font_properties=robotoBold, fontsize=12, ha='left', bbox=away_values)
+    # Indicate how many shots off target each team have made
+    ax.text(49.85, 41, 'Shots off target', color='black',
+            font_properties=robotoBold, fontsize=12, ha='center', bbox=text_box)
+    ax.text(39, 41, str(home_off_target), color=home_edge_colour,
+            font_properties=robotoBold, fontsize=12, ha='left', bbox=home_values)
+    ax.text(59, 41, str(away_off_target), color=away_edge_colour,
+            font_properties=robotoBold, fontsize=12, ha='left', bbox=away_values)
 
-    # # Indicate how many blocked shots each team have made
-    # ax.text(50, 33, 'Shots blocked', color='black',
-    #         font_properties=robotoBold, fontsize=12, ha='center', bbox=text_box)
-    # ax.text(39, 33, str(home_blocked), color=home_edge_colour,
-    #         font_properties=robotoBold, fontsize=12, ha='left', bbox=home_values)
-    # ax.text(59, 33, str(away_blocked), color=away_edge_colour,
-    #         font_properties=robotoBold, fontsize=12, ha='left', bbox=away_values)
+    # Indicate how many blocked shots each team have made
+    ax.text(50, 33, 'Shots blocked', color='black',
+            font_properties=robotoBold, fontsize=12, ha='center', bbox=text_box)
+    ax.text(39, 33, str(home_blocked), color=home_edge_colour,
+            font_properties=robotoBold, fontsize=12, ha='left', bbox=home_values)
+    ax.text(59, 33, str(away_blocked), color=away_edge_colour,
+            font_properties=robotoBold, fontsize=12, ha='left', bbox=away_values)
 
-    # # Draw the legends (shape, shot type and xG value) at the bottom of the plot
-    # ax.text(27, 8, 'Outcomes:', color='white',
-    #         font_properties=robotoBold, fontsize=15, ha='center')
-    # nodes = pitch.scatter(4, 4, s=300, marker='o',
-    #                       color=home_colour, edgecolors=home_edge_colour, zorder=1, ax=ax)
-    # ax.text(8, 3.25, 'Goal', color='white',
-    #         font_properties=robotoBold, fontsize=12, ha='center')
-    # nodes = pitch.scatter(12, 4, s=300, marker='^',
-    #                       color=away_colour, edgecolors=away_edge_colour, zorder=1, ax=ax)
-    # ax.text(17.5, 3.25, 'On target', color='white',
-    #         font_properties=robotoBold, fontsize=12, ha='center')
-    # nodes = pitch.scatter(23.5, 4, s=300, marker='s',
-    #                       color=home_colour, edgecolors=home_edge_colour, zorder=1, ax=ax)
-    # ax.text(28.7, 3.25, 'Hit post', color='white',
-    #         font_properties=robotoBold, fontsize=12, ha='center')
-    # nodes = pitch.scatter(35, 4, s=300, marker='D',
-    #                       color=away_colour, edgecolors=away_edge_colour, zorder=1, ax=ax)
-    # ax.text(41, 3.25, 'Blocked', color='white',
-    #         font_properties=robotoBold, fontsize=12, ha='center')
-    # nodes = pitch.scatter(46.5, 4, s=300, marker='X',
-    #                       color=home_colour, edgecolors=home_edge_colour, zorder=1, ax=ax)
-    # ax.text(52.5, 3.25, 'Off target', color='white',
-    #         font_properties=robotoBold, fontsize=12, ha='center')
+    # Draw the legends (shape, shot type and xG value) at the bottom of the plot
+    ax.text(27, 8, 'Outcomes:', color='white',
+            font_properties=robotoBold, fontsize=15, ha='center')
+    nodes = pitch.scatter(4, 4, s=300, marker='o',
+                          color=home_colour, edgecolors=home_edge_colour, zorder=1, ax=ax)
+    ax.text(8, 3.25, 'Goal', color='white',
+            font_properties=robotoBold, fontsize=12, ha='center')
+    nodes = pitch.scatter(12, 4, s=300, marker='^',
+                          color=away_colour, edgecolors=away_edge_colour, zorder=1, ax=ax)
+    ax.text(17.5, 3.25, 'On target', color='white',
+            font_properties=robotoBold, fontsize=12, ha='center')
+    nodes = pitch.scatter(23.5, 4, s=300, marker='s',
+                          color=home_colour, edgecolors=home_edge_colour, zorder=1, ax=ax)
+    ax.text(28.7, 3.25, 'Hit post', color='white',
+            font_properties=robotoBold, fontsize=12, ha='center')
+    nodes = pitch.scatter(35, 4, s=300, marker='D',
+                          color=away_colour, edgecolors=away_edge_colour, zorder=1, ax=ax)
+    ax.text(41, 3.25, 'Blocked', color='white',
+            font_properties=robotoBold, fontsize=12, ha='center')
+    nodes = pitch.scatter(46.5, 4, s=300, marker='X',
+                          color=home_colour, edgecolors=home_edge_colour, zorder=1, ax=ax)
+    ax.text(52.5, 3.25, 'Off target', color='white',
+            font_properties=robotoBold, fontsize=12, ha='center')
 
-    # # (The size of the dot increases by the xG value of the shot)
-    # ax.text(80, 8, 'Dot size increases by the xG value of the shot', color='white',
-    #         font_properties=robotoBold, fontsize=12, ha='center')
-    # nodes = pitch.scatter(70.5, 4, s=100, marker='o',
-    #                       color=home_colour, edgecolors=home_edge_colour, zorder=1, ax=ax)
-    # nodes = pitch.scatter(73, 4, s=200, marker='o',
-    #                       color=away_colour, edgecolors=away_edge_colour, zorder=1, ax=ax)
-    # nodes = pitch.scatter(75.8, 4, s=300, marker='o',
-    #                       color=home_colour, edgecolors=home_edge_colour, zorder=1, ax=ax)
-    # nodes = pitch.scatter(79.2, 4, s=400, marker='o',
-    #                       color=away_colour, edgecolors=away_edge_colour, zorder=1, ax=ax)
-    # nodes = pitch.scatter(83, 4, s=500, marker='o',
-    #                       color=home_colour, edgecolors=home_edge_colour, zorder=1, ax=ax)
+    # (The size of the dot increases by the xG value of the shot)
+    ax.text(80, 8, 'Dot size increases by the xG value of the shot', color='white',
+            font_properties=robotoBold, fontsize=12, ha='center')
+    nodes = pitch.scatter(70.5, 4, s=100, marker='o',
+                          color=home_colour, edgecolors=home_edge_colour, zorder=1, ax=ax)
+    nodes = pitch.scatter(73, 4, s=200, marker='o',
+                          color=away_colour, edgecolors=away_edge_colour, zorder=1, ax=ax)
+    nodes = pitch.scatter(75.8, 4, s=300, marker='o',
+                          color=home_colour, edgecolors=home_edge_colour, zorder=1, ax=ax)
+    nodes = pitch.scatter(79.2, 4, s=400, marker='o',
+                          color=away_colour, edgecolors=away_edge_colour, zorder=1, ax=ax)
+    nodes = pitch.scatter(83, 4, s=500, marker='o',
+                          color=home_colour, edgecolors=home_edge_colour, zorder=1, ax=ax)
 
-    # # Ask Streamlit to show the viz
-    # st.pyplot(fig)
+    # Ask Streamlit to show the viz
+    st.pyplot(fig)
 
 # Function to create the passing network
-# def passing_network(directory: str, eventsFile: str):
-#     isHomeTeam = False
-#     # Open the json file, copy its data, and then immediately close the json file
-#     jsonData = open_json(directory, eventsFile)
+def passing_network(directory: str, eventsFile: str):
+    isHomeTeam = False
+    # Open the json file, copy its data, and then immediately close the json file
+    jsonData = open_json(directory, eventsFile)
 
-#     # Assign each section of the json file to a variable
-#     # and get the necessary information about the match
-#     matchInfo = jsonData['matchInfo']
-#     matchName = matchInfo['description']
-#     compName = matchInfo['competition']['name']
-#     liveData = jsonData['liveData']
-#     matchDetails = liveData["matchDetails"]
-#     homeScore = matchDetails['scores']['total']['home']
-#     awayScore = matchDetails['scores']['total']['away']
+    # Assign each section of the json file to a variable
+    # and get the necessary information about the match
+    matchInfo = jsonData['matchInfo']
+    matchName = matchInfo['description']
+    compName = matchInfo['competition']['name']
+    liveData = jsonData['liveData']
+    matchDetails = liveData["matchDetails"]
+    homeScore = matchDetails['scores']['total']['home']
+    awayScore = matchDetails['scores']['total']['away']
 
-#     # Get the necessary information about both teams
-#     for contestant in matchInfo['contestant']:
+    # Get the necessary information about both teams
+    for contestant in matchInfo['contestant']:
 
-#         if contestant['position'] == 'home':
-#             homeTeamId = contestant['id']
-#             homeTeam = contestant['name']
-#         else:
-#             if isHomeTeam == False:
-#                 awayTeamId = contestant['id']
-#                 awayTeam = contestant['name']
+        if contestant['position'] == 'home':
+            homeTeamId = contestant['id']
+            homeTeam = contestant['name']
+        else:
+            if isHomeTeam == False:
+                awayTeamId = contestant['id']
+                awayTeam = contestant['name']
 
-#     # Access the lineUp section of the json file
-#     # and get the lineups of both teams
-#     liveData = jsonData['liveData']
-#     squadList = liveData['lineUp']
-#     home = squadList[0]
-#     away = squadList[1]
+    # Access the lineUp section of the json file
+    # and get the lineups of both teams
+    liveData = jsonData['liveData']
+    squadList = liveData['lineUp']
+    home = squadList[0]
+    away = squadList[1]
 
-#     # Create a few variables and some arrays to store passing data
-#     ballPasser = ''
-#     ballReceiver = ''
-#     passValue = 0  # Number of passes made to the second player
-#     player_x_value = 0
-#     player_y_value = 0
-#     homeXI = []  # Array to store the home team's starting lineup
-#     awayXI = []  # Array to store the away team's starting lineup
-#     home_x_y_values = []  # Array to store the home player's x and y values
-#     away_x_y_values = []  # Array to store the away player's x and y values
-#     home_pass_success = []  # Array to store the home player's accurate passes value
-#     away_pass_success = []  # Array to store the away player's accurate passes value
-#     # Array to store the home player's x and y values of the pass destination
-#     homePassLocation = []
-#     # Array to store the away player's x and y values of the pass destination
-#     awayPassLocation = []
+    # Create a few variables and some arrays to store passing data
+    ballPasser = ''
+    ballReceiver = ''
+    passValue = 0  # Number of passes made to the second player
+    player_x_value = 0
+    player_y_value = 0
+    homeXI = []  # Array to store the home team's starting lineup
+    awayXI = []  # Array to store the away team's starting lineup
+    home_x_y_values = []  # Array to store the home player's x and y values
+    away_x_y_values = []  # Array to store the away player's x and y values
+    home_pass_success = []  # Array to store the home player's accurate passes value
+    away_pass_success = []  # Array to store the away player's accurate passes value
+    # Array to store the home player's x and y values of the pass destination
+    homePassLocation = []
+    # Array to store the away player's x and y values of the pass destination
+    awayPassLocation = []
 
-#     # Do the same process as above for the away team
-#     for player in away['player']:
+    # Do the same process as above for the away team
+    for player in away['player']:
 
-#         if player['position'] != 'Substitute':
+        if player['position'] != 'Substitute':
 
-#             awayXI.append(player['matchName'])
-#             player_x_value = player['x']
-#             player_y_value = player['y']
-#             away_x_y_values.append(
-#                 [player['playerId'], player['matchName'], player_x_value, player_y_value])
-#             away_pass_success.append(player['passSuccess'])
+            awayXI.append(player['matchName'])
+            player_x_value = player['x']
+            player_y_value = player['y']
+            away_x_y_values.append(
+                [player['playerId'], player['matchName'], player_x_value, player_y_value])
+            away_pass_success.append(player['passSuccess'])
 
-#             for playerPass in player['playerPass']:
-#                 ballPasser = player['playerId']
-#                 ballReceiver = playerPass['playerId']
-#                 passValue = playerPass['value']
-#                 awayPassLocation.append(
-#                     [ballPasser, ballReceiver, passValue])
-#         else:
-#             break
+            for playerPass in player['playerPass']:
+                ballPasser = player['playerId']
+                ballReceiver = playerPass['playerId']
+                passValue = playerPass['value']
+                awayPassLocation.append(
+                    [ballPasser, ballReceiver, passValue])
+        else:
+            break
 
-#     home_colour = 'darkblue'
-#     home_edge_colour = 'white'
+    home_colour = 'darkblue'
+    home_edge_colour = 'white'
 
-#     away_colour = 'red'
-#     away_edge_colour = 'yellow'
+    away_colour = 'red'
+    away_edge_colour = 'yellow'
 
-#     # Setup and draw the pitch
-#     pitch = Pitch(pitch_type='opta', pitch_color='#0e1117', line_color='white',
-#                   stripe=False, constrained_layout=True, tight_layout=True)
-#     fig, ax = pitch.draw(figsize=(10, 8))
+    # Setup and draw the pitch
+    pitch = Pitch(pitch_type='opta', pitch_color='#0e1117', line_color='white',
+                  stripe=False, constrained_layout=True, tight_layout=True)
+    fig, ax = pitch.draw(figsize=(10, 8))
 
-#     # Create variables to store the starting and ending x,y coordinates of the passes
-#     x_start = 0
-#     y_start = 0
-#     x_end = 0
-#     y_end = 0
+    # Create variables to store the starting and ending x,y coordinates of the passes
+    x_start = 0
+    y_start = 0
+    x_end = 0
+    y_end = 0
 
-#     for passes in awayPassLocation:
-#         ballPasser = passes[0]
-#         ballReceiver = passes[1]
-#         passValue = passes[2]
-#         for player in away_x_y_values:
-#             if ballPasser == player[0]:
-#                 x_start = player[2]
-#                 y_start = player[3]
-#             elif ballReceiver == player[0]:
-#                 x_end = player[2]
-#                 y_end = player[3]
+    for passes in awayPassLocation:
+        ballPasser = passes[0]
+        ballReceiver = passes[1]
+        passValue = passes[2]
+        for player in away_x_y_values:
+            if ballPasser == player[0]:
+                x_start = player[2]
+                y_start = player[3]
+            elif ballReceiver == player[0]:
+                x_end = player[2]
+                y_end = player[3]
 
-#         if passValue < 4:
-#             continue
-#         elif passValue < 6:
-#             arrow = pitch.arrows(x_start, y_start, x_end, y_end, width=2.5,
-#                                  headwidth=4, headlength=2, headaxislength=2, color='#c7d5ed', alpha=0.3, ax=ax)
-#         elif passValue < 12:
-#             arrow = pitch.arrows(x_start, y_start, x_end, y_end, width=3.5,
-#                                  headwidth=4, headlength=2, headaxislength=2, color='#abc0e4', alpha=0.5, ax=ax)
-#         elif passValue < 16:
-#             arrow = pitch.arrows(x_start, y_start, x_end, y_end, width=4.5,
-#                                  headwidth=4, headlength=2, headaxislength=2, color='#dde5f4', alpha=0.65, ax=ax)
-#         else:
-#             arrow = pitch.arrows(x_start, y_start, x_end, y_end, width=5.5,
-#                                  headwidth=4, headlength=2, headaxislength=2, color='#f6f8fc', alpha=0.85, ax=ax)
+        if passValue < 4:
+            continue
+        elif passValue < 6:
+            arrow = pitch.arrows(x_start, y_start, x_end, y_end, width=2.5,
+                                 headwidth=4, headlength=2, headaxislength=2, color='#c7d5ed', alpha=0.3, ax=ax)
+        elif passValue < 12:
+            arrow = pitch.arrows(x_start, y_start, x_end, y_end, width=3.5,
+                                 headwidth=4, headlength=2, headaxislength=2, color='#abc0e4', alpha=0.5, ax=ax)
+        elif passValue < 16:
+            arrow = pitch.arrows(x_start, y_start, x_end, y_end, width=4.5,
+                                 headwidth=4, headlength=2, headaxislength=2, color='#dde5f4', alpha=0.65, ax=ax)
+        else:
+            arrow = pitch.arrows(x_start, y_start, x_end, y_end, width=5.5,
+                                 headwidth=4, headlength=2, headaxislength=2, color='#f6f8fc', alpha=0.85, ax=ax)
 
-#     for i in range(0, len(away_x_y_values)):
-#         nodes = pitch.scatter(away_x_y_values[i][2], away_x_y_values[i][3], s=4.5 *
-#                               away_pass_success[i], color=away_colour, edgecolors=away_edge_colour, zorder=1, ax=ax)
-#         playerInfo = awayXI[i]
-#         playerPosition = (
-#             away_x_y_values[i][2], away_x_y_values[i][3])
-#         text = pitch.annotate(playerInfo, playerPosition, (away_x_y_values[i][2], away_x_y_values[i][3] + 4.2),
-#                               ha='center', va='center', fontproperties=robotoRegular, fontsize=12, color='white', ax=ax)
+    for i in range(0, len(away_x_y_values)):
+        nodes = pitch.scatter(away_x_y_values[i][2], away_x_y_values[i][3], s=4.5 *
+                              away_pass_success[i], color=away_colour, edgecolors=away_edge_colour, zorder=1, ax=ax)
+        playerInfo = awayXI[i]
+        playerPosition = (
+            away_x_y_values[i][2], away_x_y_values[i][3])
+        text = pitch.annotate(playerInfo, playerPosition, (away_x_y_values[i][2], away_x_y_values[i][3] + 4.2),
+                              ha='center', va='center', fontproperties=robotoRegular, fontsize=12, color='white', ax=ax)
 
-#     # Create a colour map from the colours used for the arrows
-#     cmap0 = mpl.colors.LinearSegmentedColormap.from_list(
-#         'green2red', ['#abc0e4', '#c8d5ed', '#dde5f4', '#f6f8fc'])
-#     # Set the range of the colour map
-#     norm = mpl.colors.Normalize(vmin=6, vmax=16)
+    # Create a colour map from the colours used for the arrows
+    cmap0 = mpl.colors.LinearSegmentedColormap.from_list(
+        'green2red', ['#abc0e4', '#c8d5ed', '#dde5f4', '#f6f8fc'])
+    # Set the range of the colour map
+    norm = mpl.colors.Normalize(vmin=6, vmax=16)
 
-#     # Draw the colour map and set the tick params and the label
-#     cbar = ax.figure.colorbar(
-#         mpl.cm.ScalarMappable(norm=norm, cmap=cmap0),
-#         ax=ax, location='bottom', orientation='horizontal', fraction=.05, pad=0.02)
-#     cbar.ax.tick_params(color="white", labelcolor="white")
-#     cbar.set_label('Pass combinations', color='white')
+    # Draw the colour map and set the tick params and the label
+    cbar = ax.figure.colorbar(
+        mpl.cm.ScalarMappable(norm=norm, cmap=cmap0),
+        ax=ax, location='bottom', orientation='horizontal', fraction=.05, pad=0.02)
+    cbar.ax.tick_params(color="white", labelcolor="white")
+    cbar.set_label('Pass combinations', color='white')
 
-#     # Write the note
-#     ax.text(20, 2, "Size of dot increases by the player's accurate passes",
-#             color='white', fontsize=10, ha='center')
+    # Write the note
+    ax.text(20, 2, "Size of dot increases by the player's accurate passes",
+            color='white', fontsize=10, ha='center')
 
-#     # Credit
-#     ax.text(1, 97, "By Daryl - @dgouilard", color='white',
-#             fontproperties=robotoRegular, fontsize=10)
+    # Credit
+    ax.text(1, 97, "By Daryl - @dgouilard", color='white',
+            fontproperties=robotoRegular, fontsize=10)
 
-#     # Set the figure's face colour, width and height
-#     fig.set_facecolor('#0e1117')
-#     fig.set_figwidth(10.5)
-#     fig.set_figheight(10)
+    # Set the figure's face colour, width and height
+    fig.set_facecolor('#0e1117')
+    fig.set_figwidth(10.5)
+    fig.set_figheight(10)
 
-#     # Ask Streamlit to plot the figure
-#     st.pyplot(fig)
+    # Ask Streamlit to plot the figure
+    st.pyplot(fig)
 
 # Function to render the page
 
