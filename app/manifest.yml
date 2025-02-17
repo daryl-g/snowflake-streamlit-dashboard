@@ -1,0 +1,62 @@
+# For more information on creating manifest, go to https://docs.snowflake.com/en/developer-guide/native-apps/creating-manifest
+manifest_version: 1
+
+version:
+  name: v1
+  label: "v1.0.0"
+  comment: "Initial version of the Vietnam NT Data Dashboard"
+
+artifacts:
+  setup_script: setup_script.sql
+  readme: README.md
+  default_streamlit: ui."Dashboard"
+  extension_code: true 
+
+configuration:
+  log_level: debug
+  trace_level: always
+
+privileges:
+  - EXECUTE TASK:
+      description: "Permission to run warnings check task"
+
+references:
+  - contestants:
+      label: "Contestants"
+      description: "Contestants from all included Opta competitions."
+      privileges:
+        - SELECT
+        - REFERENCES
+      object_type: TABLE
+      multi_valued: false
+      register_callback: config_code.register_single_callback
+
+  - competitions:
+      label: "Competitions"
+      description: "All included Opta competitions."
+      privileges:
+        - SELECT
+        - REFERENCES
+      object_type: TABLE
+      multi_valued: false
+      register_callback: config_code.register_single_callback
+
+  - matches_info:
+      label: "Matches info"
+      description: "Info on matches from all included Opta competitions."
+      privileges:
+        - SELECT
+        - REFERENCES
+      object_type: TABLE
+      multi_valued: false
+      register_callback: config_code.register_single_callback
+
+  - match_details:
+      label: "Match details"
+      description: "Specific details on matches from all included Opta competitions."
+      privileges:
+        - SELECT
+        - REFERENCES
+      object_type: TABLE
+      multi_valued: false
+      register_callback: config_code.register_single_callback

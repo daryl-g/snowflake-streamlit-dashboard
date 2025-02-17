@@ -1,7 +1,7 @@
 # Import necessary libraries
 import streamlit as st
 from PIL import Image
-from MultiPage import MultiPage
+from pages.MultiPage import MultiPage
 from pages import introductory, how_to, player_overall, player_individual, matches_lastmatch
 
 menu_items = {

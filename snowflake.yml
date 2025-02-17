@@ -1,0 +1,20 @@
+# This is a project definition file, a required component of the Snowflake Native Apps Project.
+# DO NOT delete this file if you intend to use snowCLI with this project.
+
+definition_version: 1
+native_app:
+  name: vietnam_dashboard
+  source_stage: code.source
+  artifacts:
+    - src: app/* # Application entry point
+      dest: ./
+  package:
+    name: dashboard_pkg
+    role: dashboard_provider
+    warehouse: dashboard_wh
+    scripts:
+      - scripts/sql/setup-shared-content.sql
+  application:
+    name: dashboard_app
+    role: dashboard_admin
+    warehouse: dashboard_wh
