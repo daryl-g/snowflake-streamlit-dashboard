@@ -2,7 +2,7 @@
 import streamlit as st
 
 from snowflake.snowpark import Session
-from util import render_image
+from utils import render_image
 from first_time_setup import render as render_first_time_setup, get_is_first_time_setup_dismissed
 
 # Render function

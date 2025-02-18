@@ -5,7 +5,7 @@ import matplotlib as mpl
 import matplotlib.font_manager as fm
 
 from mplsoccer import Pitch, VerticalPitch
-from util import save_and_render_figure
+from app.dashboard.utils.utilfunc import save_and_render_figure
 
 mpl.rcParams['figure.dpi'] = 300
 

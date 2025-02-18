@@ -8,7 +8,7 @@ import streamlit as st
 from snowflake.snowpark import Session
 import snowflake.permissions as permission
 
-from util import get_app_name
+from utils import get_app_name
 
 
 @dataclass
