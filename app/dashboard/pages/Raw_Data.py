@@ -35,10 +35,12 @@ def render(session: Session):
     st.dataframe(data, use_container_width=True)
 
     # Option to download the data
+    ## Currently this does not work as the data is not being downloaded,
+    ## but this is a placeholder for the future
     st.download_button(
         label="Download data as csv",
         data=data.to_csv(index=False, encoding="utf-8", sep=","),
-        file_name=f"opta_{table_name}.csv",
+        file_name=f"opta_{table_name.lower()}.csv",
         mime="text/csv"
     )
 
